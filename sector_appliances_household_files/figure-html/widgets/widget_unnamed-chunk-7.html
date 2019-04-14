@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="highchart_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="highchart_libs/jquery-1.11.1/jquery.min.js"></script>
+<script src="highchart_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="highchart_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
+<link href="highchart_libs/highcharts-7.0.1/css/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="highchart_libs/highcharts-7.0.1/highcharts.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-3d.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-more.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/stock.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/map.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/annotations.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/boost.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drag-panes.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drilldown.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/item-series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/offline-exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/overlapping-datalabels.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/export-data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/funnel.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/heatmap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/treemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sankey.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/solid-gauge.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/streamgraph.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sunburst.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/vector.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/wordcloud.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/xrange.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/tilemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/venn.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/gantt.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/timeline.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/parallel-coordinates.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/grouped-categories.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/motion.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/multicolor_series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/reset.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/symbols-extra.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/text-symbols.js"></script>
+<script src="highchart_libs/highchart-binding-0.7.0/highchart.js"></script>
+<script src="highchart_libs/pymjs-1.3.2/pym.v1.min.js"></script>
+  <title>highchart</title>
+</head>
+<body style="background-color:white;">
+<div id="htmlwidget_container">
+  <div id="htmlwidget-b0df01cd195086d951a6" style="width:100%;height:500px;" class="highchart html-widget"></div>
+  <script>HTMLWidgets.pymChild = new pym.Child();HTMLWidgets.addPostRenderHandler(function(){
+                                setTimeout(function(){HTMLWidgets.pymChild.sendHeight();},100);
+                            });</script>
+</div>
+<script type="application/json" data-for="htmlwidget-b0df01cd195086d951a6">{"x":{"hc_opts":{"title":{"text":"家电行业营业收入占比"},"yAxis":{"title":{"text":"%"}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"chart":{"zoomType":"xy","type":"waterfall"},"subtitle":{"text":"更新日期:2018-09-30"},"xAxis":{"categories":["美的集团","格力电器","青岛海尔","TCL集团","四川长虹","深康佳A","海信家电","海信电器","小天鹅A","苏泊尔","长虹美菱","海立股份","万家乐","兆驰股份","三花智控","长虹华意","新宝股份","奥马电器","欧普照明","创维数字","九阳股份","老板电器","万和电气","华帝股份","惠而浦","澳柯玛","莱克电气","阳光照明","奥佳华","毅昌股份","佛山照明","得邦照明","飞科电器","四川九洲","康盛股份","飞乐音响","日出东方","爱仕达","东方电热","荣泰健康","三雄极光","珈伟新能","长青集团","哈尔斯","顺威股份","中科新材","银河电子","奇精机械","依米康","浙江美大","和晶科技","融捷健康","瑞尔特","英飞特","金莱特","开能健康","晨丰科技","天际股份","春兰股份","天银机电","*ST德奥","雪莱特","光莆股份","金海环境","华体科技","春光科技","太龙照明","星帅尔","三星新材","聚隆科技","*ST圣莱","*ST厦华"]},"legend":{"enabled":false},"tooltip":{"pointFormat":"<b>{point.y:,.2f}%"},"series":[{"data":[{"name":"美的集团","y":22.39059858551,"color":"red","line":100},{"name":"格力电器","y":16.1815015024784,"color":"red","line":100},{"name":"青岛海尔","y":15.0323685860876,"color":"red","line":100},{"name":"TCL集团","y":8.94910989744041,"color":"red","line":100},{"name":"四川长虹","y":6.29409610729763,"color":"red","line":100},{"name":"深康佳A","y":3.23869453388389,"color":"red","line":100},{"name":"海信家电","y":3.1349517661714,"color":"red","line":100},{"name":"海信电器","y":2.68144251547276,"color":"red","line":100},{"name":"小天鹅A","y":1.89531607102025,"color":"red","line":100},{"name":"苏泊尔","y":1.45749999878267,"color":"red","line":100},{"name":"长虹美菱","y":1.4417250779027,"color":"red","line":100},{"name":"海立股份","y":1.04994002322505,"color":"red","line":100},{"name":"万家乐","y":0.992955031186604,"color":"red","line":100},{"name":"兆驰股份","y":0.976572015743197,"color":"red","line":100},{"name":"三花智控","y":0.899424216145739,"color":"red","line":100},{"name":"长虹华意","y":0.735363617119589,"color":"red","line":100},{"name":"新宝股份","y":0.680353628248906,"color":"red","line":100},{"name":"奥马电器","y":0.664251729927802,"color":"red","line":100},{"name":"欧普照明","y":0.608029499397355,"color":"red","line":100},{"name":"创维数字","y":0.595629488657519,"color":"red","line":100},{"name":"九阳股份","y":0.591781825680303,"color":"red","line":100},{"name":"老板电器","y":0.586967214184534,"color":"red","line":100},{"name":"万和电气","y":0.575838125422587,"color":"red","line":100},{"name":"华帝股份","y":0.505571923718472,"color":"red","line":100},{"name":"惠而浦","y":0.504980384410046,"color":"red","line":100},{"name":"澳柯玛","y":0.474788275550832,"color":"red","line":100},{"name":"莱克电气","y":0.463824005059925,"color":"red","line":100},{"name":"阳光照明","y":0.456684551724553,"color":"red","line":100},{"name":"奥佳华","y":0.411157762424058,"color":"red","line":100},{"name":"毅昌股份","y":0.395272124928741,"color":"red","line":100},{"name":"佛山照明","y":0.314003962112862,"color":"red","line":100},{"name":"得邦照明","y":0.311707304939046,"color":"red","line":100},{"name":"飞科电器","y":0.306786668416946,"color":"red","line":100},{"name":"四川九洲","y":0.271857893040625,"color":"red","line":100},{"name":"康盛股份","y":0.259834652578061,"color":"red","line":100},{"name":"飞乐音响","y":0.25760577327198,"color":"red","line":100},{"name":"日出东方","y":0.246644646752573,"color":"red","line":100},{"name":"爱仕达","y":0.246616999026993,"color":"red","line":100},{"name":"东方电热","y":0.197612196208512,"color":"red","line":100},{"name":"荣泰健康","y":0.191296407674839,"color":"red","line":100},{"name":"三雄极光","y":0.191156182090569,"color":"red","line":100},{"name":"珈伟新能","y":0.161758253960149,"color":"red","line":100},{"name":"长青集团","y":0.160824260841748,"color":"red","line":100},{"name":"哈尔斯","y":0.144733040652846,"color":"red","line":100},{"name":"顺威股份","y":0.136659452238019,"color":"red","line":100},{"name":"中科新材","y":0.13536620305759,"color":"red","line":100},{"name":"银河电子","y":0.120891853616406,"color":"red","line":100},{"name":"奇精机械","y":0.10481562431313,"color":"red","line":100},{"name":"依米康","y":0.103502798511293,"color":"red","line":100},{"name":"浙江美大","y":0.101557443933856,"color":"red","line":100},{"name":"和晶科技","y":0.0994236100927087,"color":"red","line":100},{"name":"融捷健康","y":0.0787156975290789,"color":"red","line":100},{"name":"瑞尔特","y":0.0762388111482259,"color":"red","line":100},{"name":"英飞特","y":0.0759992989921084,"color":"red","line":100},{"name":"金莱特","y":0.074187581358019,"color":"red","line":100},{"name":"开能健康","y":0.0687206409615157,"color":"red","line":100},{"name":"晨丰科技","y":0.0670274303818417,"color":"red","line":100},{"name":"天际股份","y":0.0669901624339362,"color":"red","line":100},{"name":"春兰股份","y":0.0640053897136132,"color":"red","line":100},{"name":"天银机电","y":0.0628072070723498,"color":"red","line":100},{"name":"*ST德奥","y":0.0590560366805074,"color":"red","line":100},{"name":"雪莱特","y":0.0583712467817862,"color":"red","line":100},{"name":"光莆股份","y":0.0540631874305435,"color":"red","line":100},{"name":"金海环境","y":0.0470193002598997,"color":"red","line":100},{"name":"华体科技","y":0.0408156107506498,"color":"red","line":100},{"name":"春光科技","y":0.0391657341229988,"color":"red","line":100},{"name":"太龙照明","y":0.0364275868475269,"color":"red","line":100},{"name":"星帅尔","y":0.033286231635552,"color":"red","line":100},{"name":"三星新材","y":0.0281817010000669,"color":"red","line":100},{"name":"聚隆科技","y":0.0219884633498034,"color":"red","line":100},{"name":"*ST圣莱","y":0.0121909455844637,"color":"red","line":100},{"name":"*ST厦华","y":0.00339642383120107,"color":"red","line":100}],"dataLabels":{"enabled":false,"format":"{point.y:,.2f}%","style":{"color":"#FFFFFF","fontWeight":"bold","textShadow":"0px 0px 3px black"}},"pointPadding":0}]},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Cardo"}},"xAxis":{"lineWidth":1,"minorGridLineWidth":0,"tickColor":"#737373"},"yAxis":{"lineWidth":0,"minorGridLineWidth":0,"lineColor":"transparent","tickColor":"#737373","tickWidth":1,"gridLineColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Cardo","debug":false},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-b0df01cd195086d951a6">{"viewer":{"width":"100%","height":350,"padding":0,"fill":false},"browser":{"width":"100%","height":500,"padding":0,"fill":false}}</script>
+</body>
+</html>

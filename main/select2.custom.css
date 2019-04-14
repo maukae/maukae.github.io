@@ -1,0 +1,135 @@
+.select2-container .select2-choices .select2-search-field input {
+	background: rgb(86, 160, 211); border-radius: 0px; border: currentColor; border-image: none; color: rgb(255, 255, 255); font-family: frutigerlight;
+}
+.select2-container .select2-choice {
+	background: rgb(86, 160, 211); border-radius: 0px; border: currentColor; border-image: none; color: rgb(255, 255, 255); font-family: frutigerlight;
+}
+.select2-container .select2-choices {
+	background: rgb(86, 160, 211); border-radius: 0px; border: currentColor; border-image: none; color: rgb(255, 255, 255); font-family: frutigerlight;
+}
+.select2-container .select2-choice .select2-arrow {
+	background: rgb(86, 160, 211); border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+.select2-container .select2-choice div {
+	background: rgb(86, 160, 211); border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+.select2-container-active .select2-choice {
+	background: rgb(18, 58, 95); box-shadow: inset 0px 0px 0px rgba(0,0,0,0.075), 0px 0px 0px rgba(82,168,236,0.6);
+}
+.select2-container-multi.select2-container-active .select2-choices {
+	background: rgb(18, 58, 95); box-shadow: inset 0px 0px 0px rgba(0,0,0,0.075), 0px 0px 0px rgba(82,168,236,0.6);
+}
+.select2-drop {
+	background: rgb(86, 160, 211); border-radius: 0px; color: rgb(255, 255, 255);
+}
+.select2-drop-active {
+	background: rgb(18, 58, 95); border: currentColor; border-image: none;
+}
+.select2-results .select2-highlighted {
+	background: rgb(19, 30, 41);
+}
+.select2-container .select2-choice .select2-arrow b {
+	background: url("../images/select2_arrows.png") no-repeat 5px 1px rgba(0, 0, 0, 0);
+}
+.select2-dropdown-open .select2-choice .select2-arrow b {
+	background-position: -14px 1px;
+}
+.select2-dropdown-open .select2-choice div b {
+	background-position: -14px 1px;
+}
+.select2-container .select2-choice .select2-arrow {
+	border-radius: 0px; width: 28px;
+}
+.select2-container .select2-choice {
+	height: 28px;
+}
+.select2-chosen {
+	padding: 2px 10px;
+}
+.select2-choice > span:first-child {
+	padding: 2px 10px;
+}
+.select2-container .select2-choices .select2-search-field input {
+	padding: 2px 10px;
+}
+.select2-search {
+	margin: 5px 0px;
+}
+.select2-results {
+	margin: 0px; padding: 0px;
+}
+.select2-results .select2-result-label {
+	padding: 7px 10px;
+}
+.select2-results .select2-no-results {
+	padding: 5px 10px; color: rgb(120, 0, 50); background-color: rgb(255, 243, 215);
+}
+.select2-results .select2-searching {
+	padding: 5px 10px; color: rgb(120, 0, 50); background-color: rgb(255, 243, 215);
+}
+.select2-results .select2-selection-limit {
+	padding: 5px 10px; color: rgb(120, 0, 50); background-color: rgb(255, 243, 215);
+}
+.select2-search input {
+	background: url("../images/select2_arrows.png") no-repeat 100% -22px, linear-gradient(rgb(255, 255, 255) 85%, rgb(238, 238, 238) 99%) 0px 0px rgba(0, 0, 0, 0); border-radius: 0px;
+}
+.select2-container .select2-choice > .select2-chosen {
+	color: rgb(255, 255, 255);
+}
+select#e1 {
+	width: 100%;
+}
+select#e2 {
+	width: 100%;
+}
+select#e3 {
+	width: 100%;
+}
+.filterAggText {
+	padding: 0px 0px 0px 5px; float: left;
+}
+.filterAggText p:first-child {
+	font-family: frutigerbold; font-size: 1.4em;
+}
+.filterAggText p {
+	margin: 10px 0px;
+}
+.select2-with-searchbox .select2-results {
+	min-height: 265px;
+}
+.filterByCheck select {
+	max-width: 234px;
+}
+ul.filter-list.product .select2-container {
+	border: 1px solid rgb(255, 255, 255); border-image: none;
+}
+ul.filter-list.product .histShare {
+	width: 200px;
+}
+ul.stickyProductNav li.productList a {
+	float: none;
+}
+ul.stickyProductNav .select2-results {
+	border-right-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-color: rgb(255, 255, 255); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+.select2-dropdown-open.select2-drop-above [class^='select2-choice'] {
+	background: rgb(18, 58, 95); border-radius: 0px !important; border: currentColor; border-image: none;
+}
+@media only screen and (max-width:1024px)
+{
+.filterAggSearch input {
+	width: 152px;
+}
+}
+@media only screen and (max-width:768px)
+{
+.columnFullPad.filterByCheck {
+	padding-bottom: 0px;
+}
+.selectFilter {
+	width: 161px; margin-right: 10px; margin-bottom: 5px;
+}
+.filterAggSearch input {
+	width: 144px;
+}
+}

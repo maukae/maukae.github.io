@@ -1,0 +1,63 @@
+[class^='icon-'] {
+	text-transform: none; line-height: 1; font-family: "icomoon" !important; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+[class*=' icon-'] {
+	text-transform: none; line-height: 1; font-family: "icomoon" !important; font-style: normal; font-variant: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.icon-nb-mark::before {
+	content: "\e900";
+}
+.icon-nb-simplified::before {
+	content: "\e901";
+}
+.icon-nb-simplified-fill::before {
+	content: "\e902";
+}
+.icon-nb-simplified-full::before {
+	content: "\e903";
+}
+.icon-nb-standard::before {
+	content: "\e904";
+}
+.icon-nb-traditional::before {
+	content: "\e905";
+}
+.icon-nb-traditional-fill::before {
+	content: "\e906";
+}
+.icon-nb-traditional-full::before {
+	content: "\e907";
+}
+a.navbar-brand.icon-nb-standard::before {
+	color: rgb(0, 0, 0); font-size: 35px;
+}
+a.navbar-brand.icon-nb-mark {
+	padding-top: 7px;
+}
+a.navbar-brand.icon-nb-mark::before {
+	color: rgb(0, 0, 0); font-size: 49px;
+}
+a.navbar-brand.icon-nb-simplified {
+	height: 72px; padding-top: 9px; margin-top: 0px;
+}
+a.navbar-brand.icon-nb-traditional {
+	height: 72px; padding-top: 9px; margin-top: 0px;
+}
+a.navbar-brand.icon-nb-simplified::before {
+	color: rgb(0, 0, 0); font-size: 61px;
+}
+a.navbar-brand.icon-nb-traditional::before {
+	color: rgb(0, 0, 0); font-size: 61px;
+}
+.navbar-brand {
+	line-height: 1 !important;
+}
+#stickyTopBar {
+	height: 79px !important;
+}
+a.footer-contact-link {
+	color: rgb(255, 255, 255);
+}
+a.footer-contact-link:hover {
+	color: rgb(181, 195, 203);
+}

@@ -1,0 +1,171 @@
+footer {
+	background: rgb(77, 78, 79); margin: 0px; padding: 40px 0px 80px; width: 100%; color: rgb(255, 255, 255); font-family: "Frutiger57",Helvetica,Arial,"sans-serif","Microsoft Jhenghei","MS PGothic"; font-style: normal !important; float: left; position: relative;
+}
+@media all and (max-width:1024px)
+{
+footer {
+	width: 1024px;
+}
+body footer .container {
+	width: 970px;
+}
+}
+@media all and (max-width:768px)
+{
+footer h4.no-right-margin footer h3.no-right-margin {
+	margin-right: 30px;
+}
+}
+footer h4 {
+	margin: 24px 30px 8px 0px; padding: 0px 0px 10px; color: rgb(255, 255, 255); text-transform: uppercase; line-height: 1.1; letter-spacing: 0.06em; font-family: "Frutiger57",Helvetica,Arial,"sans-serif","Microsoft Jhenghei", "MS PGothic"; font-size: 15px; border-bottom-color: rgb(142, 142, 142); border-bottom-width: 1px; border-bottom-style: solid;
+}
+footer h3 {
+	margin: 24px 30px 8px 0px; padding: 0px 0px 10px; color: rgb(255, 255, 255); text-transform: uppercase; line-height: 1.1; letter-spacing: 0.06em; font-family: "Frutiger57",Helvetica,Arial,"sans-serif","Microsoft Jhenghei", "MS PGothic"; font-size: 15px; border-bottom-color: rgb(142, 142, 142); border-bottom-width: 1px; border-bottom-style: solid;
+}
+footer h4.no-right-margin {
+	margin-right: 0px;
+}
+footer h3.no-right-margin {
+	margin-right: 0px;
+}
+footer h3.footer-nb-mark {
+	border: currentColor; border-image: none; color: rgb(204, 204, 204); text-transform: none; letter-spacing: 0px; padding-bottom: 0px; padding-left: 51px; font-size: 20px; margin-top: 7px; margin-bottom: 20px;
+}
+footer h2.footer-nb-mark {
+	border: currentColor; border-image: none; color: rgb(204, 204, 204); text-transform: none; letter-spacing: 0px; padding-bottom: 0px; padding-left: 51px; font-size: 20px; margin-top: 7px; margin-bottom: 20px;
+}
+footer h3.footer-nb-mark::before {
+	left: 0px; top: 3px; color: rgb(204, 204, 204); text-transform: none; line-height: 1; font-family: "icomoon" !important; font-size: 33px; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; content: "\e900"; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+footer h2.footer-nb-mark::before {
+	left: 0px; top: 3px; color: rgb(204, 204, 204); text-transform: none; line-height: 1; font-family: "icomoon" !important; font-size: 33px; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; content: "\e900"; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+footer p {
+	color: rgb(255, 255, 255); line-height: 1.4285; letter-spacing: 0.08em; font-family: "Frutiger47LightCn"; font-size: 13px;
+}
+footer p a button {
+	color: rgb(255, 255, 255) !important;
+}
+footer p a {
+	color: rgb(255, 255, 255) !important;
+}
+footer p a button:hover {
+	color: rgb(181, 195, 203);
+}
+footer p a:hover {
+	color: rgb(96, 175, 231) !important;
+}
+footer a:focus {
+	color: rgb(255, 255, 255);
+}
+footer .btn.btn-secondary {
+	background: rgb(86, 160, 211); border-radius: 0px; color: rgb(255, 255, 255);
+}
+footer ul {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+footer .list-inline > li {
+	display: inline-block;
+}
+footer li {
+	margin: 0px 0px 2px; line-height: 22px; letter-spacing: 0.08em; font-family: "Frutiger47LightCn"; font-size: 13px;
+}
+footer li a {
+	color: rgb(255, 255, 255);
+}
+footer li a:link {
+	color: rgb(255, 255, 255);
+}
+footer li a:visited {
+	color: rgb(255, 255, 255);
+}
+footer li a:hover {
+	color: rgb(96, 175, 231); text-decoration: none;
+}
+footer .fa-inverse {
+	color: rgb(77, 79, 78);
+}
+footer .fa-inverse:hover {
+	color: rgb(255, 255, 255);
+}
+footer li:nth-of-type(1) a:hover .fa-stack-2x {
+	color: rgb(85, 172, 238);
+}
+footer li:nth-of-type(2) a:hover .fa-stack-2x {
+	color: rgb(0, 123, 181);
+}
+footer li:nth-of-type(3) a:hover .fa-stack-2x {
+	color: rgb(211, 72, 54);
+}
+footer .list-inline > li {
+	padding-right: 2px; padding-left: 0px;
+}
+footer button.btn.btn-contact {
+	background: none; margin: 5px 0px; padding: 0px; position: relative;
+}
+footer button.btn.btn-contact:hover {
+	color: rgb(181, 195, 203);
+}
+.footer-mynb {
+	margin: 24px 0px 0px; padding: 12px 0px 0px; line-height: 1.4285; border-top-color: rgb(142, 142, 142); border-top-width: 1px; border-top-style: solid;
+}
+.footer-mynb p {
+	margin: 0px 0px 3px;
+}
+.footer-finra {
+	text-align: center; margin-bottom: 25px;
+}
+.footer-finra a {
+	color: rgb(86, 160, 211);
+}
+.footer-finra a:hover {
+	color: rgb(181, 195, 203);
+}
+.footer-in-page-diclaimer {
+	background: rgb(247, 247, 247); padding: 40px 0px; margin-bottom: -40px;
+}
+.footer-in-page-diclaimer p {
+	color: rgb(102, 102, 102); font-size: 14px;
+}
+.footer-in-page-diclaimer p strong {
+	font-family: frutigerbold, "Microsoft Jhenghei", "MS PGothic"; font-weight: normal;
+}
+footer .icon-nb-simplified-full {
+	margin-bottom: 18px;
+}
+footer .icon-nb-traditional-full {
+	margin-bottom: 18px;
+}
+footer .icon-nb-simplified-full::before {
+	color: rgb(204, 204, 204); font-size: 46px;
+}
+footer .icon-nb-traditional-full::before {
+	color: rgb(204, 204, 204); font-size: 46px;
+}
+footer .icon-nb-standard {
+	margin-top: 18px; margin-bottom: 18px;
+}
+footer .icon-nb-standard::before {
+	color: rgb(204, 204, 204); font-size: 28px;
+}
+@media all and (max-width:767px)
+{
+footer ul {
+	margin-bottom: 30px;
+}
+footer ul.list-inline {
+	margin-left: 0px;
+}
+.footer-mynb .text-right {
+	text-align: center; margin-top: 25px;
+}
+}
+@media all and (max-width:480px)
+{
+.footer-finra {
+	text-align: left;
+}
+footer {
+	margin-top: 0px;
+}
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="highchart_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="highchart_libs/jquery-1.11.1/jquery.min.js"></script>
+<script src="highchart_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="highchart_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
+<link href="highchart_libs/highcharts-7.0.1/css/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="highchart_libs/highcharts-7.0.1/highcharts.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-3d.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-more.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/stock.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/map.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/annotations.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/boost.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drag-panes.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drilldown.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/item-series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/offline-exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/overlapping-datalabels.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/export-data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/funnel.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/heatmap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/treemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sankey.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/solid-gauge.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/streamgraph.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sunburst.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/vector.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/wordcloud.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/xrange.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/tilemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/venn.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/gantt.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/timeline.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/parallel-coordinates.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/grouped-categories.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/motion.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/multicolor_series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/reset.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/symbols-extra.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/text-symbols.js"></script>
+<script src="highchart_libs/highchart-binding-0.7.0/highchart.js"></script>
+<script src="highchart_libs/pymjs-1.3.2/pym.v1.min.js"></script>
+  <title>highchart</title>
+</head>
+<body style="background-color:white;">
+<div id="htmlwidget_container">
+  <div id="htmlwidget-d7be589174b10397ed12" style="width:100%;height:400px;" class="highchart html-widget"></div>
+  <script>HTMLWidgets.pymChild = new pym.Child();HTMLWidgets.addPostRenderHandler(function(){
+                                setTimeout(function(){HTMLWidgets.pymChild.sendHeight();},100);
+                            });</script>
+</div>
+<script type="application/json" data-for="htmlwidget-d7be589174b10397ed12">{"x":{"hc_opts":{"title":{"text":"黑色金属指数与产成品存货同比"},"yAxis":[{"title":{"text":""},"lineWidth":4},{"title":{"text":""},"opposite":true}],"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":4000},"treemap":{"layoutAlgorithm":"squarified"}},"subtitle":{"text":"更新日期:2019-01-31"},"xAxis":{"categories":["2009-12-31","2010-01-31","2010-02-28","2010-03-31","2010-04-30","2010-05-31","2010-06-30","2010-07-31","2010-08-31","2010-09-30","2010-10-31","2010-11-30","2010-12-31","2011-01-31","2011-02-28","2011-03-31","2011-04-30","2011-05-31","2011-06-30","2011-07-31","2011-08-31","2011-09-30","2011-10-31","2011-11-30","2011-12-31","2012-01-31","2012-02-29","2012-03-31","2012-04-30","2012-05-31","2012-06-30","2012-07-31","2012-08-31","2012-09-30","2012-10-31","2012-11-30","2012-12-31","2013-01-31","2013-02-28","2013-03-31","2013-04-30","2013-05-31","2013-06-30","2013-07-31","2013-08-31","2013-09-30","2013-10-31","2013-11-30","2013-12-31","2014-01-31","2014-02-28","2014-03-31","2014-04-30","2014-05-31","2014-06-30","2014-07-31","2014-08-31","2014-09-30","2014-10-31","2014-11-30","2014-12-31","2015-01-31","2015-02-28","2015-03-31","2015-04-30","2015-05-31","2015-06-30","2015-07-31","2015-08-31","2015-09-30","2015-10-31","2015-11-30","2015-12-31","2016-01-31","2016-02-29","2016-03-31","2016-04-30","2016-05-31","2016-06-30","2016-07-31","2016-08-31","2016-09-30","2016-10-31","2016-11-30","2016-12-31","2017-01-31","2017-02-28","2017-03-31","2017-04-30","2017-05-31","2017-06-30","2017-07-31","2017-08-31","2017-09-30","2017-10-31","2017-11-30","2017-12-31","2018-01-31","2018-02-28","2018-03-31","2018-04-30","2018-05-31","2018-06-30","2018-07-31","2018-08-31","2018-09-30","2018-10-31","2018-11-30","2018-12-31","2019-01-31"]},"series":[{"data":[12.7564,12.7564,5.0248,5.0248,5.0248,-4.9923,-4.9923,-4.9923,0.9579,0.9579,0.9579,-1.3344,-1.3344,-1.3344,18.6162,13.9015,14.6676,20.6549,15.9448,14.6601,11.6018,15.1654,26.8058,27.9868,28.4585,28.4585,35.8318,35.2397,32.7636,29.8853,28.6309,26.915,25.853,25.997,16.9133,15.4024,13.7886,13.7886,6.0312,7.7815,7.7046,6.0146,6.1001,4.7096,8.1473,10.1851,9.2445,8.3144,0.9378,0.9378,12.8857,13.2374,10.1901,13.4397,15.6771,15.3871,12.8363,11.3164,13.2175,14.7426,20.8243,20.8243,7.456,3.6724,1.7257,-3.2677,-5.7399,-4.3621,-7.0199,-7.5424,-10.3494,-9.8,-9.1,-9.1,-15.9,-17.5,-16.4,-13.1,-14.4,-13.5,-14.6,-17,-13.7,-12.7,-13,-13,-6.8,-4.4,-2.2,-3.5,-6.1,-5.8,-4,-2.6,-4.9,-7.4,-8.4,-8.4,-8.8,-9.9,-13.8,-12.3,-8.5,-13.3,-10.2,-7.8,-6,-7.8,-6.5,-6.5],"type":"line","name":"黑色金属矿采选业产成品存货同比","showInLegend":true},{"data":[0.340160710288218,0.306438417048448,0.304401838249225,0.291459410767554,0.280004395992968,0.270776094318506,0.26901952113062,0.272954653838835,0.258243413151528,0.257378865594585,0.252177366454499,0.236977704842325,0.24677876565358,0.261904195500843,0.261573330133555,0.278676378394967,0.289645187087481,0.275937691819632,0.278109919398941,0.27480506517166,0.258168211376177,0.254575330299425,0.246863973554732,0.234250336317196,0.233308614108415,0.238503748195543,0.238370448778897,0.232545980968094,0.232237133268078,0.232054914746345,0.214705982467873,0.212960574713031,0.215625877842358,0.217118776458789,0.21927767126354,0.23000300123154,0.216072039006135,0.211544058482135,0.210060112414399,0.2105098912331,0.213739846976537,0.199976986732477,0.19497724977415,0.191034623758343,0.194633030212273,0.180754281918456,0.179627808103563,0.18029232049801,0.177793589873206,0.167686341003835,0.164557662065616,0.172714545808336,0.172576616049683,0.174771025427978,0.179435225017531,0.176167556659287,0.175511430818679,0.168945274951912,0.181274417397191,0.182736299391593,0.208302971955728,0.190504549593771,0.191592188097582,0.175844337113545,0.183677166546624,0.16559684745608,0.17945150665341,0.164754108279305,0.157583868777224,0.156939700860669,0.140063548076367,0.130516647035046,0.12770987235036,0.146983828519755,0.149211660005212,0.13521986049863,0.14339013742576,0.135110392763833,0.130995073432841,0.137704543502596,0.137183376988402,0.134802275733587,0.144445873133507,0.153654337513558,0.157616291216386,0.176061658560802,0.176370464151194,0.16556326596568,0.160266611654338,0.164672352655015,0.171497678765399,0.190309776452778,0.205811108725698,0.187010118196288,0.187923590165667,0.228098659564295,0.207925439240995,0.235865611614732,0.256238063143141,0.217651555958904,0.239148125183566,0.221154843327911,0.235064750302124,0.257122441029814,0.253622874841498,0.249165829582225,0.263513442482134,0.230718302702043,0.23235811446008,0.243162625076309],"type":"line","name":"黑色金属/Wind全A(右轴)","yAxis":1,"showInLegend":true}],"tooltip":{"enabled":true,"valueDecimals":2}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Roboto","color":"#666666"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"plotOptions":{"line":{"marker":{"enabled":false}},"spline":{"marker":{"enabled":false}},"area":{"marker":{"enabled":false}},"areaspline":{"marker":{"enabled":false}},"arearange":{"marker":{"enabled":false}},"bubble":{"maxSize":"10%"}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-d7be589174b10397ed12">{"viewer":{"width":"100%","height":400,"padding":0,"fill":false},"browser":{"width":"100%","height":400,"padding":0,"fill":false}}</script>
+</body>
+</html>

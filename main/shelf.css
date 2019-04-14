@@ -1,0 +1,294 @@
+#top-shelf {
+	top: 0px; width: 100%; position: fixed; z-index: 11000;
+}
+.noscroll #top-shelf {
+	
+}
+.modal-open #top-shelf {
+	
+}
+.menu-open #top-shelf {
+	position: absolute;
+}
+.jumbotron.location {
+	padding-top: 5px; padding-bottom: 5px; margin-bottom: 0px; position: relative; background-color: rgb(18, 58, 95);
+}
+.jumbotron.location .container {
+	position: relative; z-index: 1;
+}
+.jumbotron.location #shelf-background {
+	background-position: top; transition:opacity 1.5s ease-in-out; left: 0px; top: 0px; width: 100%; height: 100%; display: block; position: absolute; content: " "; opacity: 0; background-image: url("/Style Library/images/country_toggle.png"); background-repeat: no-repeat; -webkit-transition: opacity 1.5s ease-in-out;
+}
+.jumbotron.location .fade-bg#shelf-background {
+	opacity: 1;
+}
+.close-shelf-container {
+	top: 25px; right: 11px; position: absolute; z-index: 2;
+}
+.close-shelf-container::after {
+	clear: both; display: block; content: "";
+}
+a.close-shelf {
+	width: 30px; height: 30px; float: right;
+}
+a.close-shelf::before {
+	top: -6px; width: 30px; height: 30px; right: 0px; color: rgb(255, 255, 255); font-family: "Linearicons-Free"; font-size: 22px; display: block; position: relative; content: "\e870";
+}
+a.close-shelf:hover::before {
+	color: rgb(86, 160, 222);
+}
+#countries-container {
+	min-height: 330px;
+}
+#countries-list::after {
+	clear: both; display: block; content: "";
+}
+.column-1#countries #countries-list ul {
+	width: 100%; float: none; display: block;
+}
+.column-2#countries #countries-list ul {
+	float: left; display: block;
+}
+.column-3#countries #countries-list ul {
+	width: 33%; float: left; display: block;
+}
+.column-2#countries #countries-list ul:first-of-type {
+	min-width: 50%;
+}
+#country-audience-shelf {
+	padding: 0px;
+}
+#country-audience-shelf #shelf-content {
+	padding-left: 0px; margin-top: 32px; margin-bottom: 32px;
+}
+#mobile-change-country #country-audience-shelf #shelf-content .row {
+	margin: 0px;
+}
+#mobile-change-country #country-audience-shelf {
+	opacity: 1;
+}
+#country-audience-shelf .nav-header {
+	color: rgb(181, 195, 203); font-family: frutigerbold, "Microsoft Jhenghei", "MS PGothic"; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+#country-audience-shelf ul {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+#country-audience-shelf ul li {
+	color: rgb(255, 255, 255);
+}
+#country-audience-shelf ul li.column-sub {
+	margin-top: 15px;
+}
+#country-audience-shelf ul li a {
+	margin: 0px; padding: 5px 5px 5px 0px; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 15px; display: inline-block;
+}
+#country-audience-shelf ul li a.apac-link {
+	padding: 0px 5px 0px 0px; text-transform: capitalize;
+}
+#country-audience-shelf ul li.apac-list-pair a {
+	padding: 0px;
+}
+#country-audience-shelf ul li span {
+	margin: 0px 0px 2px; padding: 5px 5px 0px 0px; color: rgb(181, 195, 203); text-transform: uppercase; font-size: 15px; border-bottom-color: rgb(141, 152, 158); border-bottom-width: 1px; border-bottom-style: solid; display: inline-block;
+}
+#country-audience-shelf ul li a:hover {
+	color: rgb(86, 160, 222);
+}
+#country-audience-shelf ul li a:hover::after {
+	color: rgb(86, 160, 222);
+}
+#country-audience-shelf ul li.shelf-selected {
+	display: inline-block;
+}
+#country-audience-shelf ul li.shelf-selected a {
+	background: none; color: rgb(86, 160, 210);
+}
+#country-audience-shelf ul li.shelf-selected a:hover {
+	cursor: text;
+}
+#country-audience-shelf ul li.not-selected a {
+	color: rgb(180, 181, 182); cursor: pointer;
+}
+#country-audience-shelf ul li.shelf-selected a.nonSelectPair {
+	color: rgb(180, 181, 182); cursor: pointer;
+}
+#country-audience-shelf ul li.not-selected a:hover {
+	color: rgb(255, 255, 255); cursor: pointer;
+}
+#country-audience-shelf ul li.shelf-selected a.nonSelectPair:hover {
+	color: rgb(255, 255, 255); cursor: pointer;
+}
+#country-audience-shelf ul li.shelf-selected a::after {
+	top: 1px; right: -5px; color: rgb(86, 160, 222); padding-right: 10px; font-family: "Linearicons-Free"; font-size: 12px; position: relative; content: "\e876";
+}
+#country-audience-shelf ul li.shelf-selected a.nonSelectPair::after {
+	content: none;
+}
+#country-audience-shelf ul li.apac-list-pair a {
+	text-transform: capitalize;
+}
+#country-audience-shelf ul li.apac-list a {
+	text-transform: capitalize;
+}
+a span.location-dash::before {
+	margin: 0px 6px; color: rgb(255, 255, 255); font-family: "Linearicons-Free"; font-size: 9px; content: "\e876";
+}
+a span.location-change {
+	margin: 0px 0px 0px 6px; color: rgb(255, 106, 0); text-transform: none;
+}
+a:hover span.location-change {
+	text-decoration: underline;
+}
+@media all and (min-width:1300px)
+{
+.jumbotron.location .container {
+	max-width: 1280px;
+}
+#top-shelf .container {
+	max-width: 1280px;
+}
+}
+@media all and (max-width:991px)
+{
+#country-audience-shelf ul li a {
+	font-size: 12px;
+}
+#country-audience-shelf ul li span {
+	font-size: 12px;
+}
+}
+@media all and (max-width:767px)
+{
+#top-shelf {
+	display: block;
+}
+#country-audience-shelf .container#shelf-content {
+	width: auto; padding-top: 15px; padding-bottom: 25px; margin-top: 0px; margin-bottom: 0px;
+}
+#country-audience-shelf #countries {
+	min-height: 0px;
+}
+.column-2#countries #countries-list ul:first-of-type {
+	min-width: 25%;
+}
+#country-audience-shelf ul li a {
+	padding: 0px 0px 6px; color: rgb(255, 255, 255); text-transform: none; display: block;
+}
+#country-audience-shelf ul li span {
+	padding: 0px 0px 6px; color: rgb(255, 255, 255); text-transform: none; display: block;
+}
+#country-audience-shelf ul li.apac-list-pair a {
+	display: inline-block;
+}
+#country-audience-shelf ul li.apac-list-pair span {
+	display: inline-block;
+}
+#country-audience-shelf .nav-header {
+	color: rgb(255, 255, 255);
+}
+#country-audience-shelf ul li.shelf-selected {
+	border: currentColor; border-image: none; margin-left: 0px; display: block;
+}
+#country-audience-shelf ul li.shelf-selected::after {
+	top: auto; right: 0px; bottom: 7px; padding-right: 0px; position: absolute;
+}
+#country-audience-shelf ul li.shelf-selected a {
+	padding: 0px 0px 6px;
+}
+#shelf-content li {
+	position: relative;
+}
+#shelf-content li.apac-list-pair a::after {
+	content: "";
+}
+#shelf-content li.column-sub span {
+	text-transform: uppercase;
+}
+#shelf-content li.column-top span {
+	text-transform: uppercase;
+}
+#shelf-content li.column-sub::after {
+	content: none;
+}
+#shelf-content li.column-top::after {
+	content: none;
+}
+#shelf-content ul#col-2 li.column-top {
+	margin-top: 15px;
+}
+#country-audience-shelf ul li.apac-list-pair {
+	color: rgb(18, 58, 95);
+}
+.column-2#countries #countries-list ul.asia {
+	width: 100%;
+}
+.column-2#countries #countries-list ul.asia#col-2 {
+	padding-left: 0px;
+}
+.column-2#countries #countries-list ul.asia#col-3 {
+	padding-left: 0px;
+}
+#shelf-content #regions-container li::after {
+	content: none;
+}
+#country-audience-shelf #regions-container ul li.shelf-selected::after {
+	content: none;
+}
+#shelf-content #countries-container ul.emea li::after {
+	content: none;
+}
+#country-audience-shelf #countries-container ul.emea li.shelf-selected::after {
+	content: none;
+}
+#shelf-content #countries-container ul.americas li::after {
+	content: none;
+}
+#country-audience-shelf #countries-container ul.americas li.shelf-selected::after {
+	content: none;
+}
+#shelf-content .nav-header {
+	margin-bottom: 0px;
+}
+#countries-container {
+	border-right-color: currentColor; border-left-color: currentColor; border-right-width: medium; border-left-width: medium; border-right-style: none; border-left-style: none;
+}
+#countries-container {
+	margin-top: 10px; min-height: 0px;
+}
+#audiences-container {
+	margin-top: 10px; min-height: 0px;
+}
+}
+@media all and (orientation:landscape) and (max-width:767px)
+{
+#top-shelf {
+	position: static;
+}
+}
+@media all and (orientation:portrait) and (max-width:450px)
+{
+#country-audience-shelf ul.asia li span {
+	padding: 0px;
+}
+#country-audience-shelf ul li.column-sub {
+	margin-top: 11px;
+}
+#shelf-content ul#col-2 li.column-top {
+	margin-top: 11px;
+}
+#country-audience-shelf ul li.apac-list a {
+	line-height: 14px;
+}
+#country-audience-shelf ul li.apac-list-pair {
+	line-height: 14px;
+}
+#country-audience-shelf ul li.apac-list-pair a {
+	line-height: 14px;
+}
+}
+@media all and (max-width:358px)
+{
+#top-shelf {
+	width: 340px;
+}
+}

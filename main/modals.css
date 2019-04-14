@@ -1,0 +1,555 @@
+#tcModal .modal-body {
+	
+}
+@media all and (min-width:768px)
+{
+#tcModal .modal-body {
+	height: 420px; -ms-overflow-y: scroll;
+}
+}
+@media all and (orientation:landscape) and (max-width:767px)
+{
+#tcModal .modal-body {
+	
+}
+}
+.modal {
+	z-index: 12500;
+}
+.modal-content {
+	border-radius: 0px; box-shadow: 0px 2px 9px rgba(0,0,0,0.3);
+}
+.modal-header {
+	border: currentColor; border-image: none; padding-right: 25px; padding-bottom: 5px; padding-left: 25px;
+}
+.modal-title {
+	color: rgb(0, 58, 98); letter-spacing: 0.01em; font-family: "Frutiger57Cn","Microsoft Jhenghei","MS PGothic"; font-size: 32px; font-weight: 500; margin-bottom: 25px; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.sliderLogin .modal-title {
+	font-size: 21px; margin-bottom: 0px;
+}
+.modal-login-register .modal-title {
+	font-size: 21px; margin-bottom: 0px;
+}
+.sliderLogin .modal-body {
+	padding: 0px 25px 25px;
+}
+.modal-body {
+	padding: 25px; font-family: Frutiger55Roman, "Microsoft Jhenghei", "MS PGothic";
+}
+.modal-body p {
+	color: rgb(51, 51, 51); line-height: 16px; font-family: Frutiger55Roman, "Microsoft Jhenghei", "MS PGothic"; font-size: 12px;
+}
+.modal-body p strong {
+	font-family: frutigerbold, "Microsoft Jhenghei", "MS PGothic"; font-weight: normal;
+}
+.modal-body h2 {
+	color: rgba(0, 0, 0, 0.7); text-transform: none; font-family: "frutigerbold"; font-size: 24px; font-weight: normal;
+}
+.modal-body h3 {
+	color: rgba(0, 0, 0, 0.7); text-transform: none; font-family: "frutigerbold"; font-size: 24px; font-weight: normal;
+}
+.modal-body ul {
+	padding-left: 13px;
+}
+.modal-body ul li {
+	margin: 0px 0px 5px; font-family: Frutiger55Roman, "Microsoft Jhenghei", "MS PGothic"; font-size: 12px;
+}
+ul.choose-country {
+	padding-left: 0px; margin-top: 30px; margin-bottom: 15px; list-style-type: none;
+}
+.modal-body .choose-country li {
+	margin-bottom: 0px;
+}
+.choose-country li:first-child a {
+	margin: 0px; border: currentColor; border-image: none;
+}
+.choose-country li a {
+	margin: 0px; padding: 15px 0px 0px; border: currentColor; border-image: none; width: 100%; color: rgb(0, 79, 133); text-transform: uppercase; font-family: frutigerbold,"Microsoft Jhenghei", "MS PGothic"; font-size: 15px; display: inline-block;
+}
+.choose-country li a:hover {
+	color: rgb(86, 160, 222);
+}
+.choose-country li a::after {
+	top: 1px; right: -3px; color: rgb(18, 58, 95); font-family: "Linearicons-Free"; font-size: 14px; position: relative; content: "\e876";
+}
+p.changeCountry {
+	margin-top: -30px; margin-bottom: 40px;
+}
+p.changeCountry a {
+	color: rgb(170, 170, 170); font-size: 10px;
+}
+p.changeCountry a:hover {
+	color: rgb(170, 170, 170);
+}
+.modal-footer {
+	padding: 30px 20px; border: currentColor; border-image: none; text-align: center;
+}
+.modal-footer .btn.btn-primary {
+	padding: 7px 38px; border-radius: 0px; border: 1px solid rgb(0, 79, 133); border-image: none; color: rgb(255, 255, 255); text-transform: uppercase; font-family: frutigerbold, "Microsoft Jhenghei", "MS PGothic"; font-size: 13px; background-color: rgb(18, 58, 95);
+}
+.modal-button .btn.btn-primary {
+	padding: 7px 38px; border-radius: 0px; border: 1px solid rgb(0, 79, 133); border-image: none; color: rgb(255, 255, 255); text-transform: uppercase; font-family: frutigerbold, "Microsoft Jhenghei", "MS PGothic"; font-size: 13px; background-color: rgb(18, 58, 95);
+}
+.modal-button a.btn.btn-primary.clsDisabled {
+	border-color: rgb(204, 204, 204); cursor: default; pointer-events: none; background-color: rgb(204, 204, 204);
+}
+.modal-footer .btn.btn-primary:hover {
+	background: rgb(0, 79, 133); color: rgb(255, 255, 255);
+}
+.modal-button .btn.btn-primary:hover {
+	background: rgb(0, 79, 133); color: rgb(255, 255, 255);
+}
+.modal-footer .btn.btn-default {
+	background: none; padding: 7px 38px; border-radius: 0px; border: 1px solid rgb(0, 79, 133); border-image: none; color: rgb(0, 79, 133); text-transform: uppercase; font-family: frutigerbold,"Microsoft Jhenghei", "MS PGothic"; font-size: 13px;
+}
+.modal-button .btn.btn-default {
+	background: none; padding: 7px 38px; border-radius: 0px; border: 1px solid rgb(0, 79, 133); border-image: none; color: rgb(0, 79, 133); text-transform: uppercase; font-family: frutigerbold,"Microsoft Jhenghei", "MS PGothic"; font-size: 13px;
+}
+.modal-footer button.termsDecline {
+	text-transform: uppercase;
+}
+@media all and (max-width:767px)
+{
+.modal-footer .btn.btn-primary {
+	padding: 7px 15px;
+}
+.modal-button .btn.btn-primary {
+	padding: 7px 15px;
+}
+.modal-footer .btn.btn-default {
+	padding: 7px 15px;
+}
+.modal-button .btn.btn-default {
+	padding: 7px 15px;
+}
+}
+.modal-header.blue-bg-header {
+	background: rgb(18, 58, 95); padding: 15px;
+}
+.modal-header.blue-bg-header .modal-title {
+	padding: 0px 0px 0px 10px; border: currentColor; border-image: none; color: rgb(255, 255, 255);
+}
+h4#myModalLabel {
+	color: rgb(255, 255, 255);
+}
+.modal-open .modal {
+	background: rgba(0, 0, 0, 0.7);
+}
+.modal-backdrop {
+	background: none; z-index: 0;
+}
+.modal-header.blue-bg-header button.close {
+	background: none; width: 30px; height: 30px; opacity: 1;
+}
+.modal-header.blue-bg-header .close {
+	color: rgb(18, 58, 95); font-weight: normal; text-shadow: 0px 0px;
+}
+.modal-header.blue-bg-header button.close::before {
+	top: 13px; right: 13px; color: rgb(255, 255, 255); font-family: "Linearicons-Free"; font-size: 33px; position: absolute; content: "\e870";
+}
+.modal-body label {
+	font-weight: normal;
+}
+.modal-login-register .form-control {
+	border-width: medium medium 1px; border-style: none none solid; border-color: currentColor currentColor rgb(204, 204, 204); border-radius: 0px; padding-left: 0px; box-shadow: 0px 0px;
+}
+.modal-contact .form-control {
+	border-width: medium medium 1px; border-style: none none solid; border-color: currentColor currentColor rgb(204, 204, 204); border-radius: 0px; padding-left: 0px; box-shadow: 0px 0px;
+}
+.modal-password .form-control {
+	border-width: medium medium 1px; border-style: none none solid; border-color: currentColor currentColor rgb(204, 204, 204); border-radius: 0px; padding-left: 0px; box-shadow: 0px 0px;
+}
+.modal-contact textarea.form-control {
+	border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+.modal-login-register textarea.form-control {
+	border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+.modal-login-register select option {
+	color: rgb(153, 153, 153); padding-left: 0px;
+}
+.modal-login-register select.form-control {
+	color: rgb(153, 153, 153); padding-left: 0px;
+}
+.modal-contact select.form-control {
+	color: rgb(153, 153, 153); padding-left: 0px;
+}
+.modal-password .form-control {
+	color: rgb(153, 153, 153); padding-left: 0px;
+}
+.modal-login-register select.form-control {
+	border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+.modal-select-site p.modal-sub-header {
+	color: rgba(0, 0, 0, 0.7); text-transform: none; letter-spacing: 0.03em; font-family: "frutigerbold"; font-size: 24px; font-weight: normal;
+}
+.modal-select-site p {
+	line-height: 16px; font-family: Frutiger55Roman,"Microsoft Jhenghei", "MS PGothic"; font-size: 12px;
+}
+p.help-block {
+	font-size: 14px;
+}
+p.help-block.top-border {
+	padding-top: 10px; margin-top: 20px; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid;
+}
+.modal-sub-header.top-border {
+	padding-top: 20px; margin-top: 30px; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid;
+}
+label.modal-input-error {
+	color: rgb(206, 72, 68); margin-top: 5px;
+}
+.modal-body .status {
+	color: rgb(206, 72, 68); margin-top: 5px;
+}
+span.modal-input-error {
+	color: rgb(206, 72, 68); margin-top: 5px;
+}
+.processing {
+	background-position: center; width: 46px; height: 46px; margin-right: auto; margin-left: auto; z-index: 999; opacity: 0.1; background-image: url("/_layouts/WWWCommonAssets/images/ajax-loader.gif"); background-repeat: no-repeat; background-color: white;
+}
+.dataTables_processing {
+	background-position: center; width: 250px; height: 60px; margin-right: auto; margin-left: auto; display: none; z-index: 999; background-image: url("/_layouts/WWWCommonAssets/images/ajax-loader.gif"); background-repeat: no-repeat; background-color: white;
+}
+#submitLoginBtn {
+	width: 150px;
+}
+#registerBtn {
+	width: 150px;
+}
+section[data-modal-name] .modal.fade.in {
+	background: rgba(0, 0, 0, 0.7);
+}
+.modal-open .modal {
+	background: rgba(0, 0, 0, 0.7);
+}
+.modal-header {
+	padding-bottom: 0px;
+}
+.modal-header-content {
+	padding: 20px 25px 0px; text-align: center; clear: both;
+}
+.modal-header-content .modal-title {
+	color: rgb(0, 58, 98); letter-spacing: 0.01em; font-family: "Frutiger57Cn","Microsoft Jhenghei","MS PGothic"; font-size: 32px; margin-bottom: 25px;
+}
+.modal-header-content .campaign-modal-title {
+	color: rgb(0, 58, 98); letter-spacing: 0.01em; font-family: "Frutiger57Cn","Microsoft Jhenghei","MS PGothic"; font-size: 32px; margin-bottom: 25px;
+}
+#modal-thankyou-container .campaign-thankyou-title {
+	color: rgb(0, 58, 98); letter-spacing: 0.01em; font-family: "Frutiger57Cn","Microsoft Jhenghei","MS PGothic"; font-size: 32px; margin-bottom: 25px;
+}
+section[data-modal-name=Exit_Site_Interstitial] .modal-header {
+	text-align: center;
+}
+section[data-modal-name=Exit_Site_Interstitial] .modal-body {
+	text-align: center;
+}
+.modal-body {
+	padding: 0px 25px; position: relative;
+}
+.modal-body p {
+	margin-top: 10px; margin-bottom: 10px;
+}
+#modal-form-container {
+	text-align: center; line-height: 19px; letter-spacing: 0.04em; padding-top: 40px; position: relative; z-index: 10; opacity: 1; background-color: rgb(255, 255, 255);
+}
+.modal-header-content p {
+	margin: auto; width: 80%; color: rgb(51, 51, 51); line-height: 25px; font-family: "Frutiger47LightCn","Microsoft Jhenghei","MS PGothic"; font-size: 21px;
+}
+#modal-thankyou-container p {
+	margin: auto; width: 80%; color: rgb(51, 51, 51); line-height: 25px; font-family: "Frutiger47LightCn","Microsoft Jhenghei","MS PGothic"; font-size: 21px;
+}
+#modal-form-container #utilMsg {
+	padding: 25px; left: 50%; top: 40%; position: absolute; transform: translate(-50%, -50%); background-color: rgb(238, 238, 238);
+}
+.form-submitted#modal-form-container {
+	transition:opacity 0.5s; z-index: 0; opacity: 0;
+}
+#modal-form-container input {
+	padding: 10px; border: 1px solid rgb(227, 227, 227); border-image: none; width: 70%; height: 40px; letter-spacing: 0.05em; font-family: "Frutiger57Cn", "Microsoft Jhenghei", "MS PGothic"; font-size: 14px; margin-bottom: 30px; box-sizing: border-box; background-color: rgb(249, 249, 249);
+}
+#modal-form-container select {
+	padding: 10px; border: 1px solid rgb(227, 227, 227); border-image: none; width: 70%; height: 40px; letter-spacing: 0.05em; font-family: "Frutiger57Cn", "Microsoft Jhenghei", "MS PGothic"; font-size: 14px; margin-bottom: 30px; box-sizing: border-box; background-color: rgb(249, 249, 249);
+}
+#modal-form-container #btnSubmit {
+	margin: auto auto 30px; display: block;
+}
+#modal-form-container #btnSubmit:hover {
+	cursor: pointer;
+}
+#modal-form-container #elq-email {
+	position: relative;
+}
+#modal-form-container #notYourEmail {
+	color: rgb(17, 130, 189); font-family: "Frutiger57Cn", "Microsoft Jhenghei", "MS PGothic"; font-size: 10px;
+}
+#modal-form-container #notYourEmail:hover {
+	color: rgb(51, 51, 51);
+}
+#modal-form-container .form-key {
+	top: 0px; right: 15%; color: rgb(140, 140, 140); letter-spacing: 0.05em; font-family: "Frutiger57Cn", "Microsoft Jhenghei", "MS PGothic"; font-size: 10px; position: absolute;
+}
+#modal-form-container .has-error .help-block {
+	display: none;
+}
+#modal-form-container .has-error label {
+	color: red;
+}
+#modal-form-container label {
+	margin: auto auto 0px; width: 70%; text-align: left; color: rgb(51, 51, 51); line-height: 20px; font-family: Frutiger47LightCn; font-size: 14px; font-weight: 500; display: block;
+}
+#modal-form-container .button {
+	width: 190px; font-size: 15px;
+}
+#modal-form-container .button .button-label {
+	letter-spacing: 0.08em;
+}
+#modal-thankyou-container {
+	transition:opacity 0.5s; left: 10%; top: 50%; text-align: center; right: 10%; position: absolute; z-index: 5; opacity: 0; transform: translateY(-50%);
+}
+.form-submitted#modal-thankyou-container {
+	opacity: 1;
+}
+.button.blue {
+	background-color: rgb(0, 58, 98);
+}
+.button {
+	border: 1px solid rgb(0, 58, 98); border-image: none; width: 190px; text-align: center; text-transform: uppercase; line-height: 17px; letter-spacing: 0.05em; font-family: "Frutiger67BoldCn", "Microsoft Jhenghei", "MS PGothic"; font-size: 12px; display: inline-block; position: relative;
+}
+.button.blue .button-label {
+	color: rgb(255, 255, 255);
+}
+.button .button-label {
+	left: 50%; top: 50%; width: 100%; display: block; position: absolute; transform: translate(-50%, -50%);
+}
+.button::after {
+	padding-bottom: 25%; display: block; content: "";
+}
+.modal-footer .btn + .btn {
+	margin-left: 20px;
+}
+.addFavoritesHeader {
+	color: rgb(0, 58, 98); padding-bottom: 4px; font-family: Frutiger55Roman; font-size: 20px; font-weight: 500; border-bottom-color: rgba(0, 79, 133, 0.8); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.registration {
+	margin: 0px; padding: 0px 10px; width: 320px; float: left;
+}
+.registration input {
+	margin: 0px 0px 15px;
+}
+.registration select {
+	background: 0px 0px rgb(239, 243, 246); margin: 5px 0px; padding: 5px; border-radius: 5px; border: 1px solid rgb(236, 236, 236); border-image: none; width: 296px; height: 28px; color: rgb(153, 153, 153);
+}
+.registration.noButton {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+#download-cart-items .createFolder {
+	padding: 0px;
+}
+.orderCart {
+	padding: 0px;
+}
+.cartName {
+	background: rgb(201, 202, 204); width: 100%; color: rgb(102, 102, 102); float: left;
+}
+.cartNameText {
+	padding: 9px 0px 0px 8px; float: left;
+}
+.cartNameEdit {
+	float: right;
+}
+.cartNameEdit a {
+	background: url("../images/arrow_r_14x7.png") no-repeat right rgb(86, 160, 211); padding: 10px 20px 10px 10px; color: rgb(255, 255, 255); font-family: FrutigerBold; font-size: 0.82em; float: right; transition-duration: 0.3s, 0.3s;
+}
+.cartNameEdit a:hover {
+	background-color: rgb(18, 58, 95);
+}
+.cartNameDisplay {
+	padding: 10px; width: 180px; float: left;
+}
+.cartNameDisplay p:first-child {
+	font-family: "FrutigerBold";
+}
+.cartNameDisplay p {
+	margin: 0px;
+}
+.cartNameEditBox {
+	padding: 10px; width: 180px; float: left;
+}
+.breakTop {
+	margin: 10px 0px 0px; width: 100%; float: left;
+}
+input#dcCheck {
+	margin: 0px; padding: 0px; top: 1px; width: 13px; height: 13px; position: relative;
+}
+.fancybox-wrap {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-skin {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-outer {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-inner {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-image {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-wrap iframe {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-wrap object {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-nav {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-nav span {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-tmp {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-wrap {
+	left: 0px; top: 0px; position: absolute; z-index: 8020;
+}
+.fancybox-skin {
+	background: rgb(255, 255, 255); border-radius: 4px; color: rgb(68, 68, 68); position: relative; text-shadow: none; -moz-border-radius: 4px; -webkit-border-radius: 4px;
+}
+.fancybox-opened {
+	z-index: 11002;
+}
+.fancybox-opened .fancybox-skin {
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.5); -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.fancybox-outer {
+	position: relative;
+}
+.fancybox-inner {
+	position: relative;
+}
+.fancybox-inner {
+	overflow: hidden !important;
+}
+.fancybox-wrap .fancybox-inner {
+	overflow: hidden !important;
+}
+.fancybox-error {
+	margin: 0px; padding: 15px; color: rgb(68, 68, 68); white-space: nowrap;
+}
+.fancybox-image {
+	width: 100%; height: 100%; display: block;
+}
+.fancybox-iframe {
+	width: 100%; height: 100%; display: block;
+}
+.fancybox-image {
+	max-height: 100%; max-width: 100%;
+}
+#fancybox-loading {
+	background-image: url("../images/fancybox_sprite.png");
+}
+.fancybox-close {
+	background-image: url("../images/fancybox_sprite.png");
+}
+.fancybox-prev span {
+	background-image: url("../images/fancybox_sprite.png");
+}
+.fancybox-next span {
+	background-image: url("../images/fancybox_sprite.png");
+}
+#fancybox-loading {
+	background-image: none !important;
+}
+#fancybox-loading {
+	background-position: 0px -108px; left: 50%; top: 50%; margin-top: -22px; margin-left: -22px; position: fixed; z-index: 8060; cursor: pointer; opacity: 0.8;
+}
+#fancybox-loading div {
+	background: url("../images/ajax-loader.gif") no-repeat center; width: 46px; height: 46px;
+}
+.fancybox-close {
+	top: -18px; width: 36px; height: 36px; right: -18px; position: absolute; z-index: 8040; cursor: pointer;
+}
+.fancybox-nav {
+	background: url("../images/blank.gif"); top: 0px; width: 40%; height: 100%; text-decoration: none; position: absolute; z-index: 8040; cursor: pointer; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.fancybox-prev {
+	left: 0px;
+}
+.fancybox-next {
+	right: 0px;
+}
+.fancybox-nav span {
+	top: 50%; width: 36px; height: 34px; margin-top: -18px; visibility: hidden; position: absolute; z-index: 8040; cursor: pointer;
+}
+.fancybox-prev span {
+	background-position: 0px -36px; left: 10px;
+}
+.fancybox-next span {
+	background-position: 0px -72px; right: 10px;
+}
+.fancybox-nav:hover span {
+	visibility: visible;
+}
+.fancybox-tmp {
+	left: -99999px; top: -99999px; overflow: visible !important; visibility: hidden; position: absolute; max-height: 99999px; max-width: 99999px;
+}
+.fancybox-lock {
+	width: auto; overflow: hidden !important;
+}
+.fancybox-lock body {
+	overflow: hidden !important;
+}
+.fancybox-lock-test {
+	-ms-overflow-y: hidden !important;
+}
+.fancybox-overlay {
+	background: url("../images/fancybox_overlay.png"); left: 0px; top: 0px; overflow: hidden; display: none; position: absolute; z-index: 11001;
+}
+.fancybox-overlay-fixed {
+	right: 0px; bottom: 0px; position: fixed;
+}
+.fancybox-lock .fancybox-overlay {
+	overflow: auto; -ms-overflow-y: scroll;
+}
+#divSupportModal h4 {
+	margin-bottom: 0px;
+}
+#divSupportModal .modal-body {
+	padding: 25px;
+}
+@media all and (max-width:1024px)
+{
+.modal-content .form-control {
+	font-size: 16px;
+}
+}
+@media all and (min-width:768px)
+{
+.modal-dialog {
+	margin: 45px auto;
+}
+}
+@media all and (max-width:480px)
+{
+body.modal-open {
+	overflow: visible; position: fixed;
+}
+}
+@media all and (max-width:767px)
+{
+.termsContent {
+	width: 100% !important;
+}
+.showing-header {
+	width: 100% !important;
+}
+.termsBox {
+	width: 100% !important;
+}
+.termsBoxPad {
+	width: auto !important;
+}
+}

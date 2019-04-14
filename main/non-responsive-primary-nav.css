@@ -1,0 +1,691 @@
+@font-face {
+	font-family: Frutiger57;
+	src: url(/Style Library/fonts/frutiger-57.eot?#iefix) format("embedded-opentype"), url(/Style Library/fonts/frutiger-57.woff2) format("woff2"), url(/Style Library/fonts/frutiger-57.woff) format("woff"), url(/Style Library/fonts/frutiger-57.ttf) format("truetype");
+}
+@font-face {
+	font-family: Linearicons-Free;
+	src: url(/Style Library/fonts/Linearicons-Free.eot?#iefixw118d) format("embedded-opentype"), url(/Style Library/fonts/Linearicons-Free.woff2?w118d) format("woff2"), url(/Style Library/fonts/Linearicons-Free.woff?w118d) format("woff"), url(/Style Library/fonts/Linearicons-Free.ttf?w118d) format("truetype"), url(/Style Library/fonts/Linearicons-Free.svg?w118d#Linearicons-Free) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+a:hover {
+	cursor: pointer;
+}
+.nav.navbar-nav.utility-nav.mobile {
+	display: none;
+}
+nav.navbar.navbar-default.navbar-static-top.yamm .collapse#navbar {
+	display: block;
+}
+ul.nav.navbar-nav.primary-nav::after {
+	clear: both; display: block; content: " ";
+}
+#utility-nav-alt {
+	display: none !important;
+}
+ul.utility-nav.navbar-left li.country-audience-toggle {
+	margin-left: 15px !important;
+}
+#country-audience-shelf #shelf-content {
+	background: none !important;
+}
+#country-audience-shelf #shelf-content a::after {
+	display: none !important;
+}
+#country-audience-shelf ul li a {
+	display: inline-block !important;
+}
+#country-audience-shelf ul li span {
+	display: inline-block !important;
+}
+#country-audience-shelf ul li.shelf-selected {
+	display: inline-block !important;
+}
+#country-audience-shelf ul li.shelf-selected::after {
+	top: auto !important; right: auto !important; bottom: auto !important; padding-right: 0px !important; position: relative !important;
+}
+#country-audience-shelf ul li.shelf-selected a {
+	background: none !important; padding-right: 5px !important;
+}
+#country-audience-shelf .nav-header {
+	color: rgb(181, 195, 203) !important; font-family: frutigerbold, "Microsoft Jhenghei" !important; border-bottom-color: currentColor !important; border-bottom-width: medium !important; border-bottom-style: none !important;
+}
+#regions-container {
+	padding-left: 0px;
+}
+.navbar.yamm > .container .navbar-brand {
+	margin-top: 7px; margin-right: 7px; margin-left: 0px;
+}
+.navbar.yamm > .container-fluid .navbar-brand {
+	margin-top: 7px; margin-right: 7px; margin-left: 0px;
+}
+#main-site-nav .navbar-collapse {
+	border-top-width: 0px;
+}
+#countries-container {
+	margin-top: 0px !important;
+}
+#audiences-container {
+	margin-top: 0px !important;
+}
+#shelf-content .nav-header {
+	margin-bottom: 10px !important;
+}
+ul.utility-nav.navbar-left li.country-audience-toggle::before {
+	left: -15px !important; padding-top: 2px !important; padding-left: 26px !important; display: block !important;
+}
+ul.utility-nav.navbar-left li.country-audience-toggle a {
+	margin-left: 28px !important;
+}
+.country-audience-toggle a:hover {
+	color: rgb(47, 136, 197);
+}
+ul.nav.navbar-nav.primary-nav {
+	padding: 14px 0px;
+}
+.utility-nav.navbar-right .dropdown-menu {
+	top: inherit;
+}
+.dropdown-menu {
+	top: 80px; background-color: rgb(248, 249, 250);
+}
+.header-center {
+	width: 1024px; position: relative;
+}
+@media all and (max-width:991px)
+{
+.location-change {
+	display: inline !important;
+}
+}
+@media only screen and (max-width:1024px)
+{
+.header-center {
+	margin: 0px; width: 994px; padding-left: 24px;
+}
+}
+.container {
+	padding: 0px;
+}
+.content {
+	padding: 111px 0px 0px;
+}
+@media all and (orientation:landscape) and (max-width:767px)
+{
+.content {
+	padding: 0px;
+}
+}
+ul.utility-nav.navbar-left li.country-audience-toggle a {
+	margin-left: 6px;
+}
+ul.utility-nav.navbar-left li a {
+	margin: 0px; padding: 0px 20px 0px 0px; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 12px;
+}
+#wrapper .container {
+	padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px;
+}
+.navbar.navbar-default.navbar-static-top.yamm .container {
+	padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px;
+}
+@media only screen and (max-width:1024px)
+{
+#wrapper .container {
+	
+}
+.navbar.navbar-default.navbar-static-top.yamm .container {
+	
+}
+#top-shelf .container {
+	padding-right: 0px; padding-left: 20px;
+}
+}
+.navbar-brand {
+	height: auto; padding-left: 0px;
+}
+#toggle-shelf {
+	padding-left: 0px;
+}
+#top-shelf * {
+	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+.modal-open #top-shelf {
+	z-index: 1 !important;
+}
+@media all and (max-width:767px)
+{
+.col-sm-4 {
+	width: 33.33%; float: left;
+}
+.col-sm-8 {
+	width: 66.66%; float: left;
+}
+}
+.close-shelf-container {
+	display: block !important;
+}
+#country-audience-shelf ul li span {
+	color: rgb(181, 195, 203) !important;
+}
+.profileBox {
+	top: 20px; right: 0px; position: absolute; z-index: 1000;
+}
+ul.filter-list.profileList li a.advisorLogin {
+	padding-right: 20px;
+}
+.destination {
+	display: none;
+}
+nav {
+	height: 68px; background-color: rgb(255, 255, 255);
+}
+#ctl00_divLogo {
+	display: none;
+}
+.navbar-default {
+	background-color: rgb(255, 255, 255);
+}
+.container {
+	float: none;
+}
+.container::after {
+	clear: both; display: block; content: " ";
+}
+div.header#stickyTopBar {
+	top: 30px; border-bottom-color: rgb(231, 231, 231); border-bottom-width: 1px; border-bottom-style: solid; position: fixed; background-color: rgb(255, 255, 255);
+}
+@media all and (orientation:landscape) and (max-width:767px)
+{
+div.header#stickyTopBar {
+	position: static;
+}
+}
+.modal-open #stickyTopBar {
+	z-index: 1;
+}
+.menu-open #stickyTopBar {
+	position: absolute;
+}
+.nav-header {
+	margin: 0px 0px 10px; color: rgb(51, 51, 51); text-transform: uppercase; padding-bottom: 4px; font-family: FrutigerBold,"Microsoft Jhenghei", "MS PGothic"; font-size: 15px; border-bottom-color: rgba(0, 79, 133, 0.8); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.nav-header.alt {
+	margin: 0px 0px 5px; border: currentColor; border-image: none; color: rgb(102, 102, 102); text-transform: none; line-height: 22px; font-size: 17px; display: block;
+}
+.nav-text {
+	color: rgb(102, 102, 102); text-transform: none; line-height: 1.4285; font-family: Helvetica,Arial,sans-serif; margin-bottom: 15px; display: inline-block;
+}
+.nav-text.alt {
+	margin-bottom: 5px;
+}
+.navbar-static-top {
+	border-width: 0px 0px 1px; z-index: 10;
+}
+.navbar-default {
+	background: rgb(255, 255, 255); border: currentColor; border-image: none; margin-bottom: 0px;
+}
+.dropdown-menu {
+	border-radius: 0px;
+}
+.dropdown-backdrop {
+	z-index: 5;
+}
+.categoryHeader {
+	
+}
+.top-space-5 {
+	margin-top: 5px;
+}
+.top-space-10 {
+	margin-top: 10px;
+}
+.top-space-15 {
+	margin-top: 15px;
+}
+.top-space-20 {
+	margin-top: 20px;
+}
+.top-space-30 {
+	margin-top: 30px;
+}
+.top-space-40 {
+	margin-top: 40px;
+}
+.top-space-50 {
+	margin-top: 50px;
+}
+.top-space-60 {
+	margin-top: 60px;
+}
+.top-space-70 {
+	margin-top: 70px;
+}
+.top-space-80 {
+	margin-top: 80px;
+}
+.top-space-90 {
+	margin-top: 90px;
+}
+.top-space-100 {
+	margin-top: 100px;
+}
+.spacer {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer5 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer10 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer12 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer15 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer20 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer25 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer30 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer35 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer40 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer45 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer50 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer100 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer200 {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; font-size: 0px; display: block;
+}
+.spacer5 {
+	height: 5px;
+}
+.spacer10 {
+	height: 10px;
+}
+.spacer12 {
+	height: 12px;
+}
+.spacer15 {
+	height: 15px;
+}
+.spacer20 {
+	height: 20px;
+}
+.spacer25 {
+	height: 25px;
+}
+.spacer30 {
+	height: 30px;
+}
+.spacer35 {
+	height: 35px;
+}
+.spacer40 {
+	height: 40px;
+}
+.spacer45 {
+	height: 45px;
+}
+.spacer50 {
+	height: 50px;
+}
+.spacer100 {
+	height: 100px;
+}
+.spacer200 {
+	height: 200px;
+}
+body .shade5 {
+	background: rgba(0, 0, 0, 0.05);
+}
+body .shade10 {
+	background: rgba(0, 0, 0, 0.1);
+}
+body .shade15 {
+	background: rgba(0, 0, 0, 0.15);
+}
+body .shade20 {
+	background: rgba(0, 0, 0, 0.2);
+}
+body .shade25 {
+	background: rgba(0, 0, 0, 0.25);
+}
+body .shade30 {
+	background: rgba(0, 0, 0, 0.3);
+}
+body .shade35 {
+	background: rgba(0, 0, 0, 0.35);
+}
+body .shade40 {
+	background: rgba(0, 0, 0, 0.4);
+}
+body .shade45 {
+	background: rgba(0, 0, 0, 0.45);
+}
+body .shade50 {
+	background: rgba(0, 0, 0, 0.5);
+}
+.dropdown.logged-in-status.open a.dropdown-toggle {
+	background: none;
+}
+ul.navbar-nav.primary-nav li {
+	text-transform: uppercase; font-family: "frutigerbold", "Microsoft Jhenghei", "MS PGothic";
+}
+ul.navbar-nav.primary-nav li a {
+	color: rgb(18, 58, 95); letter-spacing: normal; font-family: frutigerbold, "Microsoft Jhenghei", "MS PGothic"; font-size: 17px;
+}
+@media only screen and (max-width:768px)
+{
+ul.navbar-nav.primary-nav li a {
+	padding-right: 6px; padding-left: 6px;
+}
+}
+ul.navbar-nav.primary-nav li a:hover {
+	color: rgb(86, 160, 222);
+}
+ul.navbar-nav.primary-nav li a:focus {
+	color: rgb(86, 160, 222);
+}
+ul.navbar-nav.primary-nav .caret {
+	display: none;
+}
+.navbar-default .navbar-nav > li > a:focus {
+	color: rgb(86, 160, 222);
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: rgb(86, 160, 222);
+}
+.navbar-default .navbar-nav.mobile > li > a:focus {
+	color: rgb(255, 255, 255);
+}
+.navbar-default .navbar-nav.mobile > li > a:hover {
+	color: rgb(255, 255, 255);
+}
+.navbar-default .navbar-nav > .open > a {
+	color: rgb(18, 58, 95); background-color: transparent;
+}
+.navbar-default .navbar-nav > .open > a:focus {
+	color: rgb(86, 160, 222); background-color: rgb(255, 255, 255);
+}
+.navbar-default .navbar-nav > .open > a:hover {
+	color: rgb(86, 160, 222); background-color: rgb(255, 255, 255);
+}
+.navbar-default .navbar-nav.navbar-right > .open > a {
+	background: none; color: rgb(18, 58, 95);
+}
+.navbar-default .navbar-nav.navbar-right > .open > a:focus {
+	background: none; color: rgb(86, 160, 222);
+}
+.navbar-default .navbar-nav.navbar-right > .open > a:hover {
+	background: none; color: rgb(86, 160, 222);
+}
+.yamm .nav {
+	position: static;
+}
+.yamm .collapse {
+	position: static;
+}
+.yamm .dropup {
+	position: static;
+}
+.yamm .dropdown {
+	position: static;
+}
+.yamm .container {
+	position: relative;
+}
+.yamm .dropdown-menu {
+	border: currentColor; border-image: none;
+}
+.yamm .yamm-content {
+	padding: 20px 30px;
+}
+.primary-nav .dropdown-menu {
+	width: 1111px;
+}
+.primary-nav .dropdown-menu.multi-column {
+	border: currentColor; border-image: none;
+}
+.primary-nav .dropdown-menu {
+	padding: 20px 15px; min-width: 200px;
+}
+.primary-nav .dropdown-menu.multi-column.columns-2 .col-lg-3 {
+	width: 46%;
+}
+.primary-nav .dropdown-menu .menuThumbBox {
+	width: auto;
+}
+.clientAccess {
+	width: auto; float: right;
+}
+.clientAccess ul {
+	padding: 0px;
+}
+.clientAccess li {
+	padding: 0px;
+}
+.clientAccess::after {
+	clear: both;
+}
+.clientAccess a {
+	padding: 24px 0px; color: rgb(18, 58, 95); text-transform: uppercase; line-height: 20px; letter-spacing: 0.02em; font-family: Frutiger57Cn, "Microsoft Jhenghei", "MS PGothic"; font-size: 15px; display: block;
+}
+.clientAccess a:focus {
+	color: rgb(86, 160, 222);
+}
+.clientAccess a:hover {
+	color: rgb(86, 160, 222);
+}
+.clientAccess #id_client_access {
+	font-family: "frutigerbold", "Microsoft Jhenghei", "MS PGothic"; font-size: 17px !important;
+}
+.clientAccess ul li ul {
+	padding: 10px 17px; left: -44px; width: 105%; margin-top: -1px; position: absolute; z-index: 1001; box-shadow: 0px 6px 12px rgba(0,0,0,0.175); background-color: rgb(248, 249, 250);
+}
+.clientAccess ul li ul li a {
+	margin: 0px 0px 6px; padding: 0px; color: rgb(0, 58, 98); text-transform: none; font-family: "Frutiger57"; font-size: 15px;
+}
+.clientAccess li {
+	list-style: none;
+}
+.clientAccess .dropdown {
+	margin: 0px; position: relative;
+}
+@media all and (max-width:768px)
+{
+.primary-nav .dropdown-menu.multi-column.columns-2 .col-lg-3 {
+	width: 43%;
+}
+}
+ul.navbar-nav.primary-nav .multi-column-dropdown li.contact-name a {
+	padding-bottom: 0px;
+}
+.multi-column-dropdown {
+	list-style: none; margin: 0px; padding: 0px;
+}
+.multi-column-dropdown h4 {
+	margin: 0px 10px 10px 0px; color: rgb(51, 51, 51); text-transform: uppercase; line-height: inherit; padding-bottom: 4px; font-family: FrutigerBold, "Microsoft Jhenghei", "MS PGothic"; font-size: 15px; border-bottom-color: rgba(0, 79, 133, 0.8); border-bottom-width: 1px; border-bottom-style: solid;
+}
+ul.navbar-nav.primary-nav .menuThumbText h2 {
+	margin: 0px 0px 5px; line-height: 22px; font-size: 17px;
+}
+ul.navbar-nav.primary-nav li.dropdown .menuThumbText h2 a {
+	padding: 0px; color: rgb(0, 58, 98); text-transform: none; line-height: 22px; font-family: frutiger57; font-size: 17px;
+}
+ul.navbar-nav.primary-nav li.dropdown .menuThumbText h2 a:hover {
+	color: rgb(23, 113, 197);
+}
+.menuThumbText p {
+	color: rgb(102, 102, 102); text-transform: none; line-height: 1.4285; font-family: Helvetica, Arial, sans-serif; font-size: 14px; margin-bottom: 15px;
+}
+ul.navbar-nav .multi-column-dropdown li a {
+	padding: 0px 0px 6px; color: rgb(0, 58, 98); text-transform: none; clear: both; font-size: 15px; display: block; white-space: normal;
+}
+ul.navbar-nav.primary-nav .multi-column-dropdown li a {
+	padding: 0px 0px 6px; color: rgb(0, 58, 98); font-family: "Frutiger57"; font-size: 15px;
+}
+ul.navbar-nav.primary-nav .multi-column-dropdown li a:hover {
+	color: rgb(23, 113, 197); text-decoration: none;
+}
+ul.navbar-nav .multi-column-dropdown li.nav-link-button a {
+	margin: 0px 0px 15px; font-family: frutigerbold, "Microsoft Jhenghei", "MS PGothic";
+}
+ul.navbar-nav.primary-nav .nav-header.alt a {
+	padding: 0px; color: rgb(0, 58, 98); display: inline-block;
+}
+ul.navbar-nav.primary-nav .nav-header.alt a:hover {
+	color: rgb(23, 113, 197);
+}
+.nav-header.date {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none; color: rgb(102, 102, 102); text-transform: uppercase; line-height: 22px; font-family: frutiger57; font-size: 13px; display: block;
+}
+ul.navbar-nav.primary-nav li .nav-text.alt a {
+	padding: 0px; color: rgb(0, 58, 98); line-height: 22px; font-family: frutiger57; font-size: 17px; margin-top: 3px;
+}
+ul.navbar-nav.primary-nav li .nav-text.alt a:hover {
+	color: rgb(23, 113, 197);
+}
+.primary-nav .dropdown-menu .divider {
+	margin: 5px 0px;
+}
+.primary-nav .dropdown-menu {
+	width: 995px; margin-left: -1px;
+}
+@media all and (max-width:1024px)
+{
+.primary-nav .dropdown-menu {
+	width: 946px; margin-left: 1px;
+}
+ul.nav.navbar-nav.primary-nav .dropdown .columns-2-1 .col-lg-7 {
+	width: 56%;
+}
+}
+@media all and (max-width:768px)
+{
+.primary-nav .dropdown-menu {
+	width: 688px; margin-left: 0px;
+}
+ul.nav.navbar-nav.primary-nav .dropdown .columns-2-1 .col-lg-4 {
+	width: 35%;
+}
+}
+@media all and (max-width:1199px)
+{
+.columns-2-1 .left-space {
+	margin-left: 0px;
+}
+}
+ul.nav.navbar-nav.primary-nav .columns-2-1 .col-lg-7 {
+	width: 57%; float: left;
+}
+ul.nav.navbar-nav.primary-nav .col-lg-7.col-md-7 {
+	padding-left: 0px;
+}
+ul.nav.navbar-nav.primary-nav .columns-2-1 .col-lg-4 {
+	width: 36%; float: left;
+}
+@media all and (max-width:991px)
+{
+ul.nav.navbar-nav.primary-nav .columns-2-1 .col-lg-7 {
+	width: 57%;
+}
+}
+@media all and (max-width:768px)
+{
+ul.nav.navbar-nav.primary-nav .columns-2-1 .col-lg-7 {
+	width: 57%;
+}
+ul.nav.navbar-nav.primary-nav .columns-2-1 .col-lg-5 {
+	width: 29%;
+}
+ul.nav.navbar-nav.primary-nav .columns-2-1 .col-lg-4 {
+	width: 21%;
+}
+}
+ul.nav.navbar-nav.primary-nav .col-lg-3 {
+	width: 30%; float: left;
+}
+@media all and (max-width:768px)
+{
+ul.nav.navbar-nav.primary-nav .col-lg-3 {
+	width: 26%;
+}
+}
+ul.nav.navbar-nav.primary-nav .col-lg-5 {
+	width: 32%; float: left;
+}
+@media all and (orientation:landscape) and (max-width:767px)
+{
+#main-site-nav {
+	position: static;
+}
+}
+.fixed#stickyMenu {
+	top: 98px !important;
+}
+.filter-bar-nav-fix {
+	top: 93px;
+}
+table.fixedHeader-floating {
+	top: 220px !important;
+}
+.showing-header.top-header {
+	margin-top: -7px !important;
+}
+@media all and (max-width:1024px)
+{
+#top-shelf {
+	width: 1024px !important;
+}
+#desktop-change-country div.col-xs-12.col-sm-7 {
+	width: 49%;
+}
+#desktop-change-country div.col-xs-12.col-sm-5 {
+	width: 49%;
+}
+#top-shelf div.container {
+	width: 100%;
+}
+}
+@media all and (max-width:991px)
+{
+div.customCentered {
+	width: 1024px;
+}
+#top-shelf ul.nav.navbar-nav.utility-nav.navbar-right {
+	margin-right: 15px; display: block;
+}
+}
+@media all and (max-width:480px)
+{
+ul.utility-nav.navbar-right li a {
+	font-size: 12px !important;
+}
+}
+#stickyTopBar .clientAccess #id_client_access {
+	padding: 24px 0px 29px;
+}
+#stickyTopBar .clientAccess #id_client_access:hover {
+	color: rgb(86, 160, 222);
+}
+#stickyTopBar .clientAccess #id_client_access:focus {
+	color: rgb(86, 160, 222);
+}
+#stickyTopBar .clientAccess.nav.navbar-nav.utility-nav.mobile {
+	display: block;
+}

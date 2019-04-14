@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="highchart_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="highchart_libs/jquery-1.11.1/jquery.min.js"></script>
+<script src="highchart_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="highchart_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
+<link href="highchart_libs/highcharts-7.0.1/css/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="highchart_libs/highcharts-7.0.1/highcharts.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-3d.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-more.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/stock.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/map.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/annotations.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/boost.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drag-panes.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drilldown.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/item-series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/offline-exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/overlapping-datalabels.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/export-data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/funnel.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/heatmap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/treemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sankey.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/solid-gauge.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/streamgraph.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sunburst.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/vector.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/wordcloud.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/xrange.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/tilemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/venn.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/gantt.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/timeline.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/parallel-coordinates.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/grouped-categories.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/motion.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/multicolor_series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/reset.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/symbols-extra.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/text-symbols.js"></script>
+<script src="highchart_libs/highchart-binding-0.7.0/highchart.js"></script>
+<script src="highchart_libs/pymjs-1.3.2/pym.v1.min.js"></script>
+  <title>highchart</title>
+</head>
+<body style="background-color:white;">
+<div id="htmlwidget_container">
+  <div id="htmlwidget-b3b3a63b59a3d29008f9" style="width:100%;height:500px;" class="highchart html-widget"></div>
+  <script>HTMLWidgets.pymChild = new pym.Child();HTMLWidgets.addPostRenderHandler(function(){
+                                setTimeout(function(){HTMLWidgets.pymChild.sendHeight();},100);
+                            });</script>
+</div>
+<script type="application/json" data-for="htmlwidget-b3b3a63b59a3d29008f9">{"x":{"hc_opts":{"title":{"text":"行业相对PE历史分位水平（12年以来)"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"errorbar":{"color":"blue","stemWidth":2,"whiskerLength":9}},"subtitle":{"text":"更新日期:2019-04-12"},"xAxis":{"categories":["银行(申万)","钢铁(申万)","房地产(申万)","建筑装饰(申万)","建筑材料(申万)","采掘(申万)","家用电器(申万)","商业贸易(申万)","汽车(申万)","化工(申万)","交通运输(申万)","轻工制造(申万)","非银金融(申万)","公用事业(申万)","纺织服装(申万)","传媒(申万)","电气设备(申万)","有色金属(申万)","机械设备(申万)","食品饮料(申万)","电子(申万)","休闲服务(申万)","医药生物(申万)","综合(申万)","农林牧渔(申万)","通信(申万)","计算机(申万)","国防军工(申万)"]},"series":[{"data":[{"sector":"银行(申万)","low":4.5,"high":8.78,"current":7.26,"median":6.5},{"sector":"钢铁(申万)","low":5.69,"high":143.8,"current":7.88,"median":29.79},{"sector":"房地产(申万)","low":8.09,"high":33.64,"current":11.9,"median":15.53},{"sector":"建筑装饰(申万)","low":9.05,"high":33.6,"current":12.52,"median":13.71},{"sector":"建筑材料(申万)","low":9.98,"high":50.69,"current":13.52,"median":23.71},{"sector":"采掘(申万)","low":12.01,"high":88.01,"current":15.61,"median":18.35},{"sector":"家用电器(申万)","low":10.55,"high":25.46,"current":16.12,"median":15.07},{"sector":"商业贸易(申万)","low":14.35,"high":71.38,"current":18.3,"median":26.27},{"sector":"汽车(申万)","low":10.87,"high":36.25,"current":18.48,"median":17.48},{"sector":"化工(申万)","low":13.01,"high":76.55,"current":19.3,"median":28.92},{"sector":"交通运输(申万)","low":12.1,"high":43.29,"current":21.6,"median":18.69},{"sector":"轻工制造(申万)","low":14.23,"high":113.29,"current":21.84,"median":37.79},{"sector":"非银金融(申万)","low":10.8,"high":38.08,"current":22.73,"median":17.83},{"sector":"公用事业(申万)","low":13.78,"high":37.45,"current":23.19,"median":22.81},{"sector":"纺织服装(申万)","low":17.84,"high":63.14,"current":24.85,"median":26.34},{"sector":"传媒(申万)","low":19.49,"high":141.84,"current":26.89,"median":46.11},{"sector":"电气设备(申万)","low":20.32,"high":99.99,"current":31.04,"median":39.18},{"sector":"有色金属(申万)","low":20.95,"high":140.31,"current":31.91,"median":44.04},{"sector":"机械设备(申万)","low":12.81,"high":136.07,"current":32.05,"median":37.22},{"sector":"食品饮料(申万)","low":16.55,"high":40.67,"current":32.26,"median":27.27},{"sector":"电子(申万)","low":22.74,"high":113.84,"current":32.93,"median":48.24},{"sector":"休闲服务(申万)","low":24.92,"high":108.19,"current":33.11,"median":42.72},{"sector":"医药生物(申万)","low":23.49,"high":74.37,"current":34.46,"median":37.85},{"sector":"综合(申万)","low":20.71,"high":120.55,"current":36.87,"median":47.22},{"sector":"农林牧渔(申万)","low":23.6,"high":119.64,"current":42.83,"median":38.9},{"sector":"通信(申万)","low":28.53,"high":95.06,"current":45.26,"median":42.52},{"sector":"计算机(申万)","low":29.48,"high":159.7,"current":55.31,"median":51.86},{"sector":"国防军工(申万)","low":28.17,"high":245.82,"current":73,"median":75.47}],"type":"errorbar","ymin":[4.5,5.69,8.09,9.05,9.98,12.01,10.55,14.35,10.87,13.01,12.1,14.23,10.8,13.78,17.84,19.49,20.32,20.95,12.81,16.55,22.74,24.92,23.49,20.71,23.6,28.53,29.48,28.17],"ymax":[8.78,143.8,33.64,33.6,50.69,88.01,25.46,71.38,36.25,76.55,43.29,113.29,38.08,37.45,63.14,141.84,99.99,140.31,136.07,40.67,113.84,108.19,74.37,120.55,119.64,95.06,159.7,245.82],"name":"历史最小-最大值"},{"data":[6.5,29.79,15.53,13.71,23.71,18.35,15.07,26.27,17.48,28.92,18.69,37.79,17.83,22.81,26.34,46.11,39.18,44.04,37.22,27.27,48.24,42.72,37.85,47.22,38.9,42.52,51.86,75.47],"type":"scatter","name":"中位数","color":"black","showlegend":false,"tooltip":{"pointFormat":"PE {point.y}"}},{"data":[7.26,7.88,11.9,12.52,13.52,15.61,16.12,18.3,18.48,19.3,21.6,21.84,22.73,23.19,24.85,26.89,31.04,31.91,32.05,32.26,32.93,33.11,34.46,36.87,42.83,45.26,55.31,73],"type":"scatter","color":"red","name":"最新值","showlegend":false,"tooltip":{"pointFormat":"PE {point.y}"}}],"tooltip":{"crosshairs":true}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Cardo"}},"xAxis":{"lineWidth":1,"minorGridLineWidth":0,"tickColor":"#737373"},"yAxis":{"lineWidth":0,"minorGridLineWidth":0,"lineColor":"transparent","tickColor":"#737373","tickWidth":1,"gridLineColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Cardo","debug":false},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-b3b3a63b59a3d29008f9">{"viewer":{"width":"100%","height":350,"padding":0,"fill":false},"browser":{"width":"100%","height":500,"padding":0,"fill":false}}</script>
+</body>
+</html>

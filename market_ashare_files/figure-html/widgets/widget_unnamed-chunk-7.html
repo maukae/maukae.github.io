@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="highchart_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="highchart_libs/jquery-1.11.1/jquery.min.js"></script>
+<script src="highchart_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="highchart_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
+<link href="highchart_libs/highcharts-7.0.1/css/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="highchart_libs/highcharts-7.0.1/highcharts.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-3d.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-more.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/stock.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/map.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/annotations.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/boost.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drag-panes.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drilldown.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/item-series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/offline-exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/overlapping-datalabels.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/export-data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/funnel.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/heatmap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/treemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sankey.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/solid-gauge.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/streamgraph.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sunburst.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/vector.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/wordcloud.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/xrange.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/tilemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/venn.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/gantt.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/timeline.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/parallel-coordinates.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/grouped-categories.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/motion.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/multicolor_series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/reset.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/symbols-extra.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/text-symbols.js"></script>
+<script src="highchart_libs/highchart-binding-0.7.0/highchart.js"></script>
+<script src="highchart_libs/pymjs-1.3.2/pym.v1.min.js"></script>
+  <title>highchart</title>
+</head>
+<body style="background-color:white;">
+<div id="htmlwidget_container">
+  <div id="htmlwidget-51ad69f6c5d620a884fb" style="width:100%;height:650px;" class="highchart html-widget"></div>
+  <script>HTMLWidgets.pymChild = new pym.Child();HTMLWidgets.addPostRenderHandler(function(){
+                                setTimeout(function(){HTMLWidgets.pymChild.sendHeight();},100);
+                            });</script>
+</div>
+<script type="application/json" data-for="htmlwidget-51ad69f6c5d620a884fb">{"x":{"hc_opts":{"title":{"text":"行业涨跌幅"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"xAxis":{"categories":["农林牧渔(申万)","公用事业(申万)","商业贸易(申万)","建筑装饰(申万)","计算机(申万)","电气设备(申万)","传媒(申万)","电子(申万)","通信(申万)","非银金融(申万)","综合(申万)","交通运输(申万)","银行(申万)","机械设备(申万)","采掘(申万)","纺织服装(申万)","汽车(申万)","食品饮料(申万)","化工(申万)","有色金属(申万)","建筑材料(申万)","轻工制造(申万)","房地产(申万)","国防军工(申万)","钢铁(申万)","休闲服务(申万)","家用电器(申万)","医药生物(申万)"]},"subtitle":{"text":"更新日期:2019-04-12"},"series":[{"group":"group","data":[{"行业板块":"801010.SI","板块名称":"农林牧渔(申万)","成交额(亿元)":263.22,"成交量(亿)":24.19,"涨跌幅":1.89,"PE_TTM":null,"PB_LF":null,"y":1.89},{"行业板块":"801160.SI","板块名称":"公用事业(申万)","成交额(亿元)":224.12,"成交量(亿)":35.34,"涨跌幅":1.1,"PE_TTM":null,"PB_LF":null,"y":1.1},{"行业板块":"801200.SI","板块名称":"商业贸易(申万)","成交额(亿元)":112.08,"成交量(亿)":11.9,"涨跌幅":0.66,"PE_TTM":null,"PB_LF":null,"y":0.66},{"行业板块":"801720.SI","板块名称":"建筑装饰(申万)","成交额(亿元)":189.61,"成交量(亿)":23.82,"涨跌幅":0.54,"PE_TTM":null,"PB_LF":null,"y":0.54},{"行业板块":"801750.SI","板块名称":"计算机(申万)","成交额(亿元)":412.71,"成交量(亿)":27.28,"涨跌幅":0.34,"PE_TTM":null,"PB_LF":null,"y":0.34},{"行业板块":"801730.SI","板块名称":"电气设备(申万)","成交额(亿元)":307.04,"成交量(亿)":35.15,"涨跌幅":0.29,"PE_TTM":null,"PB_LF":null,"y":0.29},{"行业板块":"801760.SI","板块名称":"传媒(申万)","成交额(亿元)":254.82,"成交量(亿)":27.58,"涨跌幅":0.29,"PE_TTM":null,"PB_LF":null,"y":0.29},{"行业板块":"801080.SI","板块名称":"电子(申万)","成交额(亿元)":362.36,"成交量(亿)":33.6,"涨跌幅":0.26,"PE_TTM":null,"PB_LF":null,"y":0.26},{"行业板块":"801770.SI","板块名称":"通信(申万)","成交额(亿元)":231,"成交量(亿)":17.41,"涨跌幅":0.25,"PE_TTM":null,"PB_LF":null,"y":0.25},{"行业板块":"801790.SI","板块名称":"非银金融(申万)","成交额(亿元)":415.97,"成交量(亿)":35.06,"涨跌幅":0.24,"PE_TTM":null,"PB_LF":null,"y":0.24},{"行业板块":"801230.SI","板块名称":"综合(申万)","成交额(亿元)":52.58,"成交量(亿)":8.19,"涨跌幅":0.21,"PE_TTM":null,"PB_LF":null,"y":0.21},{"行业板块":"801170.SI","板块名称":"交通运输(申万)","成交额(亿元)":214.9,"成交量(亿)":31.72,"涨跌幅":0.04,"PE_TTM":null,"PB_LF":null,"y":0.04},{"行业板块":"801780.SI","板块名称":"银行(申万)","成交额(亿元)":126.5,"成交量(亿)":15.82,"涨跌幅":0.01,"PE_TTM":null,"PB_LF":null,"y":0.01},{"行业板块":"801890.SI","板块名称":"机械设备(申万)","成交额(亿元)":376.89,"成交量(亿)":41.04,"涨跌幅":-0.04,"PE_TTM":null,"PB_LF":null,"y":-0.04},{"行业板块":"801020.SI","板块名称":"采掘(申万)","成交额(亿元)":126.31,"成交量(亿)":17.61,"涨跌幅":-0.17,"PE_TTM":null,"PB_LF":null,"y":-0.17},{"行业板块":"801130.SI","板块名称":"纺织服装(申万)","成交额(亿元)":63.06,"成交量(亿)":7.85,"涨跌幅":-0.39,"PE_TTM":null,"PB_LF":null,"y":-0.39},{"行业板块":"801880.SI","板块名称":"汽车(申万)","成交额(亿元)":325.86,"成交量(亿)":38.51,"涨跌幅":-0.41,"PE_TTM":null,"PB_LF":null,"y":-0.41},{"行业板块":"801120.SI","板块名称":"食品饮料(申万)","成交额(亿元)":228.55,"成交量(亿)":9.06,"涨跌幅":-0.48,"PE_TTM":null,"PB_LF":null,"y":-0.48},{"行业板块":"801030.SI","板块名称":"化工(申万)","成交额(亿元)":561.61,"成交量(亿)":52.15,"涨跌幅":-0.51,"PE_TTM":null,"PB_LF":null,"y":-0.51},{"行业板块":"801050.SI","板块名称":"有色金属(申万)","成交额(亿元)":209.58,"成交量(亿)":23.91,"涨跌幅":-0.67,"PE_TTM":null,"PB_LF":null,"y":-0.67},{"行业板块":"801710.SI","板块名称":"建筑材料(申万)","成交额(亿元)":115.45,"成交量(亿)":10.61,"涨跌幅":-0.67,"PE_TTM":null,"PB_LF":null,"y":-0.67},{"行业板块":"801140.SI","板块名称":"轻工制造(申万)","成交额(亿元)":168.18,"成交量(亿)":17.58,"涨跌幅":-0.74,"PE_TTM":null,"PB_LF":null,"y":-0.74},{"行业板块":"801180.SI","板块名称":"房地产(申万)","成交额(亿元)":251.5,"成交量(亿)":30.42,"涨跌幅":-0.9,"PE_TTM":null,"PB_LF":null,"y":-0.9},{"行业板块":"801740.SI","板块名称":"国防军工(申万)","成交额(亿元)":134.86,"成交量(亿)":9.26,"涨跌幅":-1.05,"PE_TTM":null,"PB_LF":null,"y":-1.05},{"行业板块":"801040.SI","板块名称":"钢铁(申万)","成交额(亿元)":77.75,"成交量(亿)":14.69,"涨跌幅":-1.08,"PE_TTM":null,"PB_LF":null,"y":-1.08},{"行业板块":"801210.SI","板块名称":"休闲服务(申万)","成交额(亿元)":37.37,"成交量(亿)":3.35,"涨跌幅":-1.13,"PE_TTM":null,"PB_LF":null,"y":-1.13},{"行业板块":"801110.SI","板块名称":"家用电器(申万)","成交额(亿元)":161.02,"成交量(亿)":12.12,"涨跌幅":-1.3,"PE_TTM":null,"PB_LF":null,"y":-1.3},{"行业板块":"801150.SI","板块名称":"医药生物(申万)","成交额(亿元)":562.59,"成交量(亿)":44.72,"涨跌幅":-1.31,"PE_TTM":null,"PB_LF":null,"y":-1.31}],"type":"bar","name":"涨跌幅","showInLegend":false,"dataLabels":{"enabled":true,"format":"{point.y}%"}}],"tooltip":{"enabled":true,"valueDecimals":2}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Cardo"}},"xAxis":{"lineWidth":1,"minorGridLineWidth":0,"tickColor":"#737373"},"yAxis":{"lineWidth":0,"minorGridLineWidth":0,"lineColor":"transparent","tickColor":"#737373","tickWidth":1,"gridLineColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Cardo","debug":false},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-51ad69f6c5d620a884fb">{"viewer":{"width":"100%","height":650,"padding":0,"fill":false},"browser":{"width":"100%","height":650,"padding":0,"fill":false}}</script>
+</body>
+</html>

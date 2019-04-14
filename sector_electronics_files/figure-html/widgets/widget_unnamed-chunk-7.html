@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="highchart_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="highchart_libs/jquery-1.11.1/jquery.min.js"></script>
+<script src="highchart_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="highchart_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
+<link href="highchart_libs/highcharts-7.0.1/css/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="highchart_libs/highcharts-7.0.1/highcharts.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-3d.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-more.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/stock.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/map.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/annotations.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/boost.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drag-panes.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drilldown.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/item-series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/offline-exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/overlapping-datalabels.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/export-data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/funnel.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/heatmap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/treemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sankey.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/solid-gauge.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/streamgraph.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sunburst.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/vector.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/wordcloud.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/xrange.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/tilemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/venn.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/gantt.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/timeline.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/parallel-coordinates.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/grouped-categories.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/motion.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/multicolor_series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/reset.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/symbols-extra.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/text-symbols.js"></script>
+<script src="highchart_libs/highchart-binding-0.7.0/highchart.js"></script>
+<script src="highchart_libs/pymjs-1.3.2/pym.v1.min.js"></script>
+  <title>highchart</title>
+</head>
+<body style="background-color:white;">
+<div id="htmlwidget_container">
+  <div id="htmlwidget-af254c85a0db59b3299a" style="width:100%;height:350px;" class="highchart html-widget"></div>
+  <script>HTMLWidgets.pymChild = new pym.Child();HTMLWidgets.addPostRenderHandler(function(){
+                                setTimeout(function(){HTMLWidgets.pymChild.sendHeight();},100);
+                            });</script>
+</div>
+<script type="application/json" data-for="htmlwidget-af254c85a0db59b3299a">{"x":{"hc_opts":{"title":{"text":"显示器、笔记本、液晶电视面板价格"},"yAxis":[{"title":{"text":"美元"},"opposite":false},{"title":{"text":"美元"},"opposite":true}],"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":4000},"treemap":{"layoutAlgorithm":"squarified"}},"xAxis":{"categories":["2016-01-05","2016-01-20","2016-02-05","2016-02-22","2016-03-07","2016-03-21","2016-04-06","2016-04-20","2016-05-05","2016-05-20","2016-06-06","2016-06-20","2016-07-05","2016-07-20","2016-08-05","2016-08-22","2016-09-05","2016-09-20","2016-10-05","2016-10-20","2016-11-07","2016-11-21","2016-12-06","2016-12-20","2017-01-05","2017-01-20","2017-02-06","2017-02-20","2017-03-06","2017-03-20","2017-04-05","2017-04-20","2017-05-05","2017-05-22","2017-06-06","2017-06-20","2017-07-05","2017-07-20","2017-08-07","2017-08-21","2017-09-05","2017-09-20","2017-10-05","2017-10-23","2017-11-06","2017-11-21","2017-11-28","2017-12-05","2017-12-20","2018-01-05","2018-01-22","2018-02-05","2018-02-21","2018-03-05","2018-03-20","2018-04-05","2018-04-20","2018-05-07","2018-05-21","2018-06-05","2018-06-20","2018-07-05","2018-07-20","2018-08-05","2018-08-20","2018-09-05","2018-09-20","2018-10-05","2018-10-20","2018-11-05","2018-11-20","2018-12-05","2018-12-20","2019-01-07","2019-01-21","2019-02-21","2019-03-05","2019-03-20"]},"series":[{"data":[65.3,64.5,64.2,63.5,63.2,62.5,62.3,61.8,61.7,61.7,61.7,61.7,61.7,62.2,62.3,63.2,63.4,64,64.1,64.5,64.5,64.5,64.5,64.5,64.5,64.5,64.5,66.8,66.8,66.8,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.6,66.4,66.1,65.9,65.6,65.4,65.1,65,64.6,64.6,64.4,64.4,64.4,64.4,64.4,64.4,64.1,63.8,63.1,62.8,62.1,61.7,61.1,60.3,60.1,59.5],"type":"line","name":"显示器面板:23\"W","showInLegend":true},{"data":[43.8,43.5,43.3,42.9,42.7,42.4,42.3,42.1,42.1,42.1,42.1,42.1,42.1,42.1,42.1,42.1,42.1,42.6,42.9,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.2,43.1,43,42.9,42.8,42.7,42.6,42.6,42.5,42.5,42.3,42.2,42.1,42.1,42.1,42.1,41.9,41.9,41.8,41.8,41.8,41.8,41.8,41.8,41.8,41.8,41.8,41.8,41.8,41.8,41.6,41.5,41.2,41.1,40.9,40.4,40.3,40.2],"type":"line","yAxis":1,"name":"笔记本面板:17.3\"W(右轴)","showInLegend":true},{"data":[55,54,53,52,52,52,52,53,53,54,54,55,57,60,62,68,70,72,73,74,74,74,74,74,74,73,73,73,73,73,73,73,73,73,73,73,72,72,71,70,70,69,69,68,68,67,67,67,66,66,65,64,63,62,61,60,58,51,48,46,45,46,50,51,53,54,54,54,53,51,48,45,42,41,41,41,41,42],"type":"line","name":"液晶电视面板:32\"W","showInLegend":true}],"tooltip":{"enabled":true,"valueDecimals":2}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Roboto","color":"#666666"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"plotOptions":{"line":{"marker":{"enabled":false}},"spline":{"marker":{"enabled":false}},"area":{"marker":{"enabled":false}},"areaspline":{"marker":{"enabled":false}},"arearange":{"marker":{"enabled":false}},"bubble":{"maxSize":"10%"}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-af254c85a0db59b3299a">{"viewer":{"width":"100%","height":350,"padding":0,"fill":false},"browser":{"width":"100%","height":350,"padding":0,"fill":false}}</script>
+</body>
+</html>

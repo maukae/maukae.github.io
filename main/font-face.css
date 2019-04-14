@@ -1,0 +1,48 @@
+@font-face {
+	font-family: FrutigerLight;
+	src: url(/Style Library/fonts/frutiger_light_condensed.eot?#iefix) format("embedded-opentype"), url(/Style Library/fonts/frutiger_light_condensed.woff) format("woff"), url(/Style Library/fonts/frutiger_light_condensed.ttf) format("truetype"), url(/Style Library/fonts/frutiger_light_condensed.svg#frutiger_light_condensed) format("svg");
+}
+@font-face {
+	font-family: FrutigerBold;
+	src: url(/Style Library/fonts/frutiger_bold_condensed.eot?#iefix) format("embedded-opentype"), url(/Style Library/fonts/frutiger_bold_condensed.woff) format("woff"), url(/Style Library/fonts/frutiger_bold_condensed.ttf) format("truetype"), url(/Style Library/fonts/frutiger_bold_condensed.svg#frutiger_bold_condensed) format("svg");
+}
+@font-face {
+	font-family: Frutiger55Roman;
+	src: url(/Style Library/fonts/frutiger_55_roman.eot?#iefix) format("embedded-opentype"), url(/Style Library/fonts/frutiger_55_roman.woff) format("woff"), url(/Style Library/fonts/frutiger_55_roman.ttf) format("truetype"), url(/Style Library/fonts/frutiger_55_roman.svg#frutiger_55_roman) format("svg");
+}
+@font-face {
+	font-family: Linearicons-Free;
+	src: url(/Style Library/fonts/Linearicons-Free.eot?#iefixw118d) format("embedded-opentype"), url(/Style Library/fonts/Linearicons-Free.woff2?w118d) format("woff2"), url(/Style Library/fonts/Linearicons-Free.woff?w118d) format("woff"), url(/Style Library/fonts/Linearicons-Free.ttf?w118d) format("truetype"), url(/Style Library/fonts/Linearicons-Free.svg?w118d#Linearicons-Free) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: Frutiger57;
+	src: url(/Style Library/fonts/frutiger-57.eot?#iefix) format("embedded-opentype"), url(/Style Library/fonts/frutiger-57.woff2) format("woff2"), url(/Style Library/fonts/frutiger-57.woff) format("woff"), url(/Style Library/fonts/frutiger-57.ttf) format("truetype");
+}
+@font-face {
+	font-family: FrutigerBlack;
+	src: url(/Style Library/fonts/frutiger-87-condensed-black.eot?#iefix) format("eot"), url(/Style Library/fonts/frutiger-87-condensed-black.woff) format("woff"), url(/Style Library/fonts/frutiger-87-condensed-black.ttf) format("truetype"), url(/Style Library/fonts/frutiger-87-condensed-black.svg#frutiger-87-condensed-black) format("svg");
+}
+@font-face {
+	font-family: AdobeGaramondRegular;
+	src: url(../fonts/adobeGaramondRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/adobeGaramondRegular.woff) format("woff"), url(../fonts/adobeGaramondRegular.ttf) format("truetype"), url(../fonts/adobeGaramondRegular.svg#adobeGaramondRegular) format("svg");
+}
+@font-face {
+	font-family: Frutiger67BoldCn;
+	src: url(/Style%20Library/fonts/Frutiger67BoldCn.eot?#iefix) format("eot"), url(/Style%20Library/fonts/Frutiger67BoldCn.woff) format("woff"), url(/Style%20Library/fonts/Frutiger67BoldCn.ttf) format("truetype"), url(/Style%20Library/fonts/Frutiger67BoldCn.svg#Frutiger67BoldCn) format("svg");
+}
+@font-face {
+	font-family: Frutiger47LightCn;
+	src: url(/Style%20Library/fonts/Frutiger47LightCn.eot?#iefix) format("eot"), url(/Style%20Library/fonts/Frutiger47LightCn.woff) format("woff"), url(/Style%20Library/fonts/Frutiger47LightCn.ttf) format("truetype"), url(/Style%20Library/fonts/Frutiger47LightCn.svg#Frutiger47LightCn) format("svg");
+}
+@font-face {
+	font-family: Frutiger57Cn;
+	src: url(/Style%20Library/fonts/Frutiger57Cn.eot?#iefix) format("embedded-opentype"), url(/Style%20Library/fonts/Frutiger57Cn.woff2) format("woff2"), url(/Style%20Library/fonts/Frutiger57Cn.woff) format("woff"), url(/Style%20Library/fonts/Frutiger57Cn.ttf) format("truetype");
+}
+@font-face {
+	font-family: icomoon;
+	src: url(../../../Style%20Library/fonts/icomoon.eot?glt0ys#iefix) format("embedded-opentype"), url(../../../Style%20Library/fonts/icomoon.ttf?glt0ys) format("truetype"), url(../../../Style%20Library/fonts/icomoon.woff?glt0ys) format("woff"), url(../../../Style%20Library/fonts/icomoon.svg?glt0ys#icomoon) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}

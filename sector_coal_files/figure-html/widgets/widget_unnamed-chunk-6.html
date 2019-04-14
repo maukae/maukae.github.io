@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="highchart_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="highchart_libs/jquery-1.11.1/jquery.min.js"></script>
+<script src="highchart_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="highchart_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
+<link href="highchart_libs/highcharts-7.0.1/css/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="highchart_libs/highcharts-7.0.1/highcharts.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-3d.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-more.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/stock.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/map.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/annotations.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/boost.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drag-panes.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drilldown.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/item-series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/offline-exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/overlapping-datalabels.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/export-data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/funnel.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/heatmap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/treemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sankey.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/solid-gauge.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/streamgraph.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sunburst.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/vector.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/wordcloud.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/xrange.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/tilemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/venn.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/gantt.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/timeline.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/parallel-coordinates.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/grouped-categories.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/motion.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/multicolor_series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/reset.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/symbols-extra.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/text-symbols.js"></script>
+<script src="highchart_libs/highchart-binding-0.7.0/highchart.js"></script>
+<script src="highchart_libs/pymjs-1.3.2/pym.v1.min.js"></script>
+  <title>highchart</title>
+</head>
+<body style="background-color:white;">
+<div id="htmlwidget_container">
+  <div id="htmlwidget-3e79def8148097c01a49" style="width:100%;height:500px;" class="highchart html-widget"></div>
+  <script>HTMLWidgets.pymChild = new pym.Child();HTMLWidgets.addPostRenderHandler(function(){
+                                setTimeout(function(){HTMLWidgets.pymChild.sendHeight();},100);
+                            });</script>
+</div>
+<script type="application/json" data-for="htmlwidget-3e79def8148097c01a49">{"x":{"hc_opts":{"title":{"text":"煤炭行业净利润占比"},"yAxis":{"title":{"text":"%"}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"chart":{"zoomType":"xy","type":"waterfall"},"subtitle":{"text":"更新日期:2018-09-30"},"xAxis":{"categories":["中国神华","陕西煤业","兖州煤业","中煤能源","潞安环能","西山煤电","阳泉煤业","露天煤业","山煤国际","美锦能源","山西焦化","开滦股份","大同煤业","冀中能源","新集能源","昊华能源","金能科技","兰花科创","上海能源","盘江股份","恒源煤电","大有能源","*ST安泰","平煤股份","靖远煤电","郑州煤电","宝泰隆","陕西黑猫","永东股份","永泰能源","云煤能源","*ST安煤","ST云维","金瑞矿业","红阳能源","平庄能源"]},"legend":{"enabled":false},"tooltip":{"pointFormat":"<b>{point.y:,.2f}%"},"series":[{"data":[{"name":"中国神华","y":45.7737008871869,"color":"red","line":100},{"name":"陕西煤业","y":13.9849952397528,"color":"red","line":100},{"name":"兖州煤业","y":7.94728364991087,"color":"red","line":100},{"name":"中煤能源","y":6.75590908699317,"color":"red","line":100},{"name":"潞安环能","y":2.23301619734458,"color":"red","line":100},{"name":"西山煤电","y":1.85768316313806,"color":"red","line":100},{"name":"阳泉煤业","y":1.62801501960232,"color":"red","line":100},{"name":"露天煤业","y":1.6062811864195,"color":"red","line":100},{"name":"山煤国际","y":1.53561278787872,"color":"red","line":100},{"name":"美锦能源","y":1.42244030799366,"color":"red","line":100},{"name":"山西焦化","y":1.36440450928246,"color":"red","line":100},{"name":"开滦股份","y":1.22880976980514,"color":"red","line":100},{"name":"大同煤业","y":1.17530697843239,"color":"red","line":100},{"name":"冀中能源","y":1.0993541721975,"color":"red","line":100},{"name":"新集能源","y":1.08395686521732,"color":"red","line":100},{"name":"昊华能源","y":1.07485652911972,"color":"red","line":100},{"name":"金能科技","y":0.977093659113721,"color":"red","line":100},{"name":"兰花科创","y":0.945468501290365,"color":"red","line":100},{"name":"上海能源","y":0.770489392523555,"color":"red","line":100},{"name":"盘江股份","y":0.770019463864486,"color":"red","line":100},{"name":"恒源煤电","y":0.730264986044261,"color":"red","line":100},{"name":"大有能源","y":0.719816997444185,"color":"red","line":100},{"name":"*ST安泰","y":0.686773522364235,"color":"red","line":100},{"name":"平煤股份","y":0.649340354209788,"color":"red","line":100},{"name":"靖远煤电","y":0.522379092403727,"color":"red","line":100},{"name":"郑州煤电","y":0.381319690463667,"color":"red","line":100},{"name":"宝泰隆","y":0.289585542189852,"color":"red","line":100},{"name":"陕西黑猫","y":0.282990673604539,"color":"red","line":100},{"name":"永东股份","y":0.24232082467928,"color":"red","line":100},{"name":"永泰能源","y":0.103634437441179,"color":"red","line":100},{"name":"云煤能源","y":0.0910123318376032,"color":"red","line":100},{"name":"*ST安煤","y":0.0839882854844223,"color":"red","line":100},{"name":"ST云维","y":0.0165809565121355,"color":"red","line":100},{"name":"金瑞矿业","y":0.0165057049186,"color":"red","line":100},{"name":"红阳能源","y":0.00386356492400984,"color":"red","line":100},{"name":"平庄能源","y":-0.0550743315887751,"color":"green","line":100}],"dataLabels":{"enabled":false,"format":"{point.y:,.2f}%","style":{"color":"#FFFFFF","fontWeight":"bold","textShadow":"0px 0px 3px black"}},"pointPadding":0}]},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Cardo"}},"xAxis":{"lineWidth":1,"minorGridLineWidth":0,"tickColor":"#737373"},"yAxis":{"lineWidth":0,"minorGridLineWidth":0,"lineColor":"transparent","tickColor":"#737373","tickWidth":1,"gridLineColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Cardo","debug":false},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-3e79def8148097c01a49">{"viewer":{"width":"100%","height":350,"padding":0,"fill":false},"browser":{"width":"100%","height":500,"padding":0,"fill":false}}</script>
+</body>
+</html>

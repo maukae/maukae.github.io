@@ -1,0 +1,800 @@
+@font-face {
+	font-family: FrutigerLight;
+	src: url(/Style Library/fonts/frutiger_light_condensed.eot?#iefix) format("embedded-opentype"), url(/Style Library/fonts/frutiger_light_condensed.woff) format("woff"), url(/Style Library/fonts/frutiger_light_condensed.ttf) format("truetype"), url(/Style Library/fonts/frutiger_light_condensed.svg#frutiger_light_condensed) format("svg");
+}
+@font-face {
+	font-family: FrutigerBold;
+	src: url(../fonts/frutiger_bold_condensed.eot?#iefix) format("embedded-opentype"), url(../fonts/frutiger_bold_condensed.woff) format("woff"), url(../fonts/frutiger_bold_condensed.ttf) format("truetype"), url(../fonts/frutiger_bold_condensed.svg#frutiger_bold_condensed) format("svg");
+}
+body {
+	margin: 0px; padding: 0px; color: rgb(19, 30, 41); font-family: "FrutigerLight", Arial, Helvetica, sans-serif; font-size: 1em; font-weight: normal;
+}
+body a {
+	
+}
+.content-scroller {
+	margin: 0px; width: 299px; height: auto; clear: both;
+}
+.content-scroller .viewport {
+	width: 283px; height: 170px; overflow: hidden; position: relative;
+}
+.content-scroller .overview {
+	list-style: none; left: 0px; top: 0px; position: absolute;
+}
+.content-scroller .thumb .end {
+	background-color: rgb(0, 61, 93);
+}
+.content-scroller .thumb {
+	background-color: rgb(0, 61, 93);
+}
+.content-scroller .scrollbar {
+	width: 15px; float: right; position: relative;
+}
+.content-scroller .track {
+	padding: 0px 1px; width: 13px; height: 100%; position: relative; background-color: rgb(216, 238, 253);
+}
+.content-scroller .thumb {
+	top: 0px; width: 13px; height: 20px; overflow: hidden; position: absolute; cursor: pointer;
+}
+.content-scroller .thumb .end {
+	width: 13px; height: 5px; overflow: hidden;
+}
+.content-scroller .disable {
+	display: none;
+}
+.content-scroller .scrollbar {
+	background: url("/Style Library/images/tinyscrollbar/bg-scrollbar-track-y.png") no-repeat 0px 0px; width: 15px; float: right; position: relative;
+}
+.content-scroller .track {
+	background: url("/Style Library/images/tinyscrollbar/bg-scrollbar-trackend-y.png") no-repeat 0px 100%; width: 15px; height: 100%; position: relative;
+}
+.content-scroller .thumb {
+	background: url("/Style Library/images/tinyscrollbar/bg-scrollbar-thumb-y.png") no-repeat 50% 100%; left: -5px; top: 0px; width: 25px; height: 20px; overflow: hidden; position: absolute; cursor: pointer;
+}
+.content-scroller .thumb .end {
+	background: url("/Style Library/images/tinyscrollbar/bg-scrollbar-thumb-y.png") no-repeat 50% 0px; width: 25px; height: 5px; overflow: hidden;
+}
+.fancybox-wrap {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-skin {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-outer {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-inner {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-image {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-wrap iframe {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-wrap object {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-nav {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-nav span {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-tmp {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: top;
+}
+.fancybox-wrap {
+	left: 0px; top: 0px; position: absolute; z-index: 8020;
+}
+.fancybox-skin {
+	background: rgb(255, 255, 255); border-radius: 4px; color: rgb(68, 68, 68); position: relative; text-shadow: none; -moz-border-radius: 4px; -webkit-border-radius: 4px;
+}
+.fancybox-opened {
+	z-index: 11002;
+}
+.fancybox-opened .fancybox-skin {
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.5); -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.fancybox-outer {
+	position: relative;
+}
+.fancybox-inner {
+	position: relative;
+}
+.fancybox-inner {
+	overflow: hidden !important;
+}
+.fancybox-wrap .fancybox-inner {
+	overflow: hidden !important;
+}
+.fancybox-error {
+	margin: 0px; padding: 15px; color: rgb(68, 68, 68); white-space: nowrap;
+}
+.fancybox-image {
+	width: 100%; height: 100%; display: block;
+}
+.fancybox-iframe {
+	width: 100%; height: 100%; display: block;
+}
+.fancybox-image {
+	max-height: 100%; max-width: 100%;
+}
+#fancybox-loading {
+	background-image: url("../images/fancybox_sprite.png");
+}
+.fancybox-close {
+	background-image: url("../images/fancybox_sprite.png");
+}
+.fancybox-prev span {
+	background-image: url("../images/fancybox_sprite.png");
+}
+.fancybox-next span {
+	background-image: url("../images/fancybox_sprite.png");
+}
+#fancybox-loading {
+	background-image: none !important;
+}
+#fancybox-loading {
+	background-position: 0px -108px; left: 50%; top: 50%; margin-top: -22px; margin-left: -22px; position: fixed; z-index: 8060; cursor: pointer; opacity: 0.8;
+}
+#fancybox-loading div {
+	background: url("../images/ajax-loader.gif") no-repeat center; width: 46px; height: 46px;
+}
+.fancybox-close {
+	top: -18px; width: 36px; height: 36px; right: -18px; position: absolute; z-index: 8040; cursor: pointer;
+}
+.fancybox-nav {
+	background: url("../images/blank.gif"); top: 0px; width: 40%; height: 100%; text-decoration: none; position: absolute; z-index: 8040; cursor: pointer; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.fancybox-prev {
+	left: 0px;
+}
+.fancybox-next {
+	right: 0px;
+}
+.fancybox-nav span {
+	top: 50%; width: 36px; height: 34px; margin-top: -18px; visibility: hidden; position: absolute; z-index: 8040; cursor: pointer;
+}
+.fancybox-prev span {
+	background-position: 0px -36px; left: 10px;
+}
+.fancybox-next span {
+	background-position: 0px -72px; right: 10px;
+}
+.fancybox-nav:hover span {
+	visibility: visible;
+}
+.fancybox-tmp {
+	left: -99999px; top: -99999px; overflow: visible !important; visibility: hidden; position: absolute; max-height: 99999px; max-width: 99999px;
+}
+.processing.nbLoading {
+	background: url("../images/ajax-loader.gif") no-repeat center; opacity: 0.1;
+}
+.processing {
+	background: url("../images/ajax-loader.gif") no-repeat center; opacity: 0.1;
+}
+.fancybox-lock {
+	width: auto; overflow: hidden !important;
+}
+.fancybox-lock body {
+	overflow: hidden !important;
+}
+.fancybox-lock-test {
+	-ms-overflow-y: hidden !important;
+}
+.fancybox-overlay {
+	background: url("../images/fancybox_overlay.png"); left: 0px; top: 0px; overflow: hidden; display: none; position: absolute; z-index: 11001;
+}
+.fancybox-overlay-fixed {
+	right: 0px; bottom: 0px; position: fixed;
+}
+.fancybox-lock .fancybox-overlay {
+	overflow: auto; -ms-overflow-y: scroll;
+}
+@media not all, not all, not all
+{
+#fancybox-loading {
+	background-image: url("../images/fancybox_sprite-2x.png"); background-size: 44px 152px;
+}
+.fancybox-close {
+	background-image: url("../images/fancybox_sprite-2x.png"); background-size: 44px 152px;
+}
+.fancybox-prev span {
+	background-image: url("../images/fancybox_sprite-2x.png"); background-size: 44px 152px;
+}
+.fancybox-next span {
+	background-image: url("../images/fancybox_sprite-2x.png"); background-size: 44px 152px;
+}
+#fancybox-loading div {
+	background-image: url("../images/fancybox_loading-2x.gif"); background-size: 24px 24px;
+}
+}
+.dataTables_processing {
+	background-position: center; width: 46px; height: 46px; margin-right: auto; margin-left: auto; display: none; z-index: 999; opacity: 0.1; background-image: url("../images/ajax-loader.gif"); background-repeat: no-repeat;
+}
+.hidden {
+	display: none;
+}
+.cart {
+	background: rgb(255, 255, 255); width: 701px; height: auto; float: left;
+}
+.cartHeader {
+	background: rgb(112, 115, 114); padding: 10px; width: 680px; color: rgb(255, 255, 255); text-transform: uppercase; float: left;
+}
+.quantityError {
+	margin: 0px; padding: 10px; font-size: 0.86em; float: left;
+}
+.download {
+	background: rgb(255, 255, 255); width: 500px; height: auto; float: left;
+}
+.email {
+	background: rgb(255, 255, 255); width: 701px; height: auto; float: left;
+}
+input.cartQuantity {
+	background: 0px 0px rgb(239, 243, 246); margin: 0px; padding: 0px; border-radius: 5px; border: 1px solid rgb(236, 236, 236); border-image: none; width: 40px; height: 22px; color: rgb(153, 153, 153);
+}
+table.downloadTable {
+	border-right-color: rgb(226, 226, 226); border-bottom-color: rgb(226, 226, 226); border-left-color: rgb(226, 226, 226); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+table.modalTable {
+	background: rgb(255, 255, 255); margin: 0px; padding: 0px; width: 100%; text-align: center; float: left; border-collapse: collapse;
+}
+table.modalTable tr {
+	border-top-color: rgb(226, 226, 226); border-top-width: 1px; border-top-style: solid;
+}
+table.modalTable th {
+	padding: 10px; font-family: "FrutigerBold"; font-weight: normal; border-left-color: rgb(226, 226, 226); border-left-width: 1px; border-left-style: solid;
+}
+table.modalTable th:first-child {
+	text-align: left; border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+table.modalTable td:first-child {
+	text-align: left; border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+table.modalTable td {
+	padding: 10px; border-left-color: rgb(226, 226, 226); border-left-width: 1px; border-left-style: solid;
+}
+table.modalTable td a img {
+	-webkit-transition-duration: 0.3s, 0.3s; -moz-transition-duration: 0.3s, 0.3s;
+}
+table.modalTable td a:hover img {
+	opacity: 0.5;
+}
+.cartLeft {
+	background: rgb(239, 239, 239); margin: 15px 15px 0px 0px; width: 200px; height: auto; float: left;
+}
+.cartRight {
+	background: rgb(239, 239, 239); margin: 15px 0px 0px; width: 484px; height: auto; border-right-color: rgb(226, 226, 226); border-bottom-color: rgb(226, 226, 226); border-left-color: rgb(226, 226, 226); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; float: left;
+}
+.cartName {
+	background: rgb(201, 202, 204); width: 100%; color: rgb(102, 102, 102); float: left;
+}
+.cartNameText {
+	padding: 9px 0px 0px 8px; float: left;
+}
+.cartNameEdit {
+	float: right;
+}
+.cartNameEdit a {
+	background: url("../images/arrow_r_14x7.png") no-repeat right rgb(86, 160, 211); padding: 10px 20px 10px 10px; color: rgb(255, 255, 255); font-family: FrutigerBold; font-size: 0.82em; float: right; transition-duration: 0.3s, 0.3s;
+}
+.cartNameEdit a:hover {
+	background-color: rgb(18, 58, 95);
+}
+.cartNameDisplay {
+	padding: 10px; width: 180px; float: left;
+}
+.cartNameDisplay p:first-child {
+	font-family: "FrutigerBold";
+}
+.cartNameDisplay p {
+	margin: 0px;
+}
+.cartNameEditBox {
+	padding: 10px; width: 180px; float: left;
+}
+.cartLabel {
+	width: 100%; float: left;
+}
+.cartField {
+	width: 100%; float: left;
+}
+.cartField input {
+	background: 0px 0px rgb(255, 255, 255); margin: 0px 0px 5px; padding: 0px; border-radius: 5px; border: 1px solid rgb(236, 236, 236); border-image: none; width: 100%; height: 22px; color: rgb(153, 153, 153);
+}
+.cartField select {
+	background: 0px 0px rgb(255, 255, 255); margin: 0px 0px 5px; padding: 5px; border-radius: 5px; border: 1px solid rgb(236, 236, 236); border-image: none; width: 100%; height: 28px; color: rgb(153, 153, 153);
+}
+a.night {
+	background-color: rgb(19, 30, 41);
+}
+a.night:hover {
+	background-color: rgb(18, 58, 95);
+}
+.scarlet {
+	color: rgb(227, 27, 35); display: block;
+}
+.cartPager {
+	background: rgb(239, 239, 239); width: 100%; float: left;
+}
+.downloadPager {
+	background: rgb(239, 239, 239); width: 100%; float: left;
+}
+.downloadHeader {
+	background: rgb(112, 115, 114); padding: 10px; width: 480px; color: rgb(255, 255, 255); text-transform: uppercase; float: left;
+}
+.emailHeader {
+	background: rgb(112, 115, 114); padding: 10px; width: 680px; color: rgb(255, 255, 255); text-transform: uppercase; float: left;
+}
+.emailLeft {
+	background: rgb(239, 239, 239); margin: 15px 15px 0px 0px; width: 199px; float: left; min-height: 335px;
+}
+.emailLeftText {
+	padding: 10px; width: 180px; float: left;
+}
+.emailLeftText p:first-child {
+	margin: 0px 0px 3px;
+}
+.emailLeftText p {
+	margin: 10px 0px 3px;
+}
+.emailLeftText input {
+	width: 174px;
+}
+.emailLeftText textarea {
+	width: 174px; height: 100px;
+}
+.emailRight {
+	margin: 15px 0px 0px; width: 484px; border-right-color: rgb(226, 226, 226); border-bottom-color: rgb(226, 226, 226); border-left-color: rgb(226, 226, 226); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; float: left; min-height: 334px;
+}
+.emailPager {
+	background: rgb(239, 239, 239); width: 100%; border-top-color: rgb(226, 226, 226); border-top-width: 1px; border-top-style: solid; float: left;
+}
+.addFavorites {
+	margin: 0px; padding: 0px; width: 320px; height: auto; float: left;
+}
+.addFavoritesHeader {
+	color: rgb(0, 58, 98); padding-bottom: 4px; font-family: Frutiger55Roman; font-size: 20px; font-weight: 500; border-bottom-color: rgba(0, 79, 133, 0.8); border-bottom-width: 1px; border-bottom-style: solid;
+}
+ul.addFavoritesList li a {
+	background: url("../images/arrow_r_20x10.png") no-repeat right; padding: 10px; width: 298px; border-top-color: rgb(226, 226, 226); border-top-width: 1px; border-top-style: solid; float: left; display: inline-block;
+}
+ul.addFavoritesList li a:hover {
+	background: url("../images/arrow_r_20x10.png") no-repeat right rgb(239, 239, 239);
+}
+ul.addFavoritesAudienceList {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none; float: left; list-style-type: none;
+}
+ul.addFavoritesAudienceList li a {
+	margin: 0px; padding: 15px 0px 0px; border: currentColor; border-image: none; width: 100%; color: rgb(0, 79, 133); text-transform: uppercase; font-family: frutigerbold, "Microsoft Jhenghei", "MS PGothic"; font-size: 15px; display: inline-block;
+}
+ul.addFavoritesAudienceList li a:hover {
+	color: rgb(86, 160, 222);
+}
+ul.addFavoritesAudienceList li a::after {
+	top: 1px; right: -3px; color: rgb(18, 58, 95); font-family: "Linearicons-Free"; font-size: 14px; position: relative; content: "\e876";
+}
+.createFolder {
+	padding: 35px 10px 25px 0px; width: 298px; float: left;
+}
+.orderCart {
+	padding: 35px 10px 25px 0px; width: 298px; float: left;
+}
+.createFolder p {
+	margin: 0px 0px 5px; line-height: 16px; font-family: Frutiger55Roman, "Microsoft Jhenghei", "MS PGothic"; font-size: 12px;
+}
+.orderCart p {
+	margin: 0px 0px 15px;
+}
+.breakTop {
+	margin: 10px 0px 0px; width: 100%; float: left;
+}
+.breakBottom {
+	margin: 10px 0px 0px; width: 100%; float: left;
+}
+.orderCart input {
+	margin: 0px; padding: 0px; top: 1px; width: 13px; height: 13px; position: relative;
+}
+input#dcCheck {
+	margin: 0px; padding: 0px; top: 1px; width: 13px; height: 13px; position: relative;
+}
+.createFolder input {
+	background: rgb(239, 243, 246); margin: 0px; padding: 0px; border-radius: 5px; border: 1px solid rgb(236, 236, 236); border-image: none; width: 294px; height: 28px; color: rgb(153, 153, 153);
+}
+.email.shareModal .emailLeftText input {
+	padding-top: 0px;
+}
+.registration {
+	margin: 0px; padding: 0px 10px; width: 320px; float: left;
+}
+.registration input {
+	margin: 0px 0px 15px;
+}
+.registration select {
+	background: 0px 0px rgb(239, 243, 246); margin: 5px 0px; padding: 5px; border-radius: 5px; border: 1px solid rgb(236, 236, 236); border-image: none; width: 296px; height: 28px; color: rgb(153, 153, 153);
+}
+.registration.noButton {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.complaint {
+	margin: 0px; padding: 0px; width: 420px; float: left;
+}
+.complaintHeader {
+	background: 0px 0px rgb(112, 115, 114); padding: 10px; width: 400px; color: rgb(255, 255, 255); text-transform: uppercase; float: left;
+}
+.complaintBox {
+	padding: 20px 10px 15px; width: 398px; border-right-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; float: left;
+}
+.complaint p {
+	margin: 0px 0px 15px;
+}
+textarea.complaint {
+	background: 0px 0px rgb(239, 243, 246); border-radius: 5px; border: 1px solid rgb(236, 236, 236); border-image: none; width: 395px; height: 100px; color: rgb(153, 153, 153);
+}
+.fundContact {
+	width: 700px; height: auto; float: left;
+}
+.fundContactHeader {
+	background: 0px 0px rgb(112, 115, 114); padding: 10px; width: 680px; color: rgb(255, 255, 255); text-transform: uppercase; float: left;
+}
+.fundContactLeft {
+	margin: 15px 15px 0px 0px; width: 334px; float: left;
+}
+.fundContactRight {
+	margin: 15px 0px 0px; padding: 0px 0px 0px 15px; width: 335px; border-left-color: rgb(226, 226, 226); border-left-width: 1px; border-left-style: solid; float: left;
+}
+.fundContactFull {
+	width: 100%; float: left;
+}
+.fundContactItem {
+	margin: 0px 0px 3px; width: 100%; font-family: "FrutigerBold"; float: left;
+}
+.fundContactItem.spacer {
+	margin: 15px 0px 3px;
+}
+.fundContactLabel {
+	margin: 0px 0px 10px; padding: 7px 0px 0px; width: 100px; float: left;
+}
+.fundContactField {
+	margin: 0px 0px 10px; width: 230px; float: left;
+}
+.fundContactField input {
+	background: 0px 0px rgb(239, 243, 246); margin: 5px 0px 0px; padding: 0px 5px; border-radius: 5px; border: 1px solid rgb(236, 236, 236); border-image: none; width: 222px; height: 26px; color: rgb(153, 153, 153);
+}
+.fundContactText textarea {
+	background: 0px 0px rgb(239, 243, 246); margin: 10px 0px 15px; border-radius: 5px; border: 1px solid rgb(236, 236, 236); border-image: none; width: 694px; height: 93px; color: rgb(153, 153, 153);
+}
+.fundContactText {
+	width: 100%; font-size: 0.95em; float: left;
+}
+.complaintCaptcha {
+	margin: 15px 0px 0px; width: 100%; float: left;
+}
+.fundContactCaptcha {
+	margin: 0px 0px 15px; width: 100%; float: left;
+}
+.modalError {
+	margin: 5px 0px; width: 100%; color: rgb(227, 27, 35); float: left;
+}
+#download-cart-items .email {
+	width: auto; height: auto;
+}
+#download-cart-items .emailLeftText {
+	width: auto;
+}
+#download-cart-items .createFolder {
+	padding: 0px;
+}
+.orderCart {
+	padding: 0px;
+}
+#divMessage {
+	padding: 0px; width: 318px; height: 100px; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; float: left;
+}
+span#lblMessage {
+	padding: 22px; float: left;
+}
+body {
+	
+}
+#Form1 {
+	
+}
+.createFolder ul.addFavoritesList li a {
+	width: 262px;
+}
+#divFoldersList .createFolder {
+	padding: 10px;
+}
+.orderCart {
+	padding: 10px;
+}
+.cart-show-prompt-container {
+	left: 0px; top: 0px; width: 100%; height: 100%; visibility: hidden; position: fixed; z-index: 2002; opacity: 0.7; background-color: rgb(119, 119, 119);
+}
+div#cart-show-prompt-content {
+	border: 5px solid rgb(0, 0, 0); border-image: none; left: 50%; top: 50%; width: 300px; margin-top: -100px; margin-left: -100px; display: none; position: fixed; z-index: 2003;
+}
+.myFoldersPagerText {
+	padding: 8px 0px 0px 8px; float: left;
+}
+.myDocumentsPagerText {
+	padding: 8px 0px 0px 8px; float: left;
+}
+.myFoldersArrows {
+	float: right;
+}
+.myDocumentsArrows {
+	float: right;
+}
+.error {
+	color: rgb(204, 0, 0); font-size: 1em; font-weight: normal;
+}
+a.submit {
+	color: rgb(255, 255, 255);
+}
+a.submit:hover {
+	background: url("../images/arrow_r.png") no-repeat 90% 50% rgb(18, 58, 95); color: rgb(255, 255, 255); opacity: 1;
+}
+a.button {
+	color: rgb(255, 255, 255);
+}
+a.button:hover {
+	color: rgb(255, 255, 255);
+}
+.destination a {
+	color: rgb(255, 255, 255);
+}
+.destination a:hover {
+	color: rgb(255, 255, 255); text-decoration: underline;
+}
+.disclosures a:hover {
+	color: rgb(255, 255, 255); text-decoration: underline;
+}
+.footer-box a {
+	color: rgb(255, 255, 255);
+}
+.disclosures a {
+	color: rgb(204, 204, 204);
+}
+a.back {
+	color: rgb(255, 255, 255);
+}
+a.back:hover {
+	color: rgb(255, 255, 255);
+}
+.sectionBoxHome a {
+	color: rgb(255, 255, 255);
+}
+.sectionBoxAlt a {
+	color: rgb(255, 255, 255);
+}
+.sectionBoxHome a:hover {
+	color: rgb(86, 160, 211);
+}
+.sectionBoxAlt a:hover {
+	color: rgb(86, 160, 211);
+}
+.eventName a {
+	color: rgb(255, 255, 255);
+}
+.litAction a {
+	color: rgb(255, 255, 255);
+}
+a.cancel {
+	margin: 10px 10px 10px 0px; color: rgb(255, 255, 255);
+}
+.myFoldersEdit a {
+	color: rgb(255, 255, 255);
+}
+.myDocumentsEdit a {
+	color: rgb(255, 255, 255);
+}
+.myProfileEdit a {
+	color: rgb(255, 255, 255);
+}
+.email.shareModal .shareHeader {
+	background: rgb(112, 115, 114); padding: 10px; width: 300px; color: rgb(255, 255, 255); text-transform: uppercase; float: left;
+}
+.email.shareModal .emailLeft {
+	background: rgb(255, 255, 255); margin: 0px;
+}
+.email.shareModal .createFolder {
+	width: 318px;
+}
+.orderCart {
+	width: 318px;
+}
+.email.shareModal .emailLeftText p {
+	margin: 10px 0px 3px;
+}
+.emailLeftText textarea {
+	color: rgb(153, 153, 153); font-family: "FrutigerLight", Arial, Helvetica, sans-serif;
+}
+.shellSocial {
+	margin: 0px; padding: 0px; width: 245px; height: 248px; float: left;
+}
+.iconTwitter {
+	width: 122px; height: 122px; float: left;
+}
+.iconFacebook {
+	width: 122px; height: 122px; float: left;
+}
+.iconLinkedin {
+	width: 122px; height: 122px; float: left;
+}
+.iconEmail {
+	width: 122px; height: 122px; float: left;
+}
+.iconTwitter img {
+	-webkit-transition-duration: 0.3s, 0.3s; -moz-transition-duration: 0.3s, 0.3s;
+}
+.iconFacebook img {
+	-webkit-transition-duration: 0.3s, 0.3s; -moz-transition-duration: 0.3s, 0.3s;
+}
+.iconLinkedin img {
+	-webkit-transition-duration: 0.3s, 0.3s; -moz-transition-duration: 0.3s, 0.3s;
+}
+.iconEmail img {
+	-webkit-transition-duration: 0.3s, 0.3s; -moz-transition-duration: 0.3s, 0.3s;
+}
+.iconTwitter:hover img {
+	opacity: 0.8;
+}
+.iconFacebook:hover img {
+	opacity: 0.8;
+}
+.iconLinkedin:hover img {
+	opacity: 0.8;
+}
+.iconEmail:hover img {
+	opacity: 0.8;
+}
+.addFavoritesHeader .changeCountry {
+	margin: 8px 0px 0px; color: rgb(204, 204, 204); text-transform: none; font-size: 10px; display: block; position: absolute;
+}
+.addFavoritesHeader .changeCountry a {
+	color: rgb(170, 170, 170); text-decoration: none;
+}
+a.termsAccept {
+	background: none; padding: 11px 38px; border-radius: 0px; border: 1px solid rgb(0, 79, 133); border-image: none; color: rgb(0, 79, 133); text-transform: uppercase; font-family: frutigerbold, "Microsoft Jhenghei", "MS PGothic"; font-size: 15px; float: none; display: inline-block;
+}
+a.termsAccept:hover {
+	background: rgb(0, 79, 133); color: rgb(255, 255, 255); opacity: 1;
+}
+a.termsDecline {
+	background: none; padding: 11px 38px; border-radius: 0px; border: currentColor; border-image: none; color: rgb(0, 79, 133); text-transform: uppercase; font-family: frutigerbold, "Microsoft Jhenghei", "MS PGothic"; font-size: 15px; float: none; display: inline-block;
+}
+a.termsDecline:hover {
+	opacity: 1;
+}
+.termsContent {
+	width: 700px;
+}
+.termsContent .showing-header {
+	width: 680px; color: rgb(0, 58, 98); padding-bottom: 4px; font-family: Frutiger57; font-size: 20px; font-weight: 500; border-bottom-color: rgba(0, 79, 133, 0.8); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.termsContent .showing-header h1 {
+	margin: 0px; padding: 10px 0px 0px 10px; font-size: 1.1em;
+}
+.termsContent .termsBox {
+	margin: 0px; width: 680px;
+}
+.termsContent .termsBoxPad {
+	margin: 20px 15px; padding: 0px 15px 0px 0px; width: 663px; float: none;
+}
+.termsContent .termsBoxPad p:first-child {
+	margin-top: 15px;
+}
+.termsContent .termsBoxPad p {
+	line-height: 16px; font-family: Frutiger55Roman, "Microsoft Jhenghei", "MS PGothic"; font-size: 12px;
+}
+.termsContent .termsAction {
+	margin: 25px 0px 16px; width: 100%; text-align: center; float: none;
+}
+.main-content#login {
+	min-height: auto;
+}
+.termsBoxPad em {
+	font-style: normal;
+}
+.termsBoxPad h3 {
+	font-size: 1em;
+}
+.modalForm .form-error.alert.alert-danger {
+	display: none;
+}
+.modalForm .error {
+	font-size: 0.9em;
+}
+.modalForm {
+	background: url("/PublishingImages/feature_solving_download_modal.png") no-repeat right bottom; width: 600px; height: 450px;
+}
+.modalForm .headerGreyBg {
+	background: 0px 0px rgba(0, 0, 0, 0); margin: 0px 0px 30px; width: 100%; color: rgb(18, 58, 95); font-family: frutigerbold; font-size: 1.5em; float: left;
+}
+.modalForm .shellHeader {
+	padding: 20px 0px 0px;
+}
+.modalForm p.contactText {
+	color: rgb(112, 115, 114); font-family: frutigerbold;
+}
+.form-header {
+	background: rgb(221, 221, 221); padding: 5px; width: 100%; margin-bottom: 20px;
+}
+.nbFormFieldBlock {
+	margin: 0px 0px 15px;
+}
+.nbFormField label {
+	width: 74px; text-align: left; color: rgb(102, 102, 102); font-size: 0.9em; display: inline-block;
+}
+.nbFormField label.checkbox {
+	width: auto; text-align: left; margin-left: 0px;
+}
+.nbFormField label.radio {
+	width: auto; text-align: left; margin-left: 0px;
+}
+.nbFormField input[type='text'] {
+	padding: 4px; border: 1px solid rgb(153, 153, 153); border-image: none; width: 180px; margin-left: 5px;
+}
+.nbFormField button {
+	background: url("../images/arrow_r.png") no-repeat 86% 50% rgb(86, 160, 211); margin: 0px 0px 0px 6px; padding: 5px 23px 5px 10px; border: currentColor; border-image: none; color: rgb(255, 255, 255); font-family: frutigerlight; cursor: pointer;
+}
+.nbFormField button:hover {
+	background-color: rgb(18, 58, 95);
+}
+.form-actions {
+	background: rgb(204, 204, 204); width: 100%; text-align: right;
+}
+.form-actions a {
+	background: rgb(255, 255, 255); margin: 5px; padding: 2px 10px; border: 1px solid rgb(153, 153, 153); border-image: none; display: inline-block; box-shadow: 1px 1px 2px #666;
+}
+.solvingImage {
+	background: url("/PublishingImages/feature_solving_download_modal.png") no-repeat right bottom; width: 100%; height: 163px; display: none;
+}
+p.helperText {
+	color: rgb(112, 115, 114); font-family: frutigerbold; margin-top: 0px;
+}
+select#stateOrProvince1 {
+	margin: 0px 0px 0px 5px; padding: 4px; border: 1px solid rgb(153, 153, 153); border-image: none; width: 190px;
+}
+.modalForm.dlpaImg {
+	background: url("/PublishingImages/feature_pa_download_modal.png") no-repeat right bottom; width: 600px; height: 450px;
+}
+.modalForm.dllsImg {
+	background: url("/PublishingImages/feature_ls_download_modal.png") no-repeat right bottom; width: 600px; height: 450px;
+}
+#download-cart-items .emailHeader {
+	width: 685px !important;
+}
+@media all and (max-width:767px)
+{
+.termsContent {
+	width: 100% !important;
+}
+.showing-header {
+	width: 100% !important;
+}
+.termsBox {
+	width: 100% !important;
+}
+.termsBoxPad {
+	width: auto !important;
+}
+}
+@media only screen and (device-width:480px), only screen and (device-width:320px)
+{
+.termsContent {
+	width: 250px;
+}
+.termsContent .showing-header {
+	width: 250px;
+}
+.termsContent .termsBox {
+	width: 250px;
+}
+.termsContent .termsBoxPad {
+	width: 205px; height: 200px;
+}
+}

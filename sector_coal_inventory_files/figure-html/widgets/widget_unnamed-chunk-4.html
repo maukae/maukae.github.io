@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="highchart_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="highchart_libs/jquery-1.11.1/jquery.min.js"></script>
+<script src="highchart_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="highchart_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
+<link href="highchart_libs/highcharts-7.0.1/css/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="highchart_libs/highcharts-7.0.1/highcharts.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-3d.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-more.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/stock.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/map.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/annotations.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/boost.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drag-panes.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drilldown.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/item-series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/offline-exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/overlapping-datalabels.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/export-data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/funnel.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/heatmap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/treemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sankey.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/solid-gauge.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/streamgraph.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sunburst.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/vector.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/wordcloud.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/xrange.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/tilemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/venn.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/gantt.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/timeline.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/parallel-coordinates.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/grouped-categories.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/motion.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/multicolor_series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/reset.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/symbols-extra.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/text-symbols.js"></script>
+<script src="highchart_libs/highchart-binding-0.7.0/highchart.js"></script>
+<script src="highchart_libs/pymjs-1.3.2/pym.v1.min.js"></script>
+  <title>highchart</title>
+</head>
+<body style="background-color:white;">
+<div id="htmlwidget_container">
+  <div id="htmlwidget-bd7e115b1c876f8da9d8" style="width:100%;height:400px;" class="highchart html-widget"></div>
+  <script>HTMLWidgets.pymChild = new pym.Child();HTMLWidgets.addPostRenderHandler(function(){
+                                setTimeout(function(){HTMLWidgets.pymChild.sendHeight();},100);
+                            });</script>
+</div>
+<script type="application/json" data-for="htmlwidget-bd7e115b1c876f8da9d8">{"x":{"hc_opts":{"title":{"text":"煤炭开采洗选(中信)指数与产成品存货同比"},"yAxis":[{"title":{"text":""},"lineWidth":4},{"title":{"text":""},"opposite":true}],"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":4000},"treemap":{"layoutAlgorithm":"squarified"}},"subtitle":{"text":"更新日期:2018-12-31"},"xAxis":{"categories":["2004-12","2005-02","2005-03","2005-04","2005-05","2005-06","2005-07","2005-08","2005-09","2005-10","2005-11","2005-12","2006-02","2006-03","2006-04","2006-05","2006-06","2006-07","2006-08","2006-09","2006-10","2006-11","2006-12","2007-02","2007-05","2007-08","2007-11","2008-02","2008-05","2008-08","2008-11","2009-02","2009-05","2009-08","2009-11","2010-02","2010-05","2010-08","2010-11","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12"]},"series":[{"data":[39.94,57.68,47.25,48.75,42.98,39.78,49.3,51.34,53.59,54.98,45.6,44.3,29.45,47.42,44.08,44.67,39.89,34.09,29.55,23.75,22.22,18.49,26.4,13.61,13.87,19.15,20.77,11.68,23.47,25.8,63.34,39.31,23.42,18.8285,-2.9756,16.5722,16.4444,15.2699,19.0844,20.3976,27.8878,31.9536,31.322,31.299,26.9342,25.8558,23.9889,20.8106,26.8184,25.9845,34.9987,27.5354,25.6303,24.3793,24.2049,29.0444,33.7304,35.4054,27.4759,19.08,26.3011,3.0978,10.0659,17.5038,11.0607,17.8795,12.074,10.3725,5.944,10.4395,11.8006,15.6961,17.9496,18.0744,16.0448,16.1689,12.9926,14.6037,18.9613,17.9137,16.2193,13.9585,17.3332,11.0654,9.1106,8.4977,9.6346,9.3939,7.6517,2.3251,3.5417,3.5104,7.8,4.1,-1.4,-6.1,-9,-9.3,-9.7,-10,-8.6,-9.8,-10.6,-9.1,-9.1,-3.5,-4.4,-3,-3.4,-4.3,-7,-8.4,-7.9,-4.5,-2.9,-1.3,-9.9,-4.4,-8.5,-8.5,-6.5,-2.3,-1.8,-4.5,-4.8,-5.6,-10.4],"type":"line","name":"煤炭开采和洗选业产成品存货同比","showInLegend":true,"connectNulls":true},{"data":[1.29342814334081,1.29422523274248,1.30509934770627,1.38463703043567,1.29133688792922,1.17923641189084,1.1673212538338,1.06527960817125,1.10711998932015,1.02359621655873,0.975960618858728,1.02252608891032,1.02117472230957,1.03488661648513,1.01643152994444,0.954860906373517,0.88836803505547,0.813714909778901,0.785274711887395,0.735000867388263,0.740852844713576,0.70665671073699,0.697950522907308,0.722377955486062,0.775354329540448,0.940964155411963,1.07103951095061,0.964163584617746,1.26748264011563,1.07118159333692,0.832669332597532,0.860326898235016,1.1208650284037,1.16974236747833,1.26241086015387,1.06906768575104,1.06400908856823,1.02253854110307,1.12254018888775,1.16683002508779,1.21910888984163,1.23433354109864,1.23916708659688,1.27857402162573,1.29953862644767,1.30014895842401,1.34977211952948,1.25943254051206,1.22025170747921,1.18462506585908,1.25365436799282,1.2142760099625,1.26299695470397,1.25227637602518,1.10926803060823,1.13422711512808,1.07887708256914,1.13419608675108,1.09770221214392,1.06518364432302,1.09537881650204,1.01376051481213,0.956248070238022,0.896489297794336,0.817826309648084,0.738197400982297,0.693104293267288,0.709595447392026,0.67594142518972,0.660018999741124,0.652023311294401,0.609181822176208,0.510529328087293,0.51872910852118,0.519991737512028,0.526959065882032,0.514188341942309,0.552271387638406,0.535971223431563,0.534373968408579,0.518861917047235,0.512202455411055,0.527906325760318,0.471422305645785,0.45495531404291,0.457957610387073,0.389596050877023,0.452467280740141,0.411356252777218,0.422865697892003,0.403801541595758,0.378204817250342,0.352353955558643,0.335925155347982,0.432135045306033,0.378975028005806,0.414979452531377,0.371106121555457,0.368134894836074,0.382825680596273,0.38018001836703,0.387840067146774,0.409047440510392,0.391663219021708,0.382694404897007,0.396549716634518,0.409792068401462,0.402999961750262,0.408814312012588,0.418847289569261,0.463857351356421,0.461069251701572,0.451496473437371,0.417811534449824,0.451467329450015,0.446958648046082,0.46777542586893,0.416158547070175,0.415492715227859,0.403980818241863,0.435182035393178,0.421943146504439,0.441655077168312,0.462195980378249,0.496237356935567,0.454636209355852,0.450273914830231],"type":"line","name":"煤炭开采洗选(中信)/Wind全A(右轴)","yAxis":1,"showInLegend":true,"connectNulls":true}],"tooltip":{"enabled":true,"valueDecimals":2}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Roboto","color":"#666666"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"plotOptions":{"line":{"marker":{"enabled":false}},"spline":{"marker":{"enabled":false}},"area":{"marker":{"enabled":false}},"areaspline":{"marker":{"enabled":false}},"arearange":{"marker":{"enabled":false}},"bubble":{"maxSize":"10%"}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-bd7e115b1c876f8da9d8">{"viewer":{"width":"100%","height":400,"padding":0,"fill":false},"browser":{"width":"100%","height":400,"padding":0,"fill":false}}</script>
+</body>
+</html>

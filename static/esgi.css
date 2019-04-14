@@ -1,0 +1,214 @@
+/*Section spacing*/
+section:not(.section-head):not(.hero):not(.content-paragraph):not(.jumbo-callout):not(.multi-column-boxes), section[id] {
+    margin-bottom: 65px;
+}
+
+section[class=content-paragraph] {
+    margin-bottom: 20px;
+}
+
+section[class*=multi-column-boxes] {
+    margin-bottom: 35px;
+}
+/*Section spacing*/
+
+
+/* Hero */
+#feature-bar {
+    background-color: rgba(3, 20, 35, .85);
+    color: #efefef;
+}
+
+.cover-img {
+    background: transparent url("/publishingimages/esg/ESG_hero.jpg") no-repeat scroll center top / cover;
+}
+
+/*@media (max-width:767px) {
+    .hero-text-box {
+        top: 35%;
+        transform: translateY(-35%);
+    }
+}*/
+/* Hero */
+
+
+
+/* Partner-Box */
+.partner-box .partner-card h6 {
+    margin-bottom: 10px;
+}
+
+
+/* Partner-Box */
+
+
+/*Jumbo Video Callout */
+
+.external-data-trigger {
+    display: inline-block;
+}
+
+
+
+.jumbo-callout-content {
+    top: 0;
+    transform: none;
+    padding-right: 90px;
+}
+
+.video-player-anchor {
+    min-height: 200px;
+}
+/*Jumbo Video Callout */
+
+
+/*Text Callout */
+.text-callout-copy .button {
+    width: 215px;
+}
+
+    .text-callout-copy .button:after {
+        padding-bottom: 20%;
+    }
+
+#sticky-button.affix .button {
+    width: 100%;
+    background-color: #dcdcdc;
+    border: none;
+}
+
+    #sticky-button.affix .button.white .button-label {
+        color: #333;
+    }
+
+    #sticky-button.affix .button:after {
+        padding-bottom: 44px;
+    }
+
+
+.text-callout-copy p {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .text-callout-inner {
+        padding-bottom: 5px;
+    }
+}
+
+
+
+
+@media (max-width: 767px) and (orientation: landscape) {
+    #sticky-button.affix {
+        position: static;
+    }
+
+        #sticky-button.affix .button {
+            width: 215px;
+            background-color: #fff;
+            border: solid 1px #003a62;
+        }
+
+            #sticky-button.affix .button.white .button-label {
+                color: #003a62;
+            }
+
+            #sticky-button.affix .button:after {
+                padding-bottom: 20%;
+            }
+}
+/*Text Callout */
+
+
+/*carousel */
+
+.carousel-slide-body-container img {
+    margin-top: 0;
+}
+
+.carousel-inner #collapseThree .carousel-slide-title {
+    font-size: 1.2em;
+}
+
+.carousel-slide-body-container {
+    padding-bottom: 0;
+}
+
+    .carousel-slide-body-container .text-section,
+    .carousel-inner .text-section li {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+
+@media (max-width: 991px) {
+    .carousel-slide-body-container .text-section {
+        padding-bottom: 10px;
+    }
+
+        .carousel-slide-body-container .text-section h6 {
+            font-size: 15px;
+        }
+}
+
+
+@media (max-width: 767px) {
+    .carousel-slide-body-container img {
+        margin-top: 0;
+    }
+}
+
+
+/*carousel */
+
+
+/*Stewardship */
+section.stewardship {
+    margin-bottom: 65px;
+    font-size: 15px;
+    line-height: 19px;
+    font-family: "Frutiger47LightCn", "Microsoft Jhenghei", "MS PGothic";
+    color: #222;
+}
+
+    section.stewardship .row > div {
+        min-height: 205px;
+    }
+
+    section.stewardship a.button {
+        display: block;
+        margin-top: 15px;
+        position: absolute;
+        bottom: 0;
+    }
+
+
+@media (max-width: 1199px) {
+    section.stewardship .row > div {
+        min-height: 225px;
+    }
+}
+
+@media (max-width: 991px) {
+    section.stewardship .row > div {
+        min-height: 0px;
+        margin-bottom: 30px;
+    }
+
+    section.stewardship a.button {
+        position: relative;
+    }
+}
+
+@media (max-width:767px) {
+}
+/*Stewardship */
+
+
+/*Weapons Policy*/
+
+section.weapons-policy {
+    margin-bottom: 65px;
+}
+
+/*Weapons Policy*/

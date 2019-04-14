@@ -1,0 +1,90 @@
+body {
+	background: none;
+}
+.header {
+	background: none;
+}
+.article-text {
+	background: none;
+}
+#navigation {
+	display: none;
+}
+#primary-nav {
+	display: none;
+}
+.logo {
+	display: none;
+}
+.destination {
+	display: none;
+}
+.profileBox {
+	display: none;
+}
+#searchBox {
+	display: none;
+}
+.article-icons {
+	display: none;
+}
+.article-related {
+	display: none;
+}
+ul.tag-list {
+	display: none;
+}
+.footer {
+	display: none;
+}
+.recommend {
+	display: none;
+}
+.articleFeatureImage {
+	display: none;
+}
+.hide-on-print {
+	display: none;
+}
+#top-shelf {
+	display: none;
+}
+#desktop-change-country {
+	display: none;
+}
+.navbar {
+	display: none;
+}
+div.header#stickyTopBar {
+	border: currentColor !important; border-image: none !important; position: relative !important;
+}
+.logo-print {
+	display: block;
+}
+.content {
+	padding: 0px !important;
+}
+.article-text {
+	padding: 0px; width: 100%;
+}
+.article-author {
+	color: rgb(19, 30, 41);
+}
+.article-date {
+	color: rgb(19, 30, 41);
+}
+p.source {
+	color: rgb(19, 30, 41);
+}
+div.source {
+	color: rgb(19, 30, 41);
+}
+p.source {
+	font-size: 1em;
+}
+div.source {
+	font-size: 1em;
+}
+.article-text img.chart {
+	max-width: 750px;
+}

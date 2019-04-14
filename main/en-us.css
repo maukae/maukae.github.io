@@ -1,0 +1,21 @@
+.static-video-placement {
+	background: none; border-top-color: rgb(167, 167, 167); border-bottom-color: rgb(167, 167, 167); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; position: relative;
+}
+.static-video-placement::after {
+	clear: both; display: block; content: " ";
+}
+.static-video-placement .multi-video-wrapper {
+	width: 64%; float: left;
+}
+.static-video-placement .video-js .vjs-play-progress {
+	background: rgb(18, 58, 95);
+}
+.static-video-placement .video-js .vjs-volume-level {
+	background: rgb(18, 58, 95);
+}
+.static-video-placement .video-js .vjs-big-play-button {
+	background: rgba(0, 0, 0, 0.2);
+}
+.static-video-placement .video-js .vjs-big-play-button {
+	border: 1px solid rgb(255, 255, 255); border-image: none; width: 80px !important; height: 80px !important; line-height: 81px !important; margin-top: -40px; margin-left: -40px; background-color: rgba(168, 168, 168, 0.6);
+}

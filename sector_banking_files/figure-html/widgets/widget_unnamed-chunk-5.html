@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="highchart_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="highchart_libs/jquery-1.11.1/jquery.min.js"></script>
+<script src="highchart_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="highchart_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
+<link href="highchart_libs/highcharts-7.0.1/css/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="highchart_libs/highcharts-7.0.1/highcharts.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-3d.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-more.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/stock.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/map.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/annotations.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/boost.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drag-panes.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drilldown.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/item-series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/offline-exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/overlapping-datalabels.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/export-data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/funnel.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/heatmap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/treemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sankey.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/solid-gauge.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/streamgraph.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sunburst.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/vector.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/wordcloud.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/xrange.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/tilemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/venn.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/gantt.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/timeline.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/parallel-coordinates.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/grouped-categories.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/motion.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/multicolor_series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/reset.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/symbols-extra.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/text-symbols.js"></script>
+<script src="highchart_libs/highchart-binding-0.7.0/highchart.js"></script>
+<script src="highchart_libs/pymjs-1.3.2/pym.v1.min.js"></script>
+  <title>highchart</title>
+</head>
+<body style="background-color:white;">
+<div id="htmlwidget_container">
+  <div id="htmlwidget-2edbecaccaece157b292" style="width:100%;height:500px;" class="highchart html-widget"></div>
+  <script>HTMLWidgets.pymChild = new pym.Child();HTMLWidgets.addPostRenderHandler(function(){
+                                setTimeout(function(){HTMLWidgets.pymChild.sendHeight();},100);
+                            });</script>
+</div>
+<script type="application/json" data-for="htmlwidget-2edbecaccaece157b292">{"x":{"hc_opts":{"title":{"text":"银行行业净利润占比"},"yAxis":{"title":{"text":"%"}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"chart":{"zoomType":"xy","type":"waterfall"},"subtitle":{"text":"更新日期:2018-09-30"},"xAxis":{"categories":["工商银行","建设银行","农业银行","中国银行","招商银行","交通银行","兴业银行","浦发银行","民生银行","中信银行","光大银行","平安银行","北京银行","华夏银行","上海银行","江苏银行","宁波银行","南京银行","杭州银行","贵阳银行","成都银行","常熟银行","无锡银行","吴江银行","张家港行","江阴银行"]},"legend":{"enabled":false},"tooltip":{"pointFormat":"<b>{point.y:,.2f}%"},"series":[{"data":[{"name":"工商银行","y":19.5630324641293,"color":"red","line":100},{"name":"建设银行","y":17.5047263997708,"color":"red","line":100},{"name":"农业银行","y":13.9971981903518,"color":"red","line":100},{"name":"中国银行","y":13.2593886701321,"color":"red","line":100},{"name":"招商银行","y":5.50456740549071,"color":"red","line":100},{"name":"交通银行","y":4.69872884934086,"color":"red","line":100},{"name":"兴业银行","y":4.15254123631603,"color":"red","line":100},{"name":"浦发银行","y":3.55738901180135,"color":"red","line":100},{"name":"民生银行","y":3.51616423074667,"color":"red","line":100},{"name":"中信银行","y":3.0529150112271,"color":"red","line":100},{"name":"光大银行","y":2.26475585722916,"color":"red","line":100},{"name":"平安银行","y":1.66658917243973,"color":"red","line":100},{"name":"北京银行","y":1.35984747150917,"color":"red","line":100},{"name":"华夏银行","y":1.19128211182117,"color":"red","line":100},{"name":"上海银行","y":1.16567712330365,"color":"red","line":100},{"name":"江苏银行","y":0.846176189692862,"color":"red","line":100},{"name":"宁波银行","y":0.729397139255668,"color":"red","line":100},{"name":"南京银行","y":0.705652561559066,"color":"red","line":100},{"name":"杭州银行","y":0.359488319458628,"color":"red","line":100},{"name":"贵阳银行","y":0.309287942199934,"color":"red","line":100},{"name":"成都银行","y":0.276893574424687,"color":"red","line":100},{"name":"常熟银行","y":0.0983230581409919,"color":"red","line":100},{"name":"无锡银行","y":0.0701967587552933,"color":"red","line":100},{"name":"吴江银行","y":0.059039100671856,"color":"red","line":100},{"name":"张家港行","y":0.0526404314934237,"color":"red","line":100},{"name":"江阴银行","y":0.038101718738139,"color":"red","line":100}],"dataLabels":{"enabled":false,"format":"{point.y:,.2f}%","style":{"color":"#FFFFFF","fontWeight":"bold","textShadow":"0px 0px 3px black"}},"pointPadding":0}]},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Cardo"}},"xAxis":{"lineWidth":1,"minorGridLineWidth":0,"tickColor":"#737373"},"yAxis":{"lineWidth":0,"minorGridLineWidth":0,"lineColor":"transparent","tickColor":"#737373","tickWidth":1,"gridLineColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Cardo","debug":false},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-2edbecaccaece157b292">{"viewer":{"width":"100%","height":350,"padding":0,"fill":false},"browser":{"width":"100%","height":500,"padding":0,"fill":false}}</script>
+</body>
+</html>
