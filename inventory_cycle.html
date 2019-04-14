@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>库存周期</title>
+
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="site_libs/pymjs-1.3.2/pym.v1.js"></script>
+<script src="site_libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+</head>
+
+<body>
+
+
+<!DOCTYPE HTML>
+<HTML id="ctl00_Html1">
+<HEAD id="ctl00_Head1"><META content="IE=11.0000" http-equiv="X-UA-Compatible">
+<TITLE>	Home  </TITLE> 
+<META charset="utf-8">
+<META http-equiv="X-UA-Compatible" content="IE=edge">
+<META name="viewport" content="width=device-width, initial-scale=1">
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001">
+<META name="progid" content="SharePoint.WebPartPage.Document">
+<META name="apple-mobile-web-app-capable" content="yes">
+<META name="apple-mobile-web-app-status-bar-style" content="black">
+<TITLE>简易投研主页</TITLE>     
+<LINK href="static/library-bundle.min.css" rel="stylesheet">     
+<LINK href="static/global-bundle.min.css" rel="stylesheet">
+
+<META name="application-name" content="简易投研">
+<META name="msapplication-TileColor" content="#123a5f">
+<SCRIPT src="static/library-bundle.min.js"></SCRIPT>
+
+<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="static/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
+ 
+
+
+</HEAD> 
+<BODY>
+<DIV id="ctl00_MSO_ContentDiv" >  
+<NAV class="navbar navbar-default navbar-static-top yamm" id="main-site-nav">
+<DIV class="container">
+
+<DIV class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+    </button>
+	<a href="index.html">
+		<img src="static/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
+	</a>
+</DIV>
+
+<DIV class="navbar-collapse collapse" id="navbar">
+<UL class="nav navbar-nav primary-nav">
+
+  <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
+  data-toggle="dropdown" data-hover="dropdown">市场复盘</A>
+  <UL class="dropdown-menu multi-column columns-3">
+    <DIV class="row">
+	
+    <DIV class="col-lg-3 col-md-4 left-space">
+	<SPAN class="nav-header">A股</SPAN>
+    <UL class="multi-column-dropdown">
+      <LI><A href="market_ashare.html">行情走势</A></LI>
+      <LI><A href="valuation.html">市场估值</A></LI>
+      <LI><A href="money.html">资金面跟踪</A></LI>
+      <LI><A href="northbound_money.html">陆股通跟踪</A></LI>
+      <LI><A href="events_radar.html">事件雷达</A></LI>
+      <LI><A href="margin_trading.html">融资交易</A></LI>
+	</UL>
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
+      <LI><A href="commodities_cn.html">商品期货</A></LI>
+      <LI><A href="gold.html">黄金</A></LI>
+      <LI><A href="index_futures.html">股指期货</A></LI>
+      <LI><A href="options.html">上证50期权</A></LI>
+    </UL>
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">固收与海外市场</SPAN>
+      <LI><A href=" foreign_markets.html">全球权益市场</A></LI>
+      <LI><A href="fixed_income.html">固定收益</A></LI>
+      <LI><A href="conv_bond.html">可转债</A></LI>
+
+    </UL>
+	</DIV>
+	  
+	</DIV>
+  </UL>
+	
+  </LI>
+  
+
+  <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
+  data-toggle="dropdown" data-hover="dropdown">行业跟踪</A>
+  <UL class="dropdown-menu multi-column columns-3">
+    <DIV class="row">
+	
+    <DIV class="col-lg-3 col-md-4 left-space">
+	<SPAN class="nav-header">上游</SPAN>
+	
+    <UL class="multi-column-dropdown">
+      <LI><A href="sector_oil_gas_fuel.html">石油石化</A></LI>
+      <LI><A href="sector_coal.html">煤炭</A></LI>
+      <LI><A href="sector_rare.html">有色</A></LI>
+	</UL>
+	
+	<UL class="multi-column-dropdown"><SPAN class="nav-header">中游</SPAN>
+      <LI><A href="sector_steel.html">钢铁</A></LI>
+      <LI><A href="sector_construction.html">建材</A></LI>
+      <LI><A href="sector_chem.html">化工</A></LI>
+      <LI><A href="sector_light_industry.html">轻工制造</A></LI>
+      <LI><A href="sector_mech_equipment.html">机械设备</A></LI>
+    </UL>
+	
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">下游</SPAN>
+      <LI><A href="sector_real_estate.html">房地产</A></LI>
+      <LI><A href="sector_auto.html">汽车</A></LI>
+      <LI><A href="sector_appliances_household.html"> 家电</A></LI>
+      <LI><A href="sector_pharm.html"> 医药</A></LI>	  
+      <LI><A href="sector_agri.html">农业</A></LI>
+      <LI><A href="sector_apparel.html">纺织服装</A></LI>	  
+      <LI><A href="sector_electronics.html">电子元器件</A></LI> 
+      <LI><A href="sector_food_beverage.html">食品饮料</A></LI>		  
+    </UL>
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+
+	
+	<UL class="multi-column-dropdown"><SPAN class="nav-header">金融与公用事业</SPAN>
+      <LI><A href="sector_banking.html">银行</A></LI>
+      <LI><A href="sector_capital_markets.html">证券</A></LI>
+      <LI><A href="sector_transport.html">交通运输</A></LI>
+    </UL>
+	
+	</DIV>
+	  
+	</DIV>
+  </UL>
+	
+  </LI>
+  
+  
+   <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
+  data-toggle="dropdown" data-hover="dropdown">宏观与资产配置</A>
+  <UL class="dropdown-menu multi-column columns-3">
+    <DIV class="row">
+	
+    <DIV class="col-lg-3 col-md-4 left-space">
+	<SPAN class="nav-header">宏观数据</SPAN>
+    <UL class="multi-column-dropdown">
+      <LI><A href="cn_macro.html">国内宏观</A></LI>
+      <LI><A href="high_freq_eco_data.html">高频数据跟踪</A></LI>
+      <LI><A href="us_macro.html">美国宏观</A></LI>
+      <LI><A href="world_macro.html">全球数据</A></LI>
+	</UL>
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">资产配置</SPAN>
+      <LI><A href="asset_allocation.html">大类资产估值</A></LI>
+      <LI><A href="money_credit.html">货币信用</A></LI>
+      <LI><A href="inventory_cycle.html">库存周期</A></LI>
+      <LI><A href="investment_clock.html">美林时钟</A></LI>
+    </UL>
+	</DIV>
+	
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
+      <LI><A href="demographics_employment.html">人口与就业</A></LI>
+      <LI><A href="international_trade.html">国际收支</A></LI>
+      <LI><A href="state_rev_exp.html">财政收支</A></LI>
+      <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
+      <LI><A href="climate.html">气候</A></LI>
+	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+    </UL>
+	</DIV>
+	
+	
+	</DIV>
+	  
+	</DIV>
+  </UL>
+	
+  </LI>
+  
+  
+ 
+
+	  
+</UL>
+	  
+<UL class="nav navbar-nav utility-nav mobile"><!-- NOT mobile TOP Shelf -->    
+       <!--  <li id="mobile-change-country" class="country-audience-toggle"><a href="/_layouts/www/indexalt.aspx" data-ajax="false">Change Country</a></li> --> 
+          <!-- Mobile TOP Shelf -->         <!-- <li id="mobile-change-country" class="country-audience-toggle"><a  href="javascript:void(0);" aria-label="Change Your Location" id="toggle-shelf" data-toggle="collapse" data-target="#country-audience-shelf" role="button" aria-haspopup="false" aria-expanded="false" data-region='global' data-culture='' data-audience=''>Select Your Location</a></li>--> 
+                </UL>
+
+	</DIV><!--/.nav-collapse --> 
+  </DIV>
+</NAV>
+
+  
+
+</DIV><!-- =====  End Body ============================================================ --> <!-- Developer Dashboard --> 
+    <!-- =====  Hidden Placeholders ============================================================ --> 
+        <!-- Handle Search "enter" key and back button -->     
+    <INPUT name="__spDummyText1" style="display: none;" type="text" size="1"> 
+    <INPUT name="__spDummyText2" style="display: none;" type="text" size="1">    
+                 <!-- -->     
+   
+
+
+</DIV>
+ </BODY></HTML>
+
+
+<h1 class="title toc-ignore">库存周期</h1>
+
+
+
+<p><br><br><br><br></p>
+<DIV class="container">
+<DIV class="row content-block-row">
+
+
+<div class="col-xs-12">
+<H2 class="section-title">
+中国库存周期演进
+</H2>
+</div>
+<div class = "row">
+<div class="col-xs-12">
+<div id="htmlwidget-64cc6c3f94cf70ef240b" style="width:100%;height:500px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-64cc6c3f94cf70ef240b">{"x":{"url":"inventory_cycle_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-0c86cd88f899cdcf31b1" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0c86cd88f899cdcf31b1">{"x":{"url":"inventory_cycle_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-378949471f5caded07fb" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-378949471f5caded07fb">{"x":{"url":"inventory_cycle_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-782baf74cb42292785f6" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-782baf74cb42292785f6">{"x":{"url":"inventory_cycle_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-92a057f579b68999b208" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-92a057f579b68999b208">{"x":{"url":"inventory_cycle_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-xs-12">
+<H2 class="section-title">
+库存周期与大类资产表现
+</H2>
+</div>
+<div class = "col-xs-12">
+
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 17px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:center;">
+开始
+</th>
+<th style="text-align:center;">
+结束
+</th>
+<th style="text-align:center;">
+持续月数
+</th>
+<th style="text-align:left;">
+股票
+</th>
+<th style="text-align:left;">
+债券
+</th>
+<th style="text-align:left;">
+商品
+</th>
+<th style="text-align:left;">
+现金
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="5">
+<td colspan="7" style="background-color: #666; color: #fff;">
+<strong>被动补库存</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2004-06-30
+</td>
+<td style="text-align:center;">
+2004-12-31
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 2.984%; margin-right: 50%; text-align: right; float: right; ">-14.92</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.2%; margin-left: 50%; text-align:left;">1</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 3.914%; margin-left: 50%; text-align:left;">19.57</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.544%; margin-left: 50%; text-align:left;">2.72</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2007-03-30
+</td>
+<td style="text-align:center;">
+2008-08-29
+</td>
+<td style="text-align:center;">
+17
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 4.194%; margin-right: 50%; text-align: right; float: right; ">-20.97</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.266%; margin-left: 50%; text-align:left;">1.33</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.676%; margin-left: 50%; text-align:left;">3.38</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.682%; margin-left: 50%; text-align:left;">3.41</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2010-03-31
+</td>
+<td style="text-align:center;">
+2011-10-31
+</td>
+<td style="text-align:center;">
+19
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 3.006%; margin-right: 50%; text-align: right; float: right; ">-15.03</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.36%; margin-left: 50%; text-align:left;">1.8</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 1.928%; margin-right: 50%; text-align: right; float: right; ">-9.64</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.502%; margin-left: 50%; text-align:left;">2.51</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2013-11-29
+</td>
+<td style="text-align:center;">
+2014-07-31
+</td>
+<td style="text-align:center;">
+8
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 1.254%; margin-right: 50%; text-align: right; float: right; ">-6.27</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 1.474%; margin-left: 50%; text-align:left;">7.37</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 4.47%; margin-right: 50%; text-align: right; float: right; ">-22.35</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.866%; margin-left: 50%; text-align:left;">4.33</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2017-03-31
+</td>
+<td style="text-align:center;">
+2018-08-31
+</td>
+<td style="text-align:center;">
+17
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 0.668%; margin-right: 50%; text-align: right; float: right; ">-3.34</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.694%; margin-left: 50%; text-align:left;">3.47</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 1.316%; margin-left: 50%; text-align:left;">6.58</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.618%; margin-left: 50%; text-align:left;">3.09</span>
+</td>
+</tr>
+<tr grouplength="5">
+<td colspan="7" style="background-color: #666; color: #fff;">
+<strong>主动去库存</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2005-01-31
+</td>
+<td style="text-align:center;">
+2005-05-31
+</td>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 6.13%; margin-right: 50%; text-align: right; float: right; ">-30.65</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 2.82%; margin-left: 50%; text-align:left;">14.1</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 4.916%; margin-left: 50%; text-align:left;">24.58</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.578%; margin-left: 50%; text-align:left;">2.89</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2008-09-26
+</td>
+<td style="text-align:center;">
+2009-02-27
+</td>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 4.814%; margin-right: 50%; text-align: right; float: right; ">-24.07</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 2.666%; margin-left: 50%; text-align:left;">13.33</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 13.688%; margin-right: 50%; text-align: right; float: right; ">-68.44</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.718%; margin-left: 50%; text-align:left;">3.59</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2011-11-30
+</td>
+<td style="text-align:center;">
+2012-08-31
+</td>
+<td style="text-align:center;">
+9
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 3.636%; margin-right: 50%; text-align: right; float: right; ">-18.18</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.922%; margin-left: 50%; text-align:left;">4.61</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 1.59%; margin-right: 50%; text-align: right; float: right; ">-7.95</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.798%; margin-left: 50%; text-align:left;">3.99</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2014-08-29
+</td>
+<td style="text-align:center;">
+2015-02-27
+</td>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 23.854%; margin-left: 50%; text-align:left;">119.27</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 2.802%; margin-left: 50%; text-align:left;">14.01</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 3.104%; margin-right: 50%; text-align: right; float: right; ">-15.52</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.76%; margin-left: 50%; text-align:left;">3.8</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2018-09-28
+</td>
+<td style="text-align:center;">
+2018-12-28
+</td>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 8.502%; margin-right: 50%; text-align: right; float: right; ">-42.51</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 2.876%; margin-left: 50%; text-align:left;">14.38</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 5.928%; margin-right: 50%; text-align: right; float: right; ">-29.64</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.484%; margin-left: 50%; text-align:left;">2.42</span>
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="7" style="background-color: #666; color: #fff;">
+<strong>被动补库存</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2005-06-30
+</td>
+<td style="text-align:center;">
+2006-05-31
+</td>
+<td style="text-align:center;">
+11
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 11.532%; margin-left: 50%; text-align:left;">57.66</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 1.06%; margin-left: 50%; text-align:left;">5.3</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 19.394%; margin-left: 50%; text-align:left;">96.97</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.354%; margin-left: 50%; text-align:left;">1.77</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2009-03-31
+</td>
+<td style="text-align:center;">
+2009-08-31
+</td>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 2.568%; margin-left: 50%; text-align:left;">12.84</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 0.134%; margin-right: 50%; text-align: right; float: right; ">-0.67</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 15.038%; margin-left: 50%; text-align:left;">75.19</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.276%; margin-left: 50%; text-align:left;">1.38</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2012-09-28
+</td>
+<td style="text-align:center;">
+2013-08-30
+</td>
+<td style="text-align:center;">
+11
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 0.62%; margin-right: 50%; text-align: right; float: right; ">-3.1</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.218%; margin-left: 50%; text-align:left;">1.09</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 2.076%; margin-right: 50%; text-align: right; float: right; ">-10.38</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.678%; margin-left: 50%; text-align:left;">3.39</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2015-03-31
+</td>
+<td style="text-align:center;">
+2016-06-30
+</td>
+<td style="text-align:center;">
+15
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 4.694%; margin-right: 50%; text-align: right; float: right; ">-23.47</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 1.44%; margin-left: 50%; text-align:left;">7.2</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.222%; margin-left: 50%; text-align:left;">1.11</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.438%; margin-left: 50%; text-align:left;">2.19</span>
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="7" style="background-color: #666; color: #fff;">
+<strong>主动补库存</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2006-06-30
+</td>
+<td style="text-align:center;">
+2007-02-28
+</td>
+<td style="text-align:center;">
+8
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 26.222%; margin-left: 50%; text-align:left;">131.11</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.674%; margin-left: 50%; text-align:left;">3.37</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 3.122%; margin-right: 50%; text-align: right; float: right; ">-15.61</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.404%; margin-left: 50%; text-align:left;">2.02</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2009-09-30
+</td>
+<td style="text-align:center;">
+2010-02-26
+</td>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 3.964%; margin-left: 50%; text-align:left;">19.82</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.95%; margin-left: 50%; text-align:left;">4.75</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 9.304%; margin-left: 50%; text-align:left;">46.52</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.266%; margin-left: 50%; text-align:left;">1.33</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2013-09-30
+</td>
+<td style="text-align:center;">
+2013-10-31
+</td>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 3.27%; margin-right: 50%; text-align: right; float: right; ">-16.35</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 1.954%; margin-right: 50%; text-align: right; float: right; ">-9.77</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 3.328%; margin-right: 50%; text-align: right; float: right; ">-16.64</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.804%; margin-left: 50%; text-align:left;">4.02</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+2016-07-29
+</td>
+<td style="text-align:center;">
+2017-02-28
+</td>
+<td style="text-align:center;">
+7
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 2.516%; margin-left: 50%; text-align:left;">12.58</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 0.58%; margin-right: 50%; text-align: right; float: right; ">-2.9</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 14.304%; margin-left: 50%; text-align:left;">71.52</span>
+</td>
+<td style="text-align:left;">
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.406%; margin-left: 50%; text-align:left;">2.03</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br><br></p>
+<div class="col-xs-12">
+<H2 class="section-title">
+重点行业库存情况
+</H2>
+</div>
+<p><LINK href="static/responsive-template.css" rel="stylesheet"></p>
+<section class="multi-column-boxes cap-refresh">
+<div class="container">
+<div class="row">
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_coal_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+上游资源品
+</div>
+<div class="fundName">
+煤炭开采
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_oil_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+上游资源品
+</div>
+<div class="fundName">
+石油开采
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_rare_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+上游资源品
+</div>
+<div class="fundName">
+有色金属开采及冶炼
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_black_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+上游资源品
+</div>
+<div class="fundName">
+黑色金属矿采选业
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_chem_ingredient_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+中游原材料
+</div>
+<div class="fundName">
+化学原料与制品
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_fabric_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+中游原材料
+</div>
+<div class="fundName">
+化纤织造
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_pulp_paper_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+中游工业品
+</div>
+<div class="fundName">
+造纸及纸制品业
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_printing_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+中游工业品
+</div>
+<div class="fundName">
+印刷业
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_general_purpose_equipment_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+中游工业品
+</div>
+<div class="fundName">
+通用设备制造业
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_special_equipment_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+中游工业品
+</div>
+<div class="fundName">
+专用设备制造业
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_transport_equipment_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+中游工业品
+</div>
+<div class="fundName">
+运输设备制造业
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="  ">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+中游工业品
+</div>
+<div class="fundName">
+电器设备制造业
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="  ">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+中游工业品
+</div>
+<div class="fundName">
+金属制品业
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_apparatus_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+中游工业品
+</div>
+<div class="fundName">
+仪器仪表制造业
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_pharm_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+下游消费品
+</div>
+<div class="fundName">
+医药制造业
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_agri_food_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+下游消费品
+</div>
+<div class="fundName">
+农副食品加工业
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_food_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+下游消费品
+</div>
+<div class="fundName">
+食品制造业
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_alcohol_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+下游消费品
+</div>
+<div class="fundName">
+酒类和饮料生产
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_textile_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+下游消费品
+</div>
+<div class="fundName">
+纺织制造
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_apparel_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+下游消费品
+</div>
+<div class="fundName">
+服装制造业
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+<div class="boxFund">
+<a href="sector_auto_inventory.html">
+<div class="boxPadFund">
+<div class="sectionBox fundPage">
+下游消费品
+</div>
+<div class="fundName">
+汽车制造业
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</DIV>
+</DIV>
+
+<FOOTER>
+<DIV class="container">
+ 
+<DIV class="row">
+<DIV class="col-xs-12"><!--<p class="footer-finra">Check the background of our firm on <a href="http://brokercheck.finra.org/" target="_blank">FINRA's BrokerCheck</a>.</p>--></DIV>
+<DIV class="col-sm-3 col-xs-12">
+<H4>关于网站</H4>
+<UL>
+<p>仅供参考学习交流，不构成投资建议。</p>
+ </UL>
+ </DIV>
+
+
+<DIV class="col-sm-3 col-xs-12">
+<H4 class="no-right-margin">Email:</H4>
+<P>交流欢迎联系dlin@topologicalquant.com或xsx@topologicalquant.com</P>
+
+<SPAN class="spacer10"></SPAN>
+
+ </DIV>
+ </DIV>
+
+ </DIV>
+ </FOOTER>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>高频数据跟踪</title>
+
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="site_libs/pymjs-1.3.2/pym.v1.js"></script>
+<script src="site_libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
+<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+</head>
+
+<body>
+
+
+<!DOCTYPE HTML>
+<HTML id="ctl00_Html1">
+<HEAD id="ctl00_Head1"><META content="IE=11.0000" http-equiv="X-UA-Compatible">
+<TITLE>	Home  </TITLE> 
+<META charset="utf-8">
+<META http-equiv="X-UA-Compatible" content="IE=edge">
+<META name="viewport" content="width=device-width, initial-scale=1">
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001">
+<META name="progid" content="SharePoint.WebPartPage.Document">
+<META name="apple-mobile-web-app-capable" content="yes">
+<META name="apple-mobile-web-app-status-bar-style" content="black">
+<TITLE>简易投研主页</TITLE>     
+<LINK href="static/library-bundle.min.css" rel="stylesheet">     
+<LINK href="static/global-bundle.min.css" rel="stylesheet">
+
+<META name="application-name" content="简易投研">
+<META name="msapplication-TileColor" content="#123a5f">
+<SCRIPT src="static/library-bundle.min.js"></SCRIPT>
+
+<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="static/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
+ 
+
+
+</HEAD> 
+<BODY>
+<DIV id="ctl00_MSO_ContentDiv" >  
+<NAV class="navbar navbar-default navbar-static-top yamm" id="main-site-nav">
+<DIV class="container">
+
+<DIV class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+    </button>
+	<a href="index.html">
+		<img src="static/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
+	</a>
+</DIV>
+
+<DIV class="navbar-collapse collapse" id="navbar">
+<UL class="nav navbar-nav primary-nav">
+
+  <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
+  data-toggle="dropdown" data-hover="dropdown">市场复盘</A>
+  <UL class="dropdown-menu multi-column columns-3">
+    <DIV class="row">
+	
+    <DIV class="col-lg-3 col-md-4 left-space">
+	<SPAN class="nav-header">A股</SPAN>
+    <UL class="multi-column-dropdown">
+      <LI><A href="market_ashare.html">行情走势</A></LI>
+      <LI><A href="valuation.html">市场估值</A></LI>
+      <LI><A href="money.html">资金面跟踪</A></LI>
+      <LI><A href="northbound_money.html">陆股通跟踪</A></LI>
+      <LI><A href="events_radar.html">事件雷达</A></LI>
+      <LI><A href="margin_trading.html">融资交易</A></LI>
+	</UL>
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
+      <LI><A href="commodities_cn.html">商品期货</A></LI>
+      <LI><A href="gold.html">黄金</A></LI>
+      <LI><A href="index_futures.html">股指期货</A></LI>
+      <LI><A href="options.html">上证50期权</A></LI>
+    </UL>
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">固收与海外市场</SPAN>
+      <LI><A href=" foreign_markets.html">全球权益市场</A></LI>
+      <LI><A href="fixed_income.html">固定收益</A></LI>
+      <LI><A href="conv_bond.html">可转债</A></LI>
+
+    </UL>
+	</DIV>
+	  
+	</DIV>
+  </UL>
+	
+  </LI>
+  
+
+  <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
+  data-toggle="dropdown" data-hover="dropdown">行业跟踪</A>
+  <UL class="dropdown-menu multi-column columns-3">
+    <DIV class="row">
+	
+    <DIV class="col-lg-3 col-md-4 left-space">
+	<SPAN class="nav-header">上游</SPAN>
+	
+    <UL class="multi-column-dropdown">
+      <LI><A href="sector_oil_gas_fuel.html">石油石化</A></LI>
+      <LI><A href="sector_coal.html">煤炭</A></LI>
+      <LI><A href="sector_rare.html">有色</A></LI>
+	</UL>
+	
+	<UL class="multi-column-dropdown"><SPAN class="nav-header">中游</SPAN>
+      <LI><A href="sector_steel.html">钢铁</A></LI>
+      <LI><A href="sector_construction.html">建材</A></LI>
+      <LI><A href="sector_chem.html">化工</A></LI>
+      <LI><A href="sector_light_industry.html">轻工制造</A></LI>
+      <LI><A href="sector_mech_equipment.html">机械设备</A></LI>
+    </UL>
+	
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">下游</SPAN>
+      <LI><A href="sector_real_estate.html">房地产</A></LI>
+      <LI><A href="sector_auto.html">汽车</A></LI>
+      <LI><A href="sector_appliances_household.html"> 家电</A></LI>
+      <LI><A href="sector_pharm.html"> 医药</A></LI>	  
+      <LI><A href="sector_agri.html">农业</A></LI>
+      <LI><A href="sector_apparel.html">纺织服装</A></LI>	  
+      <LI><A href="sector_electronics.html">电子元器件</A></LI> 
+      <LI><A href="sector_food_beverage.html">食品饮料</A></LI>		  
+    </UL>
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+
+	
+	<UL class="multi-column-dropdown"><SPAN class="nav-header">金融与公用事业</SPAN>
+      <LI><A href="sector_banking.html">银行</A></LI>
+      <LI><A href="sector_capital_markets.html">证券</A></LI>
+      <LI><A href="sector_transport.html">交通运输</A></LI>
+    </UL>
+	
+	</DIV>
+	  
+	</DIV>
+  </UL>
+	
+  </LI>
+  
+  
+   <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
+  data-toggle="dropdown" data-hover="dropdown">宏观与资产配置</A>
+  <UL class="dropdown-menu multi-column columns-3">
+    <DIV class="row">
+	
+    <DIV class="col-lg-3 col-md-4 left-space">
+	<SPAN class="nav-header">宏观数据</SPAN>
+    <UL class="multi-column-dropdown">
+      <LI><A href="cn_macro.html">国内宏观</A></LI>
+      <LI><A href="high_freq_eco_data.html">高频数据跟踪</A></LI>
+      <LI><A href="us_macro.html">美国宏观</A></LI>
+      <LI><A href="world_macro.html">全球数据</A></LI>
+	</UL>
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">资产配置</SPAN>
+      <LI><A href="asset_allocation.html">大类资产估值</A></LI>
+      <LI><A href="money_credit.html">货币信用</A></LI>
+      <LI><A href="inventory_cycle.html">库存周期</A></LI>
+      <LI><A href="investment_clock.html">美林时钟</A></LI>
+    </UL>
+	</DIV>
+	
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
+      <LI><A href="demographics_employment.html">人口与就业</A></LI>
+      <LI><A href="international_trade.html">国际收支</A></LI>
+      <LI><A href="state_rev_exp.html">财政收支</A></LI>
+      <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
+      <LI><A href="climate.html">气候</A></LI>
+	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+    </UL>
+	</DIV>
+	
+	
+	  
+	</DIV>
+	
+  </UL>
+	
+  </LI>
+  
+
+
+<ul class="clientAccess nav navbar-nav utility-nav mobile">
+
+	<li class="dropdown">
+
+	
+	    <li><a  class="dropdown-toggle" href="/login/"  style=" float: right; padding-left: 500px;">登录</a></li> 
+  
+		<li><a  class="dropdown-toggle" href="/reg/" >注册</a></li> 
+	
+	</li>
+</ul>	
+
+
+</UL>	
+	  
+<UL class="nav navbar-nav utility-nav mobile"><!-- NOT mobile TOP Shelf -->    
+       <!--  <li id="mobile-change-country" class="country-audience-toggle"><a href="/_layouts/www/indexalt.aspx" data-ajax="false">Change Country</a></li> --> 
+          <!-- Mobile TOP Shelf -->         <!-- <li id="mobile-change-country" class="country-audience-toggle"><a  href="javascript:void(0);" aria-label="Change Your Location" id="toggle-shelf" data-toggle="collapse" data-target="#country-audience-shelf" role="button" aria-haspopup="false" aria-expanded="false" data-region='global' data-culture='' data-audience=''>Select Your Location</a></li>--> 
+                </UL>
+
+	</DIV><!--/.nav-collapse --> 
+  </DIV>
+</NAV>
+
+  
+
+</DIV><!-- =====  End Body ============================================================ --> <!-- Developer Dashboard --> 
+    <!-- =====  Hidden Placeholders ============================================================ --> 
+        <!-- Handle Search "enter" key and back button -->     
+    <INPUT name="__spDummyText1" style="display: none;" type="text" size="1"> 
+    <INPUT name="__spDummyText2" style="display: none;" type="text" size="1">    
+                 <!-- -->     
+   
+
+
+</DIV>
+ </BODY></HTML>
+
+
+<h1 class="title toc-ignore">高频数据跟踪</h1>
+
+
+
+<p><br><br><br><br></p>
+<div class="container">
+<div class="row content-block-row">
+<div class="col-xs-12">
+<H2 class="section-title">
+高频数据跟踪
+</H2>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 17px; ">
+<thead>
+<tr>
+<th style="text-align:center;">
+数据
+</th>
+<th style="text-align:center;">
+单位
+</th>
+<th style="text-align:center;">
+更新日期
+</th>
+<th style="text-align:right;">
+最新数据
+</th>
+<th style="text-align:right;">
+周涨幅
+</th>
+<th style="text-align:right;">
+双周涨幅
+</th>
+<th style="text-align:right;">
+年初至今涨幅
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="5">
+<td colspan="7" style="background-color: #666; color: #fff;">
+<strong>上游</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+Brent原油价格
+</td>
+<td style="text-align:center;">
+美元/桶
+</td>
+<td style="text-align:center;">
+2019-04-11
+</td>
+<td style="text-align:right;">
+70.83
+</td>
+<td style="text-align:right;">
+0.70
+</td>
+<td style="text-align:right;">
+3.57
+</td>
+<td style="text-align:right;">
+28.99
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+动力煤价格
+</td>
+<td style="text-align:center;">
+元/吨
+</td>
+<td style="text-align:center;">
+2019-04-11
+</td>
+<td style="text-align:right;">
+619.00
+</td>
+<td style="text-align:right;">
+0.75
+</td>
+<td style="text-align:right;">
+4.17
+</td>
+<td style="text-align:right;">
+9.87
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+铁矿石价格
+</td>
+<td style="text-align:center;">
+点
+</td>
+<td style="text-align:center;">
+2019-04-11
+</td>
+<td style="text-align:right;">
+329.87
+</td>
+<td style="text-align:right;">
+2.26
+</td>
+<td style="text-align:right;">
+10.34
+</td>
+<td style="text-align:right;">
+29.82
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+LME铜
+</td>
+<td style="text-align:center;">
+美元/吨
+</td>
+<td style="text-align:center;">
+2019-04-11
+</td>
+<td style="text-align:right;">
+6443.00
+</td>
+<td style="text-align:right;">
+0.14
+</td>
+<td style="text-align:right;">
+-0.54
+</td>
+<td style="text-align:right;">
+9.91
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+LME铝
+</td>
+<td style="text-align:center;">
+美元/吨
+</td>
+<td style="text-align:center;">
+2019-04-11
+</td>
+<td style="text-align:right;">
+1863.50
+</td>
+<td style="text-align:right;">
+-1.22
+</td>
+<td style="text-align:right;">
+-2.64
+</td>
+<td style="text-align:right;">
+0.92
+</td>
+</tr>
+<tr grouplength="8">
+<td colspan="7" style="background-color: #666; color: #fff;">
+<strong>中游</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+全国水泥价格指数
+</td>
+<td style="text-align:center;">
+点
+</td>
+<td style="text-align:center;">
+2019-04-11
+</td>
+<td style="text-align:right;">
+148.92
+</td>
+<td style="text-align:right;">
+0.88
+</td>
+<td style="text-align:right;">
+1.59
+</td>
+<td style="text-align:right;">
+-7.89
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+中国玻璃价格指数
+</td>
+<td style="text-align:center;">
+点
+</td>
+<td style="text-align:center;">
+2019-04-12
+</td>
+<td style="text-align:right;">
+1111.51
+</td>
+<td style="text-align:right;">
+-0.41
+</td>
+<td style="text-align:right;">
+-1.11
+</td>
+<td style="text-align:right;">
+-5.21
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+中国出口集装箱运价指数CCFI
+</td>
+<td style="text-align:center;">
+点
+</td>
+<td style="text-align:center;">
+2019-04-05
+</td>
+<td style="text-align:right;">
+797.14
+</td>
+<td style="text-align:right;">
+-4.02
+</td>
+<td style="text-align:right;">
+-9.44
+</td>
+<td style="text-align:right;">
+-5.30
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+上海集装箱运价指数SCFI
+</td>
+<td style="text-align:center;">
+点
+</td>
+<td style="text-align:center;">
+2019-04-05
+</td>
+<td style="text-align:right;">
+792.25
+</td>
+<td style="text-align:right;">
+3.30
+</td>
+<td style="text-align:right;">
+-16.20
+</td>
+<td style="text-align:right;">
+-15.80
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+波罗的海干散货指数BDI
+</td>
+<td style="text-align:center;">
+点
+</td>
+<td style="text-align:center;">
+2019-04-11
+</td>
+<td style="text-align:right;">
+728.00
+</td>
+<td style="text-align:right;">
+2.39
+</td>
+<td style="text-align:right;">
+5.66
+</td>
+<td style="text-align:right;">
+-43.21
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+全钢胎开工率
+</td>
+<td style="text-align:center;">
+%
+</td>
+<td style="text-align:center;">
+2019-04-12
+</td>
+<td style="text-align:right;">
+75.44
+</td>
+<td style="text-align:right;">
+1.07
+</td>
+<td style="text-align:right;">
+18.64
+</td>
+<td style="text-align:right;">
+7.91
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+半钢胎开工率
+</td>
+<td style="text-align:center;">
+%
+</td>
+<td style="text-align:center;">
+2019-04-12
+</td>
+<td style="text-align:right;">
+72.02
+</td>
+<td style="text-align:right;">
+2.49
+</td>
+<td style="text-align:right;">
+20.23
+</td>
+<td style="text-align:right;">
+8.81
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+螺纹钢期货结算价
+</td>
+<td style="text-align:center;">
+元/吨
+</td>
+<td style="text-align:center;">
+2019-04-11
+</td>
+<td style="text-align:right;">
+3808.00
+</td>
+<td style="text-align:right;">
+5.95
+</td>
+<td style="text-align:right;">
+3.20
+</td>
+<td style="text-align:right;">
+12.60
+</td>
+</tr>
+<tr grouplength="5">
+<td colspan="7" style="background-color: #666; color: #fff;">
+<strong>下游</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+30大中城市商品房成交套数:一线
+</td>
+<td style="text-align:center;">
+套
+</td>
+<td style="text-align:center;">
+2019-04-11
+</td>
+<td style="text-align:right;">
+908.00
+</td>
+<td style="text-align:right;">
+104.50
+</td>
+<td style="text-align:right;">
+3.89
+</td>
+<td style="text-align:right;">
+336.54
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+30大中城市商品房成交套数:二线
+</td>
+<td style="text-align:center;">
+套
+</td>
+<td style="text-align:center;">
+2019-04-11
+</td>
+<td style="text-align:right;">
+2505.00
+</td>
+<td style="text-align:right;">
+237.15
+</td>
+<td style="text-align:right;">
+16.13
+</td>
+<td style="text-align:right;">
+174.97
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+30大中城市商品房成交套数:三线
+</td>
+<td style="text-align:center;">
+套
+</td>
+<td style="text-align:center;">
+2019-04-11
+</td>
+<td style="text-align:right;">
+1650.00
+</td>
+<td style="text-align:right;">
+-11.29
+</td>
+<td style="text-align:right;">
+11.49
+</td>
+<td style="text-align:right;">
+78.57
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+菜篮子产品批发价格200指数
+</td>
+<td style="text-align:center;">
+点
+</td>
+<td style="text-align:center;">
+2019-04-11
+</td>
+<td style="text-align:right;">
+119.56
+</td>
+<td style="text-align:right;">
+-0.11
+</td>
+<td style="text-align:right;">
+-0.43
+</td>
+<td style="text-align:right;">
+11.37
+</td>
+</tr>
+<tr>
+<td style="text-align:center; padding-left: 2em;" indentlevel="1">
+农产品批发价格200指数
+</td>
+<td style="text-align:center;">
+点
+</td>
+<td style="text-align:center;">
+2019-04-11
+</td>
+<td style="text-align:right;">
+117.11
+</td>
+<td style="text-align:right;">
+-0.05
+</td>
+<td style="text-align:right;">
+-0.35
+</td>
+<td style="text-align:right;">
+9.89
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="col-xs-12">
+<H2 class="section-title">
+上游
+</H2>
+</div>
+<div class="row">
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-5429be0b970922a2e7a4" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5429be0b970922a2e7a4">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-fd89cd3e67a1b1c023b5" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fd89cd3e67a1b1c023b5">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-5b4c37b757f79e7299ac" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5b4c37b757f79e7299ac">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-9d0cadef46d52f2fe1a0" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9d0cadef46d52f2fe1a0">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-a3ecdce8b28b0fc036af" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a3ecdce8b28b0fc036af">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="col-xs-12">
+<H2 class="section-title">
+中游
+</H2>
+</div>
+<div class="row">
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-c8e05b1909ae3d2be974" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c8e05b1909ae3d2be974">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-8c550c1c98ab0fbd86c2" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8c550c1c98ab0fbd86c2">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-49b6f0363953d88c8a63" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-49b6f0363953d88c8a63">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-8d3c7f16e0085b6efda6" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8d3c7f16e0085b6efda6">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-7706c22a9f66075b70c7" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7706c22a9f66075b70c7">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-641b97279a45d9ad824f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-641b97279a45d9ad824f">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-775828ed4f0483e15a39" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-775828ed4f0483e15a39">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-16.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-1a8b0b4539b7dfc27713" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1a8b0b4539b7dfc27713">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-17.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-51ab6c13e3ca1cdabdb8" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-51ab6c13e3ca1cdabdb8">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-18.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="col-xs-12">
+<H2 class="section-title">
+下游
+</H2>
+</div>
+<div class="row">
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-8a63376beddd77b2a58a" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8a63376beddd77b2a58a">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-19.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div id="htmlwidget-d2d2333850f83a96d471" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d2d2333850f83a96d471">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-20.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-sm-6 col-xs-12">
+
+</div>
+<div class="col-sm-6 col-xs-12">
+
+</div>
+<div class="col-sm-6 col-xs-12">
+
+</div>
+</div>
+</div>
+</div>
+
+<FOOTER>
+<DIV class="container">
+ 
+<DIV class="row">
+<DIV class="col-xs-12"><!--<p class="footer-finra">Check the background of our firm on <a href="http://brokercheck.finra.org/" target="_blank">FINRA's BrokerCheck</a>.</p>--></DIV>
+<DIV class="col-sm-3 col-xs-12">
+<H4>关于网站</H4>
+<UL>
+<p>仅供参考学习交流，不构成投资建议。</p>
+ </UL>
+ </DIV>
+
+
+<DIV class="col-sm-3 col-xs-12">
+<H4 class="no-right-margin">Email:</H4>
+<P>交流欢迎联系dlin@smartashare.com或xsx@smartashare.com</P>
+
+<SPAN class="spacer10"></SPAN>
+
+ </DIV>
+ </DIV>
+
+ </DIV>
+ </FOOTER>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
