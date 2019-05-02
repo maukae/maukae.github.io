@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="highchart_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="highchart_libs/jquery-1.11.1/jquery.min.js"></script>
+<script src="highchart_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="highchart_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
+<link href="highchart_libs/highcharts-7.0.1/css/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="highchart_libs/highcharts-7.0.1/highcharts.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-3d.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-more.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/stock.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/map.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/annotations.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/boost.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drag-panes.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drilldown.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/item-series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/offline-exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/overlapping-datalabels.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/export-data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/funnel.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/heatmap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/treemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sankey.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/solid-gauge.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/streamgraph.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sunburst.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/vector.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/wordcloud.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/xrange.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/tilemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/venn.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/gantt.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/timeline.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/parallel-coordinates.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/grouped-categories.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/motion.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/multicolor_series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/reset.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/symbols-extra.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/text-symbols.js"></script>
+<script src="highchart_libs/highchart-binding-0.7.0/highchart.js"></script>
+<script src="highchart_libs/pymjs-1.3.2/pym.v1.min.js"></script>
+  <title>highchart</title>
+</head>
+<body style="background-color:white;">
+<div id="htmlwidget_container">
+  <div id="htmlwidget-52e0cdeacbc665bfe697" style="width:100%;height:400px;" class="highchart html-widget"></div>
+  <script>HTMLWidgets.pymChild = new pym.Child();HTMLWidgets.addPostRenderHandler(function(){
+                                setTimeout(function(){HTMLWidgets.pymChild.sendHeight();},100);
+                            });</script>
+</div>
+<script type="application/json" data-for="htmlwidget-52e0cdeacbc665bfe697">{"x":{"hc_opts":{"title":{"text":"2011Q4"},"yAxis":{"title":{"text":""}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"xAxis":{"categories":["2011-10-03","2011-10-04","2011-10-05","2011-10-06","2011-10-07","2011-10-10","2011-10-11","2011-10-12","2011-10-13","2011-10-14","2011-10-17","2011-10-18","2011-10-19","2011-10-20","2011-10-21","2011-10-24","2011-10-25","2011-10-26","2011-10-27","2011-10-28","2011-10-31","2011-11-01","2011-11-02","2011-11-03","2011-11-04","2011-11-07","2011-11-08","2011-11-09","2011-11-10","2011-11-11","2011-11-14","2011-11-15","2011-11-16","2011-11-17","2011-11-18","2011-11-21","2011-11-22","2011-11-23","2011-11-24","2011-11-25","2011-11-28","2011-11-29","2011-11-30","2011-12-01","2011-12-02","2011-12-05","2011-12-06","2011-12-07","2011-12-08","2011-12-09","2011-12-12","2011-12-13","2011-12-14","2011-12-15","2011-12-16","2011-12-19","2011-12-20","2011-12-21","2011-12-22","2011-12-23","2011-12-26","2011-12-27","2011-12-28","2011-12-29","2011-12-30"]},"series":[{"data":[1,0.992840095465394,0.993719381987188,0.987689988694888,0.989197337017963,0.974751915588494,0.975003140309006,0.967717623414144,0.9678432357744,0.962316291923125,0.969978645898756,0.969224971737219,0.968220072855169,0.96683833689235,0.959552819997488,0.9557844491898,0.957668634593644,0.9577942469539,0.9417158648411,0.943223213164175,0.960683331239794,0.971234769501319,0.968220072855169,0.963698027885944,0.966084662730813,0.966461499811581,0.962567516643638,0.978645898756438,0.975128752669263,0.966084662730813,0.972993342544906,0.978520286396181,0.983293556085919,0.983796005526944,0.980278859439769,0.9839216178872,0.983167943725663,0.993091320185906,0.992840095465394,1,0.994724280869237,0.993342544906419,0.984047230247456,0.983419168446175,0.987564376334631,0.987061926893606,0.986559477452581,0.98492651676925,0.990202235900013,0.987187539253863,0.99899510111795,1.00829041577691,1.01155633714357,1.00854164049743,1.00678306745384,1.00954653937947,1.00314030900641,1.00477326968974,1.00427082024871,1.00477326968974,1.00376837080769,1.00238663484487,1.01117950006281,1.00942092701922,1.00766235397563],"type":"line","name":"美元","showInLegend":true},{"data":[1,1,1,1,1,1,1.00139367170363,1.00113398594572,1.00073515624302,1.00222481494599,1.00229996755788,1.00418622370775,1.00483283380409,1.00667742117905,1.00688427688306,1.00687534785986,1.00583511665769,1.00663575240414,1.00629347318168,1.00676075872886,1.0080882068438,1.00981597283196,1.01117169618701,1.01211445221931,1.01287118693505,1.0130706017864,1.01492039775822,1.01776652390151,1.02221094519663,1.02175333275791,1.0224297062649,1.02097353139891,1.02114615918067,1.02068408223035,1.0205486587119,1.01995859909579,1.02004937749827,1.02162237375105,1.02180244238548,1.02212165496469,1.02172282526199,1.021482485721,1.02224368494835,1.02853046136263,1.03102463517499,1.03181336555719,1.03127464782444,1.03119577478622,1.03135203269213,1.03183047951831,1.03149117663691,1.03128357684764,1.03136244988586,1.03137733159118,1.03197036754836,1.03220698666302,1.03250982936637,1.03238407895638,1.03245551114193,1.03238482304164,1.03306268471917,1.03326209957051,1.03339529083317,1.03407017616963,1.03467734974686],"type":"line","name":"中债财富指数","showInLegend":true},{"data":[1,1,1,1,1,1,1.00164233622136,1.01183171500059,1.00502845610231,1.01435754526349,1.00392044488058,0.972665860328931,0.966981975149021,0.927534599041945,0.932095131232521,0.974542446164299,0.982638632526887,0.987922912603895,0.998550490620139,1.01245981655465,0.999183386476577,0.988096849894036,0.998853538473222,0.978360532689184,1.01155259071635,0.995616521396108,0.995632486423015,0.996109759224381,0.956664636439421,0.96825318442358,1.00167570456588,0.993179913100393,0.983052764365983,0.99401488880191,0.983606122746031,0.975078161511609,0.977067413452774,0.968519028490238,0.972513833000641,0.962360842976433,0.981543086491324,0.985997664599427,0.974584156594956,1.01252597792742,1.01226157215147,1.01304227635011,1.01088555942701,1.02174872946193,1.01733514263913,1.00714451734128,1.00128343474561,0.9931157173916,0.988676576937143,0.965625667007318,0.983035984307673,0.974723574908002,0.977708795224415,0.98638446891499,0.988518412901813,0.998544114197981,0.987610515861182,0.987579640553891,0.98960748662917,0.978220778774971,0.986163739233675],"type":"line","name":"南华工业指数","showInLegend":true},{"data":[1,1,1,1,1,1,1.00159033635038,1.03207668756267,1.04009020862023,1.03692787447218,1.04077769110798,1.01650384448566,1.01395649157045,0.994276239163728,0.988266738087511,1.01089480622334,1.02767202308781,1.03526674277877,1.0387357145873,1.05485487594396,1.05265424961841,1.05340868914746,1.06794689666908,1.06964513194589,1.07826169285312,1.07037398279673,1.06783089466122,1.07682232970415,1.05746747998859,1.05812766788625,1.07844081360055,1.07888733603521,1.05210366655905,1.05043485826218,1.03061045630157,1.02999973984844,1.02893141253342,1.02144245937904,1.02250396304654,1.01511309982527,1.01631150292116,1.02883246964436,0.995149666046426,1.01794320763464,1.00677119073076,0.995070767621963,0.991947242969191,0.9948579551149,0.993616904222004,0.987411649757526,0.977293459917681,0.958974098713444,0.950416818244045,0.930103672529744,0.948845246924348,0.946028359932054,0.945045328211049,0.934476351156843,0.932407506524047,0.94029180475668,0.934033667023913,0.923838711149456,0.925462739259472,0.926975883097271,0.938002897491329],"type":"line","name":"上证综指","showInLegend":true}],"tooltip":{"enabled":true,"valueDecimals":2}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Cardo"}},"xAxis":{"lineWidth":1,"minorGridLineWidth":0,"tickColor":"#737373"},"yAxis":{"lineWidth":0,"minorGridLineWidth":0,"lineColor":"transparent","tickColor":"#737373","tickWidth":1,"gridLineColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Cardo","debug":false},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-52e0cdeacbc665bfe697">{"viewer":{"width":"100%","height":400,"padding":0,"fill":false},"browser":{"width":"100%","height":400,"padding":0,"fill":false}}</script>
+</body>
+</html>
