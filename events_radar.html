@@ -103,7 +103,7 @@ if (window.hljs) {
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
-      <LI><A href="commodities_cn.html">商品期货每日跟踪</A></LI>
+      <LI><A href="commodities_cn.html">基差与期限结构</A></LI>
       <LI><A href="gold.html">黄金</A></LI>
       <LI><A href="index_futures.html">股指期货</A></LI>
       <LI><A href="options.html">上证50期权</A></LI>
@@ -300,9 +300,87 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-xs-12">
-<table>
+<table class="table table-striped table-hover table-condensed table-responsive" style="font-size: 13px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+证券代码
+</th>
+<th style="text-align:left;">
+公司名称
+</th>
+<th style="text-align:left;">
+股东名称
+</th>
+<th style="text-align:left;">
+质押方
+</th>
+<th style="text-align:right;">
+质押股数(万股)
+</th>
+<th style="text-align:left;">
+质押起始日期
+</th>
+<th style="text-align:left;">
+质押结束日期
+</th>
+<th style="text-align:left;">
+占流通股比例
+</th>
+</tr>
+</thead>
 <tbody>
 <tr>
+<td style="text-align:left;">
+002235.SZ
+</td>
+<td style="text-align:left;">
+安妮股份
+</td>
+<td style="text-align:left;">
+杨超
+</td>
+<td style="text-align:left;">
+华创证券有限责任公司
+</td>
+<td style="text-align:right;">
+550
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2020-05-06
+</td>
+<td style="text-align:left;">
+1.37%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603028.SH
+</td>
+<td style="text-align:left;">
+赛福天
+</td>
+<td style="text-align:left;">
+杰昌有限公司
+</td>
+<td style="text-align:left;">
+江苏银行股份有限公司无锡扬名支行
+</td>
+<td style="text-align:right;">
+2700
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2022-04-01
+</td>
+<td style="text-align:left;">
+16.58%
+</td>
 </tr>
 </tbody>
 </table>
@@ -344,29 +422,6 @@ if (window.hljs) {
 <tbody>
 <tr>
 <td style="text-align:left;">
-002392.SZ
-</td>
-<td style="text-align:left;">
-北京利尔
-</td>
-<td style="text-align:left;">
-2019-05-06
-</td>
-<td style="text-align:right;">
-5409.9079
-</td>
-<td style="text-align:left;">
-63.41%
-</td>
-<td style="text-align:left;">
-67.96%
-</td>
-<td style="text-align:left;">
-首发原股东限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 300383.SZ
 </td>
 <td style="text-align:left;">
@@ -386,75 +441,6 @@ if (window.hljs) {
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-603101.SH
-</td>
-<td style="text-align:left;">
-汇嘉时代
-</td>
-<td style="text-align:left;">
-2019-05-06
-</td>
-<td style="text-align:right;">
-16800.0000
-</td>
-<td style="text-align:left;">
-30%
-</td>
-<td style="text-align:left;">
-100%
-</td>
-<td style="text-align:left;">
-首发原股东限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-002534.SZ
-</td>
-<td style="text-align:left;">
-杭锅股份
-</td>
-<td style="text-align:left;">
-2019-05-06
-</td>
-<td style="text-align:right;">
-351.5400
-</td>
-<td style="text-align:left;">
-98.21%
-</td>
-<td style="text-align:left;">
-98.68%
-</td>
-<td style="text-align:left;">
-股权激励限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-603701.SH
-</td>
-<td style="text-align:left;">
-德宏股份
-</td>
-<td style="text-align:left;">
-2019-05-06
-</td>
-<td style="text-align:right;">
-100.3680
-</td>
-<td style="text-align:left;">
-97.21%
-</td>
-<td style="text-align:left;">
-97.9%
-</td>
-<td style="text-align:left;">
-股权激励限售股份
 </td>
 </tr>
 <tr>
@@ -482,45 +468,22 @@ if (window.hljs) {
 </tr>
 <tr>
 <td style="text-align:left;">
-603528.SH
+300300.SZ
 </td>
 <td style="text-align:left;">
-多伦科技
-</td>
-<td style="text-align:left;">
-2019-05-06
-</td>
-<td style="text-align:right;">
-43245.0000
-</td>
-<td style="text-align:left;">
-29.92%
-</td>
-<td style="text-align:left;">
-98.91%
-</td>
-<td style="text-align:left;">
-首发原股东限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-002297.SZ
-</td>
-<td style="text-align:left;">
-博云新材
+汉鼎宇佑
 </td>
 <td style="text-align:left;">
 2019-05-06
 </td>
 <td style="text-align:right;">
-7249.4034
+11333.9598
 </td>
 <td style="text-align:left;">
-84.36%
+81.68%
 </td>
 <td style="text-align:left;">
-99.74%
+98.27%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -551,22 +514,22 @@ if (window.hljs) {
 </tr>
 <tr>
 <td style="text-align:left;">
-300300.SZ
+000938.SZ
 </td>
 <td style="text-align:left;">
-汉鼎宇佑
+紫光股份
 </td>
 <td style="text-align:left;">
 2019-05-06
 </td>
 <td style="text-align:right;">
-11333.9598
+30662.4121
 </td>
 <td style="text-align:left;">
-81.68%
+19.77%
 </td>
 <td style="text-align:left;">
-98.27%
+40.78%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -574,25 +537,25 @@ if (window.hljs) {
 </tr>
 <tr>
 <td style="text-align:left;">
-600979.SH
+603701.SH
 </td>
 <td style="text-align:left;">
-广安爱众
+德宏股份
 </td>
 <td style="text-align:left;">
 2019-05-06
 </td>
 <td style="text-align:right;">
-23000.0000
+100.3680
 </td>
 <td style="text-align:left;">
-75.74%
+97.21%
 </td>
 <td style="text-align:left;">
-100%
+97.9%
 </td>
 <td style="text-align:left;">
-定向增发机构配售股份
+股权激励限售股份
 </td>
 </tr>
 <tr>
@@ -620,22 +583,68 @@ if (window.hljs) {
 </tr>
 <tr>
 <td style="text-align:left;">
-000938.SZ
+002534.SZ
 </td>
 <td style="text-align:left;">
-紫光股份
+杭锅股份
 </td>
 <td style="text-align:left;">
 2019-05-06
 </td>
 <td style="text-align:right;">
-30662.4121
+351.5400
 </td>
 <td style="text-align:left;">
-19.77%
+98.21%
 </td>
 <td style="text-align:left;">
-40.78%
+98.68%
+</td>
+<td style="text-align:left;">
+股权激励限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603528.SH
+</td>
+<td style="text-align:left;">
+多伦科技
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:right;">
+43245.0000
+</td>
+<td style="text-align:left;">
+29.92%
+</td>
+<td style="text-align:left;">
+98.91%
+</td>
+<td style="text-align:left;">
+首发原股东限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600979.SH
+</td>
+<td style="text-align:left;">
+广安爱众
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:right;">
+23000.0000
+</td>
+<td style="text-align:left;">
+75.74%
+</td>
+<td style="text-align:left;">
+100%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -643,25 +652,71 @@ if (window.hljs) {
 </tr>
 <tr>
 <td style="text-align:left;">
-600887.SH
+603101.SH
 </td>
 <td style="text-align:left;">
-伊利股份
+汇嘉时代
 </td>
 <td style="text-align:left;">
-2019-05-07
+2019-05-06
 </td>
 <td style="text-align:right;">
-1852.8750
+16800.0000
 </td>
 <td style="text-align:left;">
-99.37%
+30%
 </td>
 <td style="text-align:left;">
-99.68%
+100%
 </td>
 <td style="text-align:left;">
-股权激励一般股份
+首发原股东限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002392.SZ
+</td>
+<td style="text-align:left;">
+北京利尔
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:right;">
+5409.9079
+</td>
+<td style="text-align:left;">
+63.41%
+</td>
+<td style="text-align:left;">
+67.96%
+</td>
+<td style="text-align:left;">
+首发原股东限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002297.SZ
+</td>
+<td style="text-align:left;">
+博云新材
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:right;">
+7249.4034
+</td>
+<td style="text-align:left;">
+84.36%
+</td>
+<td style="text-align:left;">
+99.74%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
 </td>
 </tr>
 <tr>
@@ -712,52 +767,6 @@ if (window.hljs) {
 </tr>
 <tr>
 <td style="text-align:left;">
-002334.SZ
-</td>
-<td style="text-align:left;">
-英威腾
-</td>
-<td style="text-align:left;">
-2019-05-07
-</td>
-<td style="text-align:right;">
-813.6600
-</td>
-<td style="text-align:left;">
-79.76%
-</td>
-<td style="text-align:left;">
-80.84%
-</td>
-<td style="text-align:left;">
-股权激励限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-002757.SZ
-</td>
-<td style="text-align:left;">
-南兴装备
-</td>
-<td style="text-align:left;">
-2019-05-07
-</td>
-<td style="text-align:right;">
-20.0000
-</td>
-<td style="text-align:left;">
-74.69%
-</td>
-<td style="text-align:left;">
-74.84%
-</td>
-<td style="text-align:left;">
-股权激励限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 002472.SZ
 </td>
 <td style="text-align:left;">
@@ -777,6 +786,29 @@ if (window.hljs) {
 </td>
 <td style="text-align:left;">
 股权激励限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600887.SH
+</td>
+<td style="text-align:left;">
+伊利股份
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:right;">
+1852.8750
+</td>
+<td style="text-align:left;">
+99.37%
+</td>
+<td style="text-align:left;">
+99.37%
+</td>
+<td style="text-align:left;">
+股权激励一般股份
 </td>
 </tr>
 <tr>
@@ -804,6 +836,52 @@ if (window.hljs) {
 </tr>
 <tr>
 <td style="text-align:left;">
+002334.SZ
+</td>
+<td style="text-align:left;">
+英威腾
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:right;">
+813.6600
+</td>
+<td style="text-align:left;">
+79.76%
+</td>
+<td style="text-align:left;">
+80.84%
+</td>
+<td style="text-align:left;">
+股权激励限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002335.SZ
+</td>
+<td style="text-align:left;">
+科华恒盛
+</td>
+<td style="text-align:left;">
+2019-05-08
+</td>
+<td style="text-align:right;">
+460.8200
+</td>
+<td style="text-align:left;">
+82.1%
+</td>
+<td style="text-align:left;">
+83.8%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 300342.SZ
 </td>
 <td style="text-align:left;">
@@ -820,75 +898,6 @@ if (window.hljs) {
 </td>
 <td style="text-align:left;">
 93.32%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-300349.SZ
-</td>
-<td style="text-align:left;">
-金卡智能
-</td>
-<td style="text-align:left;">
-2019-05-08
-</td>
-<td style="text-align:right;">
-1866.4141
-</td>
-<td style="text-align:left;">
-82.04%
-</td>
-<td style="text-align:left;">
-86.39%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-603259.SH
-</td>
-<td style="text-align:left;">
-药明康德
-</td>
-<td style="text-align:left;">
-2019-05-08
-</td>
-<td style="text-align:right;">
-61442.7517
-</td>
-<td style="text-align:left;">
-8.91%
-</td>
-<td style="text-align:left;">
-61.42%
-</td>
-<td style="text-align:left;">
-首发原股东限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-600498.SH
-</td>
-<td style="text-align:left;">
-烽火通信
-</td>
-<td style="text-align:left;">
-2019-05-08
-</td>
-<td style="text-align:right;">
-456.4607
-</td>
-<td style="text-align:left;">
-94.32%
-</td>
-<td style="text-align:left;">
-94.72%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -919,22 +928,22 @@ if (window.hljs) {
 </tr>
 <tr>
 <td style="text-align:left;">
-002341.SZ
+300150.SZ
 </td>
 <td style="text-align:left;">
-新纶科技
+世纪瑞尔
 </td>
 <td style="text-align:left;">
 2019-05-08
 </td>
 <td style="text-align:right;">
-2142.1357
+1086.4334
 </td>
 <td style="text-align:left;">
-54.27%
+78.84%
 </td>
 <td style="text-align:left;">
-56.13%
+80.7%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -988,94 +997,117 @@ if (window.hljs) {
 </tr>
 <tr>
 <td style="text-align:left;">
-601020.SH
+002719.SZ
 </td>
 <td style="text-align:left;">
-华钰矿业
+麦趣尔
 </td>
 <td style="text-align:left;">
-2019-05-09
+2019-05-08
 </td>
 <td style="text-align:right;">
-23868.0000
+2102.1470
 </td>
 <td style="text-align:left;">
-54.04%
+80.88%
 </td>
 <td style="text-align:left;">
-99.42%
-</td>
-<td style="text-align:left;">
-首发原股东限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-300602.SZ
-</td>
-<td style="text-align:left;">
-飞荣达
-</td>
-<td style="text-align:left;">
-2019-05-09
-</td>
-<td style="text-align:right;">
-193.8750
-</td>
-<td style="text-align:left;">
-30.37%
-</td>
-<td style="text-align:left;">
-31%
-</td>
-<td style="text-align:left;">
-股权激励限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-600422.SH
-</td>
-<td style="text-align:left;">
-昆药集团
-</td>
-<td style="text-align:left;">
-2019-05-09
-</td>
-<td style="text-align:right;">
-141.9600
-</td>
-<td style="text-align:left;">
-99.51%
-</td>
-<td style="text-align:left;">
-99.7%
-</td>
-<td style="text-align:left;">
-股权激励限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-601113.SH
-</td>
-<td style="text-align:left;">
-华鼎股份
-</td>
-<td style="text-align:left;">
-2019-05-09
-</td>
-<td style="text-align:right;">
-7463.2240
-</td>
-<td style="text-align:left;">
-71.71%
-</td>
-<td style="text-align:left;">
-78.14%
+92.96%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600498.SH
+</td>
+<td style="text-align:left;">
+烽火通信
+</td>
+<td style="text-align:left;">
+2019-05-08
+</td>
+<td style="text-align:right;">
+456.4607
+</td>
+<td style="text-align:left;">
+94.32%
+</td>
+<td style="text-align:left;">
+94.72%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300349.SZ
+</td>
+<td style="text-align:left;">
+金卡智能
+</td>
+<td style="text-align:left;">
+2019-05-08
+</td>
+<td style="text-align:right;">
+1866.4141
+</td>
+<td style="text-align:left;">
+82.04%
+</td>
+<td style="text-align:left;">
+86.39%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002341.SZ
+</td>
+<td style="text-align:left;">
+新纶科技
+</td>
+<td style="text-align:left;">
+2019-05-08
+</td>
+<td style="text-align:right;">
+2142.1357
+</td>
+<td style="text-align:left;">
+54.27%
+</td>
+<td style="text-align:left;">
+56.13%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603259.SH
+</td>
+<td style="text-align:left;">
+药明康德
+</td>
+<td style="text-align:left;">
+2019-05-08
+</td>
+<td style="text-align:right;">
+61442.7517
+</td>
+<td style="text-align:left;">
+8.91%
+</td>
+<td style="text-align:left;">
+61.42%
+</td>
+<td style="text-align:left;">
+首发原股东限售股份
 </td>
 </tr>
 <tr>
@@ -1103,68 +1135,22 @@ if (window.hljs) {
 </tr>
 <tr>
 <td style="text-align:left;">
-300266.SZ
+601113.SH
 </td>
 <td style="text-align:left;">
-兴源环境
-</td>
-<td style="text-align:left;">
-2019-05-09
-</td>
-<td style="text-align:right;">
-4671.7314
-</td>
-<td style="text-align:left;">
-93.45%
-</td>
-<td style="text-align:left;">
-96.44%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-002425.SZ
-</td>
-<td style="text-align:left;">
-凯撒文化
+华鼎股份
 </td>
 <td style="text-align:left;">
 2019-05-09
 </td>
 <td style="text-align:right;">
-921.2797
+7463.2240
 </td>
 <td style="text-align:left;">
-98.85%
+71.71%
 </td>
 <td style="text-align:left;">
-99.98%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-002086.SZ
-</td>
-<td style="text-align:left;">
-ST东海洋
-</td>
-<td style="text-align:left;">
-2019-05-09
-</td>
-<td style="text-align:right;">
-6865.0000
-</td>
-<td style="text-align:left;">
-62.88%
-</td>
-<td style="text-align:left;">
-71.96%
+78.14%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -1195,22 +1181,22 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
-002076.SZ
+300266.SZ
 </td>
 <td style="text-align:left;">
-雪莱特
+兴源环境
 </td>
 <td style="text-align:left;">
 2019-05-09
 </td>
 <td style="text-align:right;">
-2528.4327
+4671.7314
 </td>
 <td style="text-align:left;">
-57.25%
+93.45%
 </td>
 <td style="text-align:left;">
-60.5%
+96.44%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -1218,22 +1204,68 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
-002565.SZ
+300602.SZ
 </td>
 <td style="text-align:left;">
-顺灏股份
+飞荣达
 </td>
 <td style="text-align:left;">
 2019-05-09
 </td>
 <td style="text-align:right;">
-2163.6615
+193.8750
 </td>
 <td style="text-align:left;">
-96.57%
+30.37%
 </td>
 <td style="text-align:left;">
-99.62%
+31%
+</td>
+<td style="text-align:left;">
+股权激励限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+601020.SH
+</td>
+<td style="text-align:left;">
+华钰矿业
+</td>
+<td style="text-align:left;">
+2019-05-09
+</td>
+<td style="text-align:right;">
+23868.0000
+</td>
+<td style="text-align:left;">
+54.04%
+</td>
+<td style="text-align:left;">
+99.42%
+</td>
+<td style="text-align:left;">
+首发原股东限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002425.SZ
+</td>
+<td style="text-align:left;">
+凯撒文化
+</td>
+<td style="text-align:left;">
+2019-05-09
+</td>
+<td style="text-align:right;">
+921.2797
+</td>
+<td style="text-align:left;">
+98.85%
+</td>
+<td style="text-align:left;">
+99.98%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -1241,22 +1273,68 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
-603559.SH
+002579.SZ
 </td>
 <td style="text-align:left;">
-中通国脉
+中京电子
 </td>
 <td style="text-align:left;">
 2019-05-09
 </td>
 <td style="text-align:right;">
-201.2601
+35.1000
 </td>
 <td style="text-align:left;">
-57.34%
+93.49%
 </td>
 <td style="text-align:left;">
-58.75%
+93.58%
+</td>
+<td style="text-align:left;">
+股权激励限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300098.SZ
+</td>
+<td style="text-align:left;">
+高新兴
+</td>
+<td style="text-align:left;">
+2019-05-09
+</td>
+<td style="text-align:right;">
+177.2303
+</td>
+<td style="text-align:left;">
+74.03%
+</td>
+<td style="text-align:left;">
+74.13%
+</td>
+<td style="text-align:left;">
+股权激励限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+000690.SZ
+</td>
+<td style="text-align:left;">
+宝新能源
+</td>
+<td style="text-align:left;">
+2019-05-09
+</td>
+<td style="text-align:right;">
+4492.7536
+</td>
+<td style="text-align:left;">
+93.72%
+</td>
+<td style="text-align:left;">
+95.78%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -1287,25 +1365,301 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
-600777.SH
+603559.SH
 </td>
 <td style="text-align:left;">
-新潮能源
+中通国脉
+</td>
+<td style="text-align:left;">
+2019-05-09
+</td>
+<td style="text-align:right;">
+201.2601
+</td>
+<td style="text-align:left;">
+57.34%
+</td>
+<td style="text-align:left;">
+58.75%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600422.SH
+</td>
+<td style="text-align:left;">
+昆药集团
+</td>
+<td style="text-align:left;">
+2019-05-09
+</td>
+<td style="text-align:right;">
+141.9600
+</td>
+<td style="text-align:left;">
+99.51%
+</td>
+<td style="text-align:left;">
+99.7%
+</td>
+<td style="text-align:left;">
+股权激励限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002076.SZ
+</td>
+<td style="text-align:left;">
+雪莱特
+</td>
+<td style="text-align:left;">
+2019-05-09
+</td>
+<td style="text-align:right;">
+1569.4163
+</td>
+<td style="text-align:left;">
+57.99%
+</td>
+<td style="text-align:left;">
+60.01%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002565.SZ
+</td>
+<td style="text-align:left;">
+顺灏股份
+</td>
+<td style="text-align:left;">
+2019-05-09
+</td>
+<td style="text-align:right;">
+2163.6615
+</td>
+<td style="text-align:left;">
+96.57%
+</td>
+<td style="text-align:left;">
+99.62%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002086.SZ
+</td>
+<td style="text-align:left;">
+ST东海洋
+</td>
+<td style="text-align:left;">
+2019-05-09
+</td>
+<td style="text-align:right;">
+6865.0000
+</td>
+<td style="text-align:left;">
+62.88%
+</td>
+<td style="text-align:left;">
+71.96%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002839.SZ
+</td>
+<td style="text-align:left;">
+张家港行
+</td>
+<td style="text-align:left;">
+2019-05-09
+</td>
+<td style="text-align:right;">
+45.0000
+</td>
+<td style="text-align:left;">
+47.57%
+</td>
+<td style="text-align:left;">
+47.59%
+</td>
+<td style="text-align:left;">
+首发原股东限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603679.SH
+</td>
+<td style="text-align:left;">
+华体科技
 </td>
 <td style="text-align:left;">
 2019-05-10
 </td>
 <td style="text-align:right;">
-78312.0697
+29.5500
 </td>
 <td style="text-align:left;">
-48.06%
+39.79%
 </td>
 <td style="text-align:left;">
-59.57%
+40.09%
+</td>
+<td style="text-align:left;">
+股权激励限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300477.SZ
+</td>
+<td style="text-align:left;">
+合纵科技
+</td>
+<td style="text-align:left;">
+2019-05-10
+</td>
+<td style="text-align:right;">
+522.0893
+</td>
+<td style="text-align:left;">
+54.45%
+</td>
+<td style="text-align:left;">
+55.35%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300513.SZ
+</td>
+<td style="text-align:left;">
+恒实科技
+</td>
+<td style="text-align:left;">
+2019-05-10
+</td>
+<td style="text-align:right;">
+4789.8778
+</td>
+<td style="text-align:left;">
+35.94%
+</td>
+<td style="text-align:left;">
+63.42%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603997.SH
+</td>
+<td style="text-align:left;">
+继峰股份
+</td>
+<td style="text-align:left;">
+2019-05-10
+</td>
+<td style="text-align:right;">
+187.0850
+</td>
+<td style="text-align:left;">
+98.53%
+</td>
+<td style="text-align:left;">
+98.82%
+</td>
+<td style="text-align:left;">
+股权激励限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+000597.SZ
+</td>
+<td style="text-align:left;">
+东北制药
+</td>
+<td style="text-align:left;">
+2019-05-10
+</td>
+<td style="text-align:right;">
+7509.9924
+</td>
+<td style="text-align:left;">
+77.96%
+</td>
+<td style="text-align:left;">
+90.33%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002044.SZ
+</td>
+<td style="text-align:left;">
+美年健康
+</td>
+<td style="text-align:left;">
+2019-05-10
+</td>
+<td style="text-align:right;">
+51462.4830
+</td>
+<td style="text-align:left;">
+75.43%
+</td>
+<td style="text-align:left;">
+91.92%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002796.SZ
+</td>
+<td style="text-align:left;">
+世嘉科技
+</td>
+<td style="text-align:left;">
+2019-05-10
+</td>
+<td style="text-align:right;">
+7512.7500
+</td>
+<td style="text-align:left;">
+35.13%
+</td>
+<td style="text-align:left;">
+79.77%
+</td>
+<td style="text-align:left;">
+首发原股东限售股份
 </td>
 </tr>
 <tr>
@@ -1356,48 +1710,25 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
-300477.SZ
+300079.SZ
 </td>
 <td style="text-align:left;">
-合纵科技
-</td>
-<td style="text-align:left;">
-2019-05-10
-</td>
-<td style="text-align:right;">
-522.0893
-</td>
-<td style="text-align:left;">
-54.45%
-</td>
-<td style="text-align:left;">
-55.35%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-000597.SZ
-</td>
-<td style="text-align:left;">
-东北制药
+数码科技
 </td>
 <td style="text-align:left;">
 2019-05-10
 </td>
 <td style="text-align:right;">
-7509.9924
+62.7738
 </td>
 <td style="text-align:left;">
-77.96%
+84.3%
 </td>
 <td style="text-align:left;">
-90.33%
+84.34%
 </td>
 <td style="text-align:left;">
-定向增发机构配售股份
+股权激励限售股份
 </td>
 </tr>
 <tr>
@@ -1414,125 +1745,10 @@ ST东海洋
 12412.6904
 </td>
 <td style="text-align:left;">
-61.67%
+61.77%
 </td>
 <td style="text-align:left;">
-76.41%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-300513.SZ
-</td>
-<td style="text-align:left;">
-恒实科技
-</td>
-<td style="text-align:left;">
-2019-05-10
-</td>
-<td style="text-align:right;">
-4789.8778
-</td>
-<td style="text-align:left;">
-35.94%
-</td>
-<td style="text-align:left;">
-63.42%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-002796.SZ
-</td>
-<td style="text-align:left;">
-世嘉科技
-</td>
-<td style="text-align:left;">
-2019-05-10
-</td>
-<td style="text-align:right;">
-7512.7500
-</td>
-<td style="text-align:left;">
-35.13%
-</td>
-<td style="text-align:left;">
-79.77%
-</td>
-<td style="text-align:left;">
-首发原股东限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-002797.SZ
-</td>
-<td style="text-align:left;">
-第一创业
-</td>
-<td style="text-align:left;">
-2019-05-13
-</td>
-<td style="text-align:right;">
-158395.0986
-</td>
-<td style="text-align:left;">
-54.78%
-</td>
-<td style="text-align:left;">
-100%
-</td>
-<td style="text-align:left;">
-首发原股东限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-600198.SH
-</td>
-<td style="text-align:left;">
-大唐电信
-</td>
-<td style="text-align:left;">
-2019-05-13
-</td>
-<td style="text-align:right;">
-512.9026
-</td>
-<td style="text-align:left;">
-99.23%
-</td>
-<td style="text-align:left;">
-99.81%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-002092.SZ
-</td>
-<td style="text-align:left;">
-中泰化学
-</td>
-<td style="text-align:left;">
-2019-05-13
-</td>
-<td style="text-align:right;">
-7405.5785
-</td>
-<td style="text-align:left;">
-94.78%
-</td>
-<td style="text-align:left;">
-98.23%
+76.51%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -1559,29 +1775,6 @@ ST东海洋
 </td>
 <td style="text-align:left;">
 首发原股东限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-300157.SZ
-</td>
-<td style="text-align:left;">
-恒泰艾普
-</td>
-<td style="text-align:left;">
-2019-05-13
-</td>
-<td style="text-align:right;">
-1472.4683
-</td>
-<td style="text-align:left;">
-82.23%
-</td>
-<td style="text-align:left;">
-84.3%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
 </td>
 </tr>
 <tr>
@@ -1632,6 +1825,29 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
+002797.SZ
+</td>
+<td style="text-align:left;">
+第一创业
+</td>
+<td style="text-align:left;">
+2019-05-13
+</td>
+<td style="text-align:right;">
+158395.0986
+</td>
+<td style="text-align:left;">
+54.78%
+</td>
+<td style="text-align:left;">
+100%
+</td>
+<td style="text-align:left;">
+首发原股东限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 300058.SZ
 </td>
 <td style="text-align:left;">
@@ -1655,6 +1871,121 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
+600198.SH
+</td>
+<td style="text-align:left;">
+大唐电信
+</td>
+<td style="text-align:left;">
+2019-05-13
+</td>
+<td style="text-align:right;">
+512.9026
+</td>
+<td style="text-align:left;">
+99.23%
+</td>
+<td style="text-align:left;">
+99.81%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600777.SH
+</td>
+<td style="text-align:left;">
+新潮能源
+</td>
+<td style="text-align:left;">
+2019-05-13
+</td>
+<td style="text-align:right;">
+78312.0697
+</td>
+<td style="text-align:left;">
+48.06%
+</td>
+<td style="text-align:left;">
+59.57%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300157.SZ
+</td>
+<td style="text-align:left;">
+恒泰艾普
+</td>
+<td style="text-align:left;">
+2019-05-13
+</td>
+<td style="text-align:right;">
+1472.4683
+</td>
+<td style="text-align:left;">
+82.23%
+</td>
+<td style="text-align:left;">
+84.3%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002092.SZ
+</td>
+<td style="text-align:left;">
+中泰化学
+</td>
+<td style="text-align:left;">
+2019-05-13
+</td>
+<td style="text-align:right;">
+7405.5785
+</td>
+<td style="text-align:left;">
+94.78%
+</td>
+<td style="text-align:left;">
+98.23%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603499.SH
+</td>
+<td style="text-align:left;">
+翔港科技
+</td>
+<td style="text-align:left;">
+2019-05-13
+</td>
+<td style="text-align:right;">
+37.6620
+</td>
+<td style="text-align:left;">
+24.68%
+</td>
+<td style="text-align:left;">
+25.05%
+</td>
+<td style="text-align:left;">
+股权激励限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 300482.SZ
 </td>
 <td style="text-align:left;">
@@ -1671,29 +2002,6 @@ ST东海洋
 </td>
 <td style="text-align:left;">
 69.88%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-300104.SZ
-</td>
-<td style="text-align:left;">
-乐视网
-</td>
-<td style="text-align:left;">
-2019-05-14
-</td>
-<td style="text-align:right;">
-2388.2312
-</td>
-<td style="text-align:left;">
-76.3%
-</td>
-<td style="text-align:left;">
-76.9%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -1724,6 +2032,29 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
+300104.SZ
+</td>
+<td style="text-align:left;">
+乐视网
+</td>
+<td style="text-align:left;">
+2019-05-14
+</td>
+<td style="text-align:right;">
+2388.2312
+</td>
+<td style="text-align:left;">
+76.3%
+</td>
+<td style="text-align:left;">
+76.9%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 002413.SZ
 </td>
 <td style="text-align:left;">
@@ -1740,6 +2071,29 @@ ST东海洋
 </td>
 <td style="text-align:left;">
 91.98%
+</td>
+<td style="text-align:left;">
+股权激励限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600882.SH
+</td>
+<td style="text-align:left;">
+妙可蓝多
+</td>
+<td style="text-align:left;">
+2019-05-16
+</td>
+<td style="text-align:right;">
+279.0000
+</td>
+<td style="text-align:left;">
+98.59%
+</td>
+<td style="text-align:left;">
+99.27%
 </td>
 <td style="text-align:left;">
 股权激励限售股份
@@ -1770,22 +2124,68 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
-600882.SH
+300420.SZ
 </td>
 <td style="text-align:left;">
-妙可蓝多
+五洋停车
 </td>
 <td style="text-align:left;">
 2019-05-16
 </td>
 <td style="text-align:right;">
-279.0000
+350.0000
 </td>
 <td style="text-align:left;">
-98.59%
+65.56%
 </td>
 <td style="text-align:left;">
-99.27%
+66.05%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002600.SZ
+</td>
+<td style="text-align:left;">
+领益智造
+</td>
+<td style="text-align:left;">
+2019-05-16
+</td>
+<td style="text-align:right;">
+4582.7931
+</td>
+<td style="text-align:left;">
+21.8%
+</td>
+<td style="text-align:left;">
+22.47%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300450.SZ
+</td>
+<td style="text-align:left;">
+先导智能
+</td>
+<td style="text-align:left;">
+2019-05-16
+</td>
+<td style="text-align:right;">
+276.5655
+</td>
+<td style="text-align:left;">
+55.51%
+</td>
+<td style="text-align:left;">
+55.82%
 </td>
 <td style="text-align:left;">
 股权激励限售股份
@@ -1816,68 +2216,22 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
-300450.SZ
+600855.SH
 </td>
 <td style="text-align:left;">
-先导智能
+航天长峰
 </td>
 <td style="text-align:left;">
-2019-05-16
+2019-05-17
 </td>
 <td style="text-align:right;">
-276.5655
+1137.1844
 </td>
 <td style="text-align:left;">
-55.51%
+93.77%
 </td>
 <td style="text-align:left;">
-55.82%
-</td>
-<td style="text-align:left;">
-股权激励限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-002600.SZ
-</td>
-<td style="text-align:left;">
-领益智造
-</td>
-<td style="text-align:left;">
-2019-05-16
-</td>
-<td style="text-align:right;">
-4582.7931
-</td>
-<td style="text-align:left;">
-21.8%
-</td>
-<td style="text-align:left;">
-22.47%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-300420.SZ
-</td>
-<td style="text-align:left;">
-五洋停车
-</td>
-<td style="text-align:left;">
-2019-05-16
-</td>
-<td style="text-align:right;">
-350.0000
-</td>
-<td style="text-align:left;">
-65.56%
-</td>
-<td style="text-align:left;">
-66.05%
+97%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -1908,6 +2262,52 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
+603959.SH
+</td>
+<td style="text-align:left;">
+百利科技
+</td>
+<td style="text-align:left;">
+2019-05-17
+</td>
+<td style="text-align:right;">
+16464.0000
+</td>
+<td style="text-align:left;">
+47.5%
+</td>
+<td style="text-align:left;">
+100%
+</td>
+<td style="text-align:left;">
+首发原股东限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300506.SZ
+</td>
+<td style="text-align:left;">
+名家汇
+</td>
+<td style="text-align:left;">
+2019-05-17
+</td>
+<td style="text-align:right;">
+3967.4465
+</td>
+<td style="text-align:left;">
+48.73%
+</td>
+<td style="text-align:left;">
+60.24%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 603269.SH
 </td>
 <td style="text-align:left;">
@@ -1924,29 +2324,6 @@ ST东海洋
 </td>
 <td style="text-align:left;">
 64.61%
-</td>
-<td style="text-align:left;">
-首发原股东限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-603045.SH
-</td>
-<td style="text-align:left;">
-福达合金
-</td>
-<td style="text-align:left;">
-2019-05-17
-</td>
-<td style="text-align:right;">
-4322.9100
-</td>
-<td style="text-align:left;">
-25.01%
-</td>
-<td style="text-align:left;">
-68.98%
 </td>
 <td style="text-align:left;">
 首发原股东限售股份
@@ -1977,137 +2354,22 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
-300506.SZ
+603045.SH
 </td>
 <td style="text-align:left;">
-名家汇
-</td>
-<td style="text-align:left;">
-2019-05-17
-</td>
-<td style="text-align:right;">
-3967.4465
-</td>
-<td style="text-align:left;">
-48.73%
-</td>
-<td style="text-align:left;">
-60.24%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-600855.SH
-</td>
-<td style="text-align:left;">
-航天长峰
+福达合金
 </td>
 <td style="text-align:left;">
 2019-05-17
 </td>
 <td style="text-align:right;">
-1137.1844
+4322.9100
 </td>
 <td style="text-align:left;">
-93.77%
+25.01%
 </td>
 <td style="text-align:left;">
-97%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-603959.SH
-</td>
-<td style="text-align:left;">
-百利科技
-</td>
-<td style="text-align:left;">
-2019-05-17
-</td>
-<td style="text-align:right;">
-16464.0000
-</td>
-<td style="text-align:left;">
-47.5%
-</td>
-<td style="text-align:left;">
-100%
-</td>
-<td style="text-align:left;">
-首发原股东限售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-600482.SH
-</td>
-<td style="text-align:left;">
-中国动力
-</td>
-<td style="text-align:left;">
-2019-05-20
-</td>
-<td style="text-align:right;">
-75026.5604
-</td>
-<td style="text-align:left;">
-51.92%
-</td>
-<td style="text-align:left;">
-95.64%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-600090.SH
-</td>
-<td style="text-align:left;">
-同济堂
-</td>
-<td style="text-align:left;">
-2019-05-20
-</td>
-<td style="text-align:right;">
-73696.5966
-</td>
-<td style="text-align:left;">
-48.81%
-</td>
-<td style="text-align:left;">
-100%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-300450.SZ
-</td>
-<td style="text-align:left;">
-先导智能
-</td>
-<td style="text-align:left;">
-2019-05-20
-</td>
-<td style="text-align:right;">
-35796.2573
-</td>
-<td style="text-align:left;">
-55.51%
-</td>
-<td style="text-align:left;">
-96.11%
+68.98%
 </td>
 <td style="text-align:left;">
 首发原股东限售股份
@@ -2161,25 +2423,25 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
-603339.SH
+600090.SH
 </td>
 <td style="text-align:left;">
-四方科技
+同济堂
 </td>
 <td style="text-align:left;">
 2019-05-20
 </td>
 <td style="text-align:right;">
-3203.9440
+73696.5966
 </td>
 <td style="text-align:left;">
-28.03%
+48.81%
 </td>
 <td style="text-align:left;">
-43.24%
+100%
 </td>
 <td style="text-align:left;">
-首发原股东限售股份
+定向增发机构配售股份
 </td>
 </tr>
 <tr>
@@ -2207,68 +2469,22 @@ ST东海洋
 </tr>
 <tr>
 <td style="text-align:left;">
-002670.SZ
+600482.SH
 </td>
 <td style="text-align:left;">
-国盛金控
-</td>
-<td style="text-align:left;">
-2019-05-20
-</td>
-<td style="text-align:right;">
-99477.9646
-</td>
-<td style="text-align:left;">
-32.45%
-</td>
-<td style="text-align:left;">
-83.86%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-002529.SZ
-</td>
-<td style="text-align:left;">
-海源复材
+中国动力
 </td>
 <td style="text-align:left;">
 2019-05-20
 </td>
 <td style="text-align:right;">
-6000.0000
+75026.5604
 </td>
 <td style="text-align:left;">
-76.92%
+51.92%
 </td>
 <td style="text-align:left;">
-100%
-</td>
-<td style="text-align:left;">
-定向增发机构配售股份
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-002184.SZ
-</td>
-<td style="text-align:left;">
-海得控制
-</td>
-<td style="text-align:left;">
-2019-05-20
-</td>
-<td style="text-align:right;">
-1939.3449
-</td>
-<td style="text-align:left;">
-56.98%
-</td>
-<td style="text-align:left;">
-65.02%
+95.64%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -2315,6 +2531,144 @@ ST东海洋
 </td>
 <td style="text-align:left;">
 49.68%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002529.SZ
+</td>
+<td style="text-align:left;">
+海源复材
+</td>
+<td style="text-align:left;">
+2019-05-20
+</td>
+<td style="text-align:right;">
+6000.0000
+</td>
+<td style="text-align:left;">
+76.92%
+</td>
+<td style="text-align:left;">
+100%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300450.SZ
+</td>
+<td style="text-align:left;">
+先导智能
+</td>
+<td style="text-align:left;">
+2019-05-20
+</td>
+<td style="text-align:right;">
+35796.2573
+</td>
+<td style="text-align:left;">
+55.51%
+</td>
+<td style="text-align:left;">
+96.11%
+</td>
+<td style="text-align:left;">
+首发原股东限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002670.SZ
+</td>
+<td style="text-align:left;">
+国盛金控
+</td>
+<td style="text-align:left;">
+2019-05-20
+</td>
+<td style="text-align:right;">
+99477.9646
+</td>
+<td style="text-align:left;">
+32.45%
+</td>
+<td style="text-align:left;">
+83.86%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002184.SZ
+</td>
+<td style="text-align:left;">
+海得控制
+</td>
+<td style="text-align:left;">
+2019-05-20
+</td>
+<td style="text-align:right;">
+1939.3449
+</td>
+<td style="text-align:left;">
+56.98%
+</td>
+<td style="text-align:left;">
+65.02%
+</td>
+<td style="text-align:left;">
+定向增发机构配售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603339.SH
+</td>
+<td style="text-align:left;">
+四方科技
+</td>
+<td style="text-align:left;">
+2019-05-20
+</td>
+<td style="text-align:right;">
+3203.9440
+</td>
+<td style="text-align:left;">
+28.03%
+</td>
+<td style="text-align:left;">
+43.24%
+</td>
+<td style="text-align:left;">
+首发原股东限售股份
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300227.SZ
+</td>
+<td style="text-align:left;">
+光韵达
+</td>
+<td style="text-align:left;">
+2019-05-22
+</td>
+<td style="text-align:right;">
+731.8245
+</td>
+<td style="text-align:left;">
+67.72%
+</td>
+<td style="text-align:left;">
+71.01%
 </td>
 <td style="text-align:left;">
 定向增发机构配售股份
@@ -2397,7 +2751,7 @@ ST东海洋
 <td style="text-align:left;">
 </td>
 <td style="text-align:right;">
-22.7
+20.83
 </td>
 <td style="text-align:right;">
 90
@@ -2410,6 +2764,84 @@ ST东海洋
 </td>
 <td style="text-align:left;">
 大股东,机构投资者,境内自然人
+</td>
+<td style="text-align:left;">
+现金
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+000534.SZ
+</td>
+<td style="text-align:left;">
+万泽股份
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+董事会预案
+</td>
+<td style="text-align:left;">
+定向
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+10.12
+</td>
+<td style="text-align:right;">
+90
+</td>
+<td style="text-align:right;">
+14500.00
+</td>
+<td style="text-align:left;">
+项目融资
+</td>
+<td style="text-align:left;">
+机构投资者,境内自然人
+</td>
+<td style="text-align:left;">
+现金
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600860.SH
+</td>
+<td style="text-align:left;">
+京城股份
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+董事会预案
+</td>
+<td style="text-align:left;">
+定向
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+7.80
+</td>
+<td style="text-align:right;">
+90
+</td>
+<td style="text-align:right;">
+8440.00
+</td>
+<td style="text-align:left;">
+项目融资
+</td>
+<td style="text-align:left;">
+大股东
 </td>
 <td style="text-align:left;">
 现金
@@ -2461,6 +2893,151 @@ ST东海洋
 <tbody>
 <tr>
 <td style="text-align:left;">
+600850.SH
+</td>
+<td style="text-align:left;">
+华东电脑
+</td>
+<td style="text-align:left;">
+2019-05-05
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+4.9985
+</td>
+<td style="text-align:right;">
+0.0117418
+</td>
+<td style="text-align:right;">
+14.430
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+601860.SH
+</td>
+<td style="text-align:left;">
+紫金银行
+</td>
+<td style="text-align:left;">
+2019-05-05
+</td>
+<td style="text-align:left;">
+2019-04-29
+</td>
+<td style="text-align:left;">
+2019-04-29
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+0.1000
+</td>
+<td style="text-align:right;">
+0.0000273
+</td>
+<td style="text-align:right;">
+8.010
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603283.SH
+</td>
+<td style="text-align:left;">
+赛腾股份
+</td>
+<td style="text-align:left;">
+2019-05-05
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+440.0000
+</td>
+<td style="text-align:right;">
+2.7033021
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603283.SH
+</td>
+<td style="text-align:left;">
+赛腾股份
+</td>
+<td style="text-align:left;">
+2019-05-05
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+440.0000
+</td>
+<td style="text-align:right;">
+2.7033021
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+000546.SZ
+</td>
+<td style="text-align:left;">
+金圆股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+0.7000
+</td>
+<td style="text-align:right;">
+0.0009795
+</td>
+<td style="text-align:right;">
+10.310
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 002137.SZ
 </td>
 <td style="text-align:left;">
@@ -2479,13 +3056,129 @@ ST东海洋
 <span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
 </td>
 <td style="text-align:right;">
-27.250
+27.2500
 </td>
 <td style="text-align:right;">
 0.0471049
 </td>
 <td style="text-align:right;">
-7.3400
+7.340
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002219.SZ
+</td>
+<td style="text-align:left;">
+恒康医疗
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+9.7000
+</td>
+<td style="text-align:right;">
+0.0052004
+</td>
+<td style="text-align:right;">
+3.390
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002247.SZ
+</td>
+<td style="text-align:left;">
+聚力文化
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+7.0000
+</td>
+<td style="text-align:right;">
+0.0082269
+</td>
+<td style="text-align:right;">
+4.250
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002261.SZ
+</td>
+<td style="text-align:left;">
+拓维信息
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+145.3000
+</td>
+<td style="text-align:right;">
+0.1319989
+</td>
+<td style="text-align:right;">
+5.620
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002281.SZ
+</td>
+<td style="text-align:left;">
+光迅科技
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+3.7900
+</td>
+<td style="text-align:right;">
+0.0055980
+</td>
+<td style="text-align:right;">
+28.200
 </td>
 </tr>
 <tr>
@@ -2508,13 +3201,71 @@ ST东海洋
 <span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
 </td>
 <td style="text-align:right;">
-10.000
+10.0000
 </td>
 <td style="text-align:right;">
 0.0119657
 </td>
 <td style="text-align:right;">
-6.5400
+6.550
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002386.SZ
+</td>
+<td style="text-align:left;">
+天原集团
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+2.0000
+</td>
+<td style="text-align:right;">
+0.0025613
+</td>
+<td style="text-align:right;">
+6.820
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002548.SZ
+</td>
+<td style="text-align:left;">
+金新农
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+2.2000
+</td>
+<td style="text-align:right;">
+0.0052122
+</td>
+<td style="text-align:right;">
+14.520
 </td>
 </tr>
 <tr>
@@ -2537,13 +3288,13 @@ ST东海洋
 <span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
 </td>
 <td style="text-align:right;">
-0.550
+0.5500
 </td>
 <td style="text-align:right;">
 0.0006574
 </td>
 <td style="text-align:right;">
-15.5696
+15.570
 </td>
 </tr>
 <tr>
@@ -2566,13 +3317,13 @@ ST东海洋
 <span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
 </td>
 <td style="text-align:right;">
-117.130
+117.1300
 </td>
 <td style="text-align:right;">
 0.1891589
 </td>
 <td style="text-align:right;">
-6.0780
+6.080
 </td>
 </tr>
 <tr>
@@ -2595,13 +3346,1724 @@ ST东海洋
 <span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
 </td>
 <td style="text-align:right;">
-82.295
+82.2950
 </td>
 <td style="text-align:right;">
 0.1329022
 </td>
 <td style="text-align:right;">
-6.1040
+6.104
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002621.SZ
+</td>
+<td style="text-align:left;">
+美吉姆
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+0.6700
+</td>
+<td style="text-align:right;">
+0.0019275
+</td>
+<td style="text-align:right;">
+21.130
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002641.SZ
+</td>
+<td style="text-align:left;">
+永高股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+3.0000
+</td>
+<td style="text-align:right;">
+0.0026709
+</td>
+<td style="text-align:right;">
+4.260
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002661.SZ
+</td>
+<td style="text-align:left;">
+克明面业
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+3.4800
+</td>
+<td style="text-align:right;">
+0.0104841
+</td>
+<td style="text-align:right;">
+14.450
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002734.SZ
+</td>
+<td style="text-align:left;">
+利民股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+3.0000
+</td>
+<td style="text-align:right;">
+0.0105820
+</td>
+<td style="text-align:right;">
+14.560
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002734.SZ
+</td>
+<td style="text-align:left;">
+利民股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+12.0000
+</td>
+<td style="text-align:right;">
+0.0423280
+</td>
+<td style="text-align:right;">
+14.530
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002783.SZ
+</td>
+<td style="text-align:left;">
+凯龙股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+2.0000
+</td>
+<td style="text-align:right;">
+0.0059902
+</td>
+<td style="text-align:right;">
+15.600
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002783.SZ
+</td>
+<td style="text-align:left;">
+凯龙股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+7.0000
+</td>
+<td style="text-align:right;">
+0.0209656
+</td>
+<td style="text-align:right;">
+15.790
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002796.SZ
+</td>
+<td style="text-align:left;">
+世嘉科技
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+1.2000
+</td>
+<td style="text-align:right;">
+0.0071297
+</td>
+<td style="text-align:right;">
+38.110
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002933.SZ
+</td>
+<td style="text-align:left;">
+新兴装备
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+0.0900
+</td>
+<td style="text-align:right;">
+0.0007669
+</td>
+<td style="text-align:right;">
+43.930
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300002.SZ
+</td>
+<td style="text-align:left;">
+神州泰岳
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+1888.0000
+</td>
+<td style="text-align:right;">
+0.9627289
+</td>
+<td style="text-align:right;">
+4.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300010.SZ
+</td>
+<td style="text-align:left;">
+立思辰
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+251.7000
+</td>
+<td style="text-align:right;">
+0.2898685
+</td>
+<td style="text-align:right;">
+8.900
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300015.SZ
+</td>
+<td style="text-align:left;">
+爱尔眼科
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+2.0000
+</td>
+<td style="text-align:right;">
+0.0008391
+</td>
+<td style="text-align:right;">
+37.570
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300017.SZ
+</td>
+<td style="text-align:left;">
+网宿科技
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+58.5700
+</td>
+<td style="text-align:right;">
+0.0240750
+</td>
+<td style="text-align:right;">
+11.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300033.SZ
+</td>
+<td style="text-align:left;">
+同花顺
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+0.0600
+</td>
+<td style="text-align:right;">
+0.0001116
+</td>
+<td style="text-align:right;">
+93.480
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300146.SZ
+</td>
+<td style="text-align:left;">
+汤臣倍健
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+20.0000
+</td>
+<td style="text-align:right;">
+0.0136164
+</td>
+<td style="text-align:right;">
+21.880
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300146.SZ
+</td>
+<td style="text-align:left;">
+汤臣倍健
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+230.0000
+</td>
+<td style="text-align:right;">
+0.1565885
+</td>
+<td style="text-align:right;">
+21.760
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300146.SZ
+</td>
+<td style="text-align:left;">
+汤臣倍健
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+10.0000
+</td>
+<td style="text-align:right;">
+0.0068082
+</td>
+<td style="text-align:right;">
+21.620
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300146.SZ
+</td>
+<td style="text-align:left;">
+汤臣倍健
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+35.4900
+</td>
+<td style="text-align:right;">
+0.0241623
+</td>
+<td style="text-align:right;">
+21.930
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300146.SZ
+</td>
+<td style="text-align:left;">
+汤臣倍健
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+25.0000
+</td>
+<td style="text-align:right;">
+0.0170205
+</td>
+<td style="text-align:right;">
+21.840
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300146.SZ
+</td>
+<td style="text-align:left;">
+汤臣倍健
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+87.4600
+</td>
+<td style="text-align:right;">
+0.0595445
+</td>
+<td style="text-align:right;">
+21.960
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300236.SZ
+</td>
+<td style="text-align:left;">
+上海新阳
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+1.0000
+</td>
+<td style="text-align:right;">
+0.0051609
+</td>
+<td style="text-align:right;">
+35.510
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300270.SZ
+</td>
+<td style="text-align:left;">
+中威电子
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+17.1000
+</td>
+<td style="text-align:right;">
+0.0564718
+</td>
+<td style="text-align:right;">
+7.940
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300353.SZ
+</td>
+<td style="text-align:left;">
+东土科技
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+122.2100
+</td>
+<td style="text-align:right;">
+0.2364113
+</td>
+<td style="text-align:right;">
+13.420
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300378.SZ
+</td>
+<td style="text-align:left;">
+鼎捷软件
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+0.4000
+</td>
+<td style="text-align:right;">
+0.0015114
+</td>
+<td style="text-align:right;">
+16.950
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300387.SZ
+</td>
+<td style="text-align:left;">
+富邦股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+3.2700
+</td>
+<td style="text-align:right;">
+0.0113126
+</td>
+<td style="text-align:right;">
+9.310
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300399.SZ
+</td>
+<td style="text-align:left;">
+京天利
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+0.8400
+</td>
+<td style="text-align:right;">
+0.0042510
+</td>
+<td style="text-align:right;">
+12.990
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300405.SZ
+</td>
+<td style="text-align:left;">
+科隆股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+5.4800
+</td>
+<td style="text-align:right;">
+0.0360518
+</td>
+<td style="text-align:right;">
+14.170
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300405.SZ
+</td>
+<td style="text-align:left;">
+科隆股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+1.7900
+</td>
+<td style="text-align:right;">
+0.0117760
+</td>
+<td style="text-align:right;">
+14.180
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300415.SZ
+</td>
+<td style="text-align:left;">
+伊之密
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+128.8000
+</td>
+<td style="text-align:right;">
+0.2981481
+</td>
+<td style="text-align:right;">
+6.790
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300415.SZ
+</td>
+<td style="text-align:left;">
+伊之密
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+80.0000
+</td>
+<td style="text-align:right;">
+0.1851852
+</td>
+<td style="text-align:right;">
+6.790
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300435.SZ
+</td>
+<td style="text-align:left;">
+中泰股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+1.0000
+</td>
+<td style="text-align:right;">
+0.0040080
+</td>
+<td style="text-align:right;">
+17.760
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300435.SZ
+</td>
+<td style="text-align:left;">
+中泰股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+5.0000
+</td>
+<td style="text-align:right;">
+0.0200398
+</td>
+<td style="text-align:right;">
+18.210
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300435.SZ
+</td>
+<td style="text-align:left;">
+中泰股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+10.0000
+</td>
+<td style="text-align:right;">
+0.0400797
+</td>
+<td style="text-align:right;">
+18.960
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300435.SZ
+</td>
+<td style="text-align:left;">
+中泰股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+10.0700
+</td>
+<td style="text-align:right;">
+0.0403602
+</td>
+<td style="text-align:right;">
+18.370
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300435.SZ
+</td>
+<td style="text-align:left;">
+中泰股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+5.0000
+</td>
+<td style="text-align:right;">
+0.0200398
+</td>
+<td style="text-align:right;">
+18.960
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300441.SZ
+</td>
+<td style="text-align:left;">
+鲍斯股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+33.7000
+</td>
+<td style="text-align:right;">
+0.0508807
+</td>
+<td style="text-align:right;">
+9.110
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300448.SZ
+</td>
+<td style="text-align:left;">
+浩云科技
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+0.9000
+</td>
+<td style="text-align:right;">
+0.0021985
+</td>
+<td style="text-align:right;">
+14.330
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300498.SZ
+</td>
+<td style="text-align:left;">
+温氏股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+22.6800
+</td>
+<td style="text-align:right;">
+0.0042687
+</td>
+<td style="text-align:right;">
+40.510
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300498.SZ
+</td>
+<td style="text-align:left;">
+温氏股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+50.0000
+</td>
+<td style="text-align:right;">
+0.0094107
+</td>
+<td style="text-align:right;">
+40.820
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300515.SZ
+</td>
+<td style="text-align:left;">
+三德科技
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+31.9100
+</td>
+<td style="text-align:right;">
+0.1579234
+</td>
+<td style="text-align:right;">
+9.790
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300560.SZ
+</td>
+<td style="text-align:left;">
+中富通
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+0.2700
+</td>
+<td style="text-align:right;">
+0.0017114
+</td>
+<td style="text-align:right;">
+19.990
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300567.SZ
+</td>
+<td style="text-align:left;">
+精测电子
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+1.0000
+</td>
+<td style="text-align:right;">
+0.0061119
+</td>
+<td style="text-align:right;">
+75.500
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300665.SZ
+</td>
+<td style="text-align:left;">
+飞鹿股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+21.0000
+</td>
+<td style="text-align:right;">
+0.1726974
+</td>
+<td style="text-align:right;">
+10.650
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300725.SZ
+</td>
+<td style="text-align:left;">
+药石科技
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+0.0900
+</td>
+<td style="text-align:right;">
+0.0008182
+</td>
+<td style="text-align:right;">
+91.790
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600276.SH
+</td>
+<td style="text-align:left;">
+恒瑞医药
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+2.3680
+</td>
+<td style="text-align:right;">
+0.0005354
+</td>
+<td style="text-align:right;">
+65.950
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600552.SH
+</td>
+<td style="text-align:left;">
+凯盛科技
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+5.0000
+</td>
+<td style="text-align:right;">
+0.0065455
+</td>
+<td style="text-align:right;">
+4.580
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600697.SH
+</td>
+<td style="text-align:left;">
+欧亚集团
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+11.5000
+</td>
+<td style="text-align:right;">
+0.0722870
+</td>
+<td style="text-align:right;">
+19.030
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600697.SH
+</td>
+<td style="text-align:left;">
+欧亚集团
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-29
+</td>
+<td style="text-align:left;">
+2019-04-29
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+6.6000
+</td>
+<td style="text-align:right;">
+0.0414865
+</td>
+<td style="text-align:right;">
+19.680
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603258.SH
+</td>
+<td style="text-align:left;">
+电魂网络
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-29
+</td>
+<td style="text-align:left;">
+2019-04-29
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+12.0000
+</td>
+<td style="text-align:right;">
+0.0493671
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603258.SH
+</td>
+<td style="text-align:left;">
+电魂网络
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-29
+</td>
+<td style="text-align:left;">
+2019-04-29
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+15.0000
+</td>
+<td style="text-align:right;">
+0.0617088
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603383.SH
+</td>
+<td style="text-align:left;">
+顶点软件
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+2.1000
+</td>
+<td style="text-align:right;">
+0.0174689
+</td>
+<td style="text-align:right;">
+106.104
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002911.SZ
+</td>
+<td style="text-align:left;">
+佛燃股份
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+19.2700
+</td>
+<td style="text-align:right;">
+0.0346583
+</td>
+<td style="text-align:right;">
+15.690
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002911.SZ
+</td>
+<td style="text-align:left;">
+佛燃股份
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+4.0000
+</td>
+<td style="text-align:right;">
+0.0071942
+</td>
+<td style="text-align:right;">
+15.540
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300180.SZ
+</td>
+<td style="text-align:left;">
+华峰超纤
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+200.0000
+</td>
+<td style="text-align:right;">
+0.1760818
+</td>
+<td style="text-align:right;">
+14.370
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300726.SZ
+</td>
+<td style="text-align:left;">
+宏达电子
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-02-25
+</td>
+<td style="text-align:left;">
+2019-02-25
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+5.2200
+</td>
+<td style="text-align:right;">
+0.0130467
+</td>
+<td style="text-align:right;">
+19.560
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300726.SZ
+</td>
+<td style="text-align:left;">
+宏达电子
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-02-25
+</td>
+<td style="text-align:left;">
+2019-02-25
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+1.5020
+</td>
+<td style="text-align:right;">
+0.0037541
+</td>
+<td style="text-align:right;">
+19.230
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300726.SZ
+</td>
+<td style="text-align:left;">
+宏达电子
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-02-22
+</td>
+<td style="text-align:left;">
+2019-02-22
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+0.5000
+</td>
+<td style="text-align:right;">
+0.0012497
+</td>
+<td style="text-align:right;">
+18.890
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603313.SH
+</td>
+<td style="text-align:left;">
+梦百合
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+0.4300
+</td>
+<td style="text-align:right;">
+0.0017791
+</td>
+<td style="text-align:right;">
+23.500
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603313.SH
+</td>
+<td style="text-align:left;">
+梦百合
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+0.4200
+</td>
+<td style="text-align:right;">
+0.0017377
+</td>
+<td style="text-align:right;">
+23.500
 </td>
 </tr>
 </tbody>
@@ -2998,6 +5460,64 @@ NaN
 </tr>
 <tr>
 <td style="text-align:left;">
+002127.SZ
+</td>
+<td style="text-align:left;">
+南极电商
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2018-04-02
+</td>
+<td style="text-align:left;">
+2019-04-29
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+7200.0000
+</td>
+<td style="text-align:right;">
+2.9329451
+</td>
+<td style="text-align:right;">
+8.7802
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002127.SZ
+</td>
+<td style="text-align:left;">
+南极电商
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2018-10-08
+</td>
+<td style="text-align:left;">
+2019-04-29
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+4460.0000
+</td>
+<td style="text-align:right;">
+1.8167965
+</td>
+<td style="text-align:right;">
+7.5135
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 002137.SZ
 </td>
 <td style="text-align:left;">
@@ -3023,6 +5543,35 @@ NaN
 </td>
 <td style="text-align:right;">
 7.3400
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002419.SZ
+</td>
+<td style="text-align:left;">
+天虹股份
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+2019-04-01
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+279.2029
+</td>
+<td style="text-align:right;">
+0.2326109
+</td>
+<td style="text-align:right;">
+14.0393
 </td>
 </tr>
 <tr>
@@ -3516,6 +6065,1224 @@ NA
 </td>
 <td style="text-align:right;">
 10.7933
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+000659.SZ
+</td>
+<td style="text-align:left;">
+珠海中富
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2018-12-28
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+3057.2950
+</td>
+<td style="text-align:right;">
+2.3779179
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002002.SZ
+</td>
+<td style="text-align:left;">
+鸿达兴业
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+954.0400
+</td>
+<td style="text-align:right;">
+0.3685382
+</td>
+<td style="text-align:right;">
+5.5470
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002344.SZ
+</td>
+<td style="text-align:left;">
+海宁皮城
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-03-08
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+1450.4205
+</td>
+<td style="text-align:right;">
+1.1307161
+</td>
+<td style="text-align:right;">
+5.2300
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-26
+</td>
+<td style="text-align:left;">
+2019-04-26
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+10.0000
+</td>
+<td style="text-align:right;">
+0.0065262
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-25
+</td>
+<td style="text-align:left;">
+2019-04-25
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+102.9000
+</td>
+<td style="text-align:right;">
+0.0671547
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-24
+</td>
+<td style="text-align:left;">
+2019-04-24
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+102.6600
+</td>
+<td style="text-align:right;">
+0.0669980
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-23
+</td>
+<td style="text-align:left;">
+2019-04-23
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+117.8500
+</td>
+<td style="text-align:right;">
+0.0769113
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-17
+</td>
+<td style="text-align:left;">
+2019-04-17
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+25.5000
+</td>
+<td style="text-align:right;">
+0.0166418
+</td>
+<td style="text-align:right;">
+19.5900
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-16
+</td>
+<td style="text-align:left;">
+2019-04-16
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+102.0000
+</td>
+<td style="text-align:right;">
+0.0665673
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-15
+</td>
+<td style="text-align:left;">
+2019-04-15
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+101.0000
+</td>
+<td style="text-align:right;">
+0.0659147
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-04
+</td>
+<td style="text-align:left;">
+2019-04-04
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+100.8700
+</td>
+<td style="text-align:right;">
+0.0658298
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-03
+</td>
+<td style="text-align:left;">
+2019-04-03
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+101.1000
+</td>
+<td style="text-align:right;">
+0.0659799
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-02
+</td>
+<td style="text-align:left;">
+2019-04-02
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+97.4000
+</td>
+<td style="text-align:right;">
+0.0635652
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-01
+</td>
+<td style="text-align:left;">
+2019-04-01
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+98.0000
+</td>
+<td style="text-align:right;">
+0.0639568
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-03-29
+</td>
+<td style="text-align:left;">
+2019-03-29
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+98.6000
+</td>
+<td style="text-align:right;">
+0.0643484
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-03-28
+</td>
+<td style="text-align:left;">
+2019-03-28
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+96.2000
+</td>
+<td style="text-align:right;">
+0.0627821
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-03-27
+</td>
+<td style="text-align:left;">
+2019-03-27
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+98.0000
+</td>
+<td style="text-align:right;">
+0.0639568
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-03-26
+</td>
+<td style="text-align:left;">
+2019-03-26
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+99.1000
+</td>
+<td style="text-align:right;">
+0.0646747
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002411.SZ
+</td>
+<td style="text-align:left;">
+延安必康
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-03-25
+</td>
+<td style="text-align:left;">
+2019-03-25
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+51.0000
+</td>
+<td style="text-align:right;">
+0.0332836
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002773.SZ
+</td>
+<td style="text-align:left;">
+康弘药业
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-03-08
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+29.8350
+</td>
+<td style="text-align:right;">
+0.0442960
+</td>
+<td style="text-align:right;">
+43.9130
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002773.SZ
+</td>
+<td style="text-align:left;">
+康弘药业
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-03-08
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+60.3900
+</td>
+<td style="text-align:right;">
+0.0896610
+</td>
+<td style="text-align:right;">
+43.9335
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002773.SZ
+</td>
+<td style="text-align:left;">
+康弘药业
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-03-08
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+106.2925
+</td>
+<td style="text-align:right;">
+0.1578125
+</td>
+<td style="text-align:right;">
+43.9337
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002773.SZ
+</td>
+<td style="text-align:left;">
+康弘药业
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-03-08
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+73.8400
+</td>
+<td style="text-align:right;">
+0.1096303
+</td>
+<td style="text-align:right;">
+43.9371
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+002860.SZ
+</td>
+<td style="text-align:left;">
+星帅尔
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2018-11-05
+</td>
+<td style="text-align:left;">
+2019-04-23
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+233.3500
+</td>
+<td style="text-align:right;">
+1.9999482
+</td>
+<td style="text-align:right;">
+20.0400
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300150.SZ
+</td>
+<td style="text-align:left;">
+世纪瑞尔
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-03-07
+</td>
+<td style="text-align:left;">
+2019-03-07
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+39.4100
+</td>
+<td style="text-align:right;">
+0.0673553
+</td>
+<td style="text-align:right;">
+5.5900
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300150.SZ
+</td>
+<td style="text-align:left;">
+世纪瑞尔
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-03-05
+</td>
+<td style="text-align:left;">
+2019-03-05
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+121.6000
+</td>
+<td style="text-align:right;">
+0.2078256
+</td>
+<td style="text-align:right;">
+5.2300
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300622.SZ
+</td>
+<td style="text-align:left;">
+博士眼镜
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-02-28
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+31.7000
+</td>
+<td style="text-align:right;">
+0.3643259
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300693.SZ
+</td>
+<td style="text-align:left;">
+盛弘股份
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+62.0000
+</td>
+<td style="text-align:right;">
+0.4530497
+</td>
+<td style="text-align:right;">
+13.1800
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300709.SZ
+</td>
+<td style="text-align:left;">
+精研科技
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+8.5500
+</td>
+<td style="text-align:right;">
+0.0971591
+</td>
+<td style="text-align:right;">
+44.3800
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300709.SZ
+</td>
+<td style="text-align:left;">
+精研科技
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-29
+</td>
+<td style="text-align:left;">
+2019-04-29
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+6.4500
+</td>
+<td style="text-align:right;">
+0.0732955
+</td>
+<td style="text-align:right;">
+44.7500
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300709.SZ
+</td>
+<td style="text-align:left;">
+精研科技
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-26
+</td>
+<td style="text-align:left;">
+2019-04-26
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+3.1700
+</td>
+<td style="text-align:right;">
+0.0360227
+</td>
+<td style="text-align:right;">
+47.2400
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300709.SZ
+</td>
+<td style="text-align:left;">
+精研科技
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-25
+</td>
+<td style="text-align:left;">
+2019-04-25
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+21.4100
+</td>
+<td style="text-align:right;">
+0.2432955
+</td>
+<td style="text-align:right;">
+48.6100
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300709.SZ
+</td>
+<td style="text-align:left;">
+精研科技
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-24
+</td>
+<td style="text-align:left;">
+2019-04-24
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+12.8500
+</td>
+<td style="text-align:right;">
+0.1460227
+</td>
+<td style="text-align:right;">
+46.9400
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300709.SZ
+</td>
+<td style="text-align:left;">
+精研科技
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-23
+</td>
+<td style="text-align:left;">
+2019-04-23
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+11.0800
+</td>
+<td style="text-align:right;">
+0.1259091
+</td>
+<td style="text-align:right;">
+47.4700
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+300709.SZ
+</td>
+<td style="text-align:left;">
+精研科技
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-18
+</td>
+<td style="text-align:left;">
+2019-04-18
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+24.4900
+</td>
+<td style="text-align:right;">
+0.2782955
+</td>
+<td style="text-align:right;">
+47.4900
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600240.SH
+</td>
+<td style="text-align:left;">
+*ST华业
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-01-18
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+1479.2200
+</td>
+<td style="text-align:right;">
+1.0385931
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600266.SH
+</td>
+<td style="text-align:left;">
+北京城建
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2018-12-25
+</td>
+<td style="text-align:left;">
+2019-03-29
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+746.0060
+</td>
+<td style="text-align:right;">
+0.4760606
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+600728.SH
+</td>
+<td style="text-align:left;">
+佳都科技
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-04-25
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+1766.5700
+</td>
+<td style="text-align:right;">
+1.0912905
+</td>
+<td style="text-align:right;">
+9.5500
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603058.SH
+</td>
+<td style="text-align:left;">
+永吉股份
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-01-24
+</td>
+<td style="text-align:left;">
+2019-05-06
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: red;">增持</span>
+</td>
+<td style="text-align:right;">
+133.5800
+</td>
+<td style="text-align:right;">
+0.3187501
+</td>
+<td style="text-align:right;">
+NaN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603133.SH
+</td>
+<td style="text-align:left;">
+碳元科技
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-02-11
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+180.0000
+</td>
+<td style="text-align:right;">
+0.8548429
+</td>
+<td style="text-align:right;">
+17.9227
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603133.SH
+</td>
+<td style="text-align:left;">
+碳元科技
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-02-11
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+54.0000
+</td>
+<td style="text-align:right;">
+0.2564529
+</td>
+<td style="text-align:right;">
+17.9050
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+603488.SH
+</td>
+<td style="text-align:left;">
+展鹏科技
+</td>
+<td style="text-align:left;">
+2019-05-07
+</td>
+<td style="text-align:left;">
+2019-02-01
+</td>
+<td style="text-align:left;">
+2019-04-30
+</td>
+<td style="text-align:left;">
+<span style=" font-weight: bold;    color: white;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: green;">减持</span>
+</td>
+<td style="text-align:right;">
+80.0000
+</td>
+<td style="text-align:right;">
+0.3828832
+</td>
+<td style="text-align:right;">
+9.0642
 </td>
 </tr>
 </tbody>
