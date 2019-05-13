@@ -2,59 +2,25 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-<script src="highchart_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
-<script src="highchart_libs/jquery-1.11.1/jquery.min.js"></script>
-<script src="highchart_libs/proj4js-2.3.15/proj4.js"></script>
-<link href="highchart_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
-<link href="highchart_libs/highcharts-7.0.1/css/htmlwdgtgrid.css" rel="stylesheet" />
-<script src="highchart_libs/highcharts-7.0.1/highcharts.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/highcharts-3d.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/highcharts-more.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/stock.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/map.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/annotations.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/boost.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/data.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/drag-panes.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/drilldown.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/item-series.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/offline-exporting.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/overlapping-datalabels.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/exporting.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/export-data.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/funnel.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/heatmap.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/treemap.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/sankey.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/solid-gauge.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/streamgraph.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/sunburst.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/vector.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/wordcloud.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/xrange.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/tilemap.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/venn.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/gantt.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/timeline.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/modules/parallel-coordinates.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/plugins/grouped-categories.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/plugins/motion.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/plugins/multicolor_series.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/custom/reset.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/custom/symbols-extra.js"></script>
-<script src="highchart_libs/highcharts-7.0.1/custom/text-symbols.js"></script>
-<script src="highchart_libs/highchart-binding-0.7.0/highchart.js"></script>
-<script src="highchart_libs/pymjs-1.3.2/pym.v1.min.js"></script>
-  <title>highchart</title>
+<script src="DiagrammeR_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="DiagrammeR_libs/d3-3.3.8/d3.min.js"></script>
+<script src="DiagrammeR_libs/dagre-0.4.0/dagre-d3.min.js"></script>
+<link href="DiagrammeR_libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+<script src="DiagrammeR_libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+<link href="DiagrammeR_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="DiagrammeR_libs/chromatography-0.1/chromatography.js"></script>
+<script src="DiagrammeR_libs/DiagrammeR-binding-1.0.0/DiagrammeR.js"></script>
+<script src="DiagrammeR_libs/pymjs-1.3.2/pym.v1.min.js"></script>
+  <title>DiagrammeR</title>
 </head>
 <body style="background-color:white;">
 <div id="htmlwidget_container">
-  <div id="htmlwidget-b71a81d00a3746a2350f" style="width:100%;height:400px;" class="highchart html-widget"></div>
+  <div id="htmlwidget-853f2bc0a00036343e2e" style="width:100%;height:200px;" class="DiagrammeR html-widget"></div>
   <script>HTMLWidgets.pymChild = new pym.Child();HTMLWidgets.addPostRenderHandler(function(){
                                 setTimeout(function(){HTMLWidgets.pymChild.sendHeight();},100);
                             });</script>
 </div>
-<script type="application/json" data-for="htmlwidget-b71a81d00a3746a2350f">{"x":{"hc_opts":{"title":{"text":"涤纶行业归母净利润占比"},"yAxis":{"title":{"text":"%"}},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"chart":{"type":"waterfall","zoomType":"xy"},"subtitle":{"text":"更新日期:2018-09-30"},"xAxis":{"categories":["恒力股份","桐昆股份","恒逸石化","荣盛石化","新凤鸣","华西股份","海利得","苏州龙杰","江南高纤","*ST尤夫","恒天海龙","霞客环保"]},"legend":{"enabled":false},"tooltip":{"pointFormat":"<b>{point.y:,.2f}%"},"series":[{"data":[{"name":"恒力股份","y":29.5188725370301,"color":"red","line":100},{"name":"桐昆股份","y":20.2305753919359,"color":"red","line":100},{"name":"恒逸石化","y":17.8196914845456,"color":"red","line":100},{"name":"荣盛石化","y":14.2955808857924,"color":"red","line":100},{"name":"新凤鸣","y":11.7659833895169,"color":"red","line":100},{"name":"华西股份","y":2.36952582940533,"color":"red","line":100},{"name":"海利得","y":2.34619736399683,"color":"red","line":100},{"name":"苏州龙杰","y":1.06601400807039,"color":"red","line":100},{"name":"江南高纤","y":0.429371401671887,"color":"red","line":100},{"name":"*ST尤夫","y":0.121572536928156,"color":"red","line":100},{"name":"恒天海龙","y":0.0273626286914688,"color":"red","line":100},{"name":"霞客环保","y":0.00925254241505085,"color":"red","line":100}],"dataLabels":{"enabled":false,"format":"{point.y:,.2f}%","style":{"color":"#FFFFFF","fontWeight":"bold","textShadow":"0px 0px 3px black"}},"pointPadding":0}]},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Roboto","color":"#666666"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"plotOptions":{"line":{"marker":{"enabled":false}},"spline":{"marker":{"enabled":false}},"area":{"marker":{"enabled":false}},"areaspline":{"marker":{"enabled":false}},"arearange":{"marker":{"enabled":false}},"bubble":{"maxSize":"10%"}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":[],"jsHooks":[]}</script>
-<script type="application/htmlwidget-sizing" data-for="htmlwidget-b71a81d00a3746a2350f">{"viewer":{"width":"100%","height":"400px","padding":0,"fill":false},"browser":{"width":"100%","height":"400px","padding":0,"fill":false}}</script>
+<script type="application/json" data-for="htmlwidget-853f2bc0a00036343e2e">{"x":{"diagram":"\n\n  graph LR;\n    石油 -->石脑油;\n    石脑油 --> PX;\n    石脑油 --> 乙烯;\n    PX --> PTA;\n    乙烯 --> 乙二醇;\n    PTA --> PET;\n    乙二醇 --> PET;\n    PET --> 涤纶长丝;\n    PET --> 涤纶短纤;\n    涤纶长丝 --> 纺织用品;\n    涤纶短纤 --> 纺织用品;\n\n  style 涤纶长丝 fill:#FFA070, stroke:#FF5E5E, stroke-width:2px\n  style 涤纶短纤 fill:#FFA070, stroke:#FF5E5E, stroke-width:2px\n\n"},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-853f2bc0a00036343e2e">{"viewer":{"width":"100%","height":"200px","padding":0,"fill":false},"browser":{"width":"100%","height":"200px","padding":0,"fill":false}}</script>
 </body>
 </html>
