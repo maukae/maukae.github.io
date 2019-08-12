@@ -1,0 +1,51 @@
+/* Hero Section */
+.cover-img.hero-capability-private-markets {
+    background: transparent url("../images/private-markets-hero.jpg") no-repeat scroll center top / cover;
+}
+/*Investment Platform Diagram*/
+.right .circle-callout-link.first {
+    top: 20%;
+}
+.right .circle-callout-link.second {
+    top: 35%;
+    left: 10px;
+}
+.right .circle-callout-link.third {
+    top: 50%;
+    left: 30px;
+}
+.right .circle-callout-link.fourth {
+    top: 65%;
+    left: 20px;
+}
+.right .circle-callout-link.fifth {
+    top: 80%;
+}
+.left .circle-callout-link.second {
+    right: 20px;
+}
+.right .circle-callout-link.second {
+    left: 20px;
+}
+/* Standard Callout*/
+.standard-callout a.button.white {
+    margin-top: 30px;
+}
+/* Carousel Section */
+.carousel-indicators {
+    padding: 0 32% 0 5%;
+}
+.carousel-inner .carousel-slide-title {
+    margin-top: 20px;
+}
+.panel-group .carousel-inner .panel-heading + .panel-collapse > .panel-body {
+    min-height: 450px;
+}
+/**/
+/*global Spotlight*/
+.global-spotlight .button {
+    width: 245px;
+}
+    .global-spotlight .button:after {
+        padding-bottom: 19%;
+    }

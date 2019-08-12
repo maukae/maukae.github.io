@@ -1,0 +1,93 @@
+.new-design.article-cards .img-link img {
+	max-height: 100%;
+}
+.new-design .feature-overlay.active-passive {
+	border: 1px solid rgb(106, 106, 106); border-image: none;
+}
+main :not(#hero-nav-bar).new-design a.secondary:hover {
+	color: rgb(18, 58, 95);
+}
+@media all and (max-width:768px)
+{
+footer h4.no-right-margin footer h3.no-right-margin {
+	margin-right: 30px;
+}
+}
+footer h4 {
+	margin: 24px 30px 8px 0px; padding: 0px 0px 10px; color: rgb(255, 255, 255); text-transform: uppercase; line-height: 1.1; letter-spacing: 0.06em; font-family: "Frutiger57",Helvetica,Arial,"sans-serif","Microsoft Jhenghei", "MS PGothic"; font-size: 15px; border-bottom-color: rgb(142, 142, 142); border-bottom-width: 1px; border-bottom-style: solid;
+}
+footer h3 {
+	margin: 24px 30px 8px 0px; padding: 0px 0px 10px; color: rgb(255, 255, 255); text-transform: uppercase; line-height: 1.1; letter-spacing: 0.06em; font-family: "Frutiger57",Helvetica,Arial,"sans-serif","Microsoft Jhenghei", "MS PGothic"; font-size: 15px; border-bottom-color: rgb(142, 142, 142); border-bottom-width: 1px; border-bottom-style: solid;
+}
+footer h4.no-right-margin {
+	margin-right: 0px;
+}
+footer h3.no-right-margin {
+	margin-right: 0px;
+}
+footer h3.footer-nb-mark {
+	border: currentColor; border-image: none; color: rgb(204, 204, 204); text-transform: none; letter-spacing: 0px; padding-bottom: 0px; padding-left: 51px; font-size: 20px; margin-top: 7px; margin-bottom: 20px;
+}
+footer h2.footer-nb-mark {
+	border: currentColor; border-image: none; color: rgb(204, 204, 204); text-transform: none; letter-spacing: 0px; padding-bottom: 0px; padding-left: 51px; font-size: 20px; margin-top: 7px; margin-bottom: 20px;
+}
+footer h3.footer-nb-mark::before {
+	left: 0px; top: 3px; color: rgb(204, 204, 204); text-transform: none; line-height: 1; font-family: "icomoon" !important; font-size: 33px; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; content: "\e900"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; speak: none;
+}
+footer h2.footer-nb-mark::before {
+	left: 0px; top: 3px; color: rgb(204, 204, 204); text-transform: none; line-height: 1; font-family: "icomoon" !important; font-size: 33px; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; content: "\e900"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; speak: none;
+}
+.sr-only {
+	margin: -1px; padding: 0px; border: 0px currentColor; border-image: none; width: 1px; height: 1px; overflow: hidden; position: absolute; clip: rect(0px, 0px, 0px, 0px);
+}
+footer h2 {
+	line-height: 22px !important;
+}
+.icon-nb-mark::before {
+	content: "\e900" !important;
+}
+.icon-nb-simplified::before {
+	content: "\e901" !important;
+}
+.icon-nb-simplified-fill::before {
+	content: "\e902" !important;
+}
+.icon-nb-simplified-full::before {
+	content: "\e903" !important;
+}
+.icon-nb-standard::before {
+	content: "\e904" !important;
+}
+.icon-nb-traditional::before {
+	content: "\e905" !important;
+}
+.icon-nb-traditional-fill::before {
+	content: "\e906" !important;
+}
+.icon-nb-traditional-full::before {
+	content: "\e907" !important;
+}
+ul.utility-nav.navbar-left li.country-audience-toggle::before {
+	content: "\e876" !important;
+}
+.fa-twitter::before {
+	content: "\f099" !important;
+}
+.fa-linkedin::before {
+	content: "\f0e1" !important;
+}
+.fa-google-plus::before {
+	content: "\f0d5" !important;
+}
+.fa-circle::before {
+	content: "\f111" !important;
+}
+a span.location-dash::before {
+	content: "\e876" !important;
+}
+a.close-shelf::before {
+	content: "\e870" !important;
+}
+#country-audience-shelf ul li.shelf-selected a::after {
+	content: "\e876" !important;
+}
