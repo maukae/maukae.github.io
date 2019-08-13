@@ -262,7 +262,7 @@ section {
 /*Hero Sub Nav Bar*/
 #hero-nav-bar {
     position: fixed;
-    top: 109px;
+    top: 79px;
     z-index: 600;
     width: 100%;
     background-color: #ededed;
@@ -289,7 +289,7 @@ section {
 .hero-sub-nav a,
 .hero-sub-nav a:visited {
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: 1.0em;
     letter-spacing: .04em;
     margin: 0;
     color: #131e29;
