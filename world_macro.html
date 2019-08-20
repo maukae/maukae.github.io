@@ -16,10 +16,7 @@
 
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
-<script src="site_libs/pymjs-1.3.2/pym.v1.js"></script>
-<script src="site_libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -53,15 +50,17 @@ if (window.hljs) {
 <META name="apple-mobile-web-app-capable" content="yes">
 <META name="apple-mobile-web-app-status-bar-style" content="black">
 <TITLE>简易投研主页</TITLE>     
-<LINK href="static/library-bundle.min.css" rel="stylesheet">     
-<LINK href="static/global-bundle.min.css" rel="stylesheet">
-
+<LINK href="css/library-bundle.min.css" rel="stylesheet">     
+<LINK href="css/global-bundle.min.css" rel="stylesheet">
+<LINK href="css/responsive-template.css" rel="stylesheet">
+  
+  
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
-<SCRIPT src="static/library-bundle.min.js"></SCRIPT>
+<SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
-<LINK href="static/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
  
 
 
@@ -79,7 +78,7 @@ if (window.hljs) {
         <span class="icon-bar bottom-bar"></span>
     </button>
 	<a href="index.html">
-		<img src="static/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
+		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
 	</a>
 </DIV>
 
@@ -174,6 +173,11 @@ if (window.hljs) {
       <LI><A href="sector_capital_markets.html">证券</A></LI>
       <LI><A href="sector_transport.html">交通运输</A></LI>
     </UL>
+    
+  	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
+      <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
+
+    </UL>
 	
 	</DIV>
 	  
@@ -242,7 +246,7 @@ if (window.hljs) {
 	  <SPAN class="nav-header">打赏</SPAN>
 
       <LI>感谢您的支持</LI>
-      <IMG class="img-responsive" alt="" src="static/wechatpay.png" height="100" width="100">
+      <IMG class="img-responsive" alt="" src="images/wechatpay.png" height="100" width="100">
 
 	</DIV>
 	
@@ -302,21 +306,978 @@ if (window.hljs) {
 </H2>
 </div>
 <div class="row">
-<div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-dba644b805d9f60cddc8" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-dba644b805d9f60cddc8">{"x":{"url":"world_macro_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-</div>
-<div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-3dde6b55fc75a679bc96" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3dde6b55fc75a679bc96">{"x":{"url":"world_macro_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-</div>
-<div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-d2aaaa399810d7b4c785" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d2aaaa399810d7b4c785">{"x":{"url":"world_macro_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-</div>
-<div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-dec76a41919e3734c081" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-dec76a41919e3734c081">{"x":{"url":"world_macro_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div class="col-xs-12">
+<head>
+<style>
+        table {
+              font-family: times ;
+color:  black ;
+text-align: right;}
+        th {
+              padding: 1px 1px 5px 5px;
+            }
+        td {
+             padding: 1px 1px 5px 5px; }
+      </style>
+</head>
+<table align="center" style="border-collapse: collapse; caption-side:top; font-size:13pt;">
+<caption style="text-align:center;">
+</caption>
+<tr>
+<th style="border-left: 1px solid black;background-color: #808080;border-top: 2px solid gray;border-bottom: 1px solid gray;">
+ 
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 1px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-07
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-06
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-05
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-04
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-03
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-02
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-01
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-12
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-11
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-10
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-09
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-08
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-07
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-06
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-05
+</th>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; ">
+全球综合PMI
+</td>
+<td align="center" style="border-left: 1px solid black;background-color: #B8F2A9;">
+51.70
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #90EE90;">
+51.20
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #90EE90;">
+51.20
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #DDF6C3;">
+52.10
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #FFECD2;">
+52.70
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #FFF8DC;">
+52.60
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #DDF6C3;">
+52.10
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #FFECD2;">
+52.70
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #FDC9B6;">
+53.20
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #FFE0C9;">
+53.00
+</td>
+<td align="NA" style="border-left: 0px solid black;background-color: #FFECD2;">
+52.80
+</td>
+<td align="NA" style="border-left: NApx solid black;background-color: #FBBDAD;">
+53.40
+</td>
+<td align="NA" style="border-left: NApx solid black;background-color: #F8A59B;">
+53.70
+</td>
+<td align="NA" style="border-left: NApx solid black;background-color: #F08080;">
+54.20
+</td>
+<td align="NA" style="border-left: NApx solid black;background-color: #F38D89;">
+54.00
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+全球服务业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #DDF6C3;">
+52.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+51.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+51.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+52.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+53.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+53.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+52.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+53.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+53.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+53.40
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+52.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+53.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+54.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+54.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+54.30
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+全球制造业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+49.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+49.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+49.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+50.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+50.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+50.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+50.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+51.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+52.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+52.00
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+52.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+52.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+52.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+53.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+53.10
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+美国制造业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+51.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+51.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+52.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+52.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+55.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+54.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+56.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+54.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+59.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+57.70
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+59.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+61.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+58.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+60.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
+58.70
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+财新PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FFE0C9;">
+49.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+49.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+50.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+50.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+50.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+49.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+48.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+49.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+50.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+50.10
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+50.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+50.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+50.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+51.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+51.10
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+欧元区制造业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+46.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+47.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+47.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+47.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+47.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+49.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+50.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+51.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+51.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+52.00
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+53.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+54.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+55.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+54.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+55.50
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+日本制造业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #ABF1A1;">
+49.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+49.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+49.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+50.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+49.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+48.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+50.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+52.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+52.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+52.90
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+52.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+52.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+52.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+53.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+52.80
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+德国制造业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+43.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+45.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+44.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+44.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+44.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+47.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+49.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+51.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+51.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+52.20
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+53.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+55.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+56.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+55.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+56.90
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+英国制造业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+48.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+48.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+49.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+53.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+55.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+52.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+52.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+54.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+53.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+51.10
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+53.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+52.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+53.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+54.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+54.30
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+巴西制造业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #9EEF98;">
+49.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+51.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+50.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+51.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+52.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+53.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+52.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+52.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+52.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+51.10
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+50.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+51.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
+50.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+49.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
+50.70
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+加拿大PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #B8F2A9;">
+51.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+53.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+61.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+56.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+57.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+48.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+49.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+48.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+57.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+64.60
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+56.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+61.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+56.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+65.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+69.50
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+俄罗斯制造业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #D1F5BA;">
+49.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+48.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+49.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+51.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+52.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+50.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+50.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+51.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+52.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+51.30
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+50.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
+48.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+48.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+49.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+49.80
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+澳大利亚PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #C5F3B2;">
+51.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+49.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+52.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+54.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+51.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+54.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+52.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+49.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+51.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+58.30
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+59.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
+56.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
+52.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+57.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+57.50
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+韩国制造业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+47.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+47.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+48.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+50.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+48.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+47.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+48.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+49.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+48.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+51.00
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+51.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+49.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
+48.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+49.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+48.90
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+墨西哥制造业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #B8F2A9;">
+49.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+49.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+50.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+50.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+49.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+52.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+50.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+49.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+49.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+50.70
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+51.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+50.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+52.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+52.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+51.00
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+南非PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FFF8DC;">
+48.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+43.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+45.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+47.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+46.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+48.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+45.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+49.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+55.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+45.20
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+45.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+43.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+46.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
+44.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
+49.80
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+土耳其制造业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FED5BF;">
+46.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+47.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+45.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+46.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+47.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+46.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+44.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+44.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+44.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+44.30
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+42.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
+46.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+49.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+46.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
+46.40
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+越南制造业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #D1F5BA;">
+52.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+52.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+52.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+52.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+51.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+51.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+51.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+53.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+56.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+53.90
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+51.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+53.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+54.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+55.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+53.90
+</td>
+</tr>
+<tr>
+<td colspan="16" align="left" style="font-size:11pt ;border-top: 1px solid black; border-bottom: hidden;">
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="col-xs-12">
