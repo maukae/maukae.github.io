@@ -339,6 +339,830 @@ if (window.hljs) {
 </div>
 </div>
 </div>
+<section id="data-landing" class="section-head hero-nav-jump-point">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<h2 class="section-title">
+宏观数据热力图
+</h2>
+</div>
+</div>
+</div>
+</section>
+<div class="container">
+<div class="row content-block-row">
+<div class="row">
+<div class="col-xs-12">
+<head>
+<style>
+        table {
+              font-family: times ;
+color:  black ;
+text-align: right;}
+        th {
+              padding: 1px 1px 5px 5px;
+            }
+        td {
+             padding: 1px 1px 5px 5px; }
+      </style>
+</head>
+<table align="center" style="border-collapse: collapse; caption-side:top; font-size:13pt;">
+<caption style="text-align:center;">
+</caption>
+<tr>
+<th style="border-left: 1px solid black;background-color: #808080;border-top: 2px solid gray;border-bottom: 1px solid gray;">
+ 
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 1px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-07
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-06
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-05
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-04
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-03
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-02
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-01
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-12
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-11
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-10
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-09
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-08
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-07
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-06
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-05
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-04
+</th>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; ">
+中国制造业PMI
+</td>
+<td align="center" style="border-left: 1px solid black;background-color: #C5F3B2;">
+49.70
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #9EEF98;">
+49.40
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #9EEF98;">
+49.40
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #DDF6C3;">
+50.10
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #FFF8DC;">
+50.50
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #90EE90;">
+49.20
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #ABF1A1;">
+49.50
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #9EEF98;">
+49.40
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #DDF6C3;">
+50.00
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #E8F6CB;">
+50.20
+</td>
+<td align="NA" style="border-left: 0px solid black;background-color: #FFE0C9;">
+50.80
+</td>
+<td align="NA" style="border-left: NApx solid black;background-color: #FAB1A4;">
+51.30
+</td>
+<td align="NA" style="border-left: NApx solid black;background-color: #FBBDAD;">
+51.20
+</td>
+<td align="NA" style="border-left: NApx solid black;background-color: #F8A59B;">
+51.50
+</td>
+<td align="NA" style="border-left: NApx solid black;background-color: #F08080;">
+51.90
+</td>
+<td align="NA" style="border-left: NApx solid black;background-color: #FAB1A4;">
+51.40
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+工业增加值
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+6.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+5.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+5.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+8.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+3.36
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+6.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+5.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+5.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+5.90
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+5.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+6.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+6.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+6.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+6.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+7.00
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+工业企业利润总额
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-3.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+1.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-3.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+13.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-1.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+3.60
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+4.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+9.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+16.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+20.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+21.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+21.90
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+固定资产投资
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #C5F3B2;">
+5.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+5.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+5.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+6.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+6.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+6.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+5.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+5.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+5.70
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+5.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+5.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #ABF1A1;">
+5.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+6.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+6.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+7.00
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+制造业投资
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #ABF1A1;">
+3.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+3.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+2.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+2.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+4.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+5.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+9.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+9.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+9.10
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+8.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
+7.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+7.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+6.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+5.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+4.80
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+基建投资
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #E8F6CB;">
+2.91
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+2.95
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+2.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+2.97
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+2.95
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+2.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+1.79
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+1.19
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+0.92
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+0.26
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #9EEF98;">
+0.66
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
+1.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+3.31
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+5.02
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+7.63
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+房地产投资
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FFF8DC;">
+10.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+10.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+11.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+11.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+11.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+11.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+9.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+9.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+9.70
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+9.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
+10.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+10.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #ABF1A1;">
+9.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+10.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+10.30
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+社零
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #B8F2A9;">
+7.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+9.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+8.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+7.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+8.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+8.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+8.16
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+8.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+8.60
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+9.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+9.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+8.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+9.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+8.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+9.40
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+出口金额
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FBBDAD;">
+10.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+6.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+7.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+3.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+20.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-16.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+14.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+0.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+8.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+18.70
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+16.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+7.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
+5.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+2.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+2.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+2.90
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+进口金额
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #ABF1A1;">
+0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+-0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-2.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+10.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+0.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+3.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-3.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+7.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+25.20
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+17.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+19.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+20.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+5.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+15.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+12.30
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+贸易差额
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FAB1A4;">
+3102.61
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+3451.03
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+2796.28
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+916.54
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+2166.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+288.41
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+2711.91
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+3932.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+2860.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+2265.00
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+2033.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+1689.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+1733.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+2574.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+1470.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+1665.00
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+CPI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #F08080;">
+2.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+2.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+2.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+2.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+2.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+1.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+2.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+2.50
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+2.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+2.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+2.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+1.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
+1.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
+1.80
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+PPI
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+-0.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+0.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+0.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+0.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+0.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+2.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+3.30
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+3.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+4.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+4.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+4.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+4.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
+3.40
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+外汇储备变动
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #E8F6CB;">
+-155.37
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+182.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+60.51
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+-38.08
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+85.81
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+22.56
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+152.12
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+110.15
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+85.99
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-339.27
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+-226.91
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+-82.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
+58.17
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+15.06
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+-142.29
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+-179.68
+</td>
+</tr>
+<tr>
+<td colspan="17" align="left" style="font-size:11pt ;border-top: 1px solid black; border-bottom: hidden;">
+</td>
+</tr>
+</table>
+</div>
+</div>
 <section id="PMI-landing" class="section-head hero-nav-jump-point">
 <div class="container">
 <div class="row">
@@ -350,23 +1174,21 @@ if (window.hljs) {
 </div>
 </div>
 </section>
-<div class="container">
-<div class="row content-block-row">
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-293323af098ee7fd2d30" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-293323af098ee7fd2d30">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-20b1d2d6e03c069d3d5f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-20b1d2d6e03c069d3d5f">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-7ab5cdfbb875c1900383" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7ab5cdfbb875c1900383">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3e90af1839e028163923" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3e90af1839e028163923">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br><br></p>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-44eb472b4495442e6aa0" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-44eb472b4495442e6aa0">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-503ec2677c798077c216" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-503ec2677c798077c216">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -382,34 +1204,26 @@ if (window.hljs) {
 </div>
 </section>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-4a6e99d3bc849e2a1469" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4a6e99d3bc849e2a1469">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f5c7849fde60e7dbeba8" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f5c7849fde60e7dbeba8">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-b3395c92bba57fc7a87d" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b3395c92bba57fc7a87d">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ed00781085345443dcdf" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ed00781085345443dcdf">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-81c365ff6c490f1abfe3" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-81c365ff6c490f1abfe3">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8dc880e8dc55af5758ad" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8dc880e8dc55af5758ad">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="row">
 <div class="col-xs-12">
-<div id="htmlwidget-7a49f7686a105f8eea0b" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7a49f7686a105f8eea0b">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-30fde495f009019933e5" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-30fde495f009019933e5">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-bdade9cc76a56278c93f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bdade9cc76a56278c93f">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-</div>
-<div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-1158d32a012167d872cc" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1158d32a012167d872cc">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-</div>
-<div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-4ecf4371e52bf68b486b" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4ecf4371e52bf68b486b">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-652e7b9f3cdf0b79b670" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-652e7b9f3cdf0b79b670">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="Fixed-investment-landing" class="section-head hero-nav-jump-point">
@@ -424,20 +1238,20 @@ if (window.hljs) {
 </div>
 </section>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-bb1190c4c8386993d02f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bb1190c4c8386993d02f">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4b8b129602e54061d631" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4b8b129602e54061d631">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-ad67cfedf6e9b938774d" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ad67cfedf6e9b938774d">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c1aeba30b074f36f3a0d" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c1aeba30b074f36f3a0d">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-9420cb374a3291864099" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9420cb374a3291864099">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-16.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-309a12574e4857918804" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-309a12574e4857918804">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-d1389453cddf99dfc49c" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d1389453cddf99dfc49c">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-17.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c71a2f9dcaa6efadebec" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c71a2f9dcaa6efadebec">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-16.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="consumption-landing" class="section-head hero-nav-jump-point">
@@ -454,16 +1268,16 @@ if (window.hljs) {
 <DIV class="container">
 <div class="row content-block-row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-d030333c4888c9663d0f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d030333c4888c9663d0f">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-18.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-11cd9a61f8489ab98b1d" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-11cd9a61f8489ab98b1d">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-17.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-29b0353eda8938608483" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-29b0353eda8938608483">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-19.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-168779aae5250d3dc047" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-168779aae5250d3dc047">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-18.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-06f7e510462def635bf9" style="width:100%;height:700px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-06f7e510462def635bf9">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-20.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-0cf00118714800b5e6a3" style="width:100%;height:700px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0cf00118714800b5e6a3">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-19.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="cpi-landing" class="section-head hero-nav-jump-point">
@@ -480,36 +1294,36 @@ if (window.hljs) {
 <DIV class="container">
 <div class="row content-block-row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-462e1f98b451768cab7c" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-462e1f98b451768cab7c">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-21.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-69e529da8795138bc143" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-69e529da8795138bc143">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-20.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-0f32847bb8eacc093979" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0f32847bb8eacc093979">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-22.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8ccafc2d2cb4e5effbd1" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8ccafc2d2cb4e5effbd1">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-21.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-febd5fafcaacb52f6e3b" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-febd5fafcaacb52f6e3b">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-23.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a294d0ea7fbe69fcd39a" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a294d0ea7fbe69fcd39a">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-22.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-46fcfce0010588f576c8" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-46fcfce0010588f576c8">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-24.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ddbd2189b5a9c6de22ba" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ddbd2189b5a9c6de22ba">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-23.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-de9d80c676c8b8c733e6" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-de9d80c676c8b8c733e6">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-25.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f2fdf6744bbb6196d797" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f2fdf6744bbb6196d797">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-24.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-7d8a0a5ec100d11d26c1" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7d8a0a5ec100d11d26c1">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-26.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-40bacb221d1411cbb5db" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-40bacb221d1411cbb5db">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-25.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-744153a952970ffe61bf" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-744153a952970ffe61bf">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-27.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-abd864dbb6c93a96f309" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-abd864dbb6c93a96f309">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-26.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-089db97aa4314bd7b7e2" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-089db97aa4314bd7b7e2">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-28.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b3393a43f1c1947d251c" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b3393a43f1c1947d251c">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-27.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="money-landing" class="section-head hero-nav-jump-point">
@@ -526,24 +1340,24 @@ if (window.hljs) {
 <DIV class="container">
 <div class="row content-block-row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-2d1e94d17ea778aefbc0" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2d1e94d17ea778aefbc0">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-29.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-768b25f5367dab4959a6" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-768b25f5367dab4959a6">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-28.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-75277980f6bb5c79a67f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-75277980f6bb5c79a67f">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-30.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c1a7b2827c6e8e750888" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c1a7b2827c6e8e750888">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-29.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-4106ae66ecc449b40c32" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4106ae66ecc449b40c32">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-31.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-95d57bcf0cc7bc0b3f97" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-95d57bcf0cc7bc0b3f97">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-30.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-73af0019c13f0a62c8b9" style="width:100%;height:480px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-73af0019c13f0a62c8b9">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-32.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-e113a82cc82e796b0a90" style="width:100%;height:480px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e113a82cc82e796b0a90">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-31.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-4625e26e04e04c9944b0" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4625e26e04e04c9944b0">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-33.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-68ede953cccf6bbb6a4b" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-68ede953cccf6bbb6a4b">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-32.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="rates-landing" class="section-head hero-nav-jump-point">
@@ -560,20 +1374,20 @@ if (window.hljs) {
 <DIV class="container">
 <div class="row content-block-row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-b41fc98721f8e51d4fe3" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b41fc98721f8e51d4fe3">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-34.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-29a3c71a8a7ccd9b94c1" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-29a3c71a8a7ccd9b94c1">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-33.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-e3a4902bd0a60f8502ed" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e3a4902bd0a60f8502ed">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-35.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a8c5aec12eb2cdd2d5c0" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a8c5aec12eb2cdd2d5c0">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-34.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-f05fdb4db114b09db778" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f05fdb4db114b09db778">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-36.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-9ef3e75b575cf6d6df70" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9ef3e75b575cf6d6df70">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-35.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-7d06c10786abde657c55" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7d06c10786abde657c55">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-37.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-18c7271c1f4082ab2fd7" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-18c7271c1f4082ab2fd7">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-36.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="bond-landing" class="section-head hero-nav-jump-point">
@@ -590,16 +1404,16 @@ if (window.hljs) {
 <DIV class="container">
 <div class="row content-block-row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-2130e27ed7646cbbc470" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2130e27ed7646cbbc470">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-38.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-fa164d9e1e74f8881fd2" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fa164d9e1e74f8881fd2">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-37.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-1faf5b59de03117a3073" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1faf5b59de03117a3073">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-39.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d238520155532be6576f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d238520155532be6576f">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-38.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-8366933446acc21b201d" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8366933446acc21b201d">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-40.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d9da41313f7e3677febc" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d9da41313f7e3677febc">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-39.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="currency-landing" class="section-head hero-nav-jump-point">
@@ -616,12 +1430,12 @@ if (window.hljs) {
 <DIV class="container">
 <div class="row content-block-row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-406f9da009af8418e17b" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-406f9da009af8418e17b">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-41.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3bf9153ac51d95a4ae38" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3bf9153ac51d95a4ae38">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-40.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-5902e71cddbd8370c8bc" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5902e71cddbd8370c8bc">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-42.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-49ca148afc639897c418" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-49ca148afc639897c418">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-41.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="gov-landing" class="section-head hero-nav-jump-point">
@@ -638,16 +1452,16 @@ if (window.hljs) {
 <div class="container">
 <div class="row content-block-row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-3020ad406b7775175bac" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3020ad406b7775175bac">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-43.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5a910703faf0ef34baed" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5a910703faf0ef34baed">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-42.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-e6d60261571c8df9411e" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e6d60261571c8df9411e">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-44.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8fa53f840aa67e5cbaaf" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8fa53f840aa67e5cbaaf">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-43.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-057d50f18883de3e9576" style="width:100%;height:600px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-057d50f18883de3e9576">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-45.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-51414fb46d65d956f058" style="width:100%;height:600px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-51414fb46d65d956f058">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-44.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="trade-landing" class="section-head hero-nav-jump-point">
@@ -664,16 +1478,16 @@ if (window.hljs) {
 <div class="container">
 <div class="row content-block-row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-7e1679c5eae23aa1eea4" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7e1679c5eae23aa1eea4">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-46.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a709a2c217254204d2d1" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a709a2c217254204d2d1">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-45.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-1029f18acc75ccdb74d5" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1029f18acc75ccdb74d5">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-47.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c01f6ad9f37eb4b21efb" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c01f6ad9f37eb4b21efb">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-46.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-e524f3a0712e0801c4a2" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e524f3a0712e0801c4a2">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-50.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-62e53c055599de49ba16" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-62e53c055599de49ba16">{"x":{"url":"cn_macro_files/figure-html//widgets/widget_unnamed-chunk-49.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
