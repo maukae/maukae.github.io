@@ -19,7 +19,7 @@
 <script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
 <script src="site_libs/pymjs-1.3.2/pym.v1.js"></script>
 <script src="site_libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -53,15 +53,17 @@ if (window.hljs) {
 <META name="apple-mobile-web-app-capable" content="yes">
 <META name="apple-mobile-web-app-status-bar-style" content="black">
 <TITLE>简易投研主页</TITLE>     
-<LINK href="static/library-bundle.min.css" rel="stylesheet">     
-<LINK href="static/global-bundle.min.css" rel="stylesheet">
-
+<LINK href="css/library-bundle.min.css" rel="stylesheet">     
+<LINK href="css/global-bundle.min.css" rel="stylesheet">
+<LINK href="css/responsive-template.css" rel="stylesheet">
+  
+  
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
-<SCRIPT src="static/library-bundle.min.js"></SCRIPT>
+<SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
-<LINK href="static/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
  
 
 
@@ -79,7 +81,7 @@ if (window.hljs) {
         <span class="icon-bar bottom-bar"></span>
     </button>
 	<a href="index.html">
-		<img src="static/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
+		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
 	</a>
 </DIV>
 
@@ -105,16 +107,18 @@ if (window.hljs) {
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
-      <LI><A href="commodities_cn.html">商品期货</A></LI>
+      <LI><A href="commodities_cn.html">基差与期限结构</A></LI>
+      <LI><A href="commodities_spot.html">商品现货</A></LI>
+      <LI><A href="commodities_arbitrage.html">跨品种分析</A></LI>
       <LI><A href="gold.html">黄金</A></LI>
       <LI><A href="index_futures.html">股指期货</A></LI>
       <LI><A href="options.html">上证50期权</A></LI>
+      <LI><A href="FX.html">外汇</A></LI>
     </UL>
 	</DIV>
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">固收与海外市场</SPAN>
-      <LI><A href=" foreign_markets.html">全球权益市场</A></LI>
       <LI><A href="fixed_income.html">固定收益</A></LI>
       <LI><A href="conv_bond.html">可转债</A></LI>
 
@@ -172,6 +176,11 @@ if (window.hljs) {
       <LI><A href="sector_capital_markets.html">证券</A></LI>
       <LI><A href="sector_transport.html">交通运输</A></LI>
     </UL>
+    
+  	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
+      <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
+
+    </UL>
 	
 	</DIV>
 	  
@@ -190,6 +199,8 @@ if (window.hljs) {
 	<SPAN class="nav-header">宏观数据</SPAN>
     <UL class="multi-column-dropdown">
       <LI><A href="cn_macro.html">国内宏观</A></LI>
+      <LI><A href="PPI.html">PPI</A></LI>
+      <LI><A href="CPI.html">CPI</A></LI>
       <LI><A href="high_freq_eco_data.html">高频数据跟踪</A></LI>
       <LI><A href="us_macro.html">美国宏观</A></LI>
       <LI><A href="world_macro.html">全球数据</A></LI>
@@ -208,6 +219,7 @@ if (window.hljs) {
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
+      <LI><A href="ashare_review.html">A股复盘2005-2019</A></LI>
       <LI><A href="demographics_employment.html">人口与就业</A></LI>
       <LI><A href="international_trade.html">国际收支</A></LI>
       <LI><A href="state_rev_exp.html">财政收支</A></LI>
@@ -218,6 +230,8 @@ if (window.hljs) {
 	</DIV>
 	
 	
+	
+	
 	  
 	</DIV>
 	
@@ -225,21 +239,37 @@ if (window.hljs) {
 	
   </LI>
   
-
-
-<ul class="clientAccess nav navbar-nav utility-nav mobile">
-
-	<li class="dropdown">
-
-	
-	    <li><a  class="dropdown-toggle" href="/login/"  style=" float: right; padding-left: 500px;">登录</a></li> 
   
-		<li><a  class="dropdown-toggle" href="/reg/" >注册</a></li> 
+     <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
+  data-toggle="dropdown" data-hover="dropdown">支持我们</A>
+  <UL class="dropdown-menu multi-column columns-1">
+    <DIV class="row">
 	
-	</li>
-</ul>	
+  <DIV class="col-lg-3 col-md-4 left-space">
+	  <SPAN class="nav-header">打赏</SPAN>
 
+      <LI>感谢您的支持</LI>
+      <IMG class="img-responsive" alt="" src="images/wechatpay.png" height="100" width="100">
 
+	</DIV>
+	
+  <DIV class="col-lg-3 col-md-4 left-space">
+	  <SPAN class="nav-header">Email:</SPAN>
+
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+
+	</DIV>
+	
+	
+	
+	
+	  
+	</DIV>
+	
+  </UL>
+	
+  </LI>
+  
 </UL>	
 	  
 <UL class="nav navbar-nav utility-nav mobile"><!-- NOT mobile TOP Shelf -->    
@@ -280,16 +310,16 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-2da59e0b0972ca00c96a" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2da59e0b0972ca00c96a">{"x":{"url":"state_rev_exp_files/figure-html//widgets/widget_unnamed-chunk-2.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-74683f0868313dad795a" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-74683f0868313dad795a">{"x":{"url":"state_rev_exp_files/figure-html//widgets/widget_unnamed-chunk-2.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-2f331c076adf100add13" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2f331c076adf100add13">{"x":{"url":"state_rev_exp_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-e4d4a0f88cb7b8ffc047" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e4d4a0f88cb7b8ffc047">{"x":{"url":"state_rev_exp_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-fbd75af5789a3eaf29eb" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fbd75af5789a3eaf29eb">{"x":{"url":"state_rev_exp_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f04b3bde2705cd3ffe34" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f04b3bde2705cd3ffe34">{"x":{"url":"state_rev_exp_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
 
@@ -302,12 +332,12 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-6ad0cd149e603512b415" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6ad0cd149e603512b415">{"x":{"url":"state_rev_exp_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c1110e05bd2d50e54087" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c1110e05bd2d50e54087">{"x":{"url":"state_rev_exp_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-5aeb506850374ad899e1" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5aeb506850374ad899e1">{"x":{"url":"state_rev_exp_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8541a6a9a2763dd7b880" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8541a6a9a2763dd7b880">{"x":{"url":"state_rev_exp_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
 
@@ -324,22 +354,20 @@ if (window.hljs) {
  
 <DIV class="row">
 <DIV class="col-xs-12"><!--<p class="footer-finra">Check the background of our firm on <a href="http://brokercheck.finra.org/" target="_blank">FINRA's BrokerCheck</a>.</p>--></DIV>
-<DIV class="col-sm-3 col-xs-12">
+
+<DIV class="col-xs-12">
 <H4>关于网站</H4>
 <UL>
 <p>仅供参考学习交流，不构成投资建议。</p>
- </UL>
- </DIV>
+</UL>
+</DIV>
 
 
-<DIV class="col-sm-3 col-xs-12">
-<H4 class="no-right-margin">Email:</H4>
-<P>交流欢迎联系dlin@smartashare.com或xsx@smartashare.com</P>
 
-<SPAN class="spacer10"></SPAN>
+ 
 
- </DIV>
- </DIV>
+</DIV>
+
 
  </DIV>
  </FOOTER>
