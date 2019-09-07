@@ -1,0 +1,367 @@
+/* Hero Section */
+
+.cover-img.hero-solving-2018 {
+    background: transparent url("/publishingimages/solving2018/solving2018_hero.jpg") no-repeat scroll center top / cover;
+}
+
+.cover-img.hero-aac-2018 {
+    background: transparent url("/publishingimages/solving2018/aac2018_hero.jpg") no-repeat scroll center -50px / cover;
+}
+
+.cover-img.hero-solving-2018-london {
+    background: transparent url(/publishingimages/solving2018/solving_london_hero.jpg) no-repeat scroll center top / cover;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+@media(min-width:1600px) {
+    .cover-img.hero-aac-2018 {
+        background: transparent url("/publishingimages/solving2018/aac2018_hero.jpg") no-repeat scroll center -80px / cover;
+    }
+}
+
+
+@media (max-width:480px) {
+    .hero-text img {
+        width: 60%;
+    }
+
+    .cover-img.hero-solving-2018 {
+        background: transparent url("/publishingimages/solving2018/solving2018_hero.jpg") no-repeat scroll 55% 15px / cover;
+    }
+}
+
+.solving-london .hero-sub-nav {
+    padding: 0 25%;
+}
+
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 155px;
+}
+
+.solving .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 140px;
+}
+
+.solving-london .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+
+@media(max-width:1199px) {
+    .solving-london .hero-sub-nav {
+        padding: 0;
+    }
+}
+
+@media(max-width:991px) {
+    .hero-sub-nav li {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+}
+
+/* Text Callouts **/
+
+#solving-gallery {
+    margin: 25px auto;
+    width: 100%;
+}
+
+.button {
+    width: 345px;
+}
+
+.standard-callout.bright-blue.strategy-spotlight a.button {
+    width: 180px;
+    height: 56px;
+}
+
+    .standard-callout.bright-blue.strategy-spotlight a.button:after {
+        content: none;
+    }
+
+.standard-callout .button.white {
+    margin-top: 30px;
+}
+
+.standard-callout.strategy-spotlight .standard-callout-container {
+    padding: 0 5%;
+}
+
+.standard-callout.bright-blue.strategy-spotlight .standard-callout-container.solving {
+    height: 420px;
+    padding: 0 5%;
+}
+
+.button:after {
+    padding-bottom: 16%;
+}
+
+.text-callout-copy {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+@media(max-width:991px) {
+    .button {
+        width: 235px;
+        font-size: 10px;
+    }
+}
+
+@media(max-width:767px) {
+    .solving .standard-callout.bright-blue.strategy-spotlight .standard-callout-container.solving {
+        height: 490px;
+    }
+}
+
+
+
+/* Feature Bar */
+
+#feature-bar {
+    background-color: rgba(3, 20, 35, 0.85);
+    color: #efefef;
+}
+
+    #feature-bar .feature-highlight {
+        color: #ffb911;
+    }
+
+    #feature-bar.affix {
+        background-color: rgb(3, 20, 35);
+    }
+
+@media (max-width:480px) {
+
+
+
+    #feature-bar .feature-copy {
+        display: none;
+    }
+
+    #feature-bar .feature-heading {
+        display: inline;
+    }
+}
+
+
+
+/* Team Member Component*/
+div.row.team-row .team-member {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    /*to make all elements same hight in case of wrapping names*/
+    min-height: 315px;
+    float: left;
+}
+
+    div.row.team-row .team-member .portrait-box {
+        margin-bottom: 15px;
+        position: relative;
+        border: solid 1px #e3e3e3;
+    }
+
+        div.row.team-row .team-member .portrait-box img {
+            width: 100%;
+        }
+
+    div.row.team-row .team-member .name {
+        margin-bottom: 5px;
+        font-size: .835em;
+        line-height: .95em;
+        font-family: Frutiger67BoldCn;
+    }
+
+    div.row.team-row .team-member .copy {
+        font-size: .78em;
+        line-height: normal;
+    }
+
+/*.team-member:nth-child(5),
+.team-member:nth-child(9) {
+    clear: both;
+}*/
+
+.team-member:nth-child(6),
+.team-member:nth-child(11) {
+    clear: none;
+}
+
+.team-row {
+    margin: 0 -2.7%;
+}
+
+.team-member {
+    width: 19.6%;
+    margin: 10px 2.7% 30px;
+}
+
+    .team-member .copy {
+        font-size: .9em;
+    }
+
+
+.solving div.row.team-row .team-member:nth-last-of-type(-n+4) {
+    margin-bottom: 0;
+}
+
+
+.aac div.row.team-row .team-member:nth-last-of-type(-n+1) {
+    margin-bottom: 0;
+}
+
+
+@media(max-width:1199px) {
+    div.row.team-row .team-member {
+        min-height: 275px;
+    }
+}
+
+@media(max-width:991px) {
+    div.row.team-row .team-member {
+        min-height: 260px;
+    }
+}
+
+@media(max-width:767px) {
+    div.row.team-row .team-member .name,
+    div.row.team-row .team-member .copy {
+        font-size: .8em;
+    }
+
+    .team-row {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    div.row.team-row .team-member {
+        margin-top: 0;
+        margin-bottom: 20px;
+        width: 44.5%;
+        min-height: 415px;
+    }
+
+        div.row.team-row .team-member:nth-child(3) {
+            clear: both;
+        }
+}
+
+@media (max-width: 450px) {
+    div.row.team-row .team-member {
+        min-height: 280px;
+    }
+}
+
+/*four column*/
+.four-column-block .nb-video-player-container {
+    border: solid 1px #ccc;
+}
+
+
+@media(max-width:767px) {
+    .four-column-block .block-cell:not(:last-of-type) .four-column-block-inner {
+        margin-bottom: 40px;
+        padding: 0;
+    }
+}
+
+/* Paragraph Content***/
+
+
+
+
+
+.content-paragraph figure {
+    margin: 50px 0;
+}
+
+    .content-paragraph figure.slim {
+        margin: 0;
+    }
+
+    .content-paragraph figure b {
+        display: block;
+        margin-bottom: 25px;
+        color: #768dae;
+        font-size: 1.1em;
+    }
+
+        .content-paragraph figure b + div {
+            margin-bottom: 10px;
+            margin-top: -20px;
+        }
+
+    .content-paragraph figure.fig-two div:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .content-paragraph figure.fig-two img:not(:last-of-type) {
+        margin-bottom: 100px;
+    }
+
+.content-paragraph figcaption {
+    margin-top: 25px;
+}
+
+section.content-paragraph.numbered b {
+    display: block;
+    text-transform: none;
+}
+
+/*video block*/
+.two-column-block .static-video-placement {
+    border: 0;
+}
+
+.two-column-block .vjs-poster {
+    background-size: cover;
+    background-color: #fff;
+}
+
+.two-column-block div.row:last-of-type {
+    margin-top: 45px;
+}
+
+@media(max-width:767px) {
+    .two-column-block div.row:last-of-type {
+        margin-top: 0;
+    }
+
+    .two-column-block div.row div.block-cell {
+        margin-top: 45px;
+    }
+
+    .two-column-block div.row:first-of-type div.block-cell:first-of-type {
+        margin-top: 0;
+    }
+}
+
+
+/*london*/
+
+.london.standard-callout.bright-blue.strategy-spotlight a.button {
+    width: 340px;
+}
+
+.summeries .content-copy b a {
+    color: #505151;
+}
+
+    .summeries .content-copy b a:hover {
+        color: #2F88C5;
+    }
+
+@media(max-width:767px) {
+    .london.standard-callout.bright-blue.strategy-spotlight a.button {
+        width: 265px;
+    }
+
+    .london.standard-callout.bright-blue.strategy-spotlight .standard-callout-container.solving {
+        height: 320px;
+    }
+}
