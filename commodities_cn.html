@@ -20,7 +20,7 @@
 <script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
 <script src="site_libs/pymjs-1.3.2/pym.v1.js"></script>
 <script src="site_libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -54,16 +54,22 @@ if (window.hljs) {
 <META name="apple-mobile-web-app-capable" content="yes">
 <META name="apple-mobile-web-app-status-bar-style" content="black">
 <TITLE>简易投研主页</TITLE>     
-<LINK href="static/library-bundle.min.css" rel="stylesheet">     
-<LINK href="static/global-bundle.min.css" rel="stylesheet">
-
+<LINK href="css/library-bundle.min.css" rel="stylesheet">     
+<LINK href="css/global-bundle.min.css" rel="stylesheet">
+ <script type="text/javascript" src="js/responsive-template.js"></script> 
+  
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
-<SCRIPT src="static/library-bundle.min.js"></SCRIPT>
+<SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
-<LINK href="static/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
- 
+<link href="css/solving-2018.css" rel="stylesheet">
+
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
+<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-template.css">
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/blank.js"></script>
 
 
 </HEAD> 
@@ -80,9 +86,18 @@ if (window.hljs) {
         <span class="icon-bar bottom-bar"></span>
     </button>
 	<a href="index.html">
-		<img src="static/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
+		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
 	</a>
 </DIV>
+
+
+
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
+
 
 <DIV class="navbar-collapse collapse" id="navbar">
 <UL class="nav navbar-nav primary-nav">
@@ -106,9 +121,7 @@ if (window.hljs) {
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
-      <LI><A href="commodities_cn.html">基差与期限结构</A></LI>
-      <LI><A href="commodities_spot.html">商品现货</A></LI>
-      <LI><A href="commodities_arbitrage.html">跨品种分析</A></LI>
+      <LI><A href="commodities_cn.html">商品期货</A></LI>
       <LI><A href="gold.html">黄金</A></LI>
       <LI><A href="index_futures.html">股指期货</A></LI>
       <LI><A href="options.html">上证50期权</A></LI>
@@ -178,7 +191,8 @@ if (window.hljs) {
     
   	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
       <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
-
+      <LI><A href="asset_returns_table.html">行业收益率周期图</A></LI>
+	    <LI><A href="periodic_table.html">A股元素周期表</A></LI>
     </UL>
 	
 	</DIV>
@@ -225,6 +239,7 @@ if (window.hljs) {
       <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
       <LI><A href="climate.html">气候</A></LI>
 	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+
     </UL>
 	</DIV>
 	
@@ -248,14 +263,14 @@ if (window.hljs) {
 	  <SPAN class="nav-header">打赏</SPAN>
 
       <LI>感谢您的支持</LI>
-      <IMG class="img-responsive" alt="" src="static/wechatpay.png" height="100" width="100">
+      <IMG class="img-responsive" alt="" src="images/wechatpay.png" height="100" width="100">
 
 	</DIV>
 	
   <DIV class="col-lg-3 col-md-4 left-space">
 	  <SPAN class="nav-header">Email:</SPAN>
 
-      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com</LI>
 
 	</DIV>
 	
@@ -300,6 +315,29 @@ if (window.hljs) {
 
 
 <p><br><br><br><br></p>
+<section class="hero aac">
+<div id="hero-nav-bar">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<ul class="hero-sub-nav">
+<li id="listToggle">
+选择
+</li>
+<li>
+<a id="PMI" href="commodities_cn.html">商品基差一览</a>
+</li>
+<li>
+<a id="PMI" href="commodities_spot.html">现货价格</a>
+</li>
+<li>
+<a id="PMI" href="commodities_arbitrage.html">跨品种套利</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 <div class="container">
 <div class="row content-block-row">
 <div class="col-xs-12">
@@ -349,19 +387,19 @@ if (window.hljs) {
 SGE黄金T+G
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-09-06
 </td>
 <td style="text-align:center;">
-312.05
+349.2
 </td>
 <td style="text-align:left;">
-309.79
+347.74
 </td>
 <td style="text-align:left;">
-2.26
+1.46
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 2.92%; margin-left: 50%; text-align:left;">0.73</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 1.68%; margin-left: 50%; text-align:left;">0.42</span>
 </td>
 </tr>
 <tr>
@@ -372,19 +410,19 @@ SGE黄金T+G
 SGE白银T+D
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-09-06
 </td>
 <td style="text-align:center;">
-3669.00
+4570.0
 </td>
 <td style="text-align:left;">
-3614.00
+4493.00
 </td>
 <td style="text-align:left;">
-55.00
+77.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 6.08%; margin-left: 50%; text-align:left;">1.52</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 6.84%; margin-left: 50%; text-align:left;">1.71</span>
 </td>
 </tr>
 <tr grouplength="6">
@@ -400,19 +438,19 @@ SGE白银T+D
 铜现货(长江有色1#)
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-09-06
 </td>
 <td style="text-align:center;">
-46610.00
+47450.0
 </td>
 <td style="text-align:left;">
-46680.00
+47620.00
 </td>
 <td style="text-align:left;">
--70.00
+-170.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 0.6%; margin-right: 50%; text-align: right; float: right; ">-0.15</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 1.44%; margin-right: 50%; text-align: right; float: right; ">-0.36</span>
 </td>
 </tr>
 <tr>
@@ -423,19 +461,19 @@ SGE白银T+D
 锌现货(长江有色0#)
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-09-06
 </td>
 <td style="text-align:center;">
-19615.00
+19025.0
 </td>
 <td style="text-align:left;">
-20340.00
+19630.00
 </td>
 <td style="text-align:left;">
--725.00
+-605.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 14.24%; margin-right: 50%; text-align: right; float: right; ">-3.56</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 12.32%; margin-right: 50%; text-align: right; float: right; ">-3.08</span>
 </td>
 </tr>
 <tr>
@@ -446,19 +484,19 @@ SGE白银T+D
 铝现货(长江有色A00)
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-09-06
 </td>
 <td style="text-align:center;">
-13710.00
+14395.0
 </td>
 <td style="text-align:left;">
-13650.00
+14420.00
 </td>
 <td style="text-align:left;">
-60.00
+-25.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 1.76%; margin-left: 50%; text-align:left;">0.44</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 0.68%; margin-right: 50%; text-align: right; float: right; ">-0.17</span>
 </td>
 </tr>
 <tr>
@@ -469,19 +507,19 @@ SGE白银T+D
 镍现货(1#)
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-09-06
 </td>
 <td style="text-align:center;">
-97510.00
+138590.0
 </td>
 <td style="text-align:left;">
-97750.00
+141375.00
 </td>
 <td style="text-align:left;">
--240.00
+-2785.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 1%; margin-right: 50%; text-align: right; float: right; ">-0.25</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 7.88%; margin-right: 50%; text-align: right; float: right; ">-1.97</span>
 </td>
 </tr>
 <tr>
@@ -492,19 +530,19 @@ SGE白银T+D
 锡现货(1#)
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-07-25
 </td>
 <td style="text-align:center;">
-135310.00
+133730.0
 </td>
 <td style="text-align:left;">
-141750.00
+135000.00
 </td>
 <td style="text-align:left;">
--6440.00
+-1270.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 18.16%; margin-right: 50%; text-align: right; float: right; ">-4.54</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 3.76%; margin-right: 50%; text-align: right; float: right; ">-0.94</span>
 </td>
 </tr>
 <tr>
@@ -515,19 +553,19 @@ SGE白银T+D
 铅现货(长江有色1#)
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-07-25
 </td>
 <td style="text-align:center;">
-16170.00
+16640.0
 </td>
 <td style="text-align:left;">
-16250.00
+16650.00
 </td>
 <td style="text-align:left;">
--80.00
+-10.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 1.96%; margin-right: 50%; text-align: right; float: right; ">-0.49</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 0.24%; margin-right: 50%; text-align: right; float: right; ">-0.06</span>
 </td>
 </tr>
 <tr grouplength="4">
@@ -543,19 +581,19 @@ SGE白银T+D
 HRB400 20mm 全国
 </td>
 <td style="text-align:center;">
-2019-07-02
+2019-07-24
 </td>
 <td style="text-align:center;">
-4053.00
+3899.0
 </td>
 <td style="text-align:left;">
-4161.00
+4063.00
 </td>
 <td style="text-align:left;">
--108.00
+-164.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 10.4%; margin-right: 50%; text-align: right; float: right; ">-2.6</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 16.16%; margin-right: 50%; text-align: right; float: right; ">-4.04</span>
 </td>
 </tr>
 <tr>
@@ -566,19 +604,19 @@ HRB400 20mm 全国
 上海,Q235B,4.75mm
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-07-25
 </td>
 <td style="text-align:center;">
-3918.00
+3827.0
 </td>
 <td style="text-align:left;">
-3920.00
+3820.00
 </td>
 <td style="text-align:left;">
--2.00
+7.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 0.2%; margin-right: 50%; text-align: right; float: right; ">-0.05</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 0.72%; margin-left: 50%; text-align:left;">0.18</span>
 </td>
 </tr>
 <tr>
@@ -589,19 +627,19 @@ HRB400 20mm 全国
 京唐港:库提价(含税):1/3焦煤:山西产
 </td>
 <td style="text-align:center;">
-2019-07-02
+2019-07-24
 </td>
 <td style="text-align:center;">
+1409.0
+</td>
+<td style="text-align:left;">
 1400.00
 </td>
 <td style="text-align:left;">
-1410.00
+9.00
 </td>
 <td style="text-align:left;">
--10.00
-</td>
-<td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 2.84%; margin-right: 50%; text-align: right; float: right; ">-0.71</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 2.56%; margin-left: 50%; text-align:left;">0.64</span>
 </td>
 </tr>
 <tr>
@@ -612,19 +650,19 @@ HRB400 20mm 全国
 天津港:平仓价(含税):准一级金焦
 </td>
 <td style="text-align:center;">
-2019-07-02
+2019-07-24
 </td>
 <td style="text-align:center;">
-2110.50
+2122.0
 </td>
 <td style="text-align:left;">
 2100.00
 </td>
 <td style="text-align:left;">
-10.50
+22.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 2%; margin-left: 50%; text-align:left;">0.5</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 4.2%; margin-left: 50%; text-align:left;">1.05</span>
 </td>
 </tr>
 <tr grouplength="2">
@@ -640,19 +678,19 @@ PTA
 PTA现货(华东)
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-07-25
 </td>
 <td style="text-align:center;">
-6448.00
+5406.0
 </td>
 <td style="text-align:left;">
-6850.00
+5800.00
 </td>
 <td style="text-align:left;">
--402.00
+-394.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 23.48%; margin-right: 50%; text-align: right; float: right; ">-5.87</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 27.16%; margin-right: 50%; text-align: right; float: right; ">-6.79</span>
 </td>
 </tr>
 <tr>
@@ -663,19 +701,19 @@ PTA现货(华东)
 沥青现货(道路,70#A级,上海石化)
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-07-25
 </td>
 <td style="text-align:center;">
-3286.00
+3386.0
 </td>
 <td style="text-align:left;">
 3700.00
 </td>
 <td style="text-align:left;">
--414.00
+-314.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 44.76%; margin-right: 50%; text-align: right; float: right; ">-11.19</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 33.96%; margin-right: 50%; text-align: right; float: right; ">-8.49</span>
 </td>
 </tr>
 <tr grouplength="3">
@@ -691,19 +729,19 @@ PTA现货(华东)
 秦皇岛港,动力煤,Q5500,山西产
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-07-25
 </td>
 <td style="text-align:center;">
-599.80
+593.2
 </td>
 <td style="text-align:left;">
-611.00
+588.00
 </td>
 <td style="text-align:left;">
--11.20
+5.20
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 7.32%; margin-right: 50%; text-align: right; float: right; ">-1.83</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 3.52%; margin-left: 50%; text-align:left;">0.88</span>
 </td>
 </tr>
 <tr>
@@ -763,19 +801,19 @@ NA
 豆油现货
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-07-25
 </td>
 <td style="text-align:center;">
-5430.00
+5492.0
 </td>
 <td style="text-align:left;">
-5170.00
+5308.42
 </td>
 <td style="text-align:left;">
-260.00
+183.58
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 20.12%; margin-left: 50%; text-align:left;">5.03</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 13.84%; margin-left: 50%; text-align:left;">3.46</span>
 </td>
 </tr>
 <tr>
@@ -786,19 +824,19 @@ NA
 豆粕现货
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-07-25
 </td>
 <td style="text-align:center;">
-2822.00
+2799.0
 </td>
 <td style="text-align:left;">
-2907.06
+2857.06
 </td>
 <td style="text-align:left;">
--85.06
+-58.06
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 11.72%; margin-right: 50%; text-align: right; float: right; ">-2.93</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 8.12%; margin-right: 50%; text-align: right; float: right; ">-2.03</span>
 </td>
 </tr>
 <tr grouplength="7">
@@ -814,19 +852,19 @@ NA
 菜油现货
 </td>
 <td style="text-align:center;">
-2019-07-03
+2019-09-06
 </td>
 <td style="text-align:center;">
-6836.00
+7370.0
 </td>
 <td style="text-align:left;">
-7002.50
+7598.75
 </td>
 <td style="text-align:left;">
--166.50
+-228.75
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 9.52%; margin-right: 50%; text-align: right; float: right; ">-2.38</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 12.04%; margin-right: 50%; text-align: right; float: right; ">-3.01</span>
 </td>
 </tr>
 <tr>
@@ -837,19 +875,19 @@ NA
 棕榈油现货
 </td>
 <td style="text-align:center;">
-2019-06-06
+2019-09-06
 </td>
 <td style="text-align:center;">
-4390.00
+4794.0
 </td>
 <td style="text-align:left;">
-4368.33
+4901.67
 </td>
 <td style="text-align:left;">
-21.67
+-107.67
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 2%; margin-left: 50%; text-align:left;">0.5</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 8.8%; margin-right: 50%; text-align: right; float: right; ">-2.2</span>
 </td>
 </tr>
 <tr>
@@ -860,19 +898,19 @@ NA
 鸡蛋现货(山东青岛)
 </td>
 <td style="text-align:center;">
-2019-06-06
+2019-09-06
 </td>
 <td style="text-align:center;">
-4439.00
+4382.0
 </td>
 <td style="text-align:left;">
-3950.00
+5750.00
 </td>
 <td style="text-align:left;">
-489.00
+-1368.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 49.52%; margin-left: 50%; text-align:left;">12.38</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 95.16%; margin-right: 50%; text-align: right; float: right; ">-23.79</span>
 </td>
 </tr>
 <tr>
@@ -883,19 +921,19 @@ NA
 白糖现货(柳糖)
 </td>
 <td style="text-align:center;">
-2019-06-06
+2019-09-06
 </td>
 <td style="text-align:center;">
-4979.00
+5486.0
 </td>
 <td style="text-align:left;">
-5280.00
+5750.00
 </td>
 <td style="text-align:left;">
--301.00
+-264.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 22.8%; margin-right: 50%; text-align: right; float: right; ">-5.7</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 18.36%; margin-right: 50%; text-align: right; float: right; ">-4.59</span>
 </td>
 </tr>
 <tr>
@@ -906,19 +944,19 @@ NA
 棉花现货
 </td>
 <td style="text-align:center;">
-2019-06-06
+2019-09-06
 </td>
 <td style="text-align:center;">
-12935.00
+12925.0
 </td>
 <td style="text-align:left;">
-14150.77
+13060.77
 </td>
 <td style="text-align:left;">
--1215.77
+-135.77
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 34.36%; margin-right: 50%; text-align: right; float: right; ">-8.59</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 4.16%; margin-right: 50%; text-align: right; float: right; ">-1.04</span>
 </td>
 </tr>
 <tr>
@@ -929,19 +967,19 @@ NA
 玉米现货
 </td>
 <td style="text-align:center;">
-2019-06-06
+2019-09-06
 </td>
 <td style="text-align:center;">
-1955.00
+1885.0
 </td>
 <td style="text-align:left;">
-1970.83
+1973.96
 </td>
 <td style="text-align:left;">
--15.83
+-88.96
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 3.2%; margin-right: 50%; text-align: right; float: right; ">-0.8</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 18.04%; margin-right: 50%; text-align: right; float: right; ">-4.51</span>
 </td>
 </tr>
 <tr>
@@ -952,19 +990,19 @@ NA
 玉米淀粉现货(长春)
 </td>
 <td style="text-align:center;">
-2019-06-06
+2019-09-06
 </td>
 <td style="text-align:center;">
-2401.00
+2283.0
 </td>
 <td style="text-align:left;">
 2300.00
 </td>
 <td style="text-align:left;">
-101.00
+-17.00
 </td>
 <td style="text-align:left;">
-<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightpink; width: 17.56%; margin-left: 50%; text-align:left;">4.39</span>
+<span style="display: inline-block; border-radius: 2px; padding-right: 2px; background-color: lightgreen; width: 2.96%; margin-right: 50%; text-align: right; float: right; ">-0.74</span>
 </td>
 </tr>
 </tbody>
@@ -978,20 +1016,20 @@ NA
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-144f99a5494c18ef2f52" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-144f99a5494c18ef2f52">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3e261f8c6fa5ea768801" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3e261f8c6fa5ea768801">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-174ca80969014ee62a23" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-174ca80969014ee62a23">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f61c8c57f78806388752" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f61c8c57f78806388752">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-1f481a7b85a15caf606a" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1f481a7b85a15caf606a">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-0b70d3351c3340c5aa9e" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0b70d3351c3340c5aa9e">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-4e032532e6bb201f984d" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4e032532e6bb201f984d">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-e306ed2fdb74c354bc73" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e306ed2fdb74c354bc73">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -1002,52 +1040,52 @@ NA
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-120f3c27259a4d5eabc0" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-120f3c27259a4d5eabc0">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-51c6fcba7ca2fcc4f21f" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-51c6fcba7ca2fcc4f21f">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-55d3611407230ccaf903" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-55d3611407230ccaf903">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1645c061cc139dba3ab4" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1645c061cc139dba3ab4">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-11d7ba80e9f4e0165652" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-11d7ba80e9f4e0165652">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d79357192bf2b45069a8" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d79357192bf2b45069a8">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-b7174253a75b58e39b50" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b7174253a75b58e39b50">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-6ee7a18a48e0528bd647" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6ee7a18a48e0528bd647">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-9fb44936d011404c9152" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9fb44936d011404c9152">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c9d17f225232e85b48d2" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c9d17f225232e85b48d2">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-f215d7eaff90388f7488" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f215d7eaff90388f7488">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b3aa3b41fa7eb5489f5a" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b3aa3b41fa7eb5489f5a">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-bb26e9bbe13a954b0881" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bb26e9bbe13a954b0881">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-9343942d32e7938eb795" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9343942d32e7938eb795">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-22d1589d0775cbf89d33" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-22d1589d0775cbf89d33">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-75a919ed7b11f05483d2" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-75a919ed7b11f05483d2">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-257af6e73ed7b6822851" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-257af6e73ed7b6822851">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-16.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7bb518a5eb5d8bf0e913" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7bb518a5eb5d8bf0e913">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-16.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-c6b9e0034cb73d36fab3" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c6b9e0034cb73d36fab3">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-17.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-50db5cdd494d37bab0df" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-50db5cdd494d37bab0df">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-17.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-9bcaf1433bed69bdd319" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9bcaf1433bed69bdd319">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-18.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-0929c482eaaa319c16a4" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0929c482eaaa319c16a4">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-18.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-45d3260c4f6e73716707" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-45d3260c4f6e73716707">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-19.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7f28e5097ab5d8d471f2" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7f28e5097ab5d8d471f2">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-19.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -1058,44 +1096,44 @@ NA
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-d1995a12b8cd1f153e48" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d1995a12b8cd1f153e48">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-20.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-0d6336c3379de65502c9" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0d6336c3379de65502c9">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-20.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-b668d1a2b71275b4b92d" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b668d1a2b71275b4b92d">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-21.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-cabe5f3b2d761401e826" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cabe5f3b2d761401e826">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-21.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-d33ce9b36509fba6cef4" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d33ce9b36509fba6cef4">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-22.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-aabe3212c23d5a49c814" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-aabe3212c23d5a49c814">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-22.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-79953fa4a3bd14170e79" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-79953fa4a3bd14170e79">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-23.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-693244f2f215bfa7f6da" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-693244f2f215bfa7f6da">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-23.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-5494df23dfdfa07ce7f8" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5494df23dfdfa07ce7f8">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-24.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ecab879b2d9b31158bd0" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ecab879b2d9b31158bd0">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-24.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-f311209c4782cd8340c4" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f311209c4782cd8340c4">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-25.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c53ef95d0ba9f8ffb01d" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c53ef95d0ba9f8ffb01d">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-25.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-fb9885d4379a3c4f879a" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fb9885d4379a3c4f879a">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-26.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-04d1fe4411083e1007d3" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-04d1fe4411083e1007d3">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-26.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-8c149e5417f6eb91ffcb" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8c149e5417f6eb91ffcb">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-27.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-79a8ae010683225f2681" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-79a8ae010683225f2681">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-27.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-c2f083f65c474df9b953" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c2f083f65c474df9b953">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-28.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-91e84cb517f473a770a5" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-91e84cb517f473a770a5">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-28.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-ffd9da6549d036b1304d" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ffd9da6549d036b1304d">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-29.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-124644d1c5543acaa770" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-124644d1c5543acaa770">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-29.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -1106,20 +1144,20 @@ NA
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-cd5500dd8850359f9f88" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cd5500dd8850359f9f88">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-30.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-cd2a1aa48ed1222df1df" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cd2a1aa48ed1222df1df">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-30.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-374c0767c5a654cf6e10" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-374c0767c5a654cf6e10">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-31.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8eacbc04484028c3211e" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8eacbc04484028c3211e">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-31.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-87e4e2709a08130723f5" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-87e4e2709a08130723f5">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-32.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ce4d8b7d10328ddd8cc7" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ce4d8b7d10328ddd8cc7">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-32.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-997ce9554e72ad93e00d" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-997ce9554e72ad93e00d">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-33.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5541391edea3149e04ad" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5541391edea3149e04ad">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-33.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -1130,23 +1168,23 @@ NA
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-e9a176872333d1cf07bb" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e9a176872333d1cf07bb">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-34.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1a4ede70dd3b43b3c2f3" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1a4ede70dd3b43b3c2f3">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-34.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-807f8ee50fe8725cf5be" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-807f8ee50fe8725cf5be">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-35.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3dec943aaeb0e0d25a98" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3dec943aaeb0e0d25a98">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-35.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-7613974620e886c270fa" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7613974620e886c270fa">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-36.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-239fbed6273f916c8422" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-239fbed6273f916c8422">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-36.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
 
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-85d232d91f82784c7443" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-85d232d91f82784c7443">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-38.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-cf5796af4144c9d43efc" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cf5796af4144c9d43efc">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-38.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -1157,52 +1195,52 @@ NA
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-15378fa39dadfe8d95d4" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-15378fa39dadfe8d95d4">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-39.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-60d0f72c87bdf74f71a2" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-60d0f72c87bdf74f71a2">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-39.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-b2aa04a67a7d29fb900f" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b2aa04a67a7d29fb900f">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-40.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-38212c5eef3664388d3d" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-38212c5eef3664388d3d">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-40.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-414ac9a8d1f632b5ceda" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-414ac9a8d1f632b5ceda">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-41.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1f1035f26cc442088029" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1f1035f26cc442088029">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-41.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-c40cfb74e9149625a092" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c40cfb74e9149625a092">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-42.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-156ac94536d23ccb8a2e" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-156ac94536d23ccb8a2e">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-42.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-2cc92e0e423b730bc581" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2cc92e0e423b730bc581">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-43.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-926522e249d517452290" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-926522e249d517452290">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-43.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-79770593c0882d1721f6" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-79770593c0882d1721f6">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-44.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-2ecf072b77e9dd9ac7a9" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2ecf072b77e9dd9ac7a9">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-44.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-9c2f3f58a051b7c3fe9e" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9c2f3f58a051b7c3fe9e">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-45.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-e26fe6c269eb1d62596c" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e26fe6c269eb1d62596c">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-45.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-2d297fe2691d2771d4d1" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2d297fe2691d2771d4d1">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-46.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8a6cb1a24d33f0bcc446" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8a6cb1a24d33f0bcc446">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-46.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-809fcc3e1e95791881a8" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-809fcc3e1e95791881a8">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-47.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-6b6c86db0c0d9984e516" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6b6c86db0c0d9984e516">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-47.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-c7aa37454cdd15732081" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c7aa37454cdd15732081">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-48.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b6fd36e76007e73ad29b" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b6fd36e76007e73ad29b">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-48.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-65b53bbd740946c6c6c6" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-65b53bbd740946c6c6c6">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-49.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4d5b2965f86ddef3295c" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4d5b2965f86ddef3295c">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-49.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-5edd8da2b882136bb03a" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5edd8da2b882136bb03a">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-50.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ffbd00ed46f0a1dc49a4" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ffbd00ed46f0a1dc49a4">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-50.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -1213,44 +1251,44 @@ NA
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-dc423827e2bc7964dcdd" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-dc423827e2bc7964dcdd">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-51.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-248b920c83a28a9b57cf" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-248b920c83a28a9b57cf">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-51.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-39a9113761c728a88475" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-39a9113761c728a88475">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-52.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-41267dbff737bc3d2b52" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-41267dbff737bc3d2b52">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-52.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-c64bde557177d036a09f" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c64bde557177d036a09f">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-53.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-9ab9030ed5fa814eb664" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9ab9030ed5fa814eb664">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-53.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-4c675387534f942ae4c6" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4c675387534f942ae4c6">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-54.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8f1b5d7c8ddc24dc6fa9" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8f1b5d7c8ddc24dc6fa9">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-54.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-cd3f6f707e02a909b682" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cd3f6f707e02a909b682">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-55.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-03c471854a02fa06c17d" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-03c471854a02fa06c17d">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-55.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-3aaf22341f569c99d0d3" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3aaf22341f569c99d0d3">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-56.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8cf5e43ee683617ae0e2" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8cf5e43ee683617ae0e2">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-56.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-ba20389585f46dfe9027" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ba20389585f46dfe9027">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-57.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c9e099aaaab97acc6861" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c9e099aaaab97acc6861">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-57.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-61529a81745d201f37d4" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-61529a81745d201f37d4">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-58.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-49ce61cfbd35a3255349" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-49ce61cfbd35a3255349">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-58.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-6987613a613634f0a0e0" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6987613a613634f0a0e0">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-59.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-51606cd4fe76de291e87" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-51606cd4fe76de291e87">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-59.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-b435f5cfe3d48e3774e2" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b435f5cfe3d48e3774e2">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-60.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-e8055b5f60dbd48d1daa" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e8055b5f60dbd48d1daa">{"x":{"url":"commodities_cn_files/figure-html//widgets/widget_unnamed-chunk-60.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
