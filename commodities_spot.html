@@ -19,7 +19,7 @@
 <script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
 <script src="site_libs/pymjs-1.3.2/pym.v1.js"></script>
 <script src="site_libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -53,16 +53,22 @@ if (window.hljs) {
 <META name="apple-mobile-web-app-capable" content="yes">
 <META name="apple-mobile-web-app-status-bar-style" content="black">
 <TITLE>简易投研主页</TITLE>     
-<LINK href="static/library-bundle.min.css" rel="stylesheet">     
-<LINK href="static/global-bundle.min.css" rel="stylesheet">
-
+<LINK href="css/library-bundle.min.css" rel="stylesheet">     
+<LINK href="css/global-bundle.min.css" rel="stylesheet">
+ <script type="text/javascript" src="js/responsive-template.js"></script> 
+  
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
-<SCRIPT src="static/library-bundle.min.js"></SCRIPT>
+<SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
-<LINK href="static/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
- 
+<link href="css/solving-2018.css" rel="stylesheet">
+
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
+<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-template.css">
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/blank.js"></script>
 
 
 </HEAD> 
@@ -79,9 +85,18 @@ if (window.hljs) {
         <span class="icon-bar bottom-bar"></span>
     </button>
 	<a href="index.html">
-		<img src="static/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
+		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
 	</a>
 </DIV>
+
+
+
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
+
 
 <DIV class="navbar-collapse collapse" id="navbar">
 <UL class="nav navbar-nav primary-nav">
@@ -105,9 +120,7 @@ if (window.hljs) {
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
-      <LI><A href="commodities_cn.html">基差与期限结构</A></LI>
-      <LI><A href="commodities_spot.html">商品现货</A></LI>
-      <LI><A href="commodities_arbitrage.html">跨品种分析</A></LI>
+      <LI><A href="commodities_cn.html">商品期货</A></LI>
       <LI><A href="gold.html">黄金</A></LI>
       <LI><A href="index_futures.html">股指期货</A></LI>
       <LI><A href="options.html">上证50期权</A></LI>
@@ -174,6 +187,12 @@ if (window.hljs) {
       <LI><A href="sector_capital_markets.html">证券</A></LI>
       <LI><A href="sector_transport.html">交通运输</A></LI>
     </UL>
+    
+  	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
+      <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
+      <LI><A href="asset_returns_table.html">行业收益率周期图</A></LI>
+	    <LI><A href="periodic_table.html">A股元素周期表</A></LI>
+    </UL>
 	
 	</DIV>
 	  
@@ -219,6 +238,7 @@ if (window.hljs) {
       <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
       <LI><A href="climate.html">气候</A></LI>
 	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+
     </UL>
 	</DIV>
 	
@@ -242,14 +262,14 @@ if (window.hljs) {
 	  <SPAN class="nav-header">打赏</SPAN>
 
       <LI>感谢您的支持</LI>
-      <IMG class="img-responsive" alt="" src="static/wechatpay.png" height="100" width="100">
+      <IMG class="img-responsive" alt="" src="images/wechatpay.png" height="100" width="100">
 
 	</DIV>
 	
   <DIV class="col-lg-3 col-md-4 left-space">
 	  <SPAN class="nav-header">Email:</SPAN>
 
-      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com</LI>
 
 	</DIV>
 	
@@ -294,6 +314,29 @@ if (window.hljs) {
 
 
 <p><br><br><br><br></p>
+<section class="hero aac">
+<div id="hero-nav-bar">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<ul class="hero-sub-nav">
+<li id="listToggle">
+选择
+</li>
+<li>
+<a id="PMI" href="commodities_cn.html">商品基差一览</a>
+</li>
+<li>
+<a id="PMI" href="commodities_spot.html">现货价格</a>
+</li>
+<li>
+<a id="PMI" href="commodities_arbitrage.html">跨品种套利</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 <div class="container">
 <div class="row content-block-row">
 <div class="col-xs-12">
@@ -303,24 +346,24 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-5599fdae4aeb74c9e6a0" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5599fdae4aeb74c9e6a0">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-bd2cbf48ec7d4621656f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bd2cbf48ec7d4621656f">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-cd0655c940092f5e2986" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cd0655c940092f5e2986">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-35549a469ba34334833f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-35549a469ba34334833f">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-cc29e208fe7adba40000" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cc29e208fe7adba40000">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-94d9e0de1f10f799879a" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-94d9e0de1f10f799879a">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-336ee4094b93da25abf6" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-336ee4094b93da25abf6">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4d9b1069aec1b172573e" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4d9b1069aec1b172573e">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-de387cb38d2bc50580aa" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-de387cb38d2bc50580aa">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b6dab34fa476623d30dd" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b6dab34fa476623d30dd">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="col-xs-12">
@@ -330,12 +373,12 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-b55e35ba68e7dab06595" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b55e35ba68e7dab06595">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a97023012e387ccc10d6" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a97023012e387ccc10d6">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-8f14b10c6f8612e09f9d" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8f14b10c6f8612e09f9d">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-dc5bc7cd075ad0fe224c" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-dc5bc7cd075ad0fe224c">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -346,28 +389,28 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-31f9a4d19f05553f87d5" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-31f9a4d19f05553f87d5">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-761894fc2df84e3d7fdd" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-761894fc2df84e3d7fdd">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-26f9d5c80feabe1e98b1" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-26f9d5c80feabe1e98b1">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1e2e82136c6d4a0dc40e" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1e2e82136c6d4a0dc40e">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-8b2c0a7c4411295b302b" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8b2c0a7c4411295b302b">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-74324c76574b2b16df1f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-74324c76574b2b16df1f">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-2dcf66585199fe5a1936" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2dcf66585199fe5a1936">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b723bb6574aeb07d3fc5" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b723bb6574aeb07d3fc5">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-5915b81961f964406e60" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5915b81961f964406e60">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-db0629c46a2912ba7f4c" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-db0629c46a2912ba7f4c">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-46de1739aa3892b2ba3a" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-46de1739aa3892b2ba3a">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-16.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f68d298647013e0de644" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f68d298647013e0de644">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-16.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="col-xs-12">
@@ -377,24 +420,24 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-c4a0f5a5eb34705fbc63" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c4a0f5a5eb34705fbc63">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-17.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-82601bbd936b014e59a6" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-82601bbd936b014e59a6">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-17.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-fe6c140f7daa816648a2" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fe6c140f7daa816648a2">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-18.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-9ed8c28354c42a3e2d08" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9ed8c28354c42a3e2d08">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-18.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-14d2a1abb06bb71e1f7f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-14d2a1abb06bb71e1f7f">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-19.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-bc78ee1c7122560a3e6c" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bc78ee1c7122560a3e6c">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-19.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-dcb72197aad4e1fc69d8" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-dcb72197aad4e1fc69d8">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-20.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b08b9d6252bda6e8bdfc" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b08b9d6252bda6e8bdfc">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-20.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-efe44213e40f8411bc9f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-efe44213e40f8411bc9f">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-21.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-aafb9040b09923bb2001" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-aafb9040b09923bb2001">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-21.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="col-xs-12">
@@ -404,12 +447,12 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-e6352e5d9093cf125d6c" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e6352e5d9093cf125d6c">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-22.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c1f17c72c7dd66735460" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c1f17c72c7dd66735460">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-22.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-0d3666b6105da5ef79ef" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0d3666b6105da5ef79ef">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-23.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-6108843b35d17d81a32f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6108843b35d17d81a32f">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-23.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="col-xs-12">
@@ -419,8 +462,8 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-5210d8a3533b280584e8" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5210d8a3533b280584e8">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-24.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7de77c5d560ea73a5faa" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7de77c5d560ea73a5faa">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-24.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="col-xs-12">
@@ -430,24 +473,24 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-50a3cd7afa8e70b7ddaa" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-50a3cd7afa8e70b7ddaa">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-25.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-6c380f565665b078ec34" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6c380f565665b078ec34">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-25.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-fd6df82c7bac2ad36761" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fd6df82c7bac2ad36761">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-26.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d599b881b3b27f561869" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d599b881b3b27f561869">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-26.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-52bf6822c142e6133f14" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-52bf6822c142e6133f14">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-27.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-eece5e9296e39cb092e1" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-eece5e9296e39cb092e1">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-27.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-50e042d0f08cf9f8fb5c" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-50e042d0f08cf9f8fb5c">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-28.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-12cd534ad7574b48dd60" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-12cd534ad7574b48dd60">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-28.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-9138a498132018c696d0" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9138a498132018c696d0">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-29.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-6309bca57678dd8bb046" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6309bca57678dd8bb046">{"x":{"url":"commodities_spot_files/figure-html//widgets/widget_unnamed-chunk-29.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
