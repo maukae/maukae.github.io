@@ -55,16 +55,20 @@ if (window.hljs) {
 <TITLE>简易投研主页</TITLE>     
 <LINK href="css/library-bundle.min.css" rel="stylesheet">     
 <LINK href="css/global-bundle.min.css" rel="stylesheet">
-<LINK href="css/responsive-template.css" rel="stylesheet">
-  
+ <script type="text/javascript" src="js/responsive-template.js"></script> 
   
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
 <SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
+<link href="css/solving-2018.css" rel="stylesheet">
+
 <LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 <LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
- 
+<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-template.css">
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/blank.js"></script>
 
 
 </HEAD> 
@@ -84,6 +88,15 @@ if (window.hljs) {
 		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
 	</a>
 </DIV>
+
+
+
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
+
 
 <DIV class="navbar-collapse collapse" id="navbar">
 <UL class="nav navbar-nav primary-nav">
@@ -107,9 +120,7 @@ if (window.hljs) {
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
-      <LI><A href="commodities_cn.html">基差与期限结构</A></LI>
-      <LI><A href="commodities_spot.html">商品现货</A></LI>
-      <LI><A href="commodities_arbitrage.html">跨品种分析</A></LI>
+      <LI><A href="commodities_cn.html">商品期货</A></LI>
       <LI><A href="gold.html">黄金</A></LI>
       <LI><A href="index_futures.html">股指期货</A></LI>
       <LI><A href="options.html">上证50期权</A></LI>
@@ -179,7 +190,8 @@ if (window.hljs) {
     
   	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
       <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
-
+      <LI><A href="asset_returns_table.html">行业收益率周期图</A></LI>
+	    <LI><A href="periodic_table.html">A股元素周期表</A></LI>
     </UL>
 	
 	</DIV>
@@ -226,6 +238,7 @@ if (window.hljs) {
       <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
       <LI><A href="climate.html">气候</A></LI>
 	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+
     </UL>
 	</DIV>
 	
@@ -256,7 +269,7 @@ if (window.hljs) {
   <DIV class="col-lg-3 col-md-4 left-space">
 	  <SPAN class="nav-header">Email:</SPAN>
 
-      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com</LI>
 
 	</DIV>
 	
@@ -375,6 +388,9 @@ text-align: right;}
  
 </th>
 <th <th align="center" style="font-weight: normal;border-left: 1px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-08
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
 2019-07
 </th>
 <th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
@@ -404,7 +420,7 @@ text-align: right;}
 <th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
 2018-10
 </th>
-<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
 2018-09
 </th>
 <th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
@@ -425,15 +441,15 @@ text-align: right;}
 <th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
 2018-03
 </th>
-<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
-2018-02
-</th>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; ">
 中国制造业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;background-color: #C5F3B2;">
+<td align="center" style="border-left: 1px solid black;background-color: #ABF1A1;">
+49.50
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #C5F3B2;">
 49.70
 </td>
 <td align="center" style="border-left: 0px solid black;background-color: #9EEF98;">
@@ -460,10 +476,10 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;background-color: #DDF6C3;">
 50.00
 </td>
-<td align="center" style="border-left: 0px solid black;background-color: #E8F6CB;">
+<td align="NA" style="border-left: 0px solid black;background-color: #E8F6CB;">
 50.20
 </td>
-<td align="NA" style="border-left: 0px solid black;background-color: #FFE0C9;">
+<td align="NA" style="border-left: NApx solid black;background-color: #FFE0C9;">
 50.80
 </td>
 <td align="NA" style="border-left: NApx solid black;background-color: #FAB1A4;">
@@ -484,67 +500,63 @@ text-align: right;}
 <td align="NA" style="border-left: NApx solid black;background-color: #F8A59B;">
 51.50
 </td>
-<td align="NA" style="border-left: NApx solid black;background-color: #F4F7D4;">
-50.30
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 工业增加值
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FED5BF;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
 4.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
 6.30
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
 5.00
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
 5.40
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
 8.50
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 3.36
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
 6.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
 5.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
 5.40
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
 5.90
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
 5.80
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
 6.10
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
 6.00
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
 6.00
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
 6.80
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
 7.00
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
 6.00
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
--2.12
 </td>
 </tr>
 <tr>
@@ -552,6 +564,9 @@ text-align: right;}
 工业企业利润总额
 </td>
 <td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+2.60
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 -3.10
@@ -575,10 +590,10 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
 -1.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
 3.60
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
 4.10
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
@@ -599,72 +614,71 @@ text-align: right;}
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
 3.10
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;">
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 固定资产投资
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #B8F2A9;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
 5.70
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
 5.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
 5.60
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
 6.10
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
 6.30
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
 6.10
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
 5.90
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
 5.90
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
 5.70
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #9EEF98;">
 5.40
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
 5.30
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #9EEF98;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #ABF1A1;">
 5.50
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
 6.00
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
 6.10
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
 7.00
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
-7.50
-</td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
-7.90
+7.50
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 制造业投资
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #ABF1A1;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
 3.30
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
@@ -690,10 +704,10 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
 9.50
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
 9.10
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
 8.70
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
@@ -714,73 +728,71 @@ text-align: right;}
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
 3.80
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
-4.30
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 基建投资
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #D1F5BA;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
 2.91
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
 2.95
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
 2.60
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
 2.97
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
 2.95
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
 2.50
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
 1.79
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
 1.19
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
 0.92
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
 0.26
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #9EEF98;">
 0.66
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
 1.80
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
 3.31
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
 5.02
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
 7.63
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
-8.34
-</td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
-11.34
+8.34
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 房地产投资
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FFF8DC;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
 10.60
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
@@ -806,10 +818,10 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
 9.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
 9.70
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
 9.90
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
@@ -830,15 +842,14 @@ text-align: right;}
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
 10.40
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
-9.90
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 社零
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #B8F2A9;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
 7.60
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
@@ -864,10 +875,10 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
 8.10
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
 8.60
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
 9.20
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
@@ -888,90 +899,90 @@ text-align: right;}
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
 10.10
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
-9.70
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 出口金额
 </td>
 <td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FFECD2;">
-10.30
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
-6.00
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
-7.70
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
-3.10
+2.60
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+10.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+6.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+7.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+3.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
 20.80
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 -16.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
-14.10
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
-0.20
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+14.00
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
-8.70
+0.20
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+8.70
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
 18.70
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
 16.40
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
 7.70
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
 5.40
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
 2.50
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
 2.50
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
 2.90
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #ABF1A1;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
 -10.00
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
-35.30
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 进口金额
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #ABF1A1;">
-0.40
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+-2.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+0.70
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
--0.40
+-0.30
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 -2.50
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
-10.40
+10.50
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
--1.90
+-1.80
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
-0.20
+0.30
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
 3.10
@@ -982,10 +993,10 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
 7.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
 25.20
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
 17.40
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
@@ -1006,34 +1017,34 @@ text-align: right;}
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
 6.20
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #ABF1A1;">
-0.10
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 贸易差额
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FAB1A4;">
-3102.61
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FED5BF;">
+2396.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+3070.40
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
-3451.03
+3432.30
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
-2796.28
+2794.50
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
-916.54
+909.60
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
-2166.00
+2160.90
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
-288.41
+281.60
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
-2711.91
+2698.10
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
 3932.00
@@ -1041,10 +1052,10 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
 2860.00
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
 2265.00
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
 2033.00
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
@@ -1065,27 +1076,26 @@ text-align: right;}
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
 -349.00
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
-2149.00
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 CPI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #F38D89;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
 2.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
 2.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
 2.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
 2.50
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
 2.30
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
@@ -1094,25 +1104,25 @@ CPI
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
 1.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
 1.90
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
 2.20
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
 2.50
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
 2.50
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
 2.30
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
 2.10
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
 1.90
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
@@ -1121,18 +1131,17 @@ CPI
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
 1.80
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
 2.10
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
-2.90
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 PPI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 -0.30
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
@@ -1159,10 +1168,10 @@ PPI
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
 2.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
 3.30
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
 3.60
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
@@ -1183,15 +1192,15 @@ PPI
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
 3.10
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
-3.70
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 外汇储备变动
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #E8F6CB;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FBBDAD;">
+34.79
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
 -155.37
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
@@ -1218,10 +1227,10 @@ PPI
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
 85.99
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 -339.27
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
 -226.91
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
@@ -1241,9 +1250,6 @@ PPI
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
 83.38
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
--269.75
 </td>
 </tr>
 <tr>
