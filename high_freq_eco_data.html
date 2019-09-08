@@ -56,16 +56,20 @@ if (window.hljs) {
 <TITLE>简易投研主页</TITLE>     
 <LINK href="css/library-bundle.min.css" rel="stylesheet">     
 <LINK href="css/global-bundle.min.css" rel="stylesheet">
-<LINK href="css/responsive-template.css" rel="stylesheet">
-  
+ <script type="text/javascript" src="js/responsive-template.js"></script> 
   
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
 <SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
+<link href="css/solving-2018.css" rel="stylesheet">
+
 <LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 <LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
- 
+<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-template.css">
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/blank.js"></script>
 
 
 </HEAD> 
@@ -85,6 +89,15 @@ if (window.hljs) {
 		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
 	</a>
 </DIV>
+
+
+
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
+
 
 <DIV class="navbar-collapse collapse" id="navbar">
 <UL class="nav navbar-nav primary-nav">
@@ -108,9 +121,7 @@ if (window.hljs) {
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
-      <LI><A href="commodities_cn.html">基差与期限结构</A></LI>
-      <LI><A href="commodities_spot.html">商品现货</A></LI>
-      <LI><A href="commodities_arbitrage.html">跨品种分析</A></LI>
+      <LI><A href="commodities_cn.html">商品期货</A></LI>
       <LI><A href="gold.html">黄金</A></LI>
       <LI><A href="index_futures.html">股指期货</A></LI>
       <LI><A href="options.html">上证50期权</A></LI>
@@ -180,7 +191,8 @@ if (window.hljs) {
     
   	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
       <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
-
+      <LI><A href="asset_returns_table.html">行业收益率周期图</A></LI>
+	    <LI><A href="periodic_table.html">A股元素周期表</A></LI>
     </UL>
 	
 	</DIV>
@@ -227,6 +239,7 @@ if (window.hljs) {
       <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
       <LI><A href="climate.html">气候</A></LI>
 	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+
     </UL>
 	</DIV>
 	
@@ -257,7 +270,7 @@ if (window.hljs) {
   <DIV class="col-lg-3 col-md-4 left-space">
 	  <SPAN class="nav-header">Email:</SPAN>
 
-      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com</LI>
 
 	</DIV>
 	
@@ -301,6 +314,11 @@ if (window.hljs) {
 
 
 
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
 <section class="hero aac">
 <div id="hero-nav-bar">
 <div class="container">
@@ -385,19 +403,19 @@ Brent原油价格
 美元/桶
 </td>
 <td style="text-align:center;">
-2019-08-19
+2019-09-05
 </td>
 <td style="text-align:right;">
-59.74
+60.95
 </td>
 <td style="text-align:right;">
--2.54
+-0.21
 </td>
 <td style="text-align:right;">
-1.36
+1.72
 </td>
 <td style="text-align:right;">
-8.80
+11.00
 </td>
 </tr>
 <tr>
@@ -408,19 +426,19 @@ Brent原油价格
 元/吨
 </td>
 <td style="text-align:center;">
-2019-08-14
+2019-09-04
 </td>
 <td style="text-align:right;">
-579.00
+590.20
 </td>
 <td style="text-align:right;">
-0.42
+2.04
 </td>
 <td style="text-align:right;">
--2.46
+0.20
 </td>
 <td style="text-align:right;">
-3.14
+-0.57
 </td>
 </tr>
 <tr>
@@ -431,19 +449,19 @@ Brent原油价格
 点
 </td>
 <td style="text-align:center;">
-2019-08-19
+2019-09-05
 </td>
 <td style="text-align:right;">
-327.90
+329.59
 </td>
 <td style="text-align:right;">
--1.41
+5.27
 </td>
 <td style="text-align:right;">
--10.06
+2.94
 </td>
 <td style="text-align:right;">
-29.04
+29.71
 </td>
 </tr>
 <tr>
@@ -454,19 +472,19 @@ LME铜
 美元/吨
 </td>
 <td style="text-align:center;">
-2019-08-19
+2019-09-05
 </td>
 <td style="text-align:right;">
-5790.00
+5802.00
 </td>
 <td style="text-align:right;">
-1.10
+1.86
 </td>
 <td style="text-align:right;">
-1.74
+1.96
 </td>
 <td style="text-align:right;">
--1.23
+-1.02
 </td>
 </tr>
 <tr>
@@ -477,19 +495,19 @@ LME铝
 美元/吨
 </td>
 <td style="text-align:center;">
-2019-08-19
+2019-09-05
 </td>
 <td style="text-align:right;">
-1795.00
+1778.00
 </td>
 <td style="text-align:right;">
-1.90
+2.10
 </td>
 <td style="text-align:right;">
-1.61
+0.65
 </td>
 <td style="text-align:right;">
--2.79
+-3.71
 </td>
 </tr>
 <tr grouplength="8">
@@ -505,19 +523,19 @@ LME铝
 点
 </td>
 <td style="text-align:center;">
-2019-08-19
+2019-09-06
 </td>
 <td style="text-align:right;">
-143.81
+146.19
 </td>
 <td style="text-align:right;">
-0.00
+0.08
 </td>
 <td style="text-align:right;">
--0.20
+1.10
 </td>
 <td style="text-align:right;">
--11.05
+-9.58
 </td>
 </tr>
 <tr>
@@ -528,19 +546,19 @@ LME铝
 点
 </td>
 <td style="text-align:center;">
-2019-08-20
+2019-09-06
 </td>
 <td style="text-align:right;">
-1144.04
+1159.52
 </td>
 <td style="text-align:right;">
-0.90
+0.54
 </td>
 <td style="text-align:right;">
-2.88
+1.04
 </td>
 <td style="text-align:right;">
--2.43
+-1.11
 </td>
 </tr>
 <tr>
@@ -551,19 +569,19 @@ LME铝
 点
 </td>
 <td style="text-align:center;">
-2019-08-16
+2019-09-06
 </td>
 <td style="text-align:right;">
-830.18
+823.75
 </td>
 <td style="text-align:right;">
-1.70
+0.75
 </td>
 <td style="text-align:right;">
-2.31
+1.07
 </td>
 <td style="text-align:right;">
--1.38
+-2.14
 </td>
 </tr>
 <tr>
@@ -574,19 +592,19 @@ LME铝
 点
 </td>
 <td style="text-align:center;">
-2019-08-16
+2019-09-06
 </td>
 <td style="text-align:right;">
-803.82
+795.05
 </td>
 <td style="text-align:right;">
-1.65
+-3.29
 </td>
 <td style="text-align:right;">
-3.17
+-1.96
 </td>
 <td style="text-align:right;">
--14.57
+-15.50
 </td>
 </tr>
 <tr>
@@ -597,19 +615,19 @@ LME铝
 点
 </td>
 <td style="text-align:center;">
-2019-08-19
+2019-09-06
 </td>
 <td style="text-align:right;">
-2067.00
+2462.00
 </td>
 <td style="text-align:right;">
-10.89
+0.82
 </td>
 <td style="text-align:right;">
-19.20
+13.56
 </td>
 <td style="text-align:right;">
-61.23
+92.04
 </td>
 </tr>
 <tr>
@@ -620,19 +638,19 @@ LME铝
 %
 </td>
 <td style="text-align:center;">
-2019-08-09
+2019-09-06
 </td>
 <td style="text-align:right;">
-69.14
+71.66
 </td>
 <td style="text-align:right;">
--8.22
+3.64
 </td>
 <td style="text-align:right;">
--1.51
+-6.47
 </td>
 <td style="text-align:right;">
--1.10
+2.50
 </td>
 </tr>
 <tr>
@@ -643,19 +661,19 @@ LME铝
 %
 </td>
 <td style="text-align:center;">
-2019-08-09
+2019-09-06
 </td>
 <td style="text-align:right;">
-67.68
+66.91
 </td>
 <td style="text-align:right;">
--5.01
+-1.14
 </td>
 <td style="text-align:right;">
--0.76
+-7.90
 </td>
 <td style="text-align:right;">
-2.25
+1.09
 </td>
 </tr>
 <tr>
@@ -666,19 +684,19 @@ LME铝
 元/吨
 </td>
 <td style="text-align:center;">
-2019-08-20
+2019-09-06
 </td>
 <td style="text-align:right;">
-3699.00
+3387.00
 </td>
 <td style="text-align:right;">
-0.79
+-0.59
 </td>
 <td style="text-align:right;">
--0.32
+0.44
 </td>
 <td style="text-align:right;">
-9.37
+0.15
 </td>
 </tr>
 <tr grouplength="5">
@@ -694,19 +712,19 @@ LME铝
 套
 </td>
 <td style="text-align:center;">
-2019-08-19
+2019-09-07
 </td>
 <td style="text-align:right;">
-842.00
+719.00
 </td>
 <td style="text-align:right;">
--1.41
+-26.33
 </td>
 <td style="text-align:right;">
-44.92
+-44.56
 </td>
 <td style="text-align:right;">
-304.81
+245.67
 </td>
 </tr>
 <tr>
@@ -717,19 +735,19 @@ LME铝
 套
 </td>
 <td style="text-align:center;">
-2019-08-19
+2019-09-07
 </td>
 <td style="text-align:right;">
-1751.00
+2347.00
 </td>
 <td style="text-align:right;">
--16.14
+-5.86
 </td>
 <td style="text-align:right;">
-7.03
+5.67
 </td>
 <td style="text-align:right;">
-92.21
+157.63
 </td>
 </tr>
 <tr>
@@ -740,19 +758,19 @@ LME铝
 套
 </td>
 <td style="text-align:center;">
-2019-08-19
+2019-09-07
 </td>
 <td style="text-align:right;">
-1017.00
+1629.00
 </td>
 <td style="text-align:right;">
--20.11
+4.49
 </td>
 <td style="text-align:right;">
--12.85
+-4.06
 </td>
 <td style="text-align:right;">
-10.06
+76.30
 </td>
 </tr>
 <tr>
@@ -763,19 +781,19 @@ LME铝
 点
 </td>
 <td style="text-align:center;">
-2019-08-20
+2019-09-06
 </td>
 <td style="text-align:right;">
-114.41
+115.19
 </td>
 <td style="text-align:right;">
-0.64
+0.17
 </td>
 <td style="text-align:right;">
-2.88
+0.01
 </td>
 <td style="text-align:right;">
-6.58
+7.30
 </td>
 </tr>
 <tr>
@@ -786,19 +804,19 @@ LME铝
 点
 </td>
 <td style="text-align:center;">
-2019-08-20
+2019-09-06
 </td>
 <td style="text-align:right;">
-112.69
+113.34
 </td>
 <td style="text-align:right;">
-0.57
+0.13
 </td>
 <td style="text-align:right;">
-2.51
+-0.01
 </td>
 <td style="text-align:right;">
-5.74
+6.35
 </td>
 </tr>
 </tbody>
@@ -820,24 +838,24 @@ LME铝
 </section>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-9fc4cba4f98d1f2532ca" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9fc4cba4f98d1f2532ca">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-42696ce5d36caad8d2f5" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-42696ce5d36caad8d2f5">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-e9973e5c5ab046baccd9" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e9973e5c5ab046baccd9">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-87a242fd52885563495d" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-87a242fd52885563495d">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-8a7653e6609b69aaf2cf" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8a7653e6609b69aaf2cf">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-45900b0bbac87ff03973" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-45900b0bbac87ff03973">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-c4a770031a40625cf76d" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c4a770031a40625cf76d">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a73fdd9c6cb689c1b6a6" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a73fdd9c6cb689c1b6a6">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-57df1c0970bf9a4bfc11" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-57df1c0970bf9a4bfc11">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-bfabc899faf2241723cd" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bfabc899faf2241723cd">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="midstream-landing" class="section-head hero-nav-jump-point">
@@ -853,40 +871,40 @@ LME铝
 </section>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-f0dc924e364abd53810c" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f0dc924e364abd53810c">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-beeb0c2ff58abe7e88b3" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-beeb0c2ff58abe7e88b3">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-77e6c0c13eee44e98137" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-77e6c0c13eee44e98137">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c04aac414e176ff1e11e" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c04aac414e176ff1e11e">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-4ea0846b910a70e13dda" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4ea0846b910a70e13dda">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-66f88b03ad48bcd6ba7e" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-66f88b03ad48bcd6ba7e">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-1e4ead988f2e04acce61" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1e4ead988f2e04acce61">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ea55208920a722e861b5" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ea55208920a722e861b5">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-5c982c806e57d8105780" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5c982c806e57d8105780">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ae6a7ca793996691b6af" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ae6a7ca793996691b6af">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-5a36a003c6ce5dac09e3" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5a36a003c6ce5dac09e3">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-740d9e4609f56e377dcf" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-740d9e4609f56e377dcf">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-bfd9991ef150eef63ccf" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bfd9991ef150eef63ccf">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-16.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-10400a8246f588094ca1" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-10400a8246f588094ca1">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-16.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-0cf698cf72591cdfc4b0" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0cf698cf72591cdfc4b0">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-17.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a2b4b24e6e2a481c1e4a" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a2b4b24e6e2a481c1e4a">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-17.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-062eb5bcf07157c1d65d" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-062eb5bcf07157c1d65d">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-18.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5942b66c7ed596f29583" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5942b66c7ed596f29583">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-18.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="downstream-landing" class="section-head hero-nav-jump-point">
@@ -902,16 +920,16 @@ LME铝
 </section>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-49cf12bdefc0905ded82" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-49cf12bdefc0905ded82">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-19.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3845ef9a57fb25b784df" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3845ef9a57fb25b784df">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-19.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-47256caa2107531475a5" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-47256caa2107531475a5">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-20.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-559a23b12c12793b8c61" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-559a23b12c12793b8c61">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-20.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-4b6cb5765e742a05d991" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4b6cb5765e742a05d991">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-21.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-9d6d04f20226dc91593f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9d6d04f20226dc91593f">{"x":{"url":"high_freq_eco_data_files/figure-html//widgets/widget_unnamed-chunk-21.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
 
