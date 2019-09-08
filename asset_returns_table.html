@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>行业收益率周期图</title>
+
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<link href="site_libs/bokehjs-0.12.2/bokeh.min.css" rel="stylesheet" />
+<link href="site_libs/bokehjs-0.12.2/loader.css" rel="stylesheet" />
+<script src="site_libs/bokehjs-0.12.2/bokeh.min.js"></script>
+<script src="site_libs/rbokeh-binding-0.5.0/rbokeh.js"></script>
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+</head>
+
+<body>
+
+
+<!DOCTYPE HTML>
+<HTML id="ctl00_Html1">
+<HEAD id="ctl00_Head1"><META content="IE=11.0000" http-equiv="X-UA-Compatible">
+<TITLE>	Home  </TITLE> 
+<META charset="utf-8">
+<META http-equiv="X-UA-Compatible" content="IE=edge">
+<META name="viewport" content="width=device-width, initial-scale=1">
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001">
+<META name="progid" content="SharePoint.WebPartPage.Document">
+<META name="apple-mobile-web-app-capable" content="yes">
+<META name="apple-mobile-web-app-status-bar-style" content="black">
+<TITLE>简易投研主页</TITLE>     
+<LINK href="css/library-bundle.min.css" rel="stylesheet">     
+<LINK href="css/global-bundle.min.css" rel="stylesheet">
+ <script type="text/javascript" src="js/responsive-template.js"></script> 
+  
+<META name="application-name" content="简易投研">
+<META name="msapplication-TileColor" content="#123a5f">
+<SCRIPT src="js/library-bundle.min.js"></SCRIPT>
+
+<link href="css/solving-2018.css" rel="stylesheet">
+
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
+<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-template.css">
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/blank.js"></script>
+
+
+</HEAD> 
+<BODY>
+<DIV id="ctl00_MSO_ContentDiv" >  
+<NAV class="navbar navbar-default navbar-static-top yamm" id="main-site-nav">
+<DIV class="container">
+
+<DIV class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+    </button>
+	<a href="index.html">
+		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
+	</a>
+</DIV>
+
+
+
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
+
+
+<DIV class="navbar-collapse collapse" id="navbar">
+<UL class="nav navbar-nav primary-nav">
+
+  <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
+  data-toggle="dropdown" data-hover="dropdown">市场复盘</A>
+  <UL class="dropdown-menu multi-column columns-3">
+    <DIV class="row">
+	
+    <DIV class="col-lg-3 col-md-4 left-space">
+	<SPAN class="nav-header">A股</SPAN>
+    <UL class="multi-column-dropdown">
+      <LI><A href="market_ashare.html">行情走势</A></LI>
+      <LI><A href="valuation.html">市场估值</A></LI>
+      <LI><A href="money.html">资金面跟踪</A></LI>
+      <LI><A href="northbound_money.html">陆股通跟踪</A></LI>
+      <LI><A href="events_radar.html">事件雷达</A></LI>
+      <LI><A href="margin_trading.html">融资交易</A></LI>
+	</UL>
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
+      <LI><A href="commodities_cn.html">基差与期限结构</A></LI>
+      <LI><A href="commodities_spot.html">商品现货</A></LI>
+      <LI><A href="commodities_arbitrage.html">跨品种分析</A></LI>
+      <LI><A href="gold.html">黄金</A></LI>
+      <LI><A href="index_futures.html">股指期货</A></LI>
+      <LI><A href="options.html">上证50期权</A></LI>
+      <LI><A href="FX.html">外汇</A></LI>
+    </UL>
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">固收与海外市场</SPAN>
+      <LI><A href="fixed_income.html">固定收益</A></LI>
+      <LI><A href="conv_bond.html">可转债</A></LI>
+
+    </UL>
+	</DIV>
+	  
+	</DIV>
+  </UL>
+	
+  </LI>
+  
+
+  <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
+  data-toggle="dropdown" data-hover="dropdown">行业跟踪</A>
+  <UL class="dropdown-menu multi-column columns-3">
+    <DIV class="row">
+	
+    <DIV class="col-lg-3 col-md-4 left-space">
+	<SPAN class="nav-header">上游</SPAN>
+	
+    <UL class="multi-column-dropdown">
+      <LI><A href="sector_oil_gas_fuel.html">石油石化</A></LI>
+      <LI><A href="sector_coal.html">煤炭</A></LI>
+      <LI><A href="sector_rare.html">有色</A></LI>
+	</UL>
+	
+	<UL class="multi-column-dropdown"><SPAN class="nav-header">中游</SPAN>
+      <LI><A href="sector_steel.html">钢铁</A></LI>
+      <LI><A href="sector_construction.html">建材</A></LI>
+      <LI><A href="sector_chem.html">化工</A></LI>
+      <LI><A href="sector_light_industry.html">轻工制造</A></LI>
+      <LI><A href="sector_mech_equipment.html">机械设备</A></LI>
+    </UL>
+	
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">下游</SPAN>
+      <LI><A href="sector_real_estate.html">房地产</A></LI>
+      <LI><A href="sector_auto.html">汽车</A></LI>
+      <LI><A href="sector_appliances_household.html"> 家电</A></LI>
+      <LI><A href="sector_pharm.html"> 医药</A></LI>	  
+      <LI><A href="sector_agri.html">农业</A></LI>
+      <LI><A href="sector_apparel.html">纺织服装</A></LI>	  
+      <LI><A href="sector_electronics.html">电子元器件</A></LI> 
+      <LI><A href="sector_food_beverage.html">食品饮料</A></LI>		  
+    </UL>
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+
+	
+	<UL class="multi-column-dropdown"><SPAN class="nav-header">金融与公用事业</SPAN>
+      <LI><A href="sector_banking.html">银行</A></LI>
+      <LI><A href="sector_capital_markets.html">证券</A></LI>
+      <LI><A href="sector_transport.html">交通运输</A></LI>
+    </UL>
+    
+  	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
+      <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
+
+    </UL>
+	
+	</DIV>
+	  
+	</DIV>
+  </UL>
+	
+  </LI>
+  
+  
+   <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
+  data-toggle="dropdown" data-hover="dropdown">宏观与资产配置</A>
+  <UL class="dropdown-menu multi-column columns-3">
+    <DIV class="row">
+	
+    <DIV class="col-lg-3 col-md-4 left-space">
+	<SPAN class="nav-header">宏观数据</SPAN>
+    <UL class="multi-column-dropdown">
+      <LI><A href="cn_macro.html">国内宏观</A></LI>
+      <LI><A href="PPI.html">PPI</A></LI>
+      <LI><A href="CPI.html">CPI</A></LI>
+      <LI><A href="high_freq_eco_data.html">高频数据跟踪</A></LI>
+      <LI><A href="us_macro.html">美国宏观</A></LI>
+      <LI><A href="world_macro.html">全球数据</A></LI>
+	</UL>
+	</DIV>
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">资产配置</SPAN>
+      <LI><A href="asset_allocation.html">大类资产估值</A></LI>
+      <LI><A href="money_credit.html">货币信用</A></LI>
+      <LI><A href="inventory_cycle.html">库存周期</A></LI>
+      <LI><A href="investment_clock.html">美林时钟</A></LI>
+    </UL>
+	</DIV>
+	
+	
+	<DIV class="col-lg-3 col-md-4">
+    <UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
+      <LI><A href="ashare_review.html">A股复盘2005-2019</A></LI>
+      <LI><A href="demographics_employment.html">人口与就业</A></LI>
+      <LI><A href="international_trade.html">国际收支</A></LI>
+      <LI><A href="state_rev_exp.html">财政收支</A></LI>
+      <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
+      <LI><A href="climate.html">气候</A></LI>
+	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+    </UL>
+	</DIV>
+	
+	
+	
+	
+	  
+	</DIV>
+	
+  </UL>
+	
+  </LI>
+  
+  
+     <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
+  data-toggle="dropdown" data-hover="dropdown">支持我们</A>
+  <UL class="dropdown-menu multi-column columns-1">
+    <DIV class="row">
+	
+  <DIV class="col-lg-3 col-md-4 left-space">
+	  <SPAN class="nav-header">打赏</SPAN>
+
+      <LI>感谢您的支持</LI>
+      <IMG class="img-responsive" alt="" src="images/wechatpay.png" height="100" width="100">
+
+	</DIV>
+	
+  <DIV class="col-lg-3 col-md-4 left-space">
+	  <SPAN class="nav-header">Email:</SPAN>
+
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+
+	</DIV>
+	
+	
+	
+	
+	  
+	</DIV>
+	
+  </UL>
+	
+  </LI>
+  
+</UL>	
+	  
+<UL class="nav navbar-nav utility-nav mobile"><!-- NOT mobile TOP Shelf -->    
+       <!--  <li id="mobile-change-country" class="country-audience-toggle"><a href="/_layouts/www/indexalt.aspx" data-ajax="false">Change Country</a></li> --> 
+          <!-- Mobile TOP Shelf -->         <!-- <li id="mobile-change-country" class="country-audience-toggle"><a  href="javascript:void(0);" aria-label="Change Your Location" id="toggle-shelf" data-toggle="collapse" data-target="#country-audience-shelf" role="button" aria-haspopup="false" aria-expanded="false" data-region='global' data-culture='' data-audience=''>Select Your Location</a></li>--> 
+                </UL>
+
+	</DIV><!--/.nav-collapse --> 
+  </DIV>
+</NAV>
+
+  
+
+</DIV><!-- =====  End Body ============================================================ --> <!-- Developer Dashboard --> 
+    <!-- =====  Hidden Placeholders ============================================================ --> 
+        <!-- Handle Search "enter" key and back button -->     
+    <INPUT name="__spDummyText1" style="display: none;" type="text" size="1"> 
+    <INPUT name="__spDummyText2" style="display: none;" type="text" size="1">    
+                 <!-- -->     
+   
+
+
+</DIV>
+ </BODY></HTML>
+
+
+<h1 class="title toc-ignore">行业收益率周期图</h1>
+
+
+
+<p><br><br></p>
+<div class="container">
+<div class="row content-block-row">
+<div class="col-xs-12">
+<H2 class="section-title">
+行业收益率
+</H2>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div id="htmlwidget-0003df077ea09fdf0f89" style="width:1150px;height:1300px;" class="rbokeh html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0003df077ea09fdf0f89">{"x":{"elementid":"08a5db31367e2d546542b1a54cb1a7c3","modeltype":"Plot","modelid":"2d5f55fdc630f2abd86d99fd107656b8","docid":"0346c003eaccd322dff32f003065cdaa","docs_json":{"0346c003eaccd322dff32f003065cdaa":{"version":"0.12.2","title":"Bokeh Figure","roots":{"root_ids":["2d5f55fdc630f2abd86d99fd107656b8"],"references":[{"type":"Plot","id":"2d5f55fdc630f2abd86d99fd107656b8","attributes":{"id":"2d5f55fdc630f2abd86d99fd107656b8","plot_width":1150,"plot_height":1300,"sizing_mode":"scale_both","x_range":{"type":"FactorRange","id":"078781a983572ca8e790a8e714cd503e"},"y_range":{"type":"FactorRange","id":"de396290319942e40b338e98f5b4e39c"},"left":[{"type":"CategoricalAxis","id":"832edf23830d35ed403aedb8663abff7"}],"below":[{"type":"CategoricalAxis","id":"b3df8006808d4ed5dc1f96f7e2bb3344"}],"right":[],"above":[],"renderers":[{"type":"GlyphRenderer","id":"d77e11a6aba06d10a3a0172a582b54f2"},{"type":"GlyphRenderer","id":"eae6c45cbc2172f172b697bde1240c40"},{"type":"GlyphRenderer","id":"4f25ef7ef5f5a8c77105a9ab0bbff96d"},{"type":"GlyphRenderer","id":"8526d7cff5186917a60dc10716bc5cb2"},{"type":"CategoricalAxis","id":"b3df8006808d4ed5dc1f96f7e2bb3344"},{"type":"CategoricalAxis","id":"832edf23830d35ed403aedb8663abff7"}],"extra_y_ranges":{},"extra_x_ranges":{},"tags":[],"min_border_left":4,"min_border_right":4,"min_border_top":4,"min_border_bottom":4,"lod_threshold":null,"title":{"type":"Title","id":"21043122769e1132d6bfa0ca56dbf177"}},"subtype":"Figure"},{"type":"Title","id":"21043122769e1132d6bfa0ca56dbf177","attributes":{"id":"21043122769e1132d6bfa0ca56dbf177","tags":[],"plot":null,"text":"更新日期:2019-09-08"}},{"type":"ColumnDataSource","id":"4b6179f5b051c47d58e8f961bcf40767","attributes":{"id":"4b6179f5b051c47d58e8f961bcf40767","tags":[],"column_names":["x","y"],"selected":[],"data":{"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019"],"y":["0","0","0","0","0","0","0","0","0","0"]}}},{"type":"Rect","id":"2d989a75239a46224d18690c95dd829f","attributes":{"id":"2d989a75239a46224d18690c95dd829f","tags":[],"width":{"units":"data","value":0.9},"height":{"units":"data","value":0.6},"angle":{"units":"rad","value":0},"dilate":false,"visible":true,"fill_color":{"units":"data","value":"black"},"line_color":{"units":"data","value":"black"},"fill_alpha":{"units":"data","value":1},"line_alpha":{"units":"data","value":1},"x":{"units":"data","field":"x"},"y":{"units":"data","field":"y"}}},{"type":"Rect","id":"66278148f439d2e0793960b3861513d8","attributes":{"id":"66278148f439d2e0793960b3861513d8","tags":[],"width":{"units":"data","value":0.9},"height":{"units":"data","value":0.6},"angle":{"units":"rad","value":0},"dilate":false,"visible":true,"fill_color":{"units":"data","value":"#e1e1e1"},"line_color":{"units":"data","value":"#e1e1e1"},"fill_alpha":{"units":"data","value":1},"line_alpha":{"units":"data","value":1},"x":{"units":"data","field":"x"},"y":{"units":"data","field":"y"}}},{"type":"Rect","id":"586a7b4096e37ec484bba18915474a95","attributes":{"id":"586a7b4096e37ec484bba18915474a95","tags":[],"width":{"units":"data","value":0.9},"height":{"units":"data","value":0.6},"angle":{"units":"rad","value":0},"dilate":false,"visible":true,"fill_color":{"units":"data","value":"black"},"line_color":{"units":"data","value":"black"},"fill_alpha":{"units":"data","value":1},"line_alpha":{"units":"data","value":1},"x":{"units":"data","field":"x"},"y":{"units":"data","field":"y"}}},{"type":"GlyphRenderer","id":"d77e11a6aba06d10a3a0172a582b54f2","attributes":{"id":"d77e11a6aba06d10a3a0172a582b54f2","tags":[],"selection_glyph":null,"nonselection_glyph":{"type":"Rect","id":"66278148f439d2e0793960b3861513d8"},"hover_glyph":{"type":"Rect","id":"586a7b4096e37ec484bba18915474a95"},"name":null,"data_source":{"type":"ColumnDataSource","id":"4b6179f5b051c47d58e8f961bcf40767"},"glyph":{"type":"Rect","id":"2d989a75239a46224d18690c95dd829f"}}},{"type":"ColumnDataSource","id":"7d1c3f6b38b131d3dc56bc4360329e76","attributes":{"id":"7d1c3f6b38b131d3dc56bc4360329e76","tags":[],"column_names":["x","y","text","text_color","text_font_size"],"selected":[],"data":{"x":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019"],"y":["0","0","0","0","0","0","0","0","0","0"],"text":["上证综指:-14.31%","上证综指:-21.68%","上证综指:3.17%","上证综指:-6.75%","上证综指:52.87%","上证综指:9.41%","上证综指:-12.31%","上证综指:6.56%","上证综指:-24.59%","上证综指:20.28%"],"text_color":["white","white","white","white","white","white","white","white","white","white"],"text_font_size":["8pt","8pt","8pt","8pt","8pt","8pt","8pt","8pt","8pt","8pt"]}}},{"type":"Text","id":"e0ef08c31f104ee66c484fa48748fcca","attributes":{"id":"e0ef08c31f104ee66c484fa48748fcca","tags":[],"angle":{"units":"rad","value":0},"text_alpha":{"units":"data","value":1},"x_offset":{"units":"data","value":-38},"text_font_style":{"units":"data","value":"bold"},"text_align":{"units":"data","value":"left"},"text_baseline":{"units":"data","value":"middle"},"visible":true,"x":{"units":"data","field":"x"},"y":{"units":"data","field":"y"},"text":{"units":"data","field":"text"},"text_color":{"units":"data","field":"text_color"},"text_font_size":{"units":"data","field":"text_font_size"}}},{"type":"Text","id":"6eb0c74a034737c61806af8824f4b07c","attributes":{"id":"6eb0c74a034737c61806af8824f4b07c","tags":[],"angle":{"units":"rad","value":0},"text_alpha":{"units":"data","value":1},"x_offset":{"units":"data","value":-38},"text_font_style":{"units":"data","value":"bold"},"text_align":{"units":"data","value":"left"},"text_baseline":{"units":"data","value":"middle"},"visible":true,"x":{"units":"data","field":"x"},"y":{"units":"data","field":"y"},"text":{"units":"data","field":"text"},"text_color":{"units":"data","value":"#e1e1e1"},"text_font_size":{"units":"data","field":"text_font_size"}}},{"type":"Text","id":"545d4586031355d8c6fb9f19f3d5ed05","attributes":{"id":"545d4586031355d8c6fb9f19f3d5ed05","tags":[],"angle":{"units":"rad","value":0},"text_alpha":{"units":"data","value":1},"x_offset":{"units":"data","value":-38},"text_font_style":{"units":"data","value":"bold"},"text_align":{"units":"data","value":"left"},"text_baseline":{"units":"data","value":"middle"},"visible":true,"x":{"units":"data","field":"x"},"y":{"units":"data","field":"y"},"text":{"units":"data","field":"text"},"text_color":{"units":"data","field":"text_color"},"text_font_size":{"units":"data","field":"text_font_size"}}},{"type":"GlyphRenderer","id":"eae6c45cbc2172f172b697bde1240c40","attributes":{"id":"eae6c45cbc2172f172b697bde1240c40","tags":[],"selection_glyph":null,"nonselection_glyph":{"type":"Text","id":"6eb0c74a034737c61806af8824f4b07c"},"hover_glyph":{"type":"Text","id":"545d4586031355d8c6fb9f19f3d5ed05"},"name":null,"data_source":{"type":"ColumnDataSource","id":"7d1c3f6b38b131d3dc56bc4360329e76"},"glyph":{"type":"Text","id":"e0ef08c31f104ee66c484fa48748fcca"}}},{"type":"ColumnDataSource","id":"b890e0d00fb7b9e6df86080498331587","attributes":{"id":"b890e0d00fb7b9e6df86080498331587","tags":[],"column_names":["x","y","fill_color","line_color"],"selected":[],"data":{"x":["2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019"],"y":["23","22","21","20","19","18","17","16","15","14","13","12","11","10","9","8","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16","-17","-18","-19","-20","-21","-22","-23","-24","-25","-26","11","10","9","8","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16","-17","20","19","18","17","16","15","14","13","12","11","10","9","8","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","8","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16","-17","-18","-19","-20","24","23","22","21","20","19","18","17","16","15","14","13","12","11","10","9","8","7","6","5","4","3","2","1","-1","-2","-3","-4","11","10","9","8","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16","-17","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16","-17","-18","-19","-20","-21","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16","-17","-18","-19","-20","-21","-22","-23","12","11","10","9","8","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16"],"fill_color":["#008941","#0000A6","#00C2A0","#3B5DFF","#FF4A46","#000000","#A30059","#1B4400","#4FC601","#5A0007","#809693","#997D87","#FFDBE5","#FEFFE6","#8FB0FF","#7A4900","#006FA6","#4A3B53","#FFFF00","#FF2F80","#6B7900","#B79762","#63FFAC","#1CE6FF","#61615A","#004D43","#BA0900","#FF34FF","#61615A","#A30059","#004D43","#4A3B53","#63FFAC","#997D87","#006FA6","#FFDBE5","#5A0007","#FFFF00","#FF34FF","#FF2F80","#7A4900","#0000A6","#1CE6FF","#000000","#BA0900","#FEFFE6","#809693","#B79762","#4FC601","#8FB0FF","#6B7900","#3B5DFF","#00C2A0","#008941","#FF4A46","#1B4400","#004D43","#BA0900","#FEFFE6","#006FA6","#61615A","#FF4A46","#0000A6","#63FFAC","#997D87","#6B7900","#809693","#1CE6FF","#008941","#A30059","#7A4900","#5A0007","#B79762","#FFFF00","#3B5DFF","#FF34FF","#000000","#4A3B53","#00C2A0","#4FC601","#FFDBE5","#8FB0FF","#1B4400","#FF2F80","#4A3B53","#3B5DFF","#008941","#006FA6","#0000A6","#FF2F80","#4FC601","#1B4400","#7A4900","#997D87","#000000","#8FB0FF","#6B7900","#5A0007","#63FFAC","#00C2A0","#FFDBE5","#1CE6FF","#B79762","#BA0900","#A30059","#809693","#61615A","#004D43","#FEFFE6","#FF34FF","#FF4A46","#FFFF00","#BA0900","#FEFFE6","#FF34FF","#004D43","#B79762","#61615A","#63FFAC","#4FC601","#5A0007","#809693","#00C2A0","#FF2F80","#3B5DFF","#6B7900","#FF4A46","#997D87","#FFDBE5","#8FB0FF","#1B4400","#7A4900","#1CE6FF","#FFFF00","#006FA6","#008941","#4A3B53","#000000","#A30059","#0000A6","#3B5DFF","#7A4900","#FFDBE5","#997D87","#4A3B53","#FF2F80","#008941","#5A0007","#000000","#1B4400","#0000A6","#1CE6FF","#6B7900","#00C2A0","#8FB0FF","#004D43","#006FA6","#B79762","#4FC601","#809693","#A30059","#63FFAC","#FF4A46","#FEFFE6","#FF34FF","#FFFF00","#61615A","#BA0900","#A30059","#809693","#FEFFE6","#006FA6","#61615A","#FFFF00","#FF4A46","#1CE6FF","#FF34FF","#000000","#6B7900","#008941","#5A0007","#0000A6","#8FB0FF","#FFDBE5","#7A4900","#BA0900","#FF2F80","#00C2A0","#1B4400","#63FFAC","#004D43","#4FC601","#997D87","#B79762","#3B5DFF","#4A3B53","#A30059","#006FA6","#FF34FF","#BA0900","#FF4A46","#008941","#61615A","#B79762","#809693","#0000A6","#004D43","#FFFF00","#6B7900","#FF2F80","#1CE6FF","#997D87","#FEFFE6","#63FFAC","#1B4400","#00C2A0","#3B5DFF","#000000","#7A4900","#8FB0FF","#4FC601","#5A0007","#4A3B53","#FFDBE5","#997D87","#61615A","#A30059","#000000","#3B5DFF","#BA0900","#0000A6","#004D43","#FEFFE6","#FF34FF","#63FFAC","#B79762","#809693","#4FC601","#FF2F80","#006FA6","#1CE6FF","#8FB0FF","#FFFF00","#FFDBE5","#6B7900","#1B4400","#00C2A0","#7A4900","#5A0007","#4A3B53","#FF4A46","#008941","#A30059","#008941","#000000","#3B5DFF","#BA0900","#4FC601","#006FA6","#0000A6","#809693","#997D87","#FF2F80","#00C2A0","#1B4400","#FF4A46","#B79762","#1CE6FF","#5A0007","#61615A","#004D43","#7A4900","#8FB0FF","#4A3B53","#FFFF00","#6B7900","#63FFAC","#FFDBE5","#FEFFE6","#FF34FF"],"line_color":["black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black"]}}},{"type":"Rect","id":"29d3ed363d198db24ccc4402e92a5d33","attributes":{"id":"29d3ed363d198db24ccc4402e92a5d33","tags":[],"width":{"units":"data","value":0.9},"height":{"units":"data","value":0.9},"angle":{"units":"rad","value":0},"dilate":false,"visible":true,"line_alpha":{"units":"data","value":1},"fill_alpha":{"units":"data","value":0.5},"x":{"units":"data","field":"x"},"y":{"units":"data","field":"y"},"fill_color":{"units":"data","field":"fill_color"},"line_color":{"units":"data","field":"line_color"}}},{"type":"Rect","id":"1f79ccde86a818f1fa21bc73c889fc51","attributes":{"id":"1f79ccde86a818f1fa21bc73c889fc51","tags":[],"width":{"units":"data","value":0.9},"height":{"units":"data","value":0.9},"angle":{"units":"rad","value":0},"dilate":false,"visible":true,"line_alpha":{"units":"data","value":1},"fill_alpha":{"units":"data","value":0.5},"x":{"units":"data","field":"x"},"y":{"units":"data","field":"y"},"fill_color":{"units":"data","value":"#e1e1e1"},"line_color":{"units":"data","value":"#e1e1e1"}}},{"type":"Rect","id":"90fb3e86d1b99966e4782f54368cc6e5","attributes":{"id":"90fb3e86d1b99966e4782f54368cc6e5","tags":[],"width":{"units":"data","value":0.9},"height":{"units":"data","value":0.9},"angle":{"units":"rad","value":0},"dilate":false,"visible":true,"line_alpha":{"units":"data","value":1},"fill_alpha":{"units":"data","value":1},"x":{"units":"data","field":"x"},"y":{"units":"data","field":"y"},"fill_color":{"units":"data","field":"fill_color"},"line_color":{"units":"data","field":"line_color"}}},{"type":"GlyphRenderer","id":"4f25ef7ef5f5a8c77105a9ab0bbff96d","attributes":{"id":"4f25ef7ef5f5a8c77105a9ab0bbff96d","tags":[],"selection_glyph":null,"nonselection_glyph":{"type":"Rect","id":"1f79ccde86a818f1fa21bc73c889fc51"},"hover_glyph":{"type":"Rect","id":"90fb3e86d1b99966e4782f54368cc6e5"},"name":null,"data_source":{"type":"ColumnDataSource","id":"b890e0d00fb7b9e6df86080498331587"},"glyph":{"type":"Rect","id":"29d3ed363d198db24ccc4402e92a5d33"}}},{"type":"ColumnDataSource","id":"2e6b713a477d6148e4f1faafc9eb2ee7","attributes":{"id":"2e6b713a477d6148e4f1faafc9eb2ee7","tags":[],"column_names":["x","y","text"],"selected":[],"data":{"x":["2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2010","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2011","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2012","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2013","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2014","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2015","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2016","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2017","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2018","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019","2019"],"y":["23","22","21","20","19","18","17","16","15","14","13","12","11","10","9","8","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16","-17","-18","-19","-20","-21","-22","-23","-24","-25","-26","11","10","9","8","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16","-17","20","19","18","17","16","15","14","13","12","11","10","9","8","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","8","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16","-17","-18","-19","-20","24","23","22","21","20","19","18","17","16","15","14","13","12","11","10","9","8","7","6","5","4","3","2","1","-1","-2","-3","-4","11","10","9","8","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16","-17","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16","-17","-18","-19","-20","-21","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16","-17","-18","-19","-20","-21","-22","-23","12","11","10","9","8","7","6","5","4","3","2","1","-1","-2","-3","-4","-5","-6","-7","-8","-9","-10","-11","-12","-13","-14","-15","-16"],"text":["电子39.38%","医药生物29.69%","机械设备28.11%","计算机26.44%","有色金属22.1%","农林牧渔21.06%","食品饮料20.81%","电气设备20.22%","国防军工18.38%","综合16.01%","建筑材料14.43%","休闲服务8.51%","纺织服装7.51%","建筑装饰5.82%","商业贸易4.45%","轻工制造1.79%","家用电器-0.02%","传媒-2.72%","采掘-5.86%","通信-9.77%","汽车-10.5%","交通运输-11.51%","公用事业-12.14%","化工-22.4%","银行-22.5%","房地产-24.16%","非银金融-24.89%","钢铁-28.32%","银行-4.85%","食品饮料-10.37%","房地产-22%","传媒-22.36%","公用事业-22.72%","休闲服务-24.25%","家用电器-24.76%","纺织服装-25.52%","综合-27.11%","采掘-27.86%","钢铁-28.24%","通信-28.5%","轻工制造-30.85%","医药生物-30.89%","化工-31.06%","农林牧渔-31.18%","非银金融-31.92%","建筑装饰-32.03%","建筑材料-32.71%","交通运输-32.72%","国防军工-33.09%","商业贸易-33.3%","汽车-34.34%","计算机-34.46%","机械设备-36.28%","电子-41.38%","有色金属-41.81%","电气设备-42.53%","房地产31.73%","非银金融28.1%","建筑装饰18.54%","家用电器15.84%","银行14.48%","有色金属13.64%","医药生物8.47%","公用事业5.69%","休闲服务5.24%","汽车5.01%","建筑材料4.32%","化工0.28%","电子-0.74%","食品饮料-0.74%","轻工制造-2.57%","综合-3.08%","交通运输-4.23%","采掘-4.5%","计算机-4.52%","钢铁-4.78%","农林牧渔-5.05%","传媒-5.39%","机械设备-5.57%","国防军工-5.66%","纺织服装-10.15%","商业贸易-11.83%","电气设备-18.68%","通信-24.83%","传媒107.02%","计算机66.95%","电子42.78%","家用电器39.33%","医药生物36.56%","通信34.71%","国防军工33.35%","电气设备32.23%","轻工制造21.48%","休闲服务19.47%","农林牧渔17.29%","商业贸易13.22%","汽车12.62%","综合12.36%","公用事业10.78%","机械设备9.6%","纺织服装8.16%","化工6.54%","交通运输5.27%","非银金融-4.8%","食品饮料-7.36%","建筑材料-8.36%","银行-9.19%","房地产-11.94%","建筑装饰-12.27%","钢铁-17.27%","有色金属-29.64%","采掘-31.18%","非银金融121.16%","建筑装饰83.31%","钢铁78.34%","房地产65.28%","交通运输64.76%","银行63.18%","公用事业55.68%","国防军工53.89%","综合45.6%","建筑材料42.95%","机械设备41.87%","通信41%","计算机40.31%","汽车38.43%","有色金属38.39%","休闲服务37.24%","纺织服装33.27%","商业贸易32.82%","电气设备31.55%","轻工制造28.83%","化工27.39%","采掘24.1%","家用电器21.28%","电子18.56%","传媒17.53%","农林牧渔16.27%","食品饮料16.03%","医药生物16.02%","计算机100.29%","轻工制造89.86%","纺织服装89.17%","休闲服务78.45%","传媒76.74%","通信72.69%","电子71.97%","综合71.18%","农林牧渔66.77%","电气设备60.47%","医药生物56.68%","化工55.01%","汽车46.9%","机械设备46.77%","商业贸易45.51%","房地产44.85%","家用电器42.73%","交通运输32.56%","国防军工28.5%","建筑材料26.85%","食品饮料26.58%","公用事业22.9%","有色金属15.38%","建筑装饰14.08%","钢铁1.8%","采掘-0.43%","银行-1.36%","非银金融-16.9%","食品饮料7.43%","建筑材料0.03%","建筑装饰-0.44%","家用电器-1.87%","银行-4.93%","采掘-5.76%","有色金属-6.17%","化工-7.13%","钢铁-8.13%","农林牧渔-8.58%","汽车-9.53%","电子-12.7%","综合-12.89%","医药生物-13.46%","商业贸易-13.47%","纺织服装-13.56%","轻工制造-14.36%","非银金融-14.69%","通信-15.95%","机械设备-16.84%","电气设备-17.18%","公用事业-17.69%","房地产-17.69%","国防军工-18.58%","休闲服务-21.19%","交通运输-22.6%","计算机-30.32%","传媒-32.39%","食品饮料53.85%","家用电器43.03%","钢铁19.74%","非银金融17.3%","有色金属15.39%","电子13.47%","银行13.28%","交通运输6.53%","建筑材料6.05%","医药生物3.56%","房地产0.8%","采掘-0.01%","汽车-0.52%","通信-3.05%","化工-3.81%","休闲服务-4.17%","建筑装饰-6.26%","公用事业-7.05%","电气设备-8.46%","机械设备-10.19%","计算机-11.26%","农林牧渔-12.62%","轻工制造-12.62%","商业贸易-13.6%","国防军工-16.65%","综合-21.47%","传媒-23.1%","纺织服装-23.85%","休闲服务-10.61%","银行-14.67%","食品饮料-21.95%","农林牧渔-22.44%","计算机-24.53%","非银金融-25.37%","医药生物-27.67%","房地产-28.79%","建筑装饰-29.27%","钢铁-29.62%","公用事业-29.72%","交通运输-30.17%","建筑材料-30.3%","国防军工-31.04%","通信-31.32%","家用电器-31.4%","化工-31.72%","商业贸易-32.7%","采掘-32.71%","纺织服装-34.33%","汽车-34.34%","电气设备-34.95%","机械设备-35.11%","轻工制造-36.62%","综合-39.3%","传媒-39.58%","有色金属-41.04%","电子-42.37%","食品饮料70.28%","电子54.56%","农林牧渔51.98%","计算机47.62%","非银金融45.7%","国防军工44.07%","家用电器42.24%","医药生物31.79%","建筑材料28.67%","休闲服务28.59%","通信24.55%","机械设备21.16%","电气设备19.99%","有色金属19.5%","交通运输19.29%","化工18.03%","综合18.02%","银行15.88%","房地产12.93%","轻工制造12.74%","商业贸易12.5%","传媒12.09%","采掘11.43%","汽车11.37%","公用事业8.52%","纺织服装7.41%","建筑装饰0.84%","钢铁-2.67%"]}}},{"type":"Text","id":"012afd4989fcf1f6452b5475d9ecab06","attributes":{"id":"012afd4989fcf1f6452b5475d9ecab06","tags":[],"text_color":{"units":"data","value":"black"},"angle":{"units":"rad","value":0},"text_alpha":{"units":"data","value":1},"text_font_size":{"units":"data","value":"8pt"},"x_offset":{"units":"data","value":-35},"text_font_style":{"units":"data","value":"bold"},"text_align":{"units":"data","value":"left"},"text_baseline":{"units":"data","value":"middle"},"visible":true,"x":{"units":"data","field":"x"},"y":{"units":"data","field":"y"},"text":{"units":"data","field":"text"}}},{"type":"Text","id":"6c393d9b27ec8f4e5ecbeb28caf8cda8","attributes":{"id":"6c393d9b27ec8f4e5ecbeb28caf8cda8","tags":[],"text_color":{"units":"data","value":"#e1e1e1"},"angle":{"units":"rad","value":0},"text_alpha":{"units":"data","value":1},"text_font_size":{"units":"data","value":"8pt"},"x_offset":{"units":"data","value":-35},"text_font_style":{"units":"data","value":"bold"},"text_align":{"units":"data","value":"left"},"text_baseline":{"units":"data","value":"middle"},"visible":true,"x":{"units":"data","field":"x"},"y":{"units":"data","field":"y"},"text":{"units":"data","field":"text"}}},{"type":"Text","id":"065c29a6431f8844e31012a8e24b94c9","attributes":{"id":"065c29a6431f8844e31012a8e24b94c9","tags":[],"text_color":{"units":"data","value":"black"},"angle":{"units":"rad","value":0},"text_alpha":{"units":"data","value":1},"text_font_size":{"units":"data","value":"8pt"},"x_offset":{"units":"data","value":-35},"text_font_style":{"units":"data","value":"bold"},"text_align":{"units":"data","value":"left"},"text_baseline":{"units":"data","value":"middle"},"visible":true,"x":{"units":"data","field":"x"},"y":{"units":"data","field":"y"},"text":{"units":"data","field":"text"}}},{"type":"GlyphRenderer","id":"8526d7cff5186917a60dc10716bc5cb2","attributes":{"id":"8526d7cff5186917a60dc10716bc5cb2","tags":[],"selection_glyph":null,"nonselection_glyph":{"type":"Text","id":"6c393d9b27ec8f4e5ecbeb28caf8cda8"},"hover_glyph":{"type":"Text","id":"065c29a6431f8844e31012a8e24b94c9"},"name":null,"data_source":{"type":"ColumnDataSource","id":"2e6b713a477d6148e4f1faafc9eb2ee7"},"glyph":{"type":"Text","id":"012afd4989fcf1f6452b5475d9ecab06"}}},{"type":"FactorRange","id":"078781a983572ca8e790a8e714cd503e","attributes":{"id":"078781a983572ca8e790a8e714cd503e","tags":[],"factors":["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019"]}},{"type":"FactorRange","id":"de396290319942e40b338e98f5b4e39c","attributes":{"id":"de396290319942e40b338e98f5b4e39c","tags":[],"factors":["-30","-29","-28","-27","-26","-25","-24","-23","-22","-21","-20","-19","-18","-17","-16","-15","-14","-13","-12","-11","-10","-9","-8","-7","-6","-5","-4","-3","-2","-1","0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"]}},{"type":"CategoricalAxis","id":"b3df8006808d4ed5dc1f96f7e2bb3344","attributes":{"id":"b3df8006808d4ed5dc1f96f7e2bb3344","tags":[],"plot":{"type":"Plot","id":"2d5f55fdc630f2abd86d99fd107656b8","subtype":"Figure"},"axis_label":"","formatter":{"type":"CategoricalTickFormatter","id":"ce2305499de36ae12e8ffbcec427f6c3"},"ticker":{"type":"CategoricalTicker","id":"796e2167a95823e6033a00a4d65e2df9"},"visible":true,"axis_label_text_font_size":"12pt"}},{"type":"CategoricalTickFormatter","id":"ce2305499de36ae12e8ffbcec427f6c3","attributes":{"id":"ce2305499de36ae12e8ffbcec427f6c3","tags":[]}},{"type":"CategoricalTicker","id":"796e2167a95823e6033a00a4d65e2df9","attributes":{"id":"796e2167a95823e6033a00a4d65e2df9","tags":[]}},{"type":"CategoricalAxis","id":"832edf23830d35ed403aedb8663abff7","attributes":{"id":"832edf23830d35ed403aedb8663abff7","tags":[],"plot":{"type":"Plot","id":"2d5f55fdc630f2abd86d99fd107656b8","subtype":"Figure"},"axis_label":"","formatter":{"type":"CategoricalTickFormatter","id":"458e94b9f2aa359c501529ff9a63a2a3"},"ticker":{"type":"CategoricalTicker","id":"09d639ca54579c9a46874d38d1f56d0e"},"visible":true,"axis_label_text_font_size":"12pt"}},{"type":"CategoricalTickFormatter","id":"458e94b9f2aa359c501529ff9a63a2a3","attributes":{"id":"458e94b9f2aa359c501529ff9a63a2a3","tags":[]}},{"type":"CategoricalTicker","id":"09d639ca54579c9a46874d38d1f56d0e","attributes":{"id":"09d639ca54579c9a46874d38d1f56d0e","tags":[]}}]}}},"debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+
+<FOOTER>
+<DIV class="container">
+ 
+<DIV class="row">
+<DIV class="col-xs-12"><!--<p class="footer-finra">Check the background of our firm on <a href="http://brokercheck.finra.org/" target="_blank">FINRA's BrokerCheck</a>.</p>--></DIV>
+
+<DIV class="col-xs-12">
+<H4>关于网站</H4>
+<UL>
+<p>仅供参考学习交流，不构成投资建议。</p>
+</UL>
+</DIV>
+
+
+
+ 
+
+</DIV>
+
+
+ </DIV>
+ </FOOTER>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
