@@ -55,16 +55,20 @@ if (window.hljs) {
 <TITLE>简易投研主页</TITLE>     
 <LINK href="css/library-bundle.min.css" rel="stylesheet">     
 <LINK href="css/global-bundle.min.css" rel="stylesheet">
-<LINK href="css/responsive-template.css" rel="stylesheet">
-  
+ <script type="text/javascript" src="js/responsive-template.js"></script> 
   
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
 <SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
+<link href="css/solving-2018.css" rel="stylesheet">
+
 <LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 <LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
- 
+<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-template.css">
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/blank.js"></script>
 
 
 </HEAD> 
@@ -84,6 +88,15 @@ if (window.hljs) {
 		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
 	</a>
 </DIV>
+
+
+
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
+
 
 <DIV class="navbar-collapse collapse" id="navbar">
 <UL class="nav navbar-nav primary-nav">
@@ -107,9 +120,7 @@ if (window.hljs) {
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
-      <LI><A href="commodities_cn.html">基差与期限结构</A></LI>
-      <LI><A href="commodities_spot.html">商品现货</A></LI>
-      <LI><A href="commodities_arbitrage.html">跨品种分析</A></LI>
+      <LI><A href="commodities_cn.html">商品期货</A></LI>
       <LI><A href="gold.html">黄金</A></LI>
       <LI><A href="index_futures.html">股指期货</A></LI>
       <LI><A href="options.html">上证50期权</A></LI>
@@ -179,7 +190,8 @@ if (window.hljs) {
     
   	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
       <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
-
+      <LI><A href="asset_returns_table.html">行业收益率周期图</A></LI>
+	    <LI><A href="periodic_table.html">A股元素周期表</A></LI>
     </UL>
 	
 	</DIV>
@@ -226,6 +238,7 @@ if (window.hljs) {
       <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
       <LI><A href="climate.html">气候</A></LI>
 	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+
     </UL>
 	</DIV>
 	
@@ -256,7 +269,7 @@ if (window.hljs) {
   <DIV class="col-lg-3 col-md-4 left-space">
 	  <SPAN class="nav-header">Email:</SPAN>
 
-      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com</LI>
 
 	</DIV>
 	
@@ -353,12 +366,12 @@ if (window.hljs) {
 <div class="container">
 <div class="row content-block-row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-cd1ad53e8f69e66496c8" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cd1ad53e8f69e66496c8">{"x":{"url":"cn_macro_trade_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-42ee06c15e941496c4f7" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-42ee06c15e941496c4f7">{"x":{"url":"cn_macro_trade_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-ca7c1200d16c42936cd8" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ca7c1200d16c42936cd8">{"x":{"url":"cn_macro_trade_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4fe12ddadc03b2ce2b88" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4fe12ddadc03b2ce2b88">{"x":{"url":"cn_macro_trade_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="trade-landing" class="section-head hero-nav-jump-point">
@@ -375,16 +388,16 @@ if (window.hljs) {
 <div class="container">
 <div class="row content-block-row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-8c26f1eded26ae7271ea" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8c26f1eded26ae7271ea">{"x":{"url":"cn_macro_trade_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-fc9c9f38ead68a15c39e" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fc9c9f38ead68a15c39e">{"x":{"url":"cn_macro_trade_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-22f8ad49f6d3a3e69296" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-22f8ad49f6d3a3e69296">{"x":{"url":"cn_macro_trade_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-332e1e6f81c16755a1d2" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-332e1e6f81c16755a1d2">{"x":{"url":"cn_macro_trade_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-acef67edcd10f243a45e" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-acef67edcd10f243a45e">{"x":{"url":"cn_macro_trade_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7073629c2b6cce17eade" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7073629c2b6cce17eade">{"x":{"url":"cn_macro_trade_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
