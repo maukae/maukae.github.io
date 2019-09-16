@@ -19,7 +19,7 @@
 <script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
 <script src="site_libs/pymjs-1.3.2/pym.v1.js"></script>
 <script src="site_libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -53,16 +53,22 @@ if (window.hljs) {
 <META name="apple-mobile-web-app-capable" content="yes">
 <META name="apple-mobile-web-app-status-bar-style" content="black">
 <TITLE>简易投研主页</TITLE>     
-<LINK href="static/library-bundle.min.css" rel="stylesheet">     
-<LINK href="static/global-bundle.min.css" rel="stylesheet">
-
+<LINK href="C:/Users/DLin1/Desktop/R/WEB/tq.github.io/css/library-bundle.min.css" rel="stylesheet">     
+<LINK href="C:/Users/DLin1/Desktop/R/WEB/tq.github.io/css/global-bundle.min.css" rel="stylesheet">
+ <script type="text/javascript" src="C:/Users/DLin1/Desktop/R/WEB/tq.github.io/js/responsive-template.js"></script> 
+  
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
-<SCRIPT src="static/library-bundle.min.js"></SCRIPT>
+<SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
-<LINK href="static/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
- 
+<link href="css/solving-2018.css" rel="stylesheet">
+
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
+<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-template.css">
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/blank.js"></script>
 
 
 </HEAD> 
@@ -79,9 +85,18 @@ if (window.hljs) {
         <span class="icon-bar bottom-bar"></span>
     </button>
 	<a href="index.html">
-		<img src="static/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
+		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
 	</a>
 </DIV>
+
+
+
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
+
 
 <DIV class="navbar-collapse collapse" id="navbar">
 <UL class="nav navbar-nav primary-nav">
@@ -105,9 +120,7 @@ if (window.hljs) {
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
-      <LI><A href="commodities_cn.html">基差与期限结构</A></LI>
-      <LI><A href="commodities_spot.html">商品现货</A></LI>
-      <LI><A href="commodities_arbitrage.html">跨品种分析</A></LI>
+      <LI><A href="commodities_cn.html">商品期货</A></LI>
       <LI><A href="gold.html">黄金</A></LI>
       <LI><A href="index_futures.html">股指期货</A></LI>
       <LI><A href="options.html">上证50期权</A></LI>
@@ -174,6 +187,12 @@ if (window.hljs) {
       <LI><A href="sector_capital_markets.html">证券</A></LI>
       <LI><A href="sector_transport.html">交通运输</A></LI>
     </UL>
+    
+  	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
+      <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
+      <LI><A href="asset_returns_table.html">行业收益率周期图</A></LI>
+	    <LI><A href="periodic_table.html">A股元素周期表</A></LI>
+    </UL>
 	
 	</DIV>
 	  
@@ -219,6 +238,7 @@ if (window.hljs) {
       <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
       <LI><A href="climate.html">气候</A></LI>
 	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+
     </UL>
 	</DIV>
 	
@@ -234,7 +254,7 @@ if (window.hljs) {
   
   
      <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
-  data-toggle="dropdown" data-hover="dropdown">支持我们</A>
+  data-toggle="dropdown" data-hover="dropdown">联系我们</A>
   <UL class="dropdown-menu multi-column columns-1">
     <DIV class="row">
 	
@@ -242,14 +262,14 @@ if (window.hljs) {
 	  <SPAN class="nav-header">打赏</SPAN>
 
       <LI>感谢您的支持</LI>
-      <IMG class="img-responsive" alt="" src="static/wechatpay.png" height="100" width="100">
+      <IMG class="img-responsive" alt="" src="images/wechatpay.png" height="100" width="100">
 
 	</DIV>
 	
   <DIV class="col-lg-3 col-md-4 left-space">
 	  <SPAN class="nav-header">Email:</SPAN>
 
-      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com</LI>
 
 	</DIV>
 	
@@ -303,24 +323,2105 @@ PPI分类
 </div>
 <div class="row">
 <div class="col-xs-12">
-<div id="htmlwidget-cdc5517aac87bfa0b98e" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cdc5517aac87bfa0b98e">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-</div>
-<div class="col-xs-12">
-<div id="htmlwidget-f7e6ae69b4638270a6cb" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f7e6ae69b4638270a6cb">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-</div>
-<div class="col-xs-12">
-<div id="htmlwidget-d70c2594a19d8650e7f9" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d70c2594a19d8650e7f9">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-</div>
-<div class="col-xs-12">
-<div id="htmlwidget-c9cf201b3a092f26be0d" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c9cf201b3a092f26be0d">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-</div>
-<div class="col-xs-12">
-<div id="htmlwidget-c294408c6c19b5f2f366" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c294408c6c19b5f2f366">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<head>
+<style>
+        table {
+              font-family: times ;
+color:  black ;
+text-align: right;}
+        th {
+              padding: 1px 1px 5px 5px;
+            }
+        td {
+             padding: 1px 1px 5px 5px; }
+      </style>
+</head>
+<table align="center" style="border-collapse: collapse; caption-side:top; font-size:11pt;">
+<caption style="text-align:center;">
+</caption>
+<tr>
+<th style="border-left: 1px solid black;background-color: #808080;border-top: 2px solid gray;border-bottom: 1px solid gray;">
+ 
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 1px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-08
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-07
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-06
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-05
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-04
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-03
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-02
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-01
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-12
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-11
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-10
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-09
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-08
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-07
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-06
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-05
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-04
+</th>
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2018-03
+</th>
+</tr>
+<tr>
+<td align="left" style="font-weight: bold; border-left: 1px solid black; ">
+上游采矿
+</td>
+<td style="border-left: 1px solid black; ">
+</td>
+<td style="border-left: 0px solid black; ">
+</td>
+<td style="border-left: 0px solid black; ">
+</td>
+<td style="border-left: 0px solid black; ">
+</td>
+<td style="border-left: 0px solid black; ">
+</td>
+<td style="border-left: 0px solid black; ">
+</td>
+<td style="border-left: 0px solid black; ">
+</td>
+<td style="border-left: 0px solid black; ">
+</td>
+<td style="border-left: 0px solid black; ">
+</td>
+<td style="border-left: 0px solid black; ">
+</td>
+<td style="border-left: 0px solid black; ">
+</td>
+<td style="border-left: NApx solid black; ">
+</td>
+<td style="border-left: NApx solid black; ">
+</td>
+<td style="border-left: NApx solid black; ">
+</td>
+<td style="border-left: NApx solid black; ">
+</td>
+<td style="border-left: NApx solid black; ">
+</td>
+<td style="border-left: NApx solid black; ">
+</td>
+<td style="border-left: NApx solid black; ">
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+煤炭开采和洗选业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+1.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+3.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+3.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+1.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+3.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+4.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+3.80
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+2.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+3.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+5.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+7.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+6.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+3.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
+4.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+5.80
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+黑色金属矿采选业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #F38D89;">
+21.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+23.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+18.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+14.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+10.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+5.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+5.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+3.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+5.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+9.00
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+6.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
+2.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
+2.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
+3.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
+4.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #ABF1A1;">
+0.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+-2.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+-2.20
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+非金属矿采选业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #ABF1A1;">
+5.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+5.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+5.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+5.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+5.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+5.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+5.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+5.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+6.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+6.70
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+6.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+6.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+6.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
+6.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+6.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+7.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+7.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+7.80
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+有色金属矿采选业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FFECD2;">
+3.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-1.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-2.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-2.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-2.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+-1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+-1.10
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-0.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
+-0.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+2.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
+4.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+5.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
+6.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+7.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+9.50
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+石油和天然气开采业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+-9.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-8.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-1.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+6.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+10.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+9.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-0.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+-5.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+4.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+24.40
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+42.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+41.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+39.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+42.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+32.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+24.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+15.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+6.90
+</td>
+</tr>
+<tr>
+<td align="left" style="font-weight: bold; border-left: 1px solid black; border-top: hidden; ">
+中游原材料
+</td>
+<td style="border-left: 1px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+电力工业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #9EEF98;">
+-1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+-1.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+-0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+-0.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+-1.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-1.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-1.50
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-1.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+-1.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+-1.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+-1.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+-0.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+-0.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+-0.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+-0.30
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+电力、热力的生产和供应业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FFF8DC;">
+-1.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+-0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+-0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+-0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+-0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+-1.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+-1.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+-1.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-1.50
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-1.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+-1.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+-1.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+-1.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+-0.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+-0.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+-0.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+-0.40
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+黑色金属冶炼及压延工业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+-3.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-0.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+2.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+-1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-2.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-2.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-2.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+5.30
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+6.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
+7.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+9.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+12.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+15.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+14.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+11.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+9.40
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+有色金属冶炼及压延工业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #DDF6C3;">
+0.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+-0.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+-2.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+-1.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+-0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+-1.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+-2.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-3.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+-2.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-3.10
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-2.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
+-1.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+1.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
+5.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+8.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+7.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+6.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+6.10
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+石油、煤炭及其他燃料加工业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+-5.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-5.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+-1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+2.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+4.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+3.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-1.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+5.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+17.60
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+24.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+24.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+22.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+24.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+19.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+14.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+10.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+8.50
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+化学原料及化学制品制造业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+-4.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-4.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-3.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-2.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+-1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-2.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-2.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+-2.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+0.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+3.90
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+6.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+7.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+7.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+8.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+8.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+7.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+6.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
+5.20
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+化学纤维制造业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+-8.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+-4.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+-4.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+-1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+0.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+-0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+-0.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+-0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+3.60
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+7.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+8.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+6.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+5.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+6.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+6.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+4.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+3.50
+</td>
+</tr>
+<tr>
+<td align="left" style="font-weight: bold; border-left: 1px solid black; border-top: hidden; ">
+装备制造
+</td>
+<td style="border-left: 1px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+通用设备制造业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+1.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+1.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+1.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+1.70
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+1.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+1.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+1.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+1.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+1.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+1.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+1.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+1.50
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+电气机械及器材制造业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-2.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-1.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-1.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-2.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-1.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+-1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+-1.30
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+-1.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+-0.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+-0.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+0.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+0.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+0.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+0.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+0.80
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+专用设备制造
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+0.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+0.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+0.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+0.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+0.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+1.00
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+0.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
+0.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+1.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+1.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+1.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+1.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+1.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+1.30
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+计算机/通信/其他电子设备制造
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #C5F3B2;">
+-2.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+-1.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+0.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+0.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+0.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+0.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+0.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+0.20
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+-0.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+-0.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+-0.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+-1.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #ABF1A1;">
+-2.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+-2.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+-2.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #9EEF98;">
+-2.60
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+汽车制造
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #9EEF98;">
+-0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-0.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-0.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+-0.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+-0.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-0.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+-0.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+-0.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+-0.10
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+-0.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+0.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+0.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+0.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+0.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+0.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+0.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+0.30
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+仪器仪表制造
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+1.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+1.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+0.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+0.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+0.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+0.30
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+0.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+0.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+0.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+-0.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
+-0.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
+-0.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+-0.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #9EEF98;">
+-0.80
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+金属制品
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+0.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+1.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+1.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+1.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+1.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+2.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+3.50
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+3.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+4.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+4.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+5.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+5.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+5.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+4.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+4.70
+</td>
+</tr>
+<tr>
+<td align="left" style="font-weight: bold; border-left: 1px solid black; border-top: hidden; ">
+工业消费
+</td>
+<td style="border-left: 1px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+印刷业和记录媒介的复制
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+0.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+0.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+0.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+0.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+1.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+1.70
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+1.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
+1.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
+1.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
+1.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+1.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+2.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+2.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+1.70
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+纺织业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+-1.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+-0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+0.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+1.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+1.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+1.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+1.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+1.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+2.80
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+3.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+3.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+3.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+2.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+2.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
+1.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+1.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+1.70
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+文教/工美/体育/娱乐用品制造
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+2.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+1.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+1.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+1.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+0.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+0.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+0.50
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+0.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
+-0.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
+-0.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+-0.40
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
+-1.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #9EEF98;">
+-1.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+-1.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #ABF1A1;">
+-1.10
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+医药制造业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+1.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+2.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+2.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+2.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+2.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+2.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+2.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+2.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+3.30
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+3.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+3.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+3.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+3.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
+3.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+2.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+2.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
+2.60
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+皮革工业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FED5BF;">
+0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+1.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+1.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+1.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+1.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+1.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+1.30
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+1.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+0.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+0.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+0.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
+-0.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #9EEF98;">
+-0.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+-0.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #ABF1A1;">
+-0.60
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+橡胶和塑料制品业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+-1.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+-0.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+-0.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+-0.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+0.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+-0.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+0.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+0.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+1.30
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+1.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+1.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+2.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+2.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+2.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+1.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+1.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+1.20
+</td>
+</tr>
+<tr>
+<td align="left" style="font-weight: bold; border-left: 1px solid black; border-top: hidden; ">
+农业消费
+</td>
+<td style="border-left: 1px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: 0px solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+<td style="border-left: NApx solid black; border-top: hidden; ">
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+农副食品加工业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #F08080;">
+2.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+1.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+1.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+1.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+1.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+0.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+0.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+1.30
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+1.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+0.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+0.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+0.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
+0.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
+0.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #ABF1A1;">
+-0.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+-0.50
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+食品制造业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+1.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+1.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+1.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+1.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+1.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+1.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+1.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+1.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+1.80
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+1.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+2.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+2.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+1.90
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
+1.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
+1.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+1.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #ABF1A1;">
+1.20
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+家具制造业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+1.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+1.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+1.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+1.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+1.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+1.80
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+1.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+1.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+1.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+1.20
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
+0.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+0.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+0.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
+0.80
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+酒、饮料和精致茶制造业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FAB1A4;">
+1.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+1.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+1.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+1.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+1.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+0.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+1.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+1.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+1.50
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+1.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+1.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+1.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+1.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+1.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+1.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+1.70
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+1.70
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+造纸工业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
+-7.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+-7.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+-6.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+-5.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+-3.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+-2.90
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+-1.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+-0.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+0.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+-0.40
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+0.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+4.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+8.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+10.10
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+11.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
+11.80
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+10.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+9.20
+</td>
+</tr>
+<tr>
+<td style="border-left: 1px solid black; border-top: hidden;">
+烟草制造业
+</td>
+<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #F38D89;">
+2.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+2.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+2.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+3.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+3.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+0.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+0.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+0.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+0.60
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+0.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
+0.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
+0.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
+0.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
+0.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #ABF1A1;">
+0.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+0.00
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
+0.00
+</td>
+</tr>
+<tr>
+<td colspan="19" align="left" style="font-size:9pt ;border-top: 1px solid black; border-bottom: hidden;">
+</td>
+</tr>
+</table>
 </div>
 </div>
 <p><br></p>
@@ -331,20 +2432,20 @@ PPI与经济
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-4b846b44eec3aa84eae4" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4b846b44eec3aa84eae4">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ca6145e8de59288d9402" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ca6145e8de59288d9402">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-2688714b02ebc6d73bd6" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2688714b02ebc6d73bd6">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b8b0628ee8b0ed99e966" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b8b0628ee8b0ed99e966">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-fc413d92ba39dce629a7" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fc413d92ba39dce629a7">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-57fa74e02ecea94ba28e" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-57fa74e02ecea94ba28e">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-d44445ecaf04c74b9d35" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d44445ecaf04c74b9d35">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d16bca1651a012b05554" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d16bca1651a012b05554">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="col-xs-12">
@@ -354,20 +2455,20 @@ PPI与行业指数
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-790ebd7a8a10d03c1c6c" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-790ebd7a8a10d03c1c6c">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b5c99b4e4bfa923a1a20" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b5c99b4e4bfa923a1a20">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-f45a1966c975a1ec0a82" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f45a1966c975a1ec0a82">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-698c1a1d2470b97fa7b7" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-698c1a1d2470b97fa7b7">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-f1cdc38f00e62c2db5a9" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f1cdc38f00e62c2db5a9">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-824014c07ad4a6765ef9" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-824014c07ad4a6765ef9">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-ce1d1c9a30235cac4912" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ce1d1c9a30235cac4912">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-6327df8013bbbd771ed4" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6327df8013bbbd771ed4">{"x":{"url":"PPI_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
