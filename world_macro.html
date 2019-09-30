@@ -16,6 +16,9 @@
 
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="site_libs/pymjs-1.3.2/pym.v1.js"></script>
+<script src="site_libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
 <LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -52,16 +55,20 @@ if (window.hljs) {
 <TITLE>简易投研主页</TITLE>     
 <LINK href="css/library-bundle.min.css" rel="stylesheet">     
 <LINK href="css/global-bundle.min.css" rel="stylesheet">
-<LINK href="css/responsive-template.css" rel="stylesheet">
-  
+ <script type="text/javascript" src="js/responsive-template.js"></script> 
   
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
 <SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
+<link href="css/solving-2018.css" rel="stylesheet">
+
 <LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 <LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
- 
+<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-template.css">
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/blank.js"></script>
 
 
 </HEAD> 
@@ -81,6 +88,15 @@ if (window.hljs) {
 		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
 	</a>
 </DIV>
+
+
+
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
+
 
 <DIV class="navbar-collapse collapse" id="navbar">
 <UL class="nav navbar-nav primary-nav">
@@ -104,9 +120,7 @@ if (window.hljs) {
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
-      <LI><A href="commodities_cn.html">基差与期限结构</A></LI>
-      <LI><A href="commodities_spot.html">商品现货</A></LI>
-      <LI><A href="commodities_arbitrage.html">跨品种分析</A></LI>
+      <LI><A href="commodities_cn.html">商品期货</A></LI>
       <LI><A href="gold.html">黄金</A></LI>
       <LI><A href="index_futures.html">股指期货</A></LI>
       <LI><A href="options.html">上证50期权</A></LI>
@@ -176,7 +190,8 @@ if (window.hljs) {
     
   	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
       <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
-
+      <LI><A href="asset_returns_table.html">行业收益率周期图</A></LI>
+	    <LI><A href="periodic_table.html">A股元素周期表</A></LI>
     </UL>
 	
 	</DIV>
@@ -223,6 +238,7 @@ if (window.hljs) {
       <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
       <LI><A href="climate.html">气候</A></LI>
 	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+
     </UL>
 	</DIV>
 	
@@ -238,7 +254,7 @@ if (window.hljs) {
   
   
      <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
-  data-toggle="dropdown" data-hover="dropdown">支持我们</A>
+  data-toggle="dropdown" data-hover="dropdown">联系我们</A>
   <UL class="dropdown-menu multi-column columns-1">
     <DIV class="row">
 	
@@ -253,7 +269,7 @@ if (window.hljs) {
   <DIV class="col-lg-3 col-md-4 left-space">
 	  <SPAN class="nav-header">Email:</SPAN>
 
-      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com</LI>
 
 	</DIV>
 	
@@ -328,6 +344,12 @@ text-align: right;}
  
 </th>
 <th <th align="center" style="font-weight: normal;border-left: 1px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-09
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+2019-08
+</th>
+<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
 2019-07
 </th>
 <th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
@@ -354,10 +376,10 @@ text-align: right;}
 <th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
 2018-11
 </th>
-<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
 2018-10
 </th>
-<th <th align="center" style="font-weight: normal;border-left: 0px solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
+<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
 2018-09
 </th>
 <th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
@@ -366,19 +388,18 @@ text-align: right;}
 <th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
 2018-07
 </th>
-<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
-2018-06
-</th>
-<th <th align="center" style="font-weight: normal;border-left: NApx solid black;border-bottom: 1px solid gray;border-top: 2px solid gray;background-color: #808080;color: #FFFFFF;">
-2018-05
-</th>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; ">
 全球综合PMI
 </td>
-<td align="center" style="border-left: 1px solid black;background-color: #B8F2A9;">
-51.70
+<td align="center" style="border-left: 1px solid black;">
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #9EEF98;">
+51.30
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #B8F2A9;">
+51.60
 </td>
 <td align="center" style="border-left: 0px solid black;background-color: #90EE90;">
 51.20
@@ -386,48 +407,47 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;background-color: #90EE90;">
 51.20
 </td>
-<td align="center" style="border-left: 0px solid black;background-color: #DDF6C3;">
+<td align="center" style="border-left: 0px solid black;background-color: #E8F6CB;">
 52.10
-</td>
-<td align="center" style="border-left: 0px solid black;background-color: #FFECD2;">
-52.70
-</td>
-<td align="center" style="border-left: 0px solid black;background-color: #FFF8DC;">
-52.60
-</td>
-<td align="center" style="border-left: 0px solid black;background-color: #DDF6C3;">
-52.10
-</td>
-<td align="center" style="border-left: 0px solid black;background-color: #FFECD2;">
-52.70
-</td>
-<td align="center" style="border-left: 0px solid black;background-color: #FDC9B6;">
-53.20
 </td>
 <td align="center" style="border-left: 0px solid black;background-color: #FFE0C9;">
-53.00
+52.70
 </td>
-<td align="NA" style="border-left: 0px solid black;background-color: #FFECD2;">
-52.80
+<td align="center" style="border-left: 0px solid black;background-color: #FFE0C9;">
+52.60
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #E8F6CB;">
+52.10
+</td>
+<td align="center" style="border-left: 0px solid black;background-color: #FFE0C9;">
+52.70
+</td>
+<td align="NA" style="border-left: 0px solid black;background-color: #FAB1A4;">
+53.20
 </td>
 <td align="NA" style="border-left: NApx solid black;background-color: #FBBDAD;">
+53.00
+</td>
+<td align="NA" style="border-left: NApx solid black;background-color: #FED5BF;">
+52.80
+</td>
+<td align="NA" style="border-left: NApx solid black;background-color: #F59992;">
 53.40
 </td>
-<td align="NA" style="border-left: NApx solid black;background-color: #F8A59B;">
-53.70
-</td>
 <td align="NA" style="border-left: NApx solid black;background-color: #F08080;">
-54.20
-</td>
-<td align="NA" style="border-left: NApx solid black;background-color: #F38D89;">
-54.00
+53.70
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 全球服务业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+51.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
 52.50
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
@@ -436,278 +456,264 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 51.60
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
 52.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
 53.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
 53.30
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
 52.60
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
 53.00
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
 53.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
 53.40
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
 52.90
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
 53.50
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
-54.00
-</td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
-54.60
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
-54.30
+54.00
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 全球制造业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
-49.30
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
-49.40
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 49.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
 50.40
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
 50.50
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
 50.60
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
 50.80
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
 51.40
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
 52.00
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
 52.00
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
 52.20
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
 52.60
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
-52.80
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
-53.00
-</td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
-53.10
+52.80
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 美国制造业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
-51.20
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
-51.70
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
-52.10
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+49.10
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+51.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+51.70
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+52.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
 52.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
 55.30
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
 54.20
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
 56.60
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
 54.30
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
 59.30
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
 57.70
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
 59.80
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
 61.30
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
-58.10
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
-60.20
-</td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
-58.70
+58.10
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 财新PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FFE0C9;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
+50.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
 49.90
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
 49.40
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
 50.20
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
 50.20
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
 50.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
 49.90
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 48.30
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
 49.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
 50.20
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
 50.10
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
 50.00
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
 50.60
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
-50.80
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
-51.00
-</td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
-51.10
+50.80
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 欧元区制造业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
-46.50
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 47.60
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 47.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
 47.90
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
-47.50
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
 49.30
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
-50.50
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
 51.40
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
 51.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
 52.00
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
 53.20
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
 54.60
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
-55.10
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
-54.90
-</td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
-55.50
+55.10
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 日本制造业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #ABF1A1;">
-49.40
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
-49.30
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
-49.80
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
-50.20
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
-49.20
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
-48.90
+49.30
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+49.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+49.30
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+49.80
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+50.20
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
 50.30
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
 52.60
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
 52.20
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
 52.90
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
 52.50
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
@@ -716,57 +722,42 @@ text-align: right;}
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
 52.30
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
-53.00
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
-52.80
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 德国制造业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
-43.20
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 45.00
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
-44.30
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
-44.40
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
-44.10
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
-47.60
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
-49.70
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
-51.50
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
 51.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
 52.20
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
 53.70
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
-55.90
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
-56.90
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
 55.90
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
@@ -777,61 +768,60 @@ text-align: right;}
 <td style="border-left: 1px solid black; border-top: hidden;">
 英国制造业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
-48.00
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
-48.00
+47.40
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
 49.40
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
 53.10
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
-55.10
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
 52.10
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
-52.60
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
 54.20
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F59992;">
 53.60
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
 51.10
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
 53.60
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
 52.80
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
 53.80
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
-54.40
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F59992;">
-54.30
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 巴西制造业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #9EEF98;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+52.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 49.90
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
-51.00
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
 50.20
@@ -848,116 +838,105 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
 52.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
-52.60
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
 52.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
 51.10
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
 50.90
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
 51.10
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #C5F3B2;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
 50.50
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
-49.80
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
-50.70
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 加拿大PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #B8F2A9;">
-51.20
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
 53.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
 61.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
 56.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
 57.60
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
-48.90
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
-49.50
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 48.20
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
-57.30
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
-64.60
-</td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
-56.50
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
-61.30
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
-56.70
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
-65.10
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;">
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
-69.50
+64.60
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+56.50
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FAB1A4;">
+61.30
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
+56.70
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 俄罗斯制造业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #D1F5BA;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+49.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
 49.30
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #ABF1A1;">
-48.60
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
 49.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
 51.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
-52.80
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
 50.10
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
-50.90
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FAB1A4;">
 51.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
 52.60
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
 51.30
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
 50.00
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
@@ -966,18 +945,17 @@ text-align: right;}
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
 48.10
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
-49.50
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #E8F6CB;">
-49.80
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 澳大利亚PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #C5F3B2;">
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+53.10
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
 51.30
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
@@ -1001,13 +979,13 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 49.50
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
 51.30
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
 58.30
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
 59.00
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
@@ -1016,19 +994,17 @@ text-align: right;}
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
 52.00
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
-57.40
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
-57.50
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 韩国制造业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #90EE90;">
-47.30
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+49.00
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
 47.50
@@ -1051,13 +1027,13 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
 49.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
 48.60
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F38D89;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F38D89;">
 51.00
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
 51.30
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
@@ -1066,19 +1042,16 @@ text-align: right;}
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
 48.30
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
-49.80
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
-48.90
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 墨西哥制造业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #B8F2A9;">
-49.80
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
 49.20
@@ -1086,11 +1059,9 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
 50.00
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
-50.10
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
-49.80
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
 52.60
@@ -1101,13 +1072,13 @@ text-align: right;}
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
 49.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
 49.70
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
 50.70
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
 51.70
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F4F7D4;">
@@ -1116,98 +1087,79 @@ text-align: right;}
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
 52.10
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
-52.10
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
-51.00
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 南非PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FFF8DC;">
-48.60
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
-43.20
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
-45.70
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
-47.00
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
-46.50
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
-48.20
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
-45.80
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
-49.30
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
-55.00
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
 45.20
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #C5F3B2;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
 45.50
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
 43.00
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #DDF6C3;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
 46.70
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #B8F2A9;">
-44.80
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
-49.80
 </td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 土耳其制造业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #FED5BF;">
-46.70
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F8A59B;">
-47.90
+48.00
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F4F7D4;">
-45.30
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FED5BF;">
 46.80
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FBBDAD;">
-47.20
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFE0C9;">
 46.40
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
-44.20
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
-44.20
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
-44.70
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #D1F5BA;">
 44.30
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #90EE90;">
 42.70
 </td>
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
@@ -1216,61 +1168,50 @@ text-align: right;}
 <td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
 49.00
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
-46.80
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFE0C9;">
-46.40
-</td>
 </tr>
 <tr>
 <td style="border-left: 1px solid black; border-top: hidden;">
 越南制造业PMI
 </td>
-<td align="center" style="border-left: 1px solid black;border-top: hidden;background-color: #D1F5BA;">
-52.60
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
-52.50
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
-52.00
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #D1F5BA;">
-52.50
-</td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
-51.90
+<td align="center" style="border-left: 1px solid black;border-top: hidden;">
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #90EE90;">
-51.20
+51.40
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #E8F6CB;">
+52.60
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+52.50
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #DDF6C3;">
+52.50
 </td>
 <td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
 51.90
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFF8DC;">
-53.80
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #F08080;">
-56.50
+<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #B8F2A9;">
+51.90
 </td>
-<td align="center" style="border-left: 0px solid black;border-top: hidden;background-color: #FFECD2;">
+<td align="center" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="NA" style="border-left: 0px solid black;border-top: hidden;">
+</td>
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FBBDAD;">
 53.90
 </td>
-<td align="NA" style="border-left: 0px solid black;border-top: hidden;background-color: #9EEF98;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #9EEF98;">
 51.50
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFF8DC;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FED5BF;">
 53.70
 </td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FDC9B6;">
+<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F08080;">
 54.90
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #F8A59B;">
-55.70
-</td>
-<td align="NA" style="border-left: NApx solid black;border-top: hidden;background-color: #FFECD2;">
-53.90
 </td>
 </tr>
 <tr>
@@ -1278,6 +1219,18 @@ text-align: right;}
 </td>
 </tr>
 </table>
+</div>
+</div>
+<p><br><br></p>
+<div class="col-xs-12">
+<H2 class="section-title">
+主要国家利率
+</H2>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<div id="htmlwidget-5a70157a8d8840c77343" style="width:100%;height:500px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5a70157a8d8840c77343">{"x":{"url":"world_macro_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="col-xs-12">
