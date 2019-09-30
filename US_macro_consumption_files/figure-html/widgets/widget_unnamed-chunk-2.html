@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="highchart_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="highchart_libs/jquery-1.11.1/jquery.min.js"></script>
+<script src="highchart_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="highchart_libs/highcharts-7.0.1/css/motion.css" rel="stylesheet" />
+<link href="highchart_libs/highcharts-7.0.1/css/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="highchart_libs/highcharts-7.0.1/highcharts.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-3d.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/highcharts-more.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/stock.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/map.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/annotations.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/boost.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drag-panes.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/drilldown.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/item-series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/offline-exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/overlapping-datalabels.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/exporting.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/export-data.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/funnel.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/heatmap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/treemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sankey.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/solid-gauge.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/streamgraph.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/sunburst.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/vector.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/wordcloud.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/xrange.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/tilemap.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/venn.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/gantt.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/timeline.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/modules/parallel-coordinates.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/grouped-categories.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/motion.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/plugins/multicolor_series.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/reset.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/symbols-extra.js"></script>
+<script src="highchart_libs/highcharts-7.0.1/custom/text-symbols.js"></script>
+<script src="highchart_libs/highchart-binding-0.7.0/highchart.js"></script>
+<script src="highchart_libs/pymjs-1.3.2/pym.v1.min.js"></script>
+  <title>highchart</title>
+</head>
+<body style="background-color:white;">
+<div id="htmlwidget_container">
+  <div id="htmlwidget-19d9022d90c8da2f987e" style="width:100%;height:450px;" class="highchart html-widget"></div>
+  <script>HTMLWidgets.pymChild = new pym.Child();HTMLWidgets.addPostRenderHandler(function(){
+                                setTimeout(function(){HTMLWidgets.pymChild.sendHeight();},100);
+                            });</script>
+</div>
+<script type="application/json" data-for="htmlwidget-19d9022d90c8da2f987e">{"x":{"hc_opts":{"title":{"text":"美国:现价:折年数:人均消费支出"},"yAxis":{"title":{"text":"美元"}},"credits":{"enabled":true,"text":"Smartashare.com","href":""},"exporting":{"enabled":true,"formAttributes":{"target":"_blank"},"buttons":{"contextButton":{"theme":{"fill":"transparent"},"menuItems":[{"text":"PNG","onclick":"function () { \n                  this.exportChart({ type: 'image/png' }); }"},{"text":"JPEG","onclick":"function () { \n                  this.exportChart({ type: 'image/jpeg' }); }"},{"separator":true},{"text":"CSV","onclick":"function () { this.downloadCSV(); }"},{"text":"XLS","onclick":"function () { this.downloadXLS(); }"}]}}},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":4500},"treemap":{"layoutAlgorithm":"squarified"},"column":{"stacking":"normal"}},"chart":{"type":"column","zoomType":"xy"},"subtitle":{"text":"更新日期:2019-06-30;耐用消费品对经济转折敏感度高：衰退前6-12个月减弱，复苏前1-2个月增加"},"xAxis":{"categories":["2000-03-31","2000-06-30","2000-09-30","2000-12-31","2001-03-31","2001-06-30","2001-09-30","2001-12-31","2002-03-31","2002-06-30","2002-09-30","2002-12-31","2003-03-31","2003-06-30","2003-09-30","2003-12-31","2004-03-31","2004-06-30","2004-09-30","2004-12-31","2005-03-31","2005-06-30","2005-09-30","2005-12-31","2006-03-31","2006-06-30","2006-09-30","2006-12-31","2007-03-31","2007-06-30","2007-09-30","2007-12-31","2008-03-31","2008-06-30","2008-09-30","2008-12-31","2009-03-31","2009-06-30","2009-09-30","2009-12-31","2010-03-31","2010-06-30","2010-09-30","2010-12-31","2011-03-31","2011-06-30","2011-09-30","2011-12-31","2012-03-31","2012-06-30","2012-09-30","2012-12-31","2013-03-31","2013-06-30","2013-09-30","2013-12-31","2014-03-31","2014-06-30","2014-09-30","2014-12-31","2015-03-31","2015-06-30","2015-09-30","2015-12-31","2016-03-31","2016-06-30","2016-09-30","2016-12-31","2017-03-31","2017-06-30","2017-09-30","2017-12-31","2018-03-31","2018-06-30","2018-09-30","2018-12-31","2019-03-31","2019-06-30"]},"series":[{"name":"耐用品:季调","data":[3274,3198,3224,3230,3261,3228,3235,3478,3402,3399,3475,3412,3365,3472,3580,3590,3642,3640,3696,3761,3763,3850,3887,3752,3876,3851,3879,3899,3922,3935,3946,3948,3801,3741,3594,3298,3280,3241,3365,3290,3306,3373,3394,3471,3496,3474,3492,3555,3631,3611,3630,3692,3767,3750,3754,3764,3787,3893,3936,3972,4005,4078,4098,4091,4124,4159,4218,4233,4267,4302,4348,4447,4453,4514,4532,4526,4519,4632]},{"name":"非耐用品:季调","data":[5305,5444,5508,5564,5533,5584,5572,5525,5526,5597,5608,5681,5811,5754,5927,5972,6088,6156,6220,6379,6414,6494,6702,6799,6861,6960,7062,6977,7083,7190,7244,7372,7423,7581,7649,7091,6908,6973,7131,7211,7268,7262,7297,7468,7652,7801,7803,7826,7947,7909,7917,7966,8057,7953,8025,8081,8136,8240,8283,8233,8062,8160,8227,8127,8073,8190,8198,8241,8356,8386,8467,8624,8705,8824,8889,8877,8861,9068]},{"name":"服务:季调","data":[14932,15143,15370,15585,15792,15891,15930,16056,16199,16396,16554,16746,16914,17105,17309,17494,17741,17974,18232,18486,18718,18993,19273,19558,19795,20054,20254,20488,20762,20887,21101,21298,21509,21730,21820,21799,21670,21592,21676,21798,21930,22105,22271,22375,22547,22770,22982,23010,23271,23408,23471,23646,23738,23855,24000,24318,24493,24795,25132,25475,25701,25956,26193,26363,26639,26934,27208,27502,27742,27953,28163,28577,28867,29274,29651,29895,30025,30390]}],"tooltip":{"enabled":true,"valueDecimals":2}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Cardo"}},"xAxis":{"lineWidth":1,"minorGridLineWidth":0,"tickColor":"#737373"},"yAxis":{"lineWidth":0,"minorGridLineWidth":0,"lineColor":"transparent","tickColor":"#737373","tickWidth":1,"gridLineColor":"transparent"}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Cardo","debug":false},"evals":["hc_opts.exporting.buttons.contextButton.menuItems.0.onclick","hc_opts.exporting.buttons.contextButton.menuItems.1.onclick","hc_opts.exporting.buttons.contextButton.menuItems.3.onclick","hc_opts.exporting.buttons.contextButton.menuItems.4.onclick"],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-19d9022d90c8da2f987e">{"viewer":{"width":"100%","height":450,"padding":0,"fill":false},"browser":{"width":"100%","height":450,"padding":0,"fill":false}}</script>
+</body>
+</html>
