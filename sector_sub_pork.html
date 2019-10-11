@@ -19,7 +19,7 @@
 <script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
 <script src="site_libs/pymjs-1.3.2/pym.v1.js"></script>
 <script src="site_libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -53,16 +53,22 @@ if (window.hljs) {
 <META name="apple-mobile-web-app-capable" content="yes">
 <META name="apple-mobile-web-app-status-bar-style" content="black">
 <TITLE>简易投研主页</TITLE>     
-<LINK href="static/library-bundle.min.css" rel="stylesheet">     
-<LINK href="static/global-bundle.min.css" rel="stylesheet">
-
+<LINK href="css/library-bundle.min.css" rel="stylesheet">     
+<LINK href="css/global-bundle.min.css" rel="stylesheet">
+ <script type="text/javascript" src="js/responsive-template.js"></script> 
+  
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
-<SCRIPT src="static/library-bundle.min.js"></SCRIPT>
+<SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
-<LINK href="static/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
- 
+<link href="css/solving-2018.css" rel="stylesheet">
+
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
+<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-template.css">
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/blank.js"></script>
 
 
 </HEAD> 
@@ -79,9 +85,18 @@ if (window.hljs) {
         <span class="icon-bar bottom-bar"></span>
     </button>
 	<a href="index.html">
-		<img src="static/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
+		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
 	</a>
 </DIV>
+
+
+
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
+
 
 <DIV class="navbar-collapse collapse" id="navbar">
 <UL class="nav navbar-nav primary-nav">
@@ -97,6 +112,7 @@ if (window.hljs) {
       <LI><A href="market_ashare.html">行情走势</A></LI>
       <LI><A href="valuation.html">市场估值</A></LI>
       <LI><A href="money.html">资金面跟踪</A></LI>
+      <LI><A href="technicals.html">技术指标</A></LI>
       <LI><A href="northbound_money.html">陆股通跟踪</A></LI>
       <LI><A href="events_radar.html">事件雷达</A></LI>
       <LI><A href="margin_trading.html">融资交易</A></LI>
@@ -105,9 +121,7 @@ if (window.hljs) {
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
-      <LI><A href="commodities_cn.html">基差与期限结构</A></LI>
-      <LI><A href="commodities_spot.html">商品现货</A></LI>
-      <LI><A href="commodities_arbitrage.html">跨品种分析</A></LI>
+      <LI><A href="commodities_cn.html">商品期货</A></LI>
       <LI><A href="gold.html">黄金</A></LI>
       <LI><A href="index_futures.html">股指期货</A></LI>
       <LI><A href="options.html">上证50期权</A></LI>
@@ -177,7 +191,8 @@ if (window.hljs) {
     
   	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
       <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
-
+      <LI><A href="asset_returns_table.html">行业收益率周期图</A></LI>
+	    <LI><A href="periodic_table.html">A股元素周期表</A></LI>
     </UL>
 	
 	</DIV>
@@ -200,14 +215,14 @@ if (window.hljs) {
       <LI><A href="PPI.html">PPI</A></LI>
       <LI><A href="CPI.html">CPI</A></LI>
       <LI><A href="high_freq_eco_data.html">高频数据跟踪</A></LI>
-      <LI><A href="us_macro.html">美国宏观</A></LI>
+      <LI><A href="us_macro_heatmap.html">美国宏观</A></LI>
       <LI><A href="world_macro.html">全球数据</A></LI>
 	</UL>
 	</DIV>
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">资产配置</SPAN>
-      <LI><A href="asset_allocation.html">大类资产估值</A></LI>
+      <LI><A href="asset_allocation.html">大类资产跟踪</A></LI>
       <LI><A href="money_credit.html">货币信用</A></LI>
       <LI><A href="inventory_cycle.html">库存周期</A></LI>
       <LI><A href="investment_clock.html">美林时钟</A></LI>
@@ -224,6 +239,7 @@ if (window.hljs) {
       <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
       <LI><A href="climate.html">气候</A></LI>
 	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+
     </UL>
 	</DIV>
 	
@@ -239,7 +255,7 @@ if (window.hljs) {
   
   
      <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
-  data-toggle="dropdown" data-hover="dropdown">支持我们</A>
+  data-toggle="dropdown" data-hover="dropdown">联系我们</A>
   <UL class="dropdown-menu multi-column columns-1">
     <DIV class="row">
 	
@@ -247,14 +263,14 @@ if (window.hljs) {
 	  <SPAN class="nav-header">打赏</SPAN>
 
       <LI>感谢您的支持</LI>
-      <IMG class="img-responsive" alt="" src="static/wechatpay.png" height="100" width="100">
+      <IMG class="img-responsive" alt="" src="images/wechatpay.png" height="100" width="100">
 
 	</DIV>
 	
   <DIV class="col-lg-3 col-md-4 left-space">
 	  <SPAN class="nav-header">Email:</SPAN>
 
-      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com</LI>
 
 	</DIV>
 	
@@ -308,28 +324,28 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-0d74703ccce156492b64" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0d74703ccce156492b64">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-940bffa97fe343e26c33" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-940bffa97fe343e26c33">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-03801352efab6db47878" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-03801352efab6db47878">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-436c4c0cfd024e9e0ce9" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-436c4c0cfd024e9e0ce9">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-78ba8ab84e161f6de311" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-78ba8ab84e161f6de311">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-14670366ad98a39b1528" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-14670366ad98a39b1528">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-a3d5a2427facaec2fbab" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a3d5a2427facaec2fbab">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-341192424a21ae097786" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-341192424a21ae097786">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-245a3b0b74b2d155a156" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-245a3b0b74b2d155a156">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-223a961adefdb77429f5" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-223a961adefdb77429f5">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-6a5862d963ae652fccd5" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6a5862d963ae652fccd5">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f1578e447a6ac956120d" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f1578e447a6ac956120d">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="col-xs-12">
@@ -339,28 +355,28 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-a5379213c11e7524df62" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a5379213c11e7524df62">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-bf96d4266a596f30fcad" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bf96d4266a596f30fcad">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-0984f90b6c7912a43a34" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0984f90b6c7912a43a34">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f002334c984defaf9a3b" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f002334c984defaf9a3b">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-5b17c6c2e71b4443a3e7" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5b17c6c2e71b4443a3e7">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4f2279b39c4c75f637ba" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4f2279b39c4c75f637ba">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-ee9f413c6535d2ad29d5" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ee9f413c6535d2ad29d5">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-822025b511265db0ce63" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-822025b511265db0ce63">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-7189568aa8286346567b" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7189568aa8286346567b">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5958fcd160997168fcc8" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5958fcd160997168fcc8">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-545d069f0807ef6d1750" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-545d069f0807ef6d1750">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-73e8d4b2449e8abc667f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-73e8d4b2449e8abc667f">{"x":{"url":"sector_sub_pork_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
