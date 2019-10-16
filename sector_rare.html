@@ -20,7 +20,7 @@
 <script src="site_libs/pymjs-1.3.2/pym.v1.js"></script>
 <script src="site_libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -54,16 +54,22 @@ if (window.hljs) {
 <META name="apple-mobile-web-app-capable" content="yes">
 <META name="apple-mobile-web-app-status-bar-style" content="black">
 <TITLE>简易投研主页</TITLE>     
-<LINK href="static/library-bundle.min.css" rel="stylesheet">     
-<LINK href="static/global-bundle.min.css" rel="stylesheet">
-
+<LINK href="css/library-bundle.min.css" rel="stylesheet">     
+<LINK href="css/global-bundle.min.css" rel="stylesheet">
+ <script type="text/javascript" src="js/responsive-template.js"></script> 
+  
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
-<SCRIPT src="static/library-bundle.min.js"></SCRIPT>
+<SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
-<LINK href="static/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
- 
+<link href="css/solving-2018.css" rel="stylesheet">
+
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
+<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-template.css">
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/blank.js"></script>
 
 
 </HEAD> 
@@ -80,9 +86,18 @@ if (window.hljs) {
         <span class="icon-bar bottom-bar"></span>
     </button>
 	<a href="index.html">
-		<img src="static/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
+		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
 	</a>
 </DIV>
+
+
+
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
+
 
 <DIV class="navbar-collapse collapse" id="navbar">
 <UL class="nav navbar-nav primary-nav">
@@ -98,17 +113,14 @@ if (window.hljs) {
       <LI><A href="market_ashare.html">行情走势</A></LI>
       <LI><A href="valuation.html">市场估值</A></LI>
       <LI><A href="money.html">资金面跟踪</A></LI>
-      <LI><A href="northbound_money.html">陆股通跟踪</A></LI>
+      <LI><A href="sector_rotation.html">技术指标</A></LI>
       <LI><A href="events_radar.html">事件雷达</A></LI>
-      <LI><A href="margin_trading.html">融资交易</A></LI>
 	</UL>
 	</DIV>
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
-      <LI><A href="commodities_cn.html">基差与期限结构</A></LI>
-      <LI><A href="commodities_spot.html">商品现货</A></LI>
-      <LI><A href="commodities_arbitrage.html">跨品种分析</A></LI>
+      <LI><A href="commodities_cn.html">商品期货</A></LI>
       <LI><A href="gold.html">黄金</A></LI>
       <LI><A href="index_futures.html">股指期货</A></LI>
       <LI><A href="options.html">上证50期权</A></LI>
@@ -175,6 +187,12 @@ if (window.hljs) {
       <LI><A href="sector_capital_markets.html">证券</A></LI>
       <LI><A href="sector_transport.html">交通运输</A></LI>
     </UL>
+    
+  	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
+      <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
+      <LI><A href="asset_returns_table.html">行业收益率周期图</A></LI>
+	    <LI><A href="periodic_table.html">A股元素周期表</A></LI>
+    </UL>
 	
 	</DIV>
 	  
@@ -196,14 +214,14 @@ if (window.hljs) {
       <LI><A href="PPI.html">PPI</A></LI>
       <LI><A href="CPI.html">CPI</A></LI>
       <LI><A href="high_freq_eco_data.html">高频数据跟踪</A></LI>
-      <LI><A href="us_macro.html">美国宏观</A></LI>
+      <LI><A href="us_macro_heatmap.html">美国宏观</A></LI>
       <LI><A href="world_macro.html">全球数据</A></LI>
 	</UL>
 	</DIV>
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">资产配置</SPAN>
-      <LI><A href="asset_allocation.html">大类资产估值</A></LI>
+      <LI><A href="asset_allocation.html">大类资产跟踪</A></LI>
       <LI><A href="money_credit.html">货币信用</A></LI>
       <LI><A href="inventory_cycle.html">库存周期</A></LI>
       <LI><A href="investment_clock.html">美林时钟</A></LI>
@@ -220,6 +238,7 @@ if (window.hljs) {
       <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
       <LI><A href="climate.html">气候</A></LI>
 	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+
     </UL>
 	</DIV>
 	
@@ -235,7 +254,7 @@ if (window.hljs) {
   
   
      <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
-  data-toggle="dropdown" data-hover="dropdown">支持我们</A>
+  data-toggle="dropdown" data-hover="dropdown">联系我们</A>
   <UL class="dropdown-menu multi-column columns-1">
     <DIV class="row">
 	
@@ -243,14 +262,14 @@ if (window.hljs) {
 	  <SPAN class="nav-header">打赏</SPAN>
 
       <LI>感谢您的支持</LI>
-      <IMG class="img-responsive" alt="" src="static/wechatpay.png" height="100" width="100">
+      <IMG class="img-responsive" alt="" src="images/wechatpay.png" height="100" width="100">
 
 	</DIV>
 	
   <DIV class="col-lg-3 col-md-4 left-space">
 	  <SPAN class="nav-header">Email:</SPAN>
 
-      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com</LI>
 
 	</DIV>
 	
@@ -304,12 +323,12 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-6c981b65356de3241d33" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6c981b65356de3241d33">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-838743240a90aa99277d" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-838743240a90aa99277d">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-83cc1be159f54207a647" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-83cc1be159f54207a647">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-59a7b5e6a1ea1439f540" style="width:100%;height:450px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-59a7b5e6a1ea1439f540">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="col-xs-12">
@@ -319,12 +338,12 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-177abad306f1890eccb7" style="width:100%;height:480px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-177abad306f1890eccb7">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-831f2c532124c5863810" style="width:100%;height:480px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-831f2c532124c5863810">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-ab226f93dacdfe6cf1fe" style="width:100%;height:480px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ab226f93dacdfe6cf1fe">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-eaecd53e96618a44b201" style="width:100%;height:480px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-eaecd53e96618a44b201">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br><br></p>
@@ -367,16 +386,16 @@ COMEX黄金期货
 美元/盎司
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-1292.4
+1483.5
 </td>
 <td style="text-align:left;">
-1.31
+-2
 </td>
 <td style="text-align:left;">
-0.28
+-1.59
 </td>
 </tr>
 <tr>
@@ -387,16 +406,16 @@ COMEX白银期货
 美元/盎司
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-14.491
+17.384
 </td>
 <td style="text-align:left;">
-0.72
+-1.65
 </td>
 <td style="text-align:left;">
--3.43
+-4.36
 </td>
 </tr>
 <tr>
@@ -407,16 +426,16 @@ COMEX白银期货
 点
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-98.1825
+98.3012
 </td>
 <td style="text-align:left;">
-0.16
+-0.66
 </td>
 <td style="text-align:left;">
-0.15
+-0.06
 </td>
 </tr>
 <tr>
@@ -427,16 +446,16 @@ LME3个月铜
 美元/吨
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-5854
+5780
 </td>
 <td style="text-align:left;">
--3.14
+2.17
 </td>
 <td style="text-align:left;">
--8.36
+-1.62
 </td>
 </tr>
 <tr>
@@ -447,16 +466,16 @@ LME3个月铜
 万吨
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-212450
+275575
 </td>
 <td style="text-align:left;">
-11.49
+-5.06
 </td>
 <td style="text-align:left;">
-8.45
+-8.07
 </td>
 </tr>
 <tr>
@@ -467,16 +486,16 @@ LME3个月铝
 美元/吨
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-1787
+1716
 </td>
 <td style="text-align:left;">
--2.62
+0.29
 </td>
 <td style="text-align:left;">
--3.35
+-5.14
 </td>
 </tr>
 <tr>
@@ -487,16 +506,16 @@ LME3个月铝
 万吨
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-1164975
+983525
 </td>
 <td style="text-align:left;">
--6.05
+2
 </td>
 <td style="text-align:left;">
-14.12
+7.65
 </td>
 </tr>
 <tr>
@@ -507,16 +526,16 @@ LME3个月铅
 美元/吨
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-1812.5
+2148
 </td>
 <td style="text-align:left;">
--0.63
+1.99
 </td>
 <td style="text-align:left;">
--6.43
+2.82
 </td>
 </tr>
 <tr>
@@ -527,16 +546,16 @@ LME3个月铅
 万吨
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-70350
+69150
 </td>
 <td style="text-align:left;">
--4.16
+-0.11
 </td>
 <td style="text-align:left;">
--5.89
+-9.1
 </td>
 </tr>
 <tr>
@@ -547,16 +566,16 @@ LME3个月锌
 美元/吨
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-2547.5
+2421.5
 </td>
 <td style="text-align:left;">
--2.28
+6.25
 </td>
 <td style="text-align:left;">
--8.1
+2.65
 </td>
 </tr>
 <tr>
@@ -567,16 +586,16 @@ LME3个月锌
 万吨
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-100850
+61475
 </td>
 <td style="text-align:left;">
--4.23
+-6.43
 </td>
 <td style="text-align:left;">
-26.02
+-2.34
 </td>
 </tr>
 <tr>
@@ -587,16 +606,16 @@ LME3个月锡
 美元/吨
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-18730
+16530
 </td>
 <td style="text-align:left;">
--3.83
+0.33
 </td>
 <td style="text-align:left;">
--5.76
+-5.27
 </td>
 </tr>
 <tr>
@@ -607,16 +626,16 @@ LME3个月锡
 万吨
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-2650
+6685
 </td>
 <td style="text-align:left;">
-74.92
+-0.89
 </td>
 <td style="text-align:left;">
-184.95
+-3.54
 </td>
 </tr>
 <tr>
@@ -627,16 +646,16 @@ LME3个月镍
 美元/吨
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-12015
+16940
 </td>
 <td style="text-align:left;">
--0.37
+-3.8
 </td>
 <td style="text-align:left;">
--2.71
+-5.92
 </td>
 </tr>
 <tr>
@@ -647,56 +666,56 @@ LME3个月镍
 万吨
 </td>
 <td style="text-align:left;">
-2019-05-30
+2019-10-16
 </td>
 <td style="text-align:left;">
-160290
+91062
 </td>
 <td style="text-align:left;">
--2.5
+-35.37
 </td>
 <td style="text-align:left;">
--8.07
+-41.78
 </td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-c429a93d6f995ba3abb3" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c429a93d6f995ba3abb3">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1e07d7fc99a4c6c3df6b" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1e07d7fc99a4c6c3df6b">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-2dbe877c8b9fd22aff9d" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2dbe877c8b9fd22aff9d">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-959c194f92e4902b6ae7" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-959c194f92e4902b6ae7">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-6a276f08f3e90b7a051d" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6a276f08f3e90b7a051d">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-fb6d231d793b80cd1a78" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fb6d231d793b80cd1a78">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-a8e52f499a4f677125a2" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a8e52f499a4f677125a2">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1554c75c96fe914aa689" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1554c75c96fe914aa689">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-01646b5ffc2a6855e73f" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-01646b5ffc2a6855e73f">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5ba914bdaf35a7a9a091" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5ba914bdaf35a7a9a091">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-56044358df7e195e775a" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-56044358df7e195e775a">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-110005d699134bd895e5" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-110005d699134bd895e5">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-34618175ac049abeaa07" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-34618175ac049abeaa07">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-47e8b4a07eeca5767666" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-47e8b4a07eeca5767666">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-ec125ebee26571bd7567" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ec125ebee26571bd7567">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-16.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-19137ab1024e85956c5e" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-19137ab1024e85956c5e">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-16.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-997a531db340b03fdea1" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-997a531db340b03fdea1">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-17.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-04aa5aff6b040ac6d0d5" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-04aa5aff6b040ac6d0d5">{"x":{"url":"sector_rare_files/figure-html//widgets/widget_unnamed-chunk-17.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
