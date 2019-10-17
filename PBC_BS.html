@@ -20,7 +20,7 @@
 <script src="site_libs/pymjs-1.3.2/pym.v1.js"></script>
 <script src="site_libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -54,16 +54,22 @@ if (window.hljs) {
 <META name="apple-mobile-web-app-capable" content="yes">
 <META name="apple-mobile-web-app-status-bar-style" content="black">
 <TITLE>简易投研主页</TITLE>     
-<LINK href="static/library-bundle.min.css" rel="stylesheet">     
-<LINK href="static/global-bundle.min.css" rel="stylesheet">
-
+<LINK href="css/library-bundle.min.css" rel="stylesheet">     
+<LINK href="css/global-bundle.min.css" rel="stylesheet">
+ <script type="text/javascript" src="js/responsive-template.js"></script> 
+  
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
-<SCRIPT src="static/library-bundle.min.js"></SCRIPT>
+<SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
-<LINK href="static/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
- 
+<link href="css/solving-2018.css" rel="stylesheet">
+
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
+<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-template.css">
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/blank.js"></script>
 
 
 </HEAD> 
@@ -80,9 +86,18 @@ if (window.hljs) {
         <span class="icon-bar bottom-bar"></span>
     </button>
 	<a href="index.html">
-		<img src="static/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
+		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
 	</a>
 </DIV>
+
+
+
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
+
 
 <DIV class="navbar-collapse collapse" id="navbar">
 <UL class="nav navbar-nav primary-nav">
@@ -98,9 +113,8 @@ if (window.hljs) {
       <LI><A href="market_ashare.html">行情走势</A></LI>
       <LI><A href="valuation.html">市场估值</A></LI>
       <LI><A href="money.html">资金面跟踪</A></LI>
-      <LI><A href="northbound_money.html">陆股通跟踪</A></LI>
+      <LI><A href="sector_rotation.html">技术指标</A></LI>
       <LI><A href="events_radar.html">事件雷达</A></LI>
-      <LI><A href="margin_trading.html">融资交易</A></LI>
 	</UL>
 	</DIV>
 	
@@ -116,7 +130,6 @@ if (window.hljs) {
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">固收与海外市场</SPAN>
-      <LI><A href=" foreign_markets.html">全球权益市场</A></LI>
       <LI><A href="fixed_income.html">固定收益</A></LI>
       <LI><A href="conv_bond.html">可转债</A></LI>
 
@@ -174,6 +187,12 @@ if (window.hljs) {
       <LI><A href="sector_capital_markets.html">证券</A></LI>
       <LI><A href="sector_transport.html">交通运输</A></LI>
     </UL>
+    
+  	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
+      <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
+      <LI><A href="asset_returns_table.html">行业收益率周期图</A></LI>
+	    <LI><A href="periodic_table.html">A股元素周期表</A></LI>
+    </UL>
 	
 	</DIV>
 	  
@@ -195,14 +214,14 @@ if (window.hljs) {
       <LI><A href="PPI.html">PPI</A></LI>
       <LI><A href="CPI.html">CPI</A></LI>
       <LI><A href="high_freq_eco_data.html">高频数据跟踪</A></LI>
-      <LI><A href="us_macro.html">美国宏观</A></LI>
+      <LI><A href="us_macro_heatmap.html">美国宏观</A></LI>
       <LI><A href="world_macro.html">全球数据</A></LI>
 	</UL>
 	</DIV>
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">资产配置</SPAN>
-      <LI><A href="asset_allocation.html">大类资产估值</A></LI>
+      <LI><A href="asset_allocation.html">大类资产跟踪</A></LI>
       <LI><A href="money_credit.html">货币信用</A></LI>
       <LI><A href="inventory_cycle.html">库存周期</A></LI>
       <LI><A href="investment_clock.html">美林时钟</A></LI>
@@ -219,6 +238,7 @@ if (window.hljs) {
       <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
       <LI><A href="climate.html">气候</A></LI>
 	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+
     </UL>
 	</DIV>
 	
@@ -234,7 +254,7 @@ if (window.hljs) {
   
   
      <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
-  data-toggle="dropdown" data-hover="dropdown">支持我们</A>
+  data-toggle="dropdown" data-hover="dropdown">联系我们</A>
   <UL class="dropdown-menu multi-column columns-1">
     <DIV class="row">
 	
@@ -242,14 +262,14 @@ if (window.hljs) {
 	  <SPAN class="nav-header">打赏</SPAN>
 
       <LI>感谢您的支持</LI>
-      <IMG class="img-responsive" alt="" src="static/wechatpay.png" height="100" width="100">
+      <IMG class="img-responsive" alt="" src="images/wechatpay.png" height="100" width="100">
 
 	</DIV>
 	
   <DIV class="col-lg-3 col-md-4 left-space">
 	  <SPAN class="nav-header">Email:</SPAN>
 
-      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com</LI>
 
 	</DIV>
 	
@@ -303,8 +323,8 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-8c365f315ee35776fff8" style="width:100%;height:480px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8c365f315ee35776fff8">{"x":{"url":"PBC_BS_files/figure-html//widgets/widget_unnamed-chunk-2.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-42915f881c8a8a13017a" style="width:100%;height:480px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-42915f881c8a8a13017a">{"x":{"url":"PBC_BS_files/figure-html//widgets/widget_unnamed-chunk-2.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
@@ -317,10 +337,10 @@ if (window.hljs) {
 环比变动
 </th>
 <th style="text-align:right;">
-2019-03-31
+2019-09-30
 </th>
 <th style="text-align:right;">
-2019-02-28
+2019-08-31
 </th>
 </tr>
 </thead>
@@ -330,13 +350,13 @@ if (window.hljs) {
 国外资产:外汇
 </td>
 <td style="text-align:right;">
--4.60
+-10.45
 </td>
 <td style="text-align:right;">
-212536.65
+212353.95
 </td>
 <td style="text-align:right;">
-212541.24
+212364.40
 </td>
 </tr>
 <tr>
@@ -344,13 +364,13 @@ if (window.hljs) {
 国外资产:黄金
 </td>
 <td style="text-align:right;">
-31.19
+20.99
 </td>
 <td style="text-align:right;">
-2663.61
+2855.63
 </td>
 <td style="text-align:right;">
-2632.43
+2834.64
 </td>
 </tr>
 <tr>
@@ -358,13 +378,13 @@ if (window.hljs) {
 国外资产:其他
 </td>
 <td style="text-align:right;">
-103.04
+-43.16
 </td>
 <td style="text-align:right;">
-2909.41
+3557.96
 </td>
 <td style="text-align:right;">
-2806.37
+3601.12
 </td>
 </tr>
 <tr>
@@ -386,13 +406,13 @@ if (window.hljs) {
 对其他存款性公司债权
 </td>
 <td style="text-align:right;">
--7240.25
+2002.85
 </td>
 <td style="text-align:right;">
-93667.54
+106774.83
 </td>
 <td style="text-align:right;">
-100907.79
+104771.98
 </td>
 </tr>
 <tr>
@@ -400,13 +420,13 @@ if (window.hljs) {
 对其他金融性公司债权
 </td>
 <td style="text-align:right;">
-50.80
+124.80
 </td>
 <td style="text-align:right;">
-4708.59
+5167.63
 </td>
 <td style="text-align:right;">
-4657.79
+5042.83
 </td>
 </tr>
 <tr>
@@ -414,13 +434,13 @@ if (window.hljs) {
 对非金融公司债权
 </td>
 <td style="text-align:right;">
--0.57
+NaN
 </td>
 <td style="text-align:right;">
-26.97
+NaN
 </td>
 <td style="text-align:right;">
-27.53
+NaN
 </td>
 </tr>
 <tr>
@@ -428,13 +448,13 @@ if (window.hljs) {
 其他资产
 </td>
 <td style="text-align:right;">
--596.37
+-481.17
 </td>
 <td style="text-align:right;">
-16789.62
+16006.52
 </td>
 <td style="text-align:right;">
-17385.99
+16487.69
 </td>
 </tr>
 <tr>
@@ -442,13 +462,13 @@ if (window.hljs) {
 总资产
 </td>
 <td style="text-align:right;color: #fff;background-color: #666;">
--7656.76
+1613.86
 </td>
 <td style="text-align:right;color: #fff;background-color: #666;">
-348552.64
+361966.77
 </td>
 <td style="text-align:right;color: #fff;background-color: #666;">
-356209.39
+360352.91
 </td>
 </tr>
 </tbody>
@@ -458,8 +478,8 @@ if (window.hljs) {
 <p><br></p>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-91f9cc05ac9aecfea898" style="width:100%;height:480px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-91f9cc05ac9aecfea898">{"x":{"url":"PBC_BS_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-615c13c831ddc4a640a8" style="width:100%;height:480px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-615c13c831ddc4a640a8">{"x":{"url":"PBC_BS_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
@@ -472,10 +492,10 @@ if (window.hljs) {
 环比变动
 </th>
 <th style="text-align:right;">
-2019-03-31
+2019-09-30
 </th>
 <th style="text-align:right;">
-2019-02-28
+2019-08-31
 </th>
 </tr>
 </thead>
@@ -485,13 +505,13 @@ if (window.hljs) {
 储备货币:货币发行
 </td>
 <td style="text-align:right;">
--6221.57
+1465.11
 </td>
 <td style="text-align:right;">
-81310.67
+80217.69
 </td>
 <td style="text-align:right;">
-87532.25
+78752.58
 </td>
 </tr>
 <tr>
@@ -499,13 +519,13 @@ if (window.hljs) {
 储备货币:非金融机构存款
 </td>
 <td style="text-align:right;">
--354.08
+-188.38
 </td>
 <td style="text-align:right;">
-12752.22
+13434.74
 </td>
 <td style="text-align:right;">
-13106.30
+13623.12
 </td>
 </tr>
 <tr>
@@ -513,13 +533,13 @@ if (window.hljs) {
 储备货币:其他存款性公司存款
 </td>
 <td style="text-align:right;">
-6717.43
+4284.50
 </td>
 <td style="text-align:right;">
-209648.14
+212229.56
 </td>
 <td style="text-align:right;">
-202930.71
+207945.06
 </td>
 </tr>
 <tr>
@@ -527,13 +547,13 @@ if (window.hljs) {
 不计入储备货币的金融性公司存款
 </td>
 <td style="text-align:right;">
-148.07
+-43.51
 </td>
 <td style="text-align:right;">
-4693.39
+4775.23
 </td>
 <td style="text-align:right;">
-4545.32
+4818.74
 </td>
 </tr>
 <tr>
@@ -541,13 +561,13 @@ if (window.hljs) {
 债券发行
 </td>
 <td style="text-align:right;">
-0.00
+150.00
 </td>
 <td style="text-align:right;">
-315.00
+940.00
 </td>
 <td style="text-align:right;">
-315.00
+790.00
 </td>
 </tr>
 <tr>
@@ -555,13 +575,13 @@ if (window.hljs) {
 国外负债
 </td>
 <td style="text-align:right;">
--353.89
+-22.18
 </td>
 <td style="text-align:right;">
-819.25
+1105.55
 </td>
 <td style="text-align:right;">
-1173.14
+1127.73
 </td>
 </tr>
 <tr>
@@ -569,13 +589,13 @@ if (window.hljs) {
 政府存款
 </td>
 <td style="text-align:right;">
--7109.48
+-3357.80
 </td>
 <td style="text-align:right;">
-31407.14
+38526.80
 </td>
 <td style="text-align:right;">
-38516.63
+41884.61
 </td>
 </tr>
 <tr>
@@ -597,13 +617,13 @@ if (window.hljs) {
 其他负债
 </td>
 <td style="text-align:right;">
--483.23
+-673.88
 </td>
 <td style="text-align:right;">
-7387.06
+10517.43
 </td>
 <td style="text-align:right;">
-7870.29
+11191.31
 </td>
 </tr>
 <tr>
@@ -611,13 +631,13 @@ if (window.hljs) {
 总负债
 </td>
 <td style="text-align:right;color: #fff;background-color: #666;">
--7656.75
+1613.86
 </td>
 <td style="text-align:right;color: #fff;background-color: #666;">
-348552.62
+361966.75
 </td>
 <td style="text-align:right;color: #fff;background-color: #666;">
-356209.39
+360352.90
 </td>
 </tr>
 </tbody>
