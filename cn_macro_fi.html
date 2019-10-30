@@ -55,16 +55,20 @@ if (window.hljs) {
 <TITLE>简易投研主页</TITLE>     
 <LINK href="css/library-bundle.min.css" rel="stylesheet">     
 <LINK href="css/global-bundle.min.css" rel="stylesheet">
-<LINK href="css/responsive-template.css" rel="stylesheet">
-  
+ <script type="text/javascript" src="js/responsive-template.js"></script> 
   
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
 <SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
+<link href="css/solving-2018.css" rel="stylesheet">
+
 <LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 <LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
- 
+<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-template.css">
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/blank.js"></script>
 
 
 </HEAD> 
@@ -85,6 +89,15 @@ if (window.hljs) {
 	</a>
 </DIV>
 
+
+
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
+
+
 <DIV class="navbar-collapse collapse" id="navbar">
 <UL class="nav navbar-nav primary-nav">
 
@@ -99,17 +112,14 @@ if (window.hljs) {
       <LI><A href="market_ashare.html">行情走势</A></LI>
       <LI><A href="valuation.html">市场估值</A></LI>
       <LI><A href="money.html">资金面跟踪</A></LI>
-      <LI><A href="northbound_money.html">陆股通跟踪</A></LI>
+      <LI><A href="sector_rotation.html">技术指标</A></LI>
       <LI><A href="events_radar.html">事件雷达</A></LI>
-      <LI><A href="margin_trading.html">融资交易</A></LI>
 	</UL>
 	</DIV>
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">商品与衍生品</SPAN>
-      <LI><A href="commodities_cn.html">基差与期限结构</A></LI>
-      <LI><A href="commodities_spot.html">商品现货</A></LI>
-      <LI><A href="commodities_arbitrage.html">跨品种分析</A></LI>
+      <LI><A href="commodities_cn.html">商品期货</A></LI>
       <LI><A href="gold.html">黄金</A></LI>
       <LI><A href="index_futures.html">股指期货</A></LI>
       <LI><A href="options.html">上证50期权</A></LI>
@@ -179,7 +189,8 @@ if (window.hljs) {
     
   	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
       <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
-
+      <LI><A href="asset_returns_table.html">行业收益率周期图</A></LI>
+	    <LI><A href="periodic_table.html">A股元素周期表</A></LI>
     </UL>
 	
 	</DIV>
@@ -202,14 +213,14 @@ if (window.hljs) {
       <LI><A href="PPI.html">PPI</A></LI>
       <LI><A href="CPI.html">CPI</A></LI>
       <LI><A href="high_freq_eco_data.html">高频数据跟踪</A></LI>
-      <LI><A href="us_macro.html">美国宏观</A></LI>
+      <LI><A href="us_macro_heatmap.html">美国宏观</A></LI>
       <LI><A href="world_macro.html">全球数据</A></LI>
 	</UL>
 	</DIV>
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">资产配置</SPAN>
-      <LI><A href="asset_allocation.html">大类资产估值</A></LI>
+      <LI><A href="asset_allocation.html">大类资产跟踪</A></LI>
       <LI><A href="money_credit.html">货币信用</A></LI>
       <LI><A href="inventory_cycle.html">库存周期</A></LI>
       <LI><A href="investment_clock.html">美林时钟</A></LI>
@@ -226,6 +237,7 @@ if (window.hljs) {
       <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
       <LI><A href="climate.html">气候</A></LI>
 	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+
     </UL>
 	</DIV>
 	
@@ -241,7 +253,7 @@ if (window.hljs) {
   
   
      <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
-  data-toggle="dropdown" data-hover="dropdown">支持我们</A>
+  data-toggle="dropdown" data-hover="dropdown">联系我们</A>
   <UL class="dropdown-menu multi-column columns-1">
     <DIV class="row">
 	
@@ -256,7 +268,7 @@ if (window.hljs) {
   <DIV class="col-lg-3 col-md-4 left-space">
 	  <SPAN class="nav-header">Email:</SPAN>
 
-      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com</LI>
 
 	</DIV>
 	
@@ -300,6 +312,8 @@ if (window.hljs) {
 
 
 
+<pre><code>## New names:
+## * `` -&gt; `..6`</code></pre>
 <p><br><br><br><br></p>
 <section class="hero aac">
 <div id="hero-nav-bar">
@@ -353,20 +367,20 @@ if (window.hljs) {
 <div class="container">
 <div class="row content-block-row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-d41d212f49d2e919b74b" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d41d212f49d2e919b74b">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7146deab2a2f56d0ebe9" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7146deab2a2f56d0ebe9">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-5cf6da4f283e2834525b" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5cf6da4f283e2834525b">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-0d10037934983786d007" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0d10037934983786d007">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-df2a59f61a77aae38fcf" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-df2a59f61a77aae38fcf">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-60e270e654441ee6acb4" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-60e270e654441ee6acb4">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-5580db62d4ed20637cf1" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5580db62d4ed20637cf1">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3e9403ad9a167c469712" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3e9403ad9a167c469712">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="bond-landing" class="section-head hero-nav-jump-point">
@@ -383,16 +397,16 @@ if (window.hljs) {
 <div class="container">
 <div class="row content-block-row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-d0b8de137f42342ff0bc" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d0b8de137f42342ff0bc">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d9a7144a83685ed18765" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d9a7144a83685ed18765">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-d99112baaa08c93f470c" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d99112baaa08c93f470c">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-6a757033bd396c41c7d8" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6a757033bd396c41c7d8">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-377cf5ce1907fbbcdc45" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-377cf5ce1907fbbcdc45">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4fa0c1ff8f1c46796df9" style="width:100%;height:400px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4fa0c1ff8f1c46796df9">{"x":{"url":"cn_macro_fi_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
