@@ -19,7 +19,7 @@
 <script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
 <script src="site_libs/pymjs-1.3.2/pym.v1.js"></script>
 <script src="site_libs/widgetframe-binding-0.3.1/widgetframe.js"></script>
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -53,16 +53,22 @@ if (window.hljs) {
 <META name="apple-mobile-web-app-capable" content="yes">
 <META name="apple-mobile-web-app-status-bar-style" content="black">
 <TITLE>简易投研主页</TITLE>     
-<LINK href="static/library-bundle.min.css" rel="stylesheet">     
-<LINK href="static/global-bundle.min.css" rel="stylesheet">
-
+<LINK href="css/library-bundle.min.css" rel="stylesheet">     
+<LINK href="css/global-bundle.min.css" rel="stylesheet">
+ <script type="text/javascript" src="js/responsive-template.js"></script> 
+  
 <META name="application-name" content="简易投研">
 <META name="msapplication-TileColor" content="#123a5f">
-<SCRIPT src="static/library-bundle.min.js"></SCRIPT>
+<SCRIPT src="js/library-bundle.min.js"></SCRIPT>
 
-<LINK href="static/tq_logo.ico" rel="icon" type="image/x-icon">
-<LINK href="static/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
- 
+<link href="css/solving-2018.css" rel="stylesheet">
+
+<LINK href="images/tq_logo.ico" rel="icon" type="image/x-icon">
+<LINK href="images/tq_logo.ico" rel="shortcut icon" type="image/x-icon"> 
+<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-template.css">
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/blank.js"></script>
 
 
 </HEAD> 
@@ -79,9 +85,18 @@ if (window.hljs) {
         <span class="icon-bar bottom-bar"></span>
     </button>
 	<a href="index.html">
-		<img src="static/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
+		<img src="images/tq_logo.png" style="margin-left:-8px;margin-top:6px;width:100px;height:70px"> 
 	</a>
 </DIV>
+
+
+
+<style>
+.aac .hero-sub-nav.hero-nav-open.mobile-hero-nav {
+    height: 120px;
+}
+</style>
+
 
 <DIV class="navbar-collapse collapse" id="navbar">
 <UL class="nav navbar-nav primary-nav">
@@ -97,9 +112,8 @@ if (window.hljs) {
       <LI><A href="market_ashare.html">行情走势</A></LI>
       <LI><A href="valuation.html">市场估值</A></LI>
       <LI><A href="money.html">资金面跟踪</A></LI>
-      <LI><A href="northbound_money.html">陆股通跟踪</A></LI>
+      <LI><A href="sector_rotation.html">技术指标</A></LI>
       <LI><A href="events_radar.html">事件雷达</A></LI>
-      <LI><A href="margin_trading.html">融资交易</A></LI>
 	</UL>
 	</DIV>
 	
@@ -115,7 +129,6 @@ if (window.hljs) {
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">固收与海外市场</SPAN>
-      <LI><A href=" foreign_markets.html">全球权益市场</A></LI>
       <LI><A href="fixed_income.html">固定收益</A></LI>
       <LI><A href="conv_bond.html">可转债</A></LI>
 
@@ -173,6 +186,12 @@ if (window.hljs) {
       <LI><A href="sector_capital_markets.html">证券</A></LI>
       <LI><A href="sector_transport.html">交通运输</A></LI>
     </UL>
+    
+  	<UL class="multi-column-dropdown"><SPAN class="nav-header">其他</SPAN>
+      <LI><A href="cyclical_investment.html">主营产品涨价</A></LI>
+      <LI><A href="asset_returns_table.html">行业收益率周期图</A></LI>
+	    <LI><A href="periodic_table.html">A股元素周期表</A></LI>
+    </UL>
 	
 	</DIV>
 	  
@@ -194,14 +213,14 @@ if (window.hljs) {
       <LI><A href="PPI.html">PPI</A></LI>
       <LI><A href="CPI.html">CPI</A></LI>
       <LI><A href="high_freq_eco_data.html">高频数据跟踪</A></LI>
-      <LI><A href="us_macro.html">美国宏观</A></LI>
+      <LI><A href="us_macro_heatmap.html">美国宏观</A></LI>
       <LI><A href="world_macro.html">全球数据</A></LI>
 	</UL>
 	</DIV>
 	
 	<DIV class="col-lg-3 col-md-4">
     <UL class="multi-column-dropdown"><SPAN class="nav-header">资产配置</SPAN>
-      <LI><A href="asset_allocation.html">大类资产估值</A></LI>
+      <LI><A href="asset_allocation.html">大类资产跟踪</A></LI>
       <LI><A href="money_credit.html">货币信用</A></LI>
       <LI><A href="inventory_cycle.html">库存周期</A></LI>
       <LI><A href="investment_clock.html">美林时钟</A></LI>
@@ -218,6 +237,7 @@ if (window.hljs) {
       <LI><A href="leverage_cycle.html">宏观杠杆率</A></LI>
       <LI><A href="climate.html">气候</A></LI>
 	  <LI><A href="PBC_BS.html">央行资产负债表</A></LI>
+
     </UL>
 	</DIV>
 	
@@ -233,7 +253,7 @@ if (window.hljs) {
   
   
      <LI class="dropdown yamm-fw"><A class="dropdown-toggle" href="javascript:void(0)" 
-  data-toggle="dropdown" data-hover="dropdown">支持我们</A>
+  data-toggle="dropdown" data-hover="dropdown">联系我们</A>
   <UL class="dropdown-menu multi-column columns-1">
     <DIV class="row">
 	
@@ -241,14 +261,14 @@ if (window.hljs) {
 	  <SPAN class="nav-header">打赏</SPAN>
 
       <LI>感谢您的支持</LI>
-      <IMG class="img-responsive" alt="" src="static/wechatpay.png" height="100" width="100">
+      <IMG class="img-responsive" alt="" src="images/wechatpay.png" height="100" width="100">
 
 	</DIV>
 	
   <DIV class="col-lg-3 col-md-4 left-space">
 	  <SPAN class="nav-header">Email:</SPAN>
 
-      <LI>更多定制化服务，欢迎联系dlin@smartashare.com或xsx@smartashare.com</LI>
+      <LI>更多定制化服务，欢迎联系dlin@smartashare.com</LI>
 
 	</DIV>
 	
@@ -295,8 +315,8 @@ if (window.hljs) {
 <p><br><br><br><br></p>
 <div class="container">
 <div class="row content-block-row">
-<div id="htmlwidget-90a75d823cfb05b27a50" style="width:100%;height:500px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-90a75d823cfb05b27a50">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-2.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c93ca9d8e8c3ab4cbc5f" style="width:100%;height:500px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c93ca9d8e8c3ab4cbc5f">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-2.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 <div class="col-xs-12">
 <H2 class="section-title alt">
 全球权益市场
@@ -304,52 +324,52 @@ if (window.hljs) {
 </div>
 <div class="row">
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-694bac4ba3d667af823d" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-694bac4ba3d667af823d">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-e9b56690f4be9221f63d" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e9b56690f4be9221f63d">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-4.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-22fd9bf313d1f1d73947" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-22fd9bf313d1f1d73947">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-81afca41bf70db65ce7f" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-81afca41bf70db65ce7f">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-5.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-083853b65f4cd5f2c9a3" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-083853b65f4cd5f2c9a3">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-069513cdd2019583eac2" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-069513cdd2019583eac2">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-29bc5328ba3afaf4a188" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-29bc5328ba3afaf4a188">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-20e89b2453d14e0d2630" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-20e89b2453d14e0d2630">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-424be9ee71901b8cebe3" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-424be9ee71901b8cebe3">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ea4c4d00ed177581e526" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ea4c4d00ed177581e526">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-8b674ecdc769af8e69d5" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8b674ecdc769af8e69d5">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-6c9bfc6ac382cb71d22f" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6c9bfc6ac382cb71d22f">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-9572ffbf57474fcc0c7b" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9572ffbf57474fcc0c7b">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-22078a70fbe7f438eccf" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-22078a70fbe7f438eccf">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-002674a16537d38793ae" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-002674a16537d38793ae">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-117c80a914339e75a5e7" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-117c80a914339e75a5e7">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-84cea305447d56e9501d" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-84cea305447d56e9501d">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b3b7dd5c6490c9cbfcc4" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b3b7dd5c6490c9cbfcc4">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-c71b9ed145409881fd72" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c71b9ed145409881fd72">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ff814addd2aaed52ff5a" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ff814addd2aaed52ff5a">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-09635be7090dac671397" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-09635be7090dac671397">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5e319c396d67dc065dea" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5e319c396d67dc065dea">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-sm-6 col-xs-12">
-<div id="htmlwidget-9446f1ee66d4aee92d4e" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9446f1ee66d4aee92d4e">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d83d3c91bc330218d24a" style="width:100%;height:380px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d83d3c91bc330218d24a">{"x":{"url":"foreign_markets_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
